@@ -1,1 +1,49 @@
-{"texts":{"title":"香港海岸釣魚","eyebrow":"HONG KONG COASTAL FISHING","areaLabel":"釣點","distanceLabel":"距離","scoreLabel":"分數","powerLabel":"收竿時機","hitHint":"指針進入中央時按掣","startButton":"拋竿開始","hitButton":"收竿！","bagButton":"魚獲背包","areaButton":"轉換釣點","returnButton":"回到故事 →","waiting":"魚絲已拋出，等待魚兒上釣……","biting":"有魚上釣！在正確時機收竿！","miss":"時機未到，魚掙扎走遠了！","hit":"好！魚拉近了一點！","areaTitle":"選擇釣魚地區","catchEyebrow":"FRESH CATCH","catchTitle":"成功釣獲！","againButton":"再釣一次","closeButton":"收起","bagTitle":"我的魚獲背包","bagEmpty":"暫時未有魚獲，快去拋竿吧！"},"settings":{"backgroundUrl":"assets/coast-bg.png","biteDelayMin":1200,"biteDelayMax":2800,"needleSpeed":1.8,"targetSize":16},"areas":[{"id":"cheung-chau","name":"長洲碼頭","description":"近岸魚種，適合初學者","fish":[{"id":"yellowfin","name":"黃腳鱲","icon":"🐟","minWeight":0.3,"maxWeight":1.2,"points":80,"hits":3,"weight":5},{"id":"squid","name":"魷魚","icon":"🦑","minWeight":0.2,"maxWeight":0.8,"points":100,"hits":4,"weight":3}]},{"id":"sai-kung","name":"西貢外海","description":"水清魚多，偶有大魚","fish":[{"id":"grouper","name":"石斑","icon":"🐠","minWeight":0.8,"maxWeight":4.5,"points":180,"hits":6,"weight":4},{"id":"snapper","name":"紅鮋","icon":"🐟","minWeight":0.5,"maxWeight":2.5,"points":140,"hits":5,"weight":5}]},{"id":"tai-o","name":"大澳棚屋","description":"鹹淡水交界的特色漁獲","fish":[{"id":"mullet","name":"烏頭","icon":"🐟","minWeight":0.7,"maxWeight":3.2,"points":160,"hits":6,"weight":5},{"id":"mud-crab","name":"青蟹","icon":"🦀","minWeight":0.4,"maxWeight":1.8,"points":200,"hits":7,"weight":2}]},{"id":"ninepins","name":"果洲群島","description":"深水挑戰，大魚出沒","fish":[{"id":"tuna","name":"吞拿魚","icon":"🐟","minWeight":5,"maxWeight":25,"points":500,"hits":10,"weight":3},{"id":"mahi","name":"鬼頭刀","icon":"🐠","minWeight":3,"maxWeight":15,"points":380,"hits":9,"weight":4}]}]}
+{
+  "texts": {
+    "title": "香港海岸釣魚",
+    "eyebrow": "HONG KONG COASTAL FISHING",
+    "areaLabel": "釣區",
+    "distanceLabel": "魚距",
+    "scoreLabel": "分數",
+    "powerLabel": "收魚時機",
+    "hitHint": "指針進入白色區域時收魚",
+    "tensionLabel": "魚絲張力",
+    "tensionHint": "失誤會增加張力，滿格會斷線",
+    "chooseArea": "尚未選擇",
+    "startButton": "拋竿開始",
+    "hitButton": "收魚！",
+    "bagButton": "魚獲背包",
+    "areaButton": "選擇釣區",
+    "returnButton": "回到故事 →",
+    "ready": "釣區已選好，準備好便拋竿。",
+    "waiting": "魚絲已拋出，留意水面動靜……",
+    "biting": "魚上釣！在白色區域內收魚。",
+    "miss": "失誤！魚絲張力上升。",
+    "hit": "漂亮！魚被拉近了。",
+    "lineBroken": "魚絲斷了，這尾魚逃走了！",
+    "tryAgain": "換好魚絲，可以再次拋竿。",
+    "areaTitle": "先選擇釣魚區域",
+    "areaIntro": "每個海域都有不同魚種、重量與分數。",
+    "catchEyebrow": "FRESH CATCH",
+    "catchTitle": "成功釣獲！",
+    "againButton": "再釣一次",
+    "closeButton": "收起",
+    "bagTitle": "我的魚獲背包",
+    "bagEmpty": "暫時未有魚獲，快去拋竿吧！"
+  },
+  "settings": {"backgroundUrl":"assets/coast-bg.png","biteDelayMin":900,"biteDelayMax":1900,"needleSpeed":0.85,"targetSize":30},
+  "areas": [
+    {"id":"cheung-chau","name":"長洲碼頭","description":"平靜近岸，最適合初次落竿","fish":[
+      {"id":"yellowfin-cc","name":"黃腳鱲","image":"assets/yellowfin-seabream.png","minWeight":0.3,"maxWeight":1.2,"points":80,"hits":3,"weight":7,"tensionRate":0.018},
+      {"id":"mullet-cc","name":"烏頭","image":"assets/grey-mullet.png","minWeight":0.6,"maxWeight":2.2,"points":110,"hits":4,"weight":4,"tensionRate":0.022}]},
+    {"id":"sai-kung","name":"西貢外海","description":"水清礁多，石斑出沒","fish":[
+      {"id":"grouper-sk","name":"青斑","image":"assets/orange-spotted-grouper.png","minWeight":0.8,"maxWeight":4.5,"points":190,"hits":6,"weight":4,"tensionRate":0.034},
+      {"id":"seabass-sk","name":"花鱸","image":"assets/japanese-seabass.png","minWeight":1.0,"maxWeight":4.8,"points":210,"hits":6,"weight":3,"tensionRate":0.038}]},
+    {"id":"tai-o","name":"大澳水道","description":"鹹淡水交界，烏頭活躍","fish":[
+      {"id":"mullet-to","name":"烏頭","image":"assets/grey-mullet.png","minWeight":0.8,"maxWeight":3.2,"points":150,"hits":5,"weight":7,"tensionRate":0.027},
+      {"id":"yellowfin-to","name":"黃腳鱲","image":"assets/yellowfin-seabream.png","minWeight":0.5,"maxWeight":1.8,"points":120,"hits":4,"weight":4,"tensionRate":0.024}]},
+    {"id":"ninepins","name":"果洲群島","description":"外海浪急，挑戰大型魚獲","fish":[
+      {"id":"seabass-np","name":"花鱸","image":"assets/japanese-seabass.png","minWeight":2.0,"maxWeight":8.5,"points":360,"hits":8,"weight":5,"tensionRate":0.052},
+      {"id":"grouper-np","name":"大型青斑","image":"assets/orange-spotted-grouper.png","minWeight":3.0,"maxWeight":12.0,"points":480,"hits":9,"weight":3,"tensionRate":0.06}]}
+  ]
+}
