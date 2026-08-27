@@ -1,5 +1,5 @@
 (function(){
-  var W=1000,H=562;
+  var W=880,H=495;
   function fit(){
     var el=document.getElementById('game');
     if(!el) return;
