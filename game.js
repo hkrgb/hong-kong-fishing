@@ -5,7 +5,7 @@ if(!embedded){try{bag=JSON.parse(localStorage.getItem(BAG_KEY)||'[]')}catch{}}
 function incomingHostScore(){const raw=new URLSearchParams(location.search).get('score');if(raw!==null&&raw!==''&&Number.isFinite(+raw))return +raw;if(Number.isFinite(window.__islandScore))return +window.__islandScore;return 0}
 function persistBag(){if(embedded)reportToParent(false);else localStorage.setItem(BAG_KEY,JSON.stringify(bag))}
 function reportToParent(done){if(!embedded)return;window.parent.postMessage({type:'island-stats',set:{score:hostScore+score,fishingBag:bag},complete:!!done},'*')}
-window.addEventListener('message',e=>{const d=e.data;if(!d||typeof d!=='object'||d.type!=='island-stats')return;if(Number.isFinite(+d.score)&&state==='idle'){window.__islandScore=+d.score;hostScore=+d.score}if(Array.isArray(d.fishingBag)){bag=d.fishingBag}});
+window.addEventListener('message',e=>{const d=e.data;if(!d||typeof d!=='object'||d.type!=='island-stats')return;if(d.request==='dump'){reportToParent(false);return}if(Number.isFinite(+d.score)&&state==='idle'){window.__islandScore=+d.score;hostScore=+d.score}if(Array.isArray(d.fishingBag)){bag=d.fishingBag}});
 async function fallback(){return(await fetch('config.json',{cache:'no-store'})).json()}
 async function remote(){const r=await fetch(ROOT,{cache:'no-store'});if(!r.ok)return null;const d=await r.json(),p=d.fields?.payload?.stringValue;return p?JSON.parse(p):null}
 function text(id,v){$(id).textContent=v||''} function fmt(n){return Number(n).toFixed(1)}
