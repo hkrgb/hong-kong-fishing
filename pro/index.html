@@ -1,7 +1,8 @@
-<!doctype html><html lang="zh-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>香港專業釣魚</title><link rel="stylesheet" href="style.css?v=1"></head><body><main id="stage">
-<div id="sea" class="sea"></div><div class="grade"></div><header><div><small>HONG KONG SPORT FISHING</small><h1 id="title">香港專業釣魚</h1></div><div class="conditions"><span><i>天氣</i><b id="weather">—</b></span><span><i>潮汐</i><b id="tide">—</b></span><span><i>釣點</i><b id="areaName">未選擇</b></span></div><button id="menu" class="icon" aria-label="遊戲選單">☰</button></header>
+<!doctype html><html lang="zh-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>香港專業釣魚</title><link rel="stylesheet" href="style.css?v=2"><link rel="stylesheet" href="enhancements.css?v=2"></head><body><main id="stage">
+<div id="sea" class="sea"></div><div id="fishShadows" class="fish-shadows" aria-hidden="true"></div><div class="grade"></div><header><div><small>HONG KONG SPORT FISHING</small><h1 id="title">香港專業釣魚</h1></div><div class="conditions"><span><i>天氣</i><b id="weather">—</b></span><span><i>潮汐</i><b id="tide">—</b></span><span><i>釣點</i><b id="areaName">未選擇</b></span></div><button id="menu" class="icon" aria-label="遊戲選單">☰</button></header>
 <aside class="telemetry"><small>FIGHT TELEMETRY</small><div><span>魚距</span><b><em id="distance">—</em> m</b></div><div><span>魚絲張力</span><b id="tensionText">安全</b></div><div class="tension"><i id="tension"></i></div><p id="message">先從地圖選擇釣點。</p></aside>
 <section class="fight"><div class="timing"><div id="sweet" class="sweet"></div><i id="needle"></i></div><small>在綠色區域按「收絲」</small></section>
+<section id="castControls" class="cast-controls" style="left:34px;width:225px"><small>CAST CONTROL</small><label>拋竿角度 <b id="angleValue">中央</b><input id="castAngle" type="range" min="-30" max="30" value="0"></label><label>拋竿力度 <b id="powerValue">70%</b><input id="castPower" type="range" min="35" max="100" value="70"></label><p>觀察魚影，調整方向及距離後再拋竿。</p></section>
 <section class="rod-wrap"><div id="rod" class="rod"><i></i><b></b><span></span></div><div id="line" class="line"></div><div id="splash" class="splash"></div></section>
 <button id="action" class="action" disabled>選擇釣點</button>
 <nav><button id="openMap">地圖</button><button id="openBag">魚獲 <b id="bagCount">0</b></button><button id="openTournament">釣魚比賽</button><button id="openMedals">獎章 <b id="medalCount">0</b></button></nav>
@@ -11,4 +12,4 @@
 <div id="tournamentModal" class="modal"><section class="list-card"><button class="close" data-close="tournamentModal">×</button><small>TOURNAMENT DESK</small><h2>釣魚比賽</h2><div id="tournamentList"></div></section></div>
 <div id="medalModal" class="modal"><section class="list-card"><button class="close" data-close="medalModal">×</button><small>ANGLER HONOURS</small><h2>獎章收藏</h2><div id="medalGrid" class="medals"></div></section></div>
 <div id="menuModal" class="modal"><section class="confirm-card"><small>GAME MENU</small><h2>離開專業版？</h2><p>魚獲、獎章及分數會先保存。</p><div><button data-close="menuModal">取消</button><button id="exitGame" class="danger">確定</button></div></section></div>
-</main><script src="game.js?v=1"></script></body></html>
+</main><script src="game.js?v=2"></script></body></html>
