@@ -1,0 +1,18 @@
+@media (max-width:950px), (max-height:500px){
+  #stage nav button{font-size:18px;min-height:64px;padding:12px 22px}
+  #stage #cue h2{font-size:26px}
+  #stage #cue p{font-size:17px;max-width:540px;line-height:1.55}
+  #stage #phase{font-size:14px;letter-spacing:2px}
+  #stage #cue{bottom:116px}
+  #stage .conditions small{font-size:15px}
+  #stage aside span,#stage aside p{font-size:15px}
+  #stage #action small{font-size:15px;max-width:125px}
+  #stage .dialog button{font-size:18px;min-height:56px}
+  #stage .areaCard p{font-size:17px}
+  #stage .areaCard small{font-size:14px}
+  #stage .fishCard small{font-size:15px}
+  #stage .fishCard b{font-size:18px}
+  #stage .labels{font-size:19px}
+  #stage #fightHud p,#stage #powerHud small{font-size:15px}
+  #stage .row p{font-size:18px}
+}
