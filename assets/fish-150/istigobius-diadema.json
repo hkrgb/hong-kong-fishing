@@ -1,0 +1,13 @@
+{
+  "id": "istigobius-diadema",
+  "name": "林哥・眼斑鰕虎魚",
+  "en": "Eye-marked goby",
+  "scientificName": "Istigobius diadema",
+  "family": "Gobiidae",
+  "suffix": "",
+  "notes": "Small bottom-dwelling goby with elongated body, two separate dorsal fins, pelvic fins forming a suction disc, natural species-specific markings; not a reef wrasse. Match the named species.",
+  "prompt": "Use case: stylized-concept. Premium realistic AI game fish artwork: exactly ONE Istigobius diadema. Small bottom-dwelling goby with elongated body, two separate dorsal fins, pelvic fins forming a suction disc, natural species-specific markings; not a reef wrasse. Match the named species. Whole animal full side view head left, tail right, entire fins and tail inside generous margins. Photographic natural textures, soft studio light, crisp detailed naturalistic digital illustration. Isolated uniform deep navy #0b2531 background. Landscape3:2. No scene, water, bubbles, labels, text, hooks, human or watermark. Not a real specimen photograph.",
+  "mode": "built-in ImageGen",
+  "image": "istigobius-diadema.png",
+  "review": "pending"
+}

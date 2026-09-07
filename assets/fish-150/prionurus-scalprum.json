@@ -1,0 +1,11 @@
+{
+  "id": "prionurus-scalprum",
+  "name": "倒吊",
+  "en": "Scalpel sawtail",
+  "scientificName": "Prionurus scalprum",
+  "family": "Acanthuridae",
+  "prompt": "Use case: scientific-educational. Asset: premium realistic fish-encyclopedia game illustration. Exactly ONE adult Prionurus scalprum (Scalpel sawtail; family Acanthuridae). Adult dark grey-brown laterally compressed oval body, small mouth, characteristic three bony scalpel plates each side of the caudal peduncle, yellowish caudal fin. Strict natural-history accuracy for this particular species, realistic adult non-breeding colors, anatomically plausible eyes, gills, fin rays and scales. Full fish in clean lateral side profile, head LEFT tail RIGHT, entire fins and tail visible with generous margins, centered, landscape 3:2. Highly detailed naturalistic digital specimen illustration with photographic textures and soft studio lighting, not cartoon. Isolated on a uniform deep navy #0b2531 background, no scenery, no water bubbles, no hands, no hooks, no text, no labels, no border, no watermark. Do not substitute another species. This is artistic game artwork, not an actual specimen photograph.",
+  "mode": "built-in ImageGen",
+  "image": "prionurus-scalprum.png",
+  "review": "pending"
+}

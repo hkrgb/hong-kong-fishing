@@ -1,0 +1,7 @@
+{
+  "id": "apogon-niger",
+  "prompt": "Precise-object-edit. Correct the species coloration and shape of this AI fish illustration to Apogonichthyoides niger (historical name Apogon niger). Preserve navy background, full lateral head-left framing and realistic scale texture. Remove every dark horizontal stripe and the orange back. Head and body are dusky grey, darker dorsally, eye iris pale yellow. Compact deep oblong compressed body with a blunt snout; fins dusky, posterior pelvic fins long; tail only shallowly emarginate, NOT deeply forked. No conspicuous stripes or spots. No text or props. Artistic game asset not a specimen photograph.",
+  "mode": "built-in ImageGen edit",
+  "image": "apogon-niger-v2.png",
+  "review": "pending"
+}

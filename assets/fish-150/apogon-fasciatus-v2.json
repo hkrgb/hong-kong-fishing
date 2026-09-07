@@ -1,0 +1,7 @@
+{
+  "id": "apogon-fasciatus",
+  "prompt": "Precise-object-edit. Correct this generated Apogon fasciatus (Ostorhinchus fasciatus) fish illustration. Preserve the isolated full lateral head-left fish on navy background and naturalistic finish. Remove ALL vertical black body bars. This species has pale silvery pink body and LONGITUDINAL dark stripes that run horizontally nose-to-tail: one broad uniform midlateral stripe through eye along side continuing onto central caudal rays, narrower stripe from above eye to upper caudal peduncle, fine stripe below dorsal base. Pale unstriped lower belly. No vertical bands, no spots, no text. Keep all fins and entire tail inside frame. This is AI game art, not a specimen photograph.",
+  "mode": "built-in ImageGen edit",
+  "image": "apogon-fasciatus-v2.png",
+  "review": "visual composition reviewed; not expert taxonomic certification"
+}

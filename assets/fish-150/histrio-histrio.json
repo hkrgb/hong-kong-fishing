@@ -1,0 +1,11 @@
+{
+  "id": "histrio-histrio",
+  "name": "裸躄魚",
+  "en": "Sargassumfish",
+  "scientificName": "Histrio histrio",
+  "family": "Antennariidae",
+  "prompt": "Use case: scientific-educational. Asset: premium realistic fish-encyclopedia game illustration. Exactly ONE adult Histrio histrio (Sargassumfish; family Antennariidae). Sargassum frogfish: squat globular mottled ochre-brown and cream body, irregular fleshy camouflage flaps, upward mouth, arm-like pectoral fins, tiny lure on head; NOT a conventional streamlined fish. Strict natural-history accuracy for this particular species, realistic adult non-breeding colors, anatomically plausible eyes, gills, fin rays and scales. Full fish in clean lateral side profile, head LEFT tail RIGHT, entire fins and tail visible with generous margins, centered, landscape 3:2. Highly detailed naturalistic digital specimen illustration with photographic textures and soft studio lighting, not cartoon. Isolated on a uniform deep navy #0b2531 background, no scenery, no water bubbles, no hands, no hooks, no text, no labels, no border, no watermark. Do not substitute another species. This is artistic game artwork, not an actual specimen photograph.",
+  "mode": "built-in ImageGen",
+  "image": "histrio-histrio.png",
+  "review": "pending"
+}

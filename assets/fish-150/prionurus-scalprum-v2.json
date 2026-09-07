@@ -1,0 +1,7 @@
+{
+  "id": "prionurus-scalprum",
+  "prompt": "Precise-object-edit. Edit target: this generated Prionurus scalprum fish illustration. Keep full fish silhouette, navy background, head left, framing, texture, lighting unchanged. Correct ONLY the bony tail peduncle plates: remove the incorrect six plates in two columns. Replace them with exactly THREE small scalpel plates in a SINGLE HORIZONTAL LINE along the middle of the visible tail peduncle, side by side from left to right. These plates lie in a row along the body axis, not stacked. No extra plates above or below. Everything else unchanged.",
+  "mode": "built-in ImageGen edit",
+  "image": "prionurus-scalprum-v2.png",
+  "review": "visual composition reviewed; not expert taxonomic certification"
+}

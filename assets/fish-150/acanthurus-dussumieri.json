@@ -1,0 +1,11 @@
+{
+  "id": "acanthurus-dussumieri",
+  "name": "額帶刺尾魚",
+  "en": "Eyestripe surgeonfish",
+  "scientificName": "Acanthurus dussumieri",
+  "family": "Acanthuridae",
+  "prompt": "Use case: scientific-educational. Asset: premium realistic fish-encyclopedia game illustration. Exactly ONE adult Acanthurus dussumieri (Eyestripe surgeonfish; family Acanthuridae). Adult grey-blue oval body covered in fine wavy lines, yellow stripe through the eye, pale tail peduncle and bluish tail, pointed snout and continuous dorsal fin. Strict natural-history accuracy for this particular species, realistic adult non-breeding colors, anatomically plausible eyes, gills, fin rays and scales. Full fish in clean lateral side profile, head LEFT tail RIGHT, entire fins and tail visible with generous margins, centered, landscape 3:2. Highly detailed naturalistic digital specimen illustration with photographic textures and soft studio lighting, not cartoon. Isolated on a uniform deep navy #0b2531 background, no scenery, no water bubbles, no hands, no hooks, no text, no labels, no border, no watermark. Do not substitute another species. This is artistic game artwork, not an actual specimen photograph.",
+  "mode": "built-in ImageGen",
+  "image": "acanthurus-dussumieri.png",
+  "review": "pending"
+}
