@@ -18,6 +18,19 @@ service cloud.firestore {
       allow read: if true;
       allow write: if isAdmin();
     }
+    match /fishingPlayers/{uid}/saves/coastline {
+      function owner() {
+        return request.auth != null && request.auth.uid == uid
+          && request.auth.token.email_verified == true;
+      }
+      allow get: if owner();
+      allow create, update: if owner()
+        && request.resource.data.keys().hasOnly(['version', 'payload', 'updatedAt'])
+        && request.resource.data.version == 1
+        && request.resource.data.payload is string
+        && request.resource.data.payload.size() < 900000
+        && request.resource.data.updatedAt == request.time;
+    }
     match /{document=**} {
       allow read, write: if false;
     }
