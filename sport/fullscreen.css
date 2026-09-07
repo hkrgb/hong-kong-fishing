@@ -1,0 +1,9 @@
+/* Fullscreen the viewport, never stretch the fixed 1280 x 720 game stage. */
+html:fullscreen,html:-webkit-full-screen,html::backdrop{background:#000}
+html:fullscreen body,html:-webkit-full-screen body{background:#000}
+#home .homeCenter{padding:14px 22px}
+#home .homeCenter h1{margin:8px 0;font-size:68px}
+#home .homeActions{gap:9px}
+#home .homeActions button{padding:11px 20px}
+#home #accountActions{margin-top:15px}
+#home #fullscreenNote{font-size:12px;line-height:1.5;margin:8px auto;max-width:650px;color:#efd3a0}
