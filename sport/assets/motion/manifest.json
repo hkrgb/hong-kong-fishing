@@ -1,0 +1,18 @@
+{
+  "mode": "built-in ImageGen",
+  "assets": [
+    {
+      "path": "rod-base-v2.webp",
+      "master": "rod-base-v2.png",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied first-person fishing tackle image. Produce an animation-ready BASE sprite, same portrait 2:3 aspect ratio and same exact camera, same rod/reel/right gloved gripping hand positions. REMOVE the entire LEFT cranking hand and its blue sleeve at bottom left, and REMOVE the crank handle/black knob projecting to the lower left of the reel. Keep the reel gearbox axle visible so a separately animated crank can attach there. Retain the RIGHT gloved hand holding the rod and its blue sleeve, intact carbon black rod and blue silver spinning reel. Make ALL background truly transparent alpha, no scenery, no black matte, no glow. Professional realistic game asset, no text. Full rod and right hand in frame, matching original composition and lighting. Do not add a second hand. Left lower quadrant should be empty transparent.",
+      "revisionPrompt": "Use case: background-extraction. The supplied image has a FAKE painted grey-white checkerboard. REMOVE that entire checkerboard background and output REAL TRANSPARENT ALPHA pixels around the fishing rod, reel and right hand. Preserve all actual rod reel glove sleeve pixels, silhouette and position exactly. Do not draw a checkerboard or white or black matte. Only one right hand holding rod, left side remains empty. Portrait 1024x1536. This is a PNG cutout for compositing, must have a real alpha channel.",
+      "review": "True alpha verified; fixed rod/right hand, no left hand or crank."
+    },
+    {
+      "path": "reeling-hand.webp",
+      "master": "reeling-hand.png",
+      "prompt": "Use case: stylized-concept, realistic game animation sprite. Reference image only for glove and sleeve appearance: supplied first-person fishing rod image. Generate ONLY the LEFT hand gripping a SMALL BLACK OVAL REEL HANDLE KNOB, with a short blue patterned fishing-shirt forearm extending diagonally down-left from the wrist toward bottom-left edge. No rod, NO reel, no right hand, no background. True transparent alpha, no checkerboard painted, no shadows outside object. Single hand anatomy: black/grey fingerless technical fishing glove, thumb visible on right of the closed gripping fingers. Knob sits at about 65% canvas width, 35% canvas height, held naturally between thumb and fingers; fingers curl over knob. Camera sees back of glove like reference left hand. Square canvas, whole hand and about one forearm length, not enormous bulky hand. Photorealistic high-end PC fishing game asset, neutral warm daylight, crisp fabric/leather detail. No text. The hand+knob will be animated along an elliptical orbit around a separate reel axle, leave plenty of transparent room.",
+      "review": "True alpha verified; left glove and knob on separate layer."
+    }
+  ]
+}
