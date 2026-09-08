@@ -1,4 +1,5 @@
 #stage>nav{display:none!important}
+#stage.competition>aside{display:block;width:260px;top:140px;padding:14px}#stage.competition>aside>*{display:none}#stage.competition>aside #cupStatus{display:block;font-size:24px;margin:0;line-height:1.5}
 #stage>header #weatherInfo{display:none}#stage .catalogSearch small{font-size:20px}
 #stage>.brand{display:none}#stage>header .brand>span,#stage>header .brand h1 span,#stage>aside,#stage #phase,#stage #subhint,#stage #actionHint,#stage #powerHud small{display:none}
 #stage>header .brand h1{font-size:40px}#stage>header .conditions>span{font-size:30px}#stage>header .conditions small{display:none}#stage>header #weatherInfo{font-size:22px;padding:8px 14px}#stage>header #menu{font-size:36px;min-width:78px;min-height:72px}
