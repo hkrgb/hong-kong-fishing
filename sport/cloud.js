@@ -1,7 +1,7 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js';
 import {getAuth,GoogleAuthProvider,onAuthStateChanged,signInWithPopup,signOut} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import {getFirestore,doc,runTransaction,serverTimestamp} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
-import {mergeSaves,emptySave} from './save-merge.js';
+import {mergeSaves,emptySave} from './save-merge.js?v=20260909-economy';
 const config={projectId:'yes-card-gacha-rgb',appId:'1:496431023991:web:b62a7768104553c9958372',apiKey:'AIzaSyB8f7LK3UR-l2UgV_6qYPgAfDNfV4YlYrM',authDomain:'yes-card-gacha-rgb.firebaseapp.com'};
 export function createCloud(hooks){
  const app=initializeApp(config,'coastline-player'),auth=getAuth(app),db=getFirestore(app);

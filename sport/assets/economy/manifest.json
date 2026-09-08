@@ -1,0 +1,25 @@
+{
+  "mode": "built-in ImageGen",
+  "assets": [
+    {
+      "file": "tackle-shop.webp",
+      "master": "tackle-shop.png",
+      "prompt": "A professional realistic PC fishing game location illustration, Hong Kong Cheung Chau small waterfront fishing tackle shop interior, warm amber wood counter on left, blue green shelves of reels and bait jars, rods neatly racked, harbour visible through doorway, cinematic late afternoon, no people, generous darker empty right half for a game shop interface. Landscape 16:9, no text no brands no watermark."
+    },
+    {
+      "file": "fish-market.webp",
+      "master": "fish-market.png",
+      "prompt": "A professional realistic PC fishing game location illustration, Hong Kong island seafood buying stall at the harbour, clean stainless counter with a weighing scale and fish baskets on left, blue tanks, red lamps and sunlit harbour background, realistic inviting warm teal gold palette, no gore no people, generous darker empty right half for a game selling interface. Landscape 16:9, no text no brands no watermark."
+    },
+    {
+      "file": "bait-kit.webp",
+      "master": "bait-kit.png",
+      "prompt": "Professional realistic fishing game inventory asset: three distinct bait containers arranged neatly side by side on dark teal background, left simple small bait tub with earthworms and shrimp pieces, middle elegant blue bait tin containing shimmering shrimp bait, right premium gold-rimmed bait box with luminous realistic fish-shaped lure. Full objects, precise product lighting, no text, no labels, no watermarks, landscape composition."
+    },
+    {
+      "file": "market-scale.webp",
+      "master": "market-scale.png",
+      "prompt": "Professional realistic fishing game inventory illustration: a stainless fishmonger weighing scale beside a wicker tray with two fresh whole silver marine fish on crushed ice, fish heads left, clean no gore, dark teal background, cinematic warm sidelight, detailed physical materials, centered still life, no text no logos no watermark."
+    }
+  ]
+}
