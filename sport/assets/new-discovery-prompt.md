@@ -1,0 +1,3 @@
+Generated using the imagegen skill, built-in ImageGen. File: new-discovery.webp (transparent PNG encoded to WebP).
+
+Prompt: Use case: stylized-concept. Transparent background game UI badge, isolated dramatic premium fishing achievement emblem. Exact text "NEW" in huge legible beveled gold letters, deep teal enamel outline, energetic gold starburst and turquoise water splash behind letters, a few brilliant sparkles. Polished professional PC game reward art, celebratory and exaggerated, compact wide emblem centered with padding, no other text, no scenery, genuinely transparent background. Asset for first discovery of a fish species.
