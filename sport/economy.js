@@ -30,11 +30,17 @@ function showTackle(){
 function salePrice(f){const current=cfg.fish.find(v=>v.id===f.id);return Math.max(10,Math.round((+f.weight||0)*moneyValue(current?.sellPerKg,moneyValue(cfg.economy?.sellPerKg,50))));}
 function showMarket(page=0){
  const w=wallet(),fish=save.bag.filter(f=>!w.sold.has(CoastEconomy.catchKey(f))),pages=Math.max(1,Math.ceil(fish.length/3));page=clamp(page,0,pages-1);
- modal('海鮮檔 · $'+w.money,'<div class="shopScene" style="background-image:url('+shopAsset('fish-market')+')"><div class="shopDisplay"><img src="'+shopAsset('market-scale')+'" alt="海鮮磅與魚獲竹籃"><p>只用遊戲金錢交易。出售後仍保留魚庫、紀錄及獎章。</p></div><div class="marketOffers">'+(fish.length?'':'<p>暫時沒有可出售魚獲。先去免費釣區試試！</p>')+'</div></div>');
+ modal('海鮮檔 · $'+w.money,'<div class="marketShop" style="background-image:linear-gradient(#071d2966,#071d29aa),url('+shopAsset('fish-market')+')"><div class="marketOffers">'+(fish.length?'':'<p>沒有可出售魚獲</p>')+'</div><p class="marketNote">出售後仍保留圖鑑及魚獲紀錄。</p></div>');
  for(const f of fish.slice(page*3,page*3+3)){const row=document.createElement('section');row.className='saleOffer';row.innerHTML=fishMarkup(f)+'<div><b>'+esc(f.name)+'</b><p>'+Number(f.weight).toFixed(2)+' kg · $'+salePrice(f)+'</p></div>';const b=document.createElement('button');b.textContent='出售';b.onclick=()=>confirmSale(f,page);row.append(b);document.querySelector('.marketOffers').append(row);}
- foot('上一頁',()=>showMarket(page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showMarket(page+1)).disabled=page===pages-1;foot('商街',openHarbour);foot('返回',returnFromShop);
+ foot('上一頁',()=>showMarket(page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showMarket(page+1)).disabled=page===pages-1;foot('商街',openHarbour);foot('返回',returnFromShop);foot('賣出所有魚獲',confirmSellAll,true).disabled=!fish.length;
 }
 function confirmSale(f,page){const amount=salePrice(f);modal('確認出售？','<div class="saleConfirm">'+fishMarkup(f)+'<p>'+esc(f.name)+' · '+Number(f.weight).toFixed(2)+' kg<br>獲得 $'+amount+'<br>魚庫解鎖及魚獲紀錄會保留。</p></div>',()=>{transact({type:'sell',catchKey:CoastEconomy.catchKey(f),amount});showMarket(page);},'確認出售');foot('取消',()=>showMarket(page));}
+function confirmSellAll(){
+ const sold=wallet().sold,seen=new Set(),items=save.bag.filter(f=>{const k=CoastEconomy.catchKey(f);if(sold.has(k)||seen.has(k))return false;seen.add(k);return true;}).map(f=>({key:CoastEconomy.catchKey(f),amount:salePrice(f)}));
+ if(!items.length){showMarket();return;}
+ const total=items.reduce((n,f)=>n+f.amount,0);let done=false;
+ modal('賣出所有魚獲？','<p class="intro">共 '+items.length+' 條魚<br>合共可獲得 $'+total+'<br>圖鑑及魚獲紀錄會保留。</p>',()=>{if(done)return;done=true;let received=0;for(const f of items)if(transact({type:'sell',catchKey:f.key,amount:f.amount}))received+=f.amount;modal('出售結果','<p class="intro">本次獲得 $'+received+'<br>目前金錢 $'+wallet().money+'</p>',()=>showMarket(),'確定',true);},'是',true);foot('否',()=>showMarket());
+}
 function requestArea(a){if(areaOwned(a)){showAreaIntro(a);return;}const price=areaPrice(a);modal('解鎖 '+a.name,'<p class="intro">一次支付 $'+price+'，之後可免費返回。<br>目前金錢：$'+wallet().money+'</p>',()=>{if(transact({type:'unlock',areaId:a.id,amount:price}))showAreaIntro(a);else economyMessage('金錢不足','可以在免費釣區釣魚，再到海鮮檔出售。',()=>showAreas());},'支付並解鎖',true);foot('取消',()=>showAreas());}
 function canBaitCast(){const w=wallet();if(!economyReady())return false;if(!w.bait[equippedBait]){showTackle();return false;}if(equippedBait!=='basic'&&fishList.every(hasCaught)){economyMessage('本區魚種已全部收集','未有未釣過魚種，高級魚餌不會被消耗。請換基本魚餌或其他釣區。',showTackle);return false;}return true;}
 function useCastBait(){if(!canBaitCast())return false;const pool=CoastEconomy.pool(fishList,new Set(save.bag.map(f=>f.id)),equippedBait,Math.random());if(!pool.length||!transact({type:'use',bait:equippedBait}))return false;castSpecies=equippedBait==='basic'?null:pool[Math.floor(Math.random()*pool.length)];return true;}
