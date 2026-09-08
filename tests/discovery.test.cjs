@@ -1,0 +1,6 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');
+const code=fs.readFileSync(path.join(__dirname,'../sport/discovery.js'),'utf8');
+function setup(f={id:'test'}){const c={cfg:{fish:[f]},save:{bag:[]},URL,esc:String};vm.createContext(c);vm.runInContext(code,c);return c;}
+test('old catch IDs unlock without modifying save',()=>{const c=setup();assert(!c.hasCaught({id:'test'}));c.save.bag.push({id:'test',weight:1});assert(c.hasCaught({id:'test'}));assert.equal(c.save.bag[0].weight,1)});
+test('small medium large boundaries need sourced body length',()=>{for(const [n,type] of [[29.9,'small'],[30,'medium'],[79.9,'medium'],[80,'large']]){const f={id:'test',adultLengthCm:n,sizeSource:'https://example.org/reference'},c=setup(f);assert.equal(c.fishSize(f).type,type)}const c=setup({id:'test',max:100});assert.equal(c.fishSize({id:'test'}).type,'unknown')});
+test('large verified species and neutral silhouette',()=>{const f={id:'test',scientificName:'Seriola dumerili'},c=setup(f);assert.equal(c.fishSize(f).type,'large');assert(!c.unknownFish().includes(f.scientificName));assert(!c.unknownFish().includes('<img'));});

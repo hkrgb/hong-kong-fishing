@@ -9,7 +9,7 @@ const CoastMotion = (() => {
   const cloud=document.createElement('canvas');cloud.width=512;cloud.height=160;
   const c=cloud.getContext('2d');
   for(let i=0;i<55;i++){const x=35+(i*83.71)%440,y=63+Math.sin(i*2.399)*26,r=20+(i*13)%40;
-    const g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(225,236,238,.12)');g.addColorStop(1,'rgba(225,236,238,0)');c.fillStyle=g;c.fillRect(x-r,y-r,2*r,2*r);}
+    const g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(225,236,238,.28)');g.addColorStop(1,'rgba(225,236,238,0)');c.fillStyle=g;c.fillRect(x-r,y-r,2*r,2*r);}
   function update(dt,reeling,paused){if(paused)return;clock+=dt;const target=reeling?5.8:0;velocity+=(target-velocity)*(1-Math.exp(-dt*14));if(velocity<.002&&!reeling)velocity=0;phase=(phase+velocity*dt)%(Math.PI*2);}
   function draw(rig){
     if(!base.complete||!base.naturalWidth||!hand.complete||!hand.naturalWidth)return false;
@@ -30,15 +30,15 @@ const CoastMotion = (() => {
     if(conditions?.night){ctx.fillStyle='rgba(5,20,51,.22)';ctx.fillRect(0,0,1280,720);}
     if(conditions?.cloud||conditions?.rain){ctx.fillStyle='rgba(21,39,51,.15)';ctx.fillRect(0,0,1280,720);}
     ctx.save();ctx.beginPath();ctx.rect(0,0,1280,250);ctx.clip();
-    for(let i=0;i<5;i++){const x=((i*347+t*(conditions?.wind?9:3.2))%1770)-450,y=10+(i*43)%120;ctx.globalAlpha=conditions?.cloud ? .55 : .28;ctx.drawImage(cloud,x,y,620,145);}
+    for(let i=0;i<5;i++){const x=((i*347+t*(conditions?.wind?24:13))%1770)-450,y=10+(i*43)%120;ctx.globalAlpha=conditions?.cloud ? .85 : .65;ctx.drawImage(cloud,x,y,620,145);}
     ctx.restore();
     if(conditions?.rain&&!reduced.matches){ctx.strokeStyle='rgba(190,219,229,.18)';ctx.lineWidth=1;ctx.beginPath();for(let i=0;i<80;i++){const y=((i*101+t*330)%730),x=(i*197-y*.22)%1320;ctx.moveTo(x,y);ctx.lineTo(x-5,y+16);}ctx.stroke();}
     ctx.restore();
   }
   function waves(ctx){const t=reduced.matches?0:clock;ctx.save();ctx.beginPath();ctx.rect(290,332,850,245);ctx.clip();
-    for(let i=0;i<64;i++){const depth=(i%16)/16,y=340+depth*224+Math.sin(t*.7+i)*2,x=300+(i*137)%820+Math.sin(t*.22+i)*18;
-      const length=10+depth*35,alpha=.025+depth*.035+Math.sin(t*1.2+i)*.017;
-      ctx.strokeStyle=`rgba(210,238,231,${alpha})`;ctx.lineWidth=.6+depth*.7;ctx.beginPath();ctx.moveTo(x-length,y);ctx.bezierCurveTo(x-length*.3,y-2-depth*2,x+length*.3,y+1,x+length,y);ctx.stroke();}
+    for(let i=0;i<96;i++){const depth=(i%16)/16,y=340+depth*224+Math.sin(t*1.2+i)*6,x=300+(i*137)%820+Math.sin(t*.65+i)*32;
+      const length=10+depth*35,alpha=.10+depth*.10+Math.sin(t*1.6+i)*.05;
+      ctx.strokeStyle=`rgba(210,238,231,${alpha})`;ctx.lineWidth=1+depth*1.2;ctx.beginPath();ctx.moveTo(x-length,y);ctx.bezierCurveTo(x-length*.3,y-2-depth*2,x+length*.3,y+1,x+length,y);ctx.stroke();}
     ctx.restore();}
   return {update,draw,atmosphere,waves,get phase(){return phase},get velocity(){return velocity},get clock(){return clock},get reduced(){return reduced.matches}};
 })();
@@ -74,8 +74,8 @@ function updateSeaLife(dt){
 }
 function drawNaturalFish(f){
   ctx.save();ctx.translate(f.x,f.y);ctx.rotate(f.angle);
-  const depth=clamp((f.y-320)/230,.1,1);ctx.scale(f.size*(.55+depth*.5),f.size*(.55+depth*.5)*.62);
-  ctx.fillStyle=`rgba(3,29,34,${.13+depth*.18})`;
+  const depth=clamp((f.y-320)/230,.1,1);const size=fishSize(f.species).type,scale=size==='large'?1.35:size==='small'?.65:1;ctx.scale(scale*f.size*(.55+depth*.5),scale*f.size*(.55+depth*.5)*.62);
+  ctx.fillStyle=size==='large'?`rgba(190,39,31,${.5+depth*.2})`:`rgba(3,29,34,${.13+depth*.18})`;
   const spine=x=>Math.sin(f.phase-(30-x)*.055)*Math.pow((30-x)/75,1.7)*5+(f.bend||0)*Math.pow((30-x)/75,2)*6;
   ctx.beginPath();ctx.moveTo(30,0);
   for(let side=-1;side<=1;side+=2){for(let i=0;i<=14;i++){const u=side<0?i/14:1-i/14,x=30-u*63,width=Math.sin(Math.PI*u)*10.5*(1-u*.45);ctx.lineTo(x,spine(x)+width*side);}}
