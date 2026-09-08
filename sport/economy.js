@@ -41,5 +41,10 @@ function useCastBait(){if(!canBaitCast())return false;const pool=CoastEconomy.po
 function attractedFish(){const close=(a,b)=>Math.hypot(a.x-target.x,a.y-target.y)<Math.hypot(b.x-target.x,b.y-target.y)?a:b;const matching=castSpecies?school.filter(f=>f.species.id===castSpecies.id):school;const f=(matching.length?matching:school).reduce(close);if(castSpecies)f.species=castSpecies;return f;}
 function setupEconomy(){const b=document.createElement('button');b.id='walletButton';b.onclick=openHarbour;document.querySelector('nav').append(b);updateWallet();
  const entry=document.createElement('section');entry.id='entryFullscreen';entry.innerHTML='<div><small>COASTLINE</small><h2>以橫向 16:9 開始旅程</h2><p>全屏幕置中顯示，多餘位置保留黑邊。</p><button id="enterFullscreen">全屏幕</button><button id="skipFullscreen">繼續視窗模式</button><p id="entryFullscreenStatus" role="status"></p></div>';stage.append(entry);
- $('skipFullscreen').onclick=()=>entry.remove();$('enterFullscreen').onclick=async()=>{await toggleFullscreen();if(isFullscreen())entry.remove();else $('entryFullscreenStatus').textContent='瀏覽器未能開啟全屏幕，可繼續使用視窗模式。';};
+ const rotate=document.createElement('section');rotate.id='entryRotate';rotate.setAttribute('role','status');rotate.innerHTML='<div><span aria-hidden="true">↻</span><h2>請先將手機轉為橫向</h2><p>轉成橫向後，再按「全屏幕」開始遊戲。</p></div>';document.body.append(rotate);
+ const portrait=()=>matchMedia('(pointer: coarse)').matches&&innerHeight>innerWidth;
+ const updateEntry=()=>{const blocked=portrait();rotate.hidden=!blocked;$('enterFullscreen').disabled=blocked;$('entryFullscreenStatus').textContent=blocked?'請先將手機轉為橫向，再按全屏幕。':'';};
+ const dismissEntry=()=>{removeEventListener('resize',updateEntry);visualViewport?.removeEventListener('resize',updateEntry);rotate.remove();entry.remove();};
+ addEventListener('resize',updateEntry);visualViewport?.addEventListener('resize',updateEntry);updateEntry();
+ $('skipFullscreen').onclick=dismissEntry;$('enterFullscreen').onclick=async()=>{if(portrait()){updateEntry();return;}await toggleFullscreen();if(isFullscreen())dismissEntry();else $('entryFullscreenStatus').textContent='瀏覽器未能開啟全屏幕，可繼續使用視窗模式。';};
 }

@@ -1,0 +1,7 @@
+#entryRotate{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:#061926;color:#e8d4a8;text-align:center;padding:28px;box-sizing:border-box;font-family:system-ui,sans-serif}
+#entryRotate[hidden]{display:none}
+#entryRotate>div{max-width:360px}
+#entryRotate span{display:block;font-size:76px;line-height:1.2}
+#entryRotate h2{font-size:24px;line-height:1.5}
+#entryRotate p{color:#d1dee2;font-size:17px;line-height:1.8}
+#enterFullscreen:disabled{opacity:.5;cursor:not-allowed}
