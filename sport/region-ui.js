@@ -59,6 +59,6 @@ async function refreshScenery(){
  const chosen=area,url=areaArt(chosen),current=$('background').style.backgroundImage;
  if(current.includes(url))return;
  sceneryRefreshPending=true;
- try{await preloadPicture(url);if(area===chosen&&!tournament&&areaArt(chosen)===url){setScene();stage.dataset.dayPeriod=RegionGuide.period();}}catch{}finally{sceneryRefreshPending=false;}
+ try{await preloadPicture(url);if(area===chosen&&!tournament&&areaArt(chosen)===url){setScene();stage.dataset.dayPeriod=scenePeriod();}}catch{}finally{sceneryRefreshPending=false;}
 }
 setInterval(refreshScenery,15000);
