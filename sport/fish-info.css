@@ -1,0 +1,11 @@
+#stage .dialog:has(.fishShowcase)>header{display:flex;gap:12px;align-items:center}
+#stage #fishInfoButton{width:60px;height:60px;padding:0;font-size:34px;line-height:1;color:#ffe3a0;background:#254653cc;border:1px solid #ddc89188}
+#fishInfoOverlay{position:absolute;inset:0;z-index:30;display:grid;place-items:center;background:#03131e55;border-radius:inherit}
+#stage .fishInfoPanel{width:70%;height:70%;padding:22px 26px;display:flex;flex-direction:column;gap:15px;border:1px solid #e6d2a777;border-radius:14px;background:#123340eb;backdrop-filter:blur(16px);box-shadow:0 15px 55px #0009;color:#f5edda}
+#stage .fishInfoPanel>header{position:static;display:flex;align-items:center;justify-content:space-between;margin:0;gap:14px;flex:none}
+#stage .fishInfoPanel h2{font-size:30px;line-height:1.25;margin:0}
+#stage .fishInfoPanel header button{padding:0;width:48px;height:48px;font-size:32px;flex:none}
+#stage #fishInfoText{flex:1;min-height:0;margin:0;font-size:26px;line-height:1.65;overflow-wrap:anywhere}
+#stage .fishInfoPanel footer{display:flex;justify-content:space-between;align-items:center;margin:0;min-height:0;gap:12px}
+#stage .fishInfoPanel footer button{font-size:23px;padding:7px 16px}
+#infoPage{font-size:22px}#fishInfoSource{font-size:18px;color:#e8ce95;text-align:center}
