@@ -16,3 +16,5 @@
 #stage .detail.fishShowcase>.fishCapture{position:absolute;bottom:0;right:0;left:auto;display:flex;gap:22px;padding:8px 12px;background:#0e2a36b3;border:0;backdrop-filter:none;pointer-events:none}
 #stage .fishCapture p{font-size:23px}#stage .fishCapture strong{font-size:34px;font-weight:400}
 #stage .fishShowcase .newDiscovery{top:100px;left:12px}
+#stage .dialog:has(.fishShowcase) #modalFooter.fishNavigation{display:grid;grid-template-columns:1fr auto 1fr;width:100%;gap:16px}
+#stage .fishNavigation .fishPrevious{justify-self:start}#stage .fishNavigation .fishNext{justify-self:end}
