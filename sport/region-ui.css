@@ -9,3 +9,23 @@
 .baitKnowledge article{flex:1;min-height:0;padding:24px 30px;border:1px solid #dac79b66;background:linear-gradient(120deg,#214451,#0a2634);border-radius:10px}.baitKnowledge article small{font-size:23px;color:#e7d4a9}.baitKnowledge h3{font-size:32px;margin:14px 0}.baitKnowledge p{font-size:28px;line-height:1.65;margin:0}.baitKnowledge article aside{position:static!important;display:block!important;background:none!important;border:0!important;padding:0!important;font-size:20px!important;color:#c8d6da;margin-top:20px;width:auto!important}
 #stage[data-day-period="night"] #water{filter:brightness(.55) saturate(.8)}
 #stage .placeIntro p{font-size:26px;line-height:1.55}
+/* Compact, aligned shop cards and a separate quantity checkout. */
+#stage .tackleShop .baitOffer{background:#08232df2;gap:8px;border-color:#dec99155;box-shadow:0 8px 20px #0003}
+#stage .tackleShop .baitOffer>b{font-size:27px}
+.baitUnitPrice{font-size:34px;color:#ffe4ad;font-weight:700}.baitUnitPrice small{font-size:21px;font-weight:400}
+#stage .tackleShop .baitOffer p{font-size:22px;line-height:1.35}
+.baitStock{font-size:22px;color:#b7cfd2}
+#stage .tackleShop .baitOffer button{min-height:48px!important;font-size:23px!important;padding:5px 12px!important}
+.baitCheckout{height:100%;display:grid;grid-template-columns:1fr 1.5fr;gap:32px;padding:24px;background:linear-gradient(125deg,#153541,#071e29);border:1px solid #d9c39266;border-radius:14px}
+.checkoutInfo{display:flex;flex-direction:column;justify-content:center;padding:22px;border-right:1px solid #d9c39255;gap:16px}.checkoutInfo small,.checkoutInfo span{font-size:24px;color:#bcd1d5}.checkoutInfo strong{font-size:68px;color:#f0d598}.checkoutInfo p{font-size:28px;margin:0}
+.checkoutOrder{display:flex;flex-direction:column;justify-content:center;gap:14px;font-size:27px}
+.quantityStepper{display:grid;grid-template-columns:64px 1fr 64px;gap:12px}
+#stage .quantityStepper button{font-size:32px;padding:4px;min-height:58px}
+.quantityStepper input{width:100%;min-width:0;text-align:center;font:700 34px inherit;font-size:34px;background:#f5eedc;color:#12313a;border:1px solid #e9ce8b;border-radius:8px;-webkit-user-select:text;user-select:text}
+.quantityPresets{display:flex;gap:12px}#stage .quantityPresets button{flex:1;font-size:23px;padding:6px}
+.checkoutTotal{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dec99155;padding-top:12px}.checkoutTotal b{font-size:40px;color:#ffe3a6}
+#baitRemaining{font-size:24px;margin:0}#baitPurchaseHint{font-size:19px;color:#b7cbd0}
+#stage .tackleShop .baitOffer{display:grid;grid-template-rows:30px 38px 1fr 24px 44px 44px;gap:5px;padding:10px 14px}
+#stage .tackleShop .baitOffer>b{line-height:30px}
+#stage .tackleShop .baitOffer p{font-size:24px;line-height:1.25;margin:0;min-height:0}
+#stage .tackleShop .baitOffer button{min-height:44px!important;font-size:24px!important;padding:2px 8px!important}
