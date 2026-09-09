@@ -1,0 +1,167 @@
+{
+  "mode": "built-in imagegen",
+  "assets": [
+    {
+      "id": "harbour",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-13a5496a-e357-44b2-9412-c20c0e0a3809.png",
+      "prompt": "Use case: photorealistic-natural. Asset: professional Hong Kong fishing videogame background, 16:9 landscape 1536x864. Cheung Chau Hong Kong typhoon shelter, shore-level first-person view from seawall across calm open green-blue water, colourful small working fishing boats moored in mid distance, dense low three-storey white/pastel waterfront village and low green hills beyond. Based on real Cheung Chau harbour visual character as documented by Hong Kong Tourism Board, not Guangzhou Changzhou. Bright natural midday. Horizon/shoreline around upper 38 percent; bottom 60 percent unobstructed gently rippling water for interactive fishing. Tiny stone edge only bottom left. Polished realistic photographic game environment, natural colours. No people in foreground, no rod, hands, fish, UI, text, logos or watermark. No invented skyscraper skyline. Single image, not collage."
+    },
+    {
+      "id": "harbour",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-88e175b6-57ba-4919-8a70-5297c17fb805.png",
+      "prompt": "Use case: lighting-weather edit. Edit target: supplied Cheung Chau harbour game background. Change ONLY time-of-day lighting to early morning, delicate warm low side light, fresh cool blue water, subtle peach sky. Preserve exact camera, 16:9 framing, geography, shore positions, all buildings and boats, unobstructed water foreground. Professional realistic videogame background. No UI/text/rod/people. Do not shift or crop scene."
+    },
+    {
+      "id": "harbour",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-3166a878-b503-45ce-95bb-e2aadac498b2.png",
+      "prompt": "Use case: lighting-weather edit. Edit target: supplied Cheung Chau harbour game background. Change ONLY time-of-day lighting to night, dark blue sky, softly lit waterfront windows and boat lamps with realistic reflections, readable moonlit sea, no harsh daylight. Preserve exact camera, 16:9 framing, geography, shore positions, all buildings and boats, unobstructed water foreground. Professional realistic videogame background. No UI/text/rod/people. Do not shift or crop scene."
+    },
+    {
+      "id": "cheung-chau",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-d277e0b5-fefd-4099-848a-3fe4f67caed2.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game environment. Nam Tam Wan on southern Cheung Chau Hong Kong: quiet small rocky coastal inlet, rounded granite boulders lining a green low headland on left, low seaside path tucked above rocks, open South China Sea ahead and distant hazy island silhouettes. No dense village harbour or grand temples. Scene based on Nam Tam Wan coastal descriptions/photo essay https://notsomoon.blogspot.com/2012/07/blog-post_16.html. Bright natural midday, believable location-inspired landscape, not exact survey. Shore-level first person camera, horizon/shore around top 35%, lower 60% open gently rippling water for gameplay. Natural rich colours, finely detailed photographic realism. No hands, rod, fish, foreground people, text, logos, UI or watermark. Not collage."
+    },
+    {
+      "id": "cheung-chau",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-3868ee32-9ea8-4596-b039-2fc0040d2e68.png",
+      "prompt": "Use case lighting-weather. Edit this cheung-chau noon game scene to early morning: gentle golden side illumination, delicate peach clouds, fresh pale blue sky and water. Keep EXACT camera position, 16:9 framing, geography, rocks, all buildings, bridges, boats, waterline and horizon unchanged. Change only illumination and sky mood. Same professional photorealistic game art. No additions of landmarks, foreground objects, people, text or UI."
+    },
+    {
+      "id": "cheung-chau",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-bab63721-1295-4427-a1bd-ed33c36aef47.png",
+      "prompt": "Edit time of day only: make the supplied Nam Tam Wan coastal game background a realistic moonlit night with dark navy sky and readable softly lit sea. Keep identical 16:9 framing, rocks, hills, shore, waterline and camera. No new landmarks, people, text or UI."
+    },
+    {
+      "id": "tung-wan",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-d0940dab-e2b7-4377-a5db-7497c18ea5c8.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game environment. Tung Wan beach Cheung Chau: view from rocky southern edge outside swimming area, crescent sand and low white pastel village buildings curving away on left under forested low hills, open clear turquoise water ahead. Real visual reference Hong Kong Tourism Board Tung Wan Beach. No invented skyscrapers. Bright natural midday, believable location-inspired landscape, not exact survey. Shore-level first person camera, horizon/shore around top 35%, lower 60% open gently rippling water for gameplay. Natural rich colours, finely detailed photographic realism. No hands, rod, fish, foreground people, text, logos, UI or watermark. Not collage."
+    },
+    {
+      "id": "tung-wan",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-abe05527-bbb8-45b4-8bd0-7c86c21ad087.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tung-wan midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tung-wan",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-c1f54625-201a-4551-a358-cd447c814767.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tung-wan midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "peng-chau",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-7f9828ad-bae3-4749-8e8f-9b5c4b3ceff3.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game environment. Tai Lei Island bridge at Peng Chau Hong Kong: view from rocky shore across clear green water toward long low concrete pedestrian bridge with evenly spaced piers spanning horizontally in upper left-middle to small leafy Tai Lei island with modest utilitarian buildings, distant hazy Lantau hills. Reference Islands District Office Tai Lei Bridge photos. NOT Tai O suspension bridge. Bright natural midday, believable location-inspired landscape, not exact survey. Shore-level first person camera, horizon/shore around top 35%, lower 60% open gently rippling water for gameplay. Natural rich colours, finely detailed photographic realism. No hands, rod, fish, foreground people, text, logos, UI or watermark. Not collage."
+    },
+    {
+      "id": "peng-chau",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-b0f6f735-828d-490e-960d-ce0cc0173030.png",
+      "prompt": "Use case lighting-weather. Edit target supplied peng-chau midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "peng-chau",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-a71d6042-a12b-4c40-90de-47482a43d4cb.png",
+      "prompt": "Use case lighting-weather. Edit target supplied peng-chau midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tsuen-wan",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-742376ef-e0e2-4e88-baee-d4c825c4081f.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game environment. Tsuen Wan waterfront Hong Kong looking west along Rambler Channel: broad blue sea, urban waterfront high-rise apartment towers far right, green hills across channel and slender Ting Kau cable-stayed bridge in far distance with three pylons. A small edge of promenade railing at extreme bottom left only. Real reference Tsuen Wan Riviera Park promenade photos. No Victoria Harbour skyline. Bright natural midday, believable location-inspired landscape, not exact survey. Shore-level first person camera, horizon/shore around top 35%, lower 60% open gently rippling water for gameplay. Natural rich colours, finely detailed photographic realism. No hands, rod, fish, foreground people, text, logos, UI or watermark. Not collage."
+    },
+    {
+      "id": "tsuen-wan",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-217aedf3-2849-4a6c-b444-0a1651eddbf8.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tsuen-wan midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tsuen-wan",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-dfdb1db9-61ab-43e3-b8de-d83ca615f0e9.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tsuen-wan midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tung-lung",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-60371f50-9f19-4b1b-9ea9-fd9294e23107.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game background. Tung Lung Chau Hong Kong rocky coast, dark rugged vertical sea cliffs and boulder gully to left, green grass and scrub atop cliff, deep teal South China Sea filling foreground and right, distant Clearwater Bay headland. References Hong Kong Outdoors Tung Lung Chau sea cliffs and Hong Kong Tourism Board. Natural clear midday light, natural colours, high quality photographic game art. Sea occupies lower 60%, horizon at about upper 35%, clear water foreground. No foreground people, boat deck, rod, hands, fish, text, UI, logos or watermark. No collage."
+    },
+    {
+      "id": "tung-lung",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-b2a7ca58-af28-407e-b603-3d8192a5af1d.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tung-lung midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tung-lung",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-22262828-6af3-4b3a-a213-4d50999add66.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tung-lung midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "po-toi",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-5551462b-a64a-445b-9741-d73ae3d722aa.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game background. Po Toi Island southern Hong Kong: rugged pale rounded granite headland on left with sparse scrub, distinctive weather-rounded granite outcrops, expansive deep cobalt South China Sea, tiny distant white navigation light on ridge. Based on Po Toi coastal reference photographs and HK Tourism Board. Not tropical palm resort. Natural clear midday light, natural colours, high quality photographic game art. Sea occupies lower 60%, horizon at about upper 35%, clear water foreground. No foreground people, boat deck, rod, hands, fish, text, UI, logos or watermark. No collage."
+    },
+    {
+      "id": "po-toi",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-835bb946-d9e1-4020-8af8-4e7ecbfc3018.png",
+      "prompt": "Use case lighting-weather. Edit target supplied po-toi midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "po-toi",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-811337ad-7543-4093-a8b8-3c8ad23da526.png",
+      "prompt": "Use case lighting-weather. Edit target supplied po-toi midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "sharp-island",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-4d868b71-a4aa-4862-9576-8f280cb5b03f.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game background. Sharp Island Kiu Tsui Sai Kung Hong Kong: from low coastal rocky shore view across turquoise sea to narrow sand-and-pebble tombolo leading to small green rounded Kiu Tau islet in upper left middle, layers of distant Sai Kung green hills, a tiny kayak far away. Reference Hong Kong UNESCO Global Geopark Sharp Island tombolo photographs. No hexagonal basalt cliff. Natural clear midday light, natural colours, high quality photographic game art. Sea occupies lower 60%, horizon at about upper 35%, clear water foreground. No foreground people, boat deck, rod, hands, fish, text, UI, logos or watermark. No collage."
+    },
+    {
+      "id": "sharp-island",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-e0c0526b-4b56-4b85-8eda-360ec69995f9.png",
+      "prompt": "Use case lighting-weather. Edit target supplied sharp-island midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "sharp-island",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-b500a500-6d86-472d-b4f0-a1f84eba702f.png",
+      "prompt": "Use case lighting-weather. Edit target supplied sharp-island midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tsing-ma",
+      "period": "noon",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-198bba1f-9453-45d7-b0ac-ab061aea46a9.png",
+      "prompt": "Use case photorealistic-natural. Single 16:9 professional realistic fishing game background. Tsing Ma Bridge Hong Kong viewed at boat level from sea south of bridge, massive grey two-tower suspension bridge spanning across upper half, gently curving main cables and vertical hangers, green Tsing Yi and Ma Wan slopes on sides, one small distant cargo vessel, open teal sea foreground. Reference Hong Kong Tourism Board Tsing Yi nature trails bridge panorama adapted to boat-level angle. Not Golden Gate or cable-stayed bridge. Natural clear midday light, natural colours, high quality photographic game art. Sea occupies lower 60%, horizon at about upper 35%, clear water foreground. No foreground people, boat deck, rod, hands, fish, text, UI, logos or watermark. No collage."
+    },
+    {
+      "id": "tsing-ma",
+      "period": "morning",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-da942c4c-b444-4086-a7df-6258b98d49ba.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tsing-ma midday coastal game image. Change only lighting to gentle early morning golden side light, pale peach clouds and fresh cool blue sea. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    },
+    {
+      "id": "tsing-ma",
+      "period": "night",
+      "source": "C:\\Users\\for-ai\\.codex\\generated_images\\01a03239-37e5-7641-af35-44ec9d4f22e1\\exec-717735dd-4c7f-46ea-a39d-73770afcf3d1.png",
+      "prompt": "Use case lighting-weather. Edit target supplied tsing-ma midday coastal game image. Change only lighting to night, deep navy sky and readable softly moonlit water, existing building windows may emit small warm lights; natural dark hills. Preserve EXACT 16:9 composition, camera, horizon, waterline, rocks, buildings, bridge geometry, boats, all geography. No new landmarks, text, UI, hands, rods or foreground people. Professional photorealistic game scene."
+    }
+  ]
+}

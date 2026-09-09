@@ -1,0 +1,41 @@
+/* Workbook-derived knowledge and versioned region migration. No player-save writes. */
+(function(root){
+const locations=[
+['harbour','長洲 — 避風塘堤岸','local','cheung-chau',0,'充滿濃厚小島漁港風情，鄰近熱鬧的長洲大街與渡輪碼頭，周邊小吃美食林立（如大魚蛋、芒果糯米糍），是兼具休閒散步與美食體驗的熱門景點。','泥鯭,石九公,黃腳立,烏頭,釘公（沙鑽）,石煞,黑立,火點,青斑仔,池魚'],
+['cheung-chau','長洲 — 南氹','local','cheung-chau',0,'位於長洲南部較為幽靜的內灣，鄰近長洲天后廟與南氹灣海濱長廊，沿途環境清幽，遠離市區喧囂，適合享受寧靜的小島漫步與海景。','黃腳立,連尖（龍尖）,石九公,火點,青斑,黑立,石煞,牙彧,牛屎立,沙鑽'],
+['tung-wan','長洲 — 東灣','local','cheung-chau',0,'長洲最著名的泳灘，擁有廣闊的沙灘景致，風帆、SUP 等水上活動盛行。黃昏時分，亦可欣賞海景與入夜後對岸的燈光。','魷魚 / 針墨,黃腳立,沙鑽,黑立,石九公,石煞,泥鯭,火點,赤立,鱸魚'],
+['peng-chau','坪洲 — 大利島（洲仔橋）','other','lantau',200,'坪洲是主打慢活休閒風格的無車離島，大利島由一條短橋連接坪洲主島，景觀開闊，可遠眺青馬大橋，氣氛悠閒慢活。','黃腳立,黑立,石九公,泥鯭,火點,烏頭,石煞,連尖,青斑仔,釘公（沙鑽）'],
+['tsuen-wan','荃灣海濱長廊','other','cheung-chau',200,'鄰近荃灣西港鐵站，周邊設有公園、單車徑與海濱步道，可欣賞橋景和船隻，夜晚華燈初上非常迷人。','黃腳立,烏頭,石殺（石九公類）,黑立,泥鯭,盲槽（金目鱸）,石斑仔,牙彧,牛屎立,鯽魚'],
+['tung-lung','西貢 — 東龍洲','other','ninepins',400,'以雄偉的懸崖峭壁與古蹟聞名，島上有著名的東龍洲炮台與石刻，亦是香港野外露營、行山攀岩與戶外探索的熱門外島目的地。','黑立,赤立,連尖,青斑,火點,白立,石煞,紅魚,石九公,雞魚'],
+['po-toi','蒲台島','other','po-toi',800,'被譽為「香港南極」，擁有壯觀的花崗岩奇石景致（如佛手岩、靈龜上山）、燈塔及紫菜特產，是觀星、觀日出與離島遠足的名勝。','青斑,紅斑,黑立,白立,紅魚,連尖,石煞,赤立,石九公,馬鮫魚'],
+['sharp-island','西貢 — 沙下至橋咀島','other','lantau',300,'橋咀島擁有著名的「連島沙洲」奇觀，沙下灘則是獨木舟、直立板等水上活動的熱門出發點，適合水上探索體驗。','青斑,火點,黑立,鱸魚,連尖,石九公,黃腳立,紅魚仔,魷魚,細鱗'],
+['tsing-ma','青針水域（青馬大橋一帶）','other','po-toi',600,'青馬大橋與汲水門大橋一帶的宏偉航道，可從海上感受懸索大橋的震撼視野，是遊艇觀光與艇釣體驗的經典路線。','鱸魚,黃腳立,大型青斑,馬鮫魚,黑立,紅魚,火點,石九公,連尖,池魚']
+];
+const baitKnowledge={
+basic:[['青蟲 / 紅蟲（沙蟲）','萬用型生餌，價格便宜，具備天然氣味與蠕動誘魚效果，是香港普遍的入門魚餌。'],['白麵包 / 麵包粒','取得成本低，搓成小丸子掛鉤，可用於水面或中層群游的雜食性魚類。'],['冷藏南美白蝦肉（切粒／醃製）','便宜且容易保存。切粒後可用鹽或蝦粉醃硬，增加韌度，減少小魚輕易偷食。']],
+advanced:[['生蝦（基圍蝦 / 蝦仔）','常見的活餌。生蝦在水中的跳動能誘發掠食性魚類攻擊，常用於魚排、近岸艇釣及防波堤。'],['南極蝦 + 磯釣誘餌粉','浮波磯釣的常見配備。南極蝦混入誘餌粉投向水中，配合釣餌位置形成「誘釣同步」，吸引魚群。'],['木蝦（Squid Jig / 魷魚針）','模仿蝦形的假餌。透過抽動釣竿，模仿受傷小蝦在水中跳躍，吸引頭足類抱鉤。']],
+master:[['活蟹（麵包蟹仔 / 石蟹 / 雜色蟹）','外殼堅硬、氣味濃郁，小魚較難咬動，有助減少雜魚搶餌，是釣大型魚時會使用的天然魚餌。'],['活魚餌（生泥鯭 / 池魚仔 / 泥鱲）','艇釣與重投釣法使用的活餌。水流波動與掙扎信號，能吸引深水水域的掠食者。'],['活蝦蛄（瀨尿蝦） / 大生魷魚','成本較高，取得及保存較繁複，氣味濃烈，是深水區釣大型魚時會使用的魚餌。']]
+};
+// Only explicit matches: absent/ambiguous names are retained as source notes, not invented species.
+const aliases={'黃腳立':['seabream'],'青斑':['grouper'],'青斑仔':['grouper'],'大型青斑':['grouper'],'黑立':['acanthopagrus-schlegelii'],'赤立':['pagrus-major'],'石九公':['sebastiscus-marmoratus'],'石殺（石九公類）':['sebastiscus-marmoratus'],'泥鯭':['siganus-canaliculatus'],'連尖':['lethrinus-nebulosus','lethrinus-haematopterus'],'連尖（龍尖）':['lethrinus-nebulosus','lethrinus-haematopterus'],'紅魚':['lutjanus-malabaricus','lutjanus-sebae'],'紅魚仔':['lutjanus-malabaricus','lutjanus-sebae'],'盲槽（金目鱸）':['lates-calcarifer']};
+function normalize(c){
+ if(c.regionGuideVersion===1)return c;
+ const old=c.areas||[],ids=new Set(c.fish.map(f=>f.id));
+ c.legacyAreas=c.legacyAreas||old;
+ c.areas=locations.map(([id,name,category,template,price,description,words])=>{
+  const previous=old.find(a=>a.id===id),base=old.find(a=>a.id===template)||old[0]||{};
+  const commonNames=words.split(','),boostedFish=[...new Set(commonNames.flatMap(n=>aliases[n]||c.fish.filter(f=>f.name===n).map(f=>f.id)))].filter(id=>ids.has(id));
+  const backgrounds=Object.fromEntries(['morning','noon','night'].map(p=>[p,'../sport/assets/locations/'+id+'-'+p+'.webp']));
+  return {...base,...previous,id,name,category,description,introTitle:name,introText:description,introImage:'',background:backgrounds.noon,backgrounds,unlockPrice:category==='local'?0:Math.max(1,Number(previous?.unlockPrice)||price),commonNames,boostedFish,commonWeight:3,fish:[...new Set([...(base.fish||[]),...(previous?.fish||[]),...boostedFish])].filter(id=>ids.has(id))};
+ });
+ // Keep custom areas and earlier unlock entitlements; don't destroy previous purchases.
+ c.areas.find(a=>a.id==='peng-chau').unlockAliases=['lantau'];
+ c.areas.find(a=>a.id==='tung-lung').unlockAliases=['ninepins'];
+ const known=new Set([...locations.map(a=>a[0]),'lantau','ninepins']);
+ c.areas.push(...old.filter(a=>!known.has(a.id)).map(a=>({...a,category:a.category||'other'})));
+ c.baitKnowledge=c.baitKnowledge||structuredClone(baitKnowledge);c.regionGuideVersion=1;return c;
+}
+function period(date=new Date()){const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Hong_Kong',hour:'2-digit',hourCycle:'h23'}).format(date));return h>=5&&h<11?'morning':h>=11&&h<18?'noon':'night';}
+function weighted(pool,a,random=Math.random){if(!pool.length)return null;const boosted=new Set(a?.boostedFish||[]),mult=Math.max(1,Math.min(20,Number(a?.commonWeight)||3));let n=random()*pool.reduce((s,f)=>s+(boosted.has(f.id)?mult:1),0);for(const f of pool){n-=boosted.has(f.id)?mult:1;if(n<0)return f;}return pool.at(-1);}
+root.RegionGuide={normalize,period,weighted,locations,baitKnowledge};
+})(globalThis);
