@@ -18,7 +18,15 @@ master:[['活蟹（麵包蟹仔 / 石蟹 / 雜色蟹）','外殼堅硬、氣味�
 };
 // Only explicit matches: absent/ambiguous names are retained as source notes, not invented species.
 const aliases={'黃腳立':['seabream'],'青斑':['grouper'],'青斑仔':['grouper'],'大型青斑':['grouper'],'黑立':['acanthopagrus-schlegelii'],'赤立':['pagrus-major'],'石九公':['sebastiscus-marmoratus'],'石殺（石九公類）':['sebastiscus-marmoratus'],'泥鯭':['siganus-canaliculatus'],'連尖':['lethrinus-nebulosus','lethrinus-haematopterus'],'連尖（龍尖）':['lethrinus-nebulosus','lethrinus-haematopterus'],'紅魚':['lutjanus-malabaricus','lutjanus-sebae'],'紅魚仔':['lutjanus-malabaricus','lutjanus-sebae'],'盲槽（金目鱸）':['lates-calcarifer']};
+root.FishImagePath=function(value){
+ if(typeof value!=='string')return value;
+ if(/^https?:/i.test(value)&&!value.startsWith('https://hkrgb.github.io/hong-kong-fishing/'))return value;
+ value=value.replace('assets/fish-150/','assets/fish/');
+ for(const name of ['yellowfin-seabream.png','orange-spotted-grouper.png','grey-mullet.png','japanese-seabass.png'])value=value.replace('assets/'+name,'assets/fish/classic-'+name);
+ return value;
+};
 function normalize(c){
+ for(const fish of c.fish||[])fish.image=root.FishImagePath(fish.image);
  if(c.regionGuideVersion===1)return c;
  const old=c.areas||[],ids=new Set(c.fish.map(f=>f.id));
  c.legacyAreas=c.legacyAreas||old;

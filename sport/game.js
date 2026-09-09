@@ -6,7 +6,7 @@ const KEY = 'coastline-sport-save-v1', BASE = new URL('../pro/', document.baseUR
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rand = (a,b) => a+Math.random()*(b-a);
 const esc = v => String(v??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const asset = path => {if(!path)return '';try{const u=new URL(path,BASE);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
+const asset = path => {path=globalThis.FishImagePath?.(path)||path;if(!path)return '';try{const u=new URL(path,BASE);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
 let cfg, area, weather, tide, fishList=[], school=[], selected=null, caught=null;
 let state='loading', time=0, stateTime=0, last=0, heading=0, power=.55, held=false, pressedAt=0;
 let bait=null, target={x:640,y:435}, distance=0, tension=0, stamina=1, surge=false, over=0, nibble=0;

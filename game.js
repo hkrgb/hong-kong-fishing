@@ -15,7 +15,7 @@ window.addEventListener('message',e=>{const d=e.data;if(!d||typeof d!=='object'|
 async function fallback(){return(await fetch('config.json',{cache:'no-store'})).json()}
 async function remote(){const r=await fetch(ROOT,{cache:'no-store'});if(!r.ok)return null;const d=await r.json(),p=d.fields?.payload?.stringValue;return p?JSON.parse(p):null}
 function text(id,v){$(id).textContent=v??''} function fmt(n){return Number(n).toFixed(1)}
-function assetFor(f){return f?.id?`assets/fish/${f.id}.png`:(f?.image||'assets/yellowfin-seabream.png')}
+function assetFor(f){return f?.id?`assets/fish/${f.id}.png`:(f?.image||'assets/fish/classic-yellowfin-seabream.png')}
 function preloadImage(src,priority=false){if(imageCache.has(src))return imageCache.get(src);const job=new Promise(resolve=>{const img=new Image();if(priority)img.fetchPriority='high';img.onload=img.onerror=()=>resolve(src);img.src=src});imageCache.set(src,job);return job}
 function updatePreload(){if(!preloadTotal)return;const pct=Math.round(preloadDone/preloadTotal*100);$('#preloadBar').style.width=pct+'%';text('#preloadText',preloadDone>=preloadTotal?'30 種魚圖已準備好':`正在準備魚類圖鑑 ${preloadDone} / ${preloadTotal}`)}
 async function preloadFishList(list,priority=false){const urls=[...new Set(list.map(assetFor))];await Promise.all(urls.map(async src=>{const known=imageCache.has(src);await preloadImage(src,priority);if(!known){preloadDone++;updatePreload()}}))}
