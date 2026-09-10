@@ -1,4 +1,4 @@
-import {mountTransfer} from './data-transfer.js?v=20260910-transfer';
+import {mountTransfer} from './data-transfer.js?v=20260910-transfer-intro';
 import '../region-guide.js?v=20260910-cutout';
 import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js';import{getAuth,GoogleAuthProvider,onAuthStateChanged,signInWithPopup,signOut}from'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 const FIREBASE_CONFIG={projectId:'yes-card-gacha-rgb',appId:'1:496431023991:web:b62a7768104553c9958372',storageBucket:'yes-card-gacha-rgb.firebasestorage.app',apiKey:'AIzaSyB8f7LK3UR-l2UgV_6qYPgAfDNfV4YlYrM',authDomain:'yes-card-gacha-rgb.firebaseapp.com',messagingSenderId:'496431023991'},ADMIN='info@rgb-workshop.com',ROOT='https://firestore.googleapis.com/v1/projects/yes-card-gacha-rgb/databases/(default)/documents/miniGames/hongKongFishingPro',$=s=>document.querySelector(s),auth=getAuth(initializeApp(FIREBASE_CONFIG));let cfg;

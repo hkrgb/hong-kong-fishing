@@ -1,7 +1,16 @@
 /* JSON configuration backups; no player records or credentials. */
+import '../sport/fish-education.js';
 export function exportData(config,scope){
  if(!['all','fish','areas'].includes(scope))throw Error('不支援的分類');
- return {format:'hk-fishing-config',version:1,scope,exportedAt:new Date().toISOString(),data:structuredClone(scope==='all'?config:config[scope])};
+ const data=structuredClone(scope==='all'?config:config[scope]);
+ const fish=scope==='all'?data.fish:scope==='fish'?data:[];
+ for(const item of fish){
+  if(!String(item.educationIntro||'').trim()){
+   const entry=globalThis.FishEducation?.[item.id];
+   if(entry?.paragraphs?.length)item.educationIntro=entry.paragraphs.join('\n\n');
+  }
+ }
+ return {format:'hk-fishing-config',version:1,scope,exportedAt:new Date().toISOString(),data};
 }
 function checkTree(value){if(!value||typeof value!=='object')return;for(const [key,v] of Object.entries(value)){if(['__proto__','prototype','constructor'].includes(key))throw Error('檔案含不安全欄位');checkTree(v);}}
 function listCheck(list,kind){
