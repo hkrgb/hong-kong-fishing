@@ -1,12 +1,13 @@
 const arrivalCache=new Map();let arriving=false;
 const boatFiles={morning:'ship-7am.mp4',noon:'ship-1pm.mp4',night:'ship-9pm.mp4'},boatVideos=new Map();
 async function preloadBoatVideos(){
- const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><h2>準備出海</h2><p role="status">正在預載乘船影片（約 20 MB）…</p><progress max="3" value="0"></progress><div></div></section>';stage.append(layer);
+ if(boatVideos.size===3)return;
+ const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><p role="status" hidden></p><progress aria-label="載入乘船影片" max="3" value="0"></progress><div></div></section>';stage.append(layer);
  async function attempt(){
-  const status=layer.querySelector('p'),actions=layer.querySelector('div');actions.replaceChildren();status.textContent='正在預載早、午、晚乘船影片…';
+  const status=layer.querySelector('p'),actions=layer.querySelector('div');actions.replaceChildren();status.hidden=true;status.textContent='正在預載早、午、晚乘船影片…';
   await Promise.all(Object.values(boatFiles).map(async name=>{if(boatVideos.has(name))return;try{const r=await fetch(asset('../mp4/'+name),{signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('video');const blob=await r.blob();if(!blob.size)throw Error('empty');boatVideos.set(name,URL.createObjectURL(blob));}catch{}layer.querySelector('progress').value=boatVideos.size;status.textContent='已預載 '+boatVideos.size+' / 3 段影片';}));
   if(boatVideos.size===3){layer.remove();return;}
-  status.textContent='部分影片未能載入。可重試，或先進入遊戲（乘船時再載入）。';
+  status.hidden=false;status.textContent='部分影片未能載入。可重試，或先進入遊戲（乘船時再載入）。';
   await new Promise(resolve=>{for(const [label,action] of [['重試預載',async()=>{await attempt();resolve();}],['先進入遊戲',()=>{layer.remove();resolve();}]]){const b=document.createElement('button');b.textContent=label;b.onclick=action;actions.append(b);}});
  }
  await attempt();
