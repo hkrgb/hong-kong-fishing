@@ -22,17 +22,26 @@ async function enterAreaLoaded(a,confirmed=false){
   await preloadPicture(areaArt(a));if(!economyReady())throw Error('save');
   if(price&&!transact({type:'travel',areaId:a.id,amount:price})){economyMessage('金錢不足','沒有扣款，請先到免費釣區釣魚或出售魚獲。',showAreas);return;}
   updateWallet();updateQuickHud();
-  if(travelling&&(a.category!=='local'||(area&&area.category!=='local')))await playBoatTrip();
-  chooseArea(a);
+  if(travelling&&(a.category!=='local'||(area&&area.category!=='local')))await playBoatTrip(()=>chooseArea(a));
+  else chooseArea(a);
  }catch{modal('暫時未能載入釣區','<p class="intro">請檢查網絡，然後重試。</p>',()=>enterAreaLoaded(a),'重試',true);foot('返回釣區',showAreas);}
  finally{arriving=false;$('closeModal').disabled=false;}
 }
-function playBoatTrip(){return new Promise(resolve=>{
+function playBoatTrip(revealScene=()=>{}){return new Promise((resolve,reject)=>{
  const layer=document.createElement('div');layer.id='boatTrip';
  const video=document.createElement('video');video.playsInline=true;video.muted=true;video.preload='auto';
  const file=boatFiles[RegionGuide.period()];video.src=boatVideos.get(file)||asset('../mp4/'+file);
  const button=document.createElement('button');button.textContent='載入乘船影片…';button.hidden=true;layer.append(video,button);stage.append(layer);
- let done=false;const finish=()=>{if(done)return;done=true;clearTimeout(timer);video.pause();layer.remove();resolve();};
+ let done=false;const finish=async()=>{
+  if(done)return;done=true;clearTimeout(timer);video.pause();button.hidden=true;
+  try{
+   // Keep the final video frame over the prepared scene throughout the dissolve.
+   revealScene();
+   const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:800;
+   const fade=layer.animate([{opacity:1},{opacity:0}],{duration,easing:'ease-in-out',fill:'forwards'});
+   await fade.finished.catch(()=>{});resolve();
+  }catch(error){reject(error);}finally{layer.remove();}
+ };
  const fallback=()=>{button.hidden=false;button.textContent='影片未能播放 · 繼續前往釣區';button.onclick=finish;};
  const timer=setTimeout(fallback,15000);video.onplaying=()=>{clearTimeout(timer);button.hidden=true;};video.onended=finish;video.onerror=fallback;
  video.play().catch(()=>{button.hidden=false;button.textContent='點按播放乘船影片';button.onclick=()=>video.play().catch(fallback);});
