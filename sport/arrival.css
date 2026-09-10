@@ -2,3 +2,16 @@
 .arrival{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}.arrival h2{font-size:34px}.arrival p{font-size:24px}.arrivalSpinner{width:72px;height:72px;border:6px solid #f5d58a33;border-top-color:#f5d58a;border-radius:50%;animation:arrivalSpin 1s linear infinite}@keyframes arrivalSpin{to{transform:rotate(360deg)}}
 .detail:has(.newDiscovery){position:relative;padding-top:30px}.newDiscovery{position:absolute;top:0;left:10px;width:100px!important;height:56px!important;object-fit:contain;filter:drop-shadow(0 0 6px #ffe8a588)!important;animation:discoveryPop .6s ease-out}.detail:has(.newDiscovery)>img:not(.newDiscovery){height:240px}
 @keyframes discoveryPop{from{transform:scale(.35) rotate(-14deg);opacity:0}70%{transform:scale(1.12) rotate(3deg)}to{transform:scale(1);opacity:1}}@media(prefers-reduced-motion:reduce){.arrivalSpinner,.newDiscovery{animation:none}}
+#stage .dialog:has(.boatCheckout){width:760px;height:420px;padding:24px 30px}
+#stage .dialog:has(.boatCheckout) header{margin-bottom:10px}
+#stage .dialog:has(.boatCheckout) h2{font-size:28px;margin:0}
+#stage .boatCheckout h3{font-size:25px;line-height:1.35;margin:0 0 14px;font-weight:500;overflow-wrap:anywhere}
+#stage .boatAmounts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#stage .boatAmounts p{margin:0;padding:14px;background:#ffffff09;border-radius:8px;font-size:20px;color:#c4d4d9}
+#stage .boatAmounts strong{display:block;font-size:29px;color:#eed9aa;margin-top:6px}
+#stage .boatNote{font-size:19px;margin:14px 0 0;line-height:1.4}
+#stage .dialog:has(.boatCheckout) footer button{font-size:24px;padding:10px 22px}
+#boatPreload{position:absolute;inset:0;z-index:90;background:#061d2bf5;display:grid;place-items:center;text-align:center}
+#boatPreload section{width:800px;padding:45px;background:#123442;border:1px solid #dcc49366;border-radius:16px}
+#boatPreload h2{font-size:38px;color:#ecd39a}#boatPreload p{font-size:24px;line-height:1.6;color:#e3edef}
+#boatPreload progress{width:100%;height:22px;accent-color:#d6bc83}#boatPreload button{font-size:24px;padding:15px 25px;margin:20px 10px 0;background:#dcc493;border:0;border-radius:6px}
