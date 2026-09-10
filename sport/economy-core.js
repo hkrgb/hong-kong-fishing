@@ -11,6 +11,7 @@ globalThis.CoastEconomy=(()=>{
    if(e.type==='buy'&&kinds.includes(e.bait)&&price&&s.money>=e.amount){s.money-=e.amount;s.bait[e.bait]++;ok=true;}
    if(e.type==='use'&&kinds.includes(e.bait)&&s.bait[e.bait]>0){s.bait[e.bait]--;ok=true;}
    if(e.type==='unlock'&&typeof e.areaId==='string'&&!s.areas.has(e.areaId)&&price&&s.money>=e.amount){s.money-=e.amount;s.areas.add(e.areaId);ok=true;}
+   if(e.type==='travel'&&typeof e.areaId==='string'&&price&&s.money>=e.amount){s.money-=e.amount;ok=true;}
    if(e.type==='sell'&&fish.has(e.catchKey)&&!s.sold.has(e.catchKey)&&price){s.sold.add(e.catchKey);s.money+=e.amount;ok=true;}
    if(e.type==='relief'&&Number.isFinite(e.limit)&&s.money<e.limit&&kinds.every(k=>s.bait[k]===0)){s.bait.basic=3;ok=true;}
    if(ok)s.accepted.add(e.id);else s.rejected.push(e.id);

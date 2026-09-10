@@ -7,3 +7,9 @@
 #hudPeriods{margin-left:auto;display:flex;gap:8px;background:#071c28b8;padding:5px!important}#hudPeriods span{opacity:.36;padding:5px;border-radius:6px;font-size:22px}#hudPeriods span.active{opacity:1;color:#ffe0a0;background:#d3ae5433;box-shadow:0 0 12px #edcb7844}#hudClock{margin-left:0;white-space:nowrap}
 #stage,#stage *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}#stage input,#stage textarea,#stage [contenteditable=true]{-webkit-user-select:text;user-select:text}#stage button{touch-action:manipulation}#stage img{-webkit-user-drag:none}
 .periodPicker{height:100%;display:flex;flex-direction:column;justify-content:center;gap:30px;text-align:center;font-size:26px}.periodPicker p{margin:0}#periodChoices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}#stage #periodChoices button{font-size:26px;min-height:110px}#periodChoices [aria-pressed=true]{background:#dfc48c;color:#16343d;border-color:#fff0ba}
+#stage:has(.regionGroups)>header,#stage:has(.regionPlaces)>header{z-index:11}
+#stage:has(.regionGroups)>header .brand,#stage:has(.regionGroups)>header .conditions,#stage:has(.regionPlaces)>header .brand,#stage:has(.regionPlaces)>header .conditions{visibility:hidden}
+#stage:has(.regionGroups) .dialog,#stage:has(.regionPlaces) .dialog{height:570px;margin-top:90px}
+#boatTrip{position:absolute;inset:0;z-index:100;background:#000;display:grid;place-items:center}
+#boatTrip video{width:100%;height:100%;object-fit:contain}
+#boatTrip button{position:absolute;bottom:40px;left:25%;width:50%;padding:20px;background:#153543;color:white;font-size:26px;border:1px solid #d4c08c}
