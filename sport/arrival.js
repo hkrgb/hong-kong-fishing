@@ -2,7 +2,7 @@ const arrivalCache=new Map();let arriving=false;
 const boatFiles={morning:'ship-7am.mp4',noon:'ship-1pm.mp4',night:'ship-9pm.mp4'},boatVideos=new Map();
 async function preloadBoatVideos(){
  if(boatVideos.size===3)return;
- const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><p role="status" hidden></p><progress aria-label="載入乘船影片" max="3" value="0"></progress><div></div></section>';stage.append(layer);
+ const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><h2 style="font-size:26px;margin:0 0 20px">資料載入中</h2><p role="status" hidden></p><progress aria-label="載入乘船影片" max="3" value="0"></progress><div></div></section>';stage.append(layer);
  async function attempt(){
   const status=layer.querySelector('p'),actions=layer.querySelector('div');actions.replaceChildren();status.hidden=true;status.textContent='正在預載早、午、晚乘船影片…';
   await Promise.all(Object.values(boatFiles).map(async name=>{if(boatVideos.has(name))return;try{const r=await fetch(asset('../mp4/'+name),{signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('video');const blob=await r.blob();if(!blob.size)throw Error('empty');boatVideos.set(name,URL.createObjectURL(blob));}catch{}layer.querySelector('progress').value=boatVideos.size;status.textContent='已預載 '+boatVideos.size+' / 3 段影片';}));
