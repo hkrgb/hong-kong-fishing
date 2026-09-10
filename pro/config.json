@@ -73,7 +73,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "黃腳鱲（Acanthopagrus latus）屬鯛科，體側扁、高而結實，體色偏銀黃，腹鰭與臀鰭常帶明顯黃色，背鰭有尖棘，是香港近岸常見的「鱲」類之一。\n\n牠偏好河口、紅樹林外緣、石堤與人工岸線等半咸水至近岸淺水，華南沿岸至西太平洋廣泛分布；香港釣友常在堤岸、碼頭與河口區遇上。\n\n辨認提示：看腹鰭與臀鰭的鮮黃、頭部略鈍、體高適中；同屬的黑鱲體色更深、頭部較黑，可並排比較。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "grouper",
@@ -90,7 +92,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "青斑（Epinephelus coioides）屬鮨科石斑類，體延長而粗壯，體側有橙褐色斑點與不規則橫帶，口大、下頜略突出，是華南常見的養殖與野生石斑。\n\n成魚多棲於岩礁、珊瑚碎屑與較深沿岸水域，幼魚可出現於河口與紅樹林；印度－西太平洋廣布，香港水域亦有記錄。\n\n釣者辨認：橙褐斑點密布、體側常有斷續橫帶；與紅斑（E. akaara）相比，青斑斑點偏橙、體色較綠褐。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "mullet",
@@ -107,7 +111,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "烏頭（Mugil cephalus）屬鯔科，體近圓柱形、頭扁、口小、脂眼瞼發達，背鰭兩枚分離，體銀灰、側線不明顯，是全球溫熱帶沿岸極常見的濾食性魚類。\n\n牠常成群游於河口、泥灘、排水渠口與近岸淺灣，耐污耐低氧；香港避風塘、堤岸與河口全年可見。\n\n學習提示：烏頭以刮食藻類與有機碎屑為主，嘴部像「吸泥」；看到銀身、雙背鰭、游泳時成群掠過水面，多半是鯔科。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "seabass",
@@ -124,7 +130,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "鱸魚（Lateolabrax japonicus）屬花鱸科，體延長側扁，口大、齒細，側線明顯，幼魚體側常有黑斑，成魚銀灰帶藍綠光澤，是東亞沿岸重要食用魚。\n\n分布於西北太平洋沿岸，包括日本、朝鮮半島至中國東海與南海北部；香港近岸岩礁、堤岸與河口交界偶有釣獲。\n\n辨認：幼魚體側黑斑是重要特徵；成魚體較修長、背鰭棘部與軟條部分離明顯，與石斑的粗短身形不同。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "acanthurus-dussumieri",
@@ -141,7 +149,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "額帶刺尾魚（Acanthurus dussumieri）屬刺尾魚科，體卵圓側扁，尾柄兩側有可活動的「刺刀」棘，額部有淡色橫帶，體色偏黃褐至藍灰，是典型熱帶礁區刮藻魚。\n\n見於印度－西太平洋珊瑚與岩礁淺水；香港屬其分布北緣，偶見於較清潔的沿岸岩礁與人工魚礁區。\n\n安全提示：尾柄棘鋒利，上岸處理時勿徒手捏尾柄；觀察時看額帶與尾柄棘，可與倒吊等其他刺尾魚區分。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "prionurus-scalprum",
@@ -158,7 +168,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "倒吊（Prionurus scalprum）屬刺尾魚科鋸尾刺尾魚屬，體側扁、尾柄兩側有多枚骨質棘板（像「鋸子」），體色灰藍至暗褐，是東亞溫帶至亞熱帶岩礁常見種。\n\n主要分布於日本至華南沿岸岩礁與藻場；香港東面與離島岩岸較常記錄，喜歡在浪邊刮食藻類。\n\n釣者常稱「倒吊」：看尾柄多枚固定棘板（非單一可動刺刀），體較扁、游姿貼岩，與額帶刺尾魚不同。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "ambassis-gymnocephalus",
@@ -175,7 +187,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "透明梳蘿（Ambassis gymnocephalus）屬雙邊魚科（玻璃鱸類），體小而透明或半透明，大眼、側扁，背部略隆起，常成群，是河口與紅樹林常見的小型魚。\n\n廣泛分布於印度－西太平洋近岸與河口；香港泥灘、紅樹林潮溝與避風塘淺水常見，夜間燈光下更易見。\n\n學習提示：半透明身體讓內臟與骨骼隱約可見，是辨認「玻璃魚」的關鍵；牠們多以浮游動物為食，是食物鏈底層的重要一環。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "histrio-histrio",
@@ -192,7 +206,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "裸躄魚（Histrio histrio）屬躄魚科，體短而柔軟，皮瓣與絲狀突起極多，色斑模仿馬尾藻，胸鰭像「手脚」可攀爬，是著名的漂浮偽裝獵手。\n\n全球熱帶至亞熱帶海域隨馬尾藻、漂浮海藻叢漂流；香港外海與沿岸有時可在漂藻中發現，並非底棲定棲魚。\n\n生態趣味：牠靠擬態躲在藻叢中伏擊小魚；看到「長滿絲狀皮瓣、像藻一樣的怪魚」，多半就是裸躄魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "apogon-doederleini",
@@ -209,7 +225,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "十線梳蘿（Apogon doederleini，現多歸 Ostorhinchus）屬天竺鯛科，體小型、大眼、口大，體側有多條縱線，夜間活躍，日間躲於岩隙。\n\n分布於西北太平洋沿岸岩礁與珊瑚碎屑區；香港岩岸淺水常見此類天竺鯛。\n\n辨認：數體側縱線條數與頭部斑紋；天竺鯛雄魚常有「口育」習性，把卵含在口中保護，是有趣的生態知識。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "apogon-fasciatus",
@@ -226,7 +244,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "四間梳蘿（Apogon fasciatus）屬天竺鯛科，體側有寬闊深色橫帶（約四條），夜間覓食，日間躲藏，是印度－西太平洋常見的帶紋天竺鯛。\n\n見於沿岸岩礁、珊瑚區與港口結構物縫隙；香港近岸岩礁與碼頭柱腳夜間可遇。\n\n學習提示：橫帶分明的「四間」圖案是俗名來源；與縱線型天竺鯛並排比較，最易記住橫帶 vs 縱線的差別。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "apogon-niger",
@@ -243,7 +263,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "印度梳蘿（Apogon niger）屬天竺鯛科，體色偏暗褐至近黑，大眼，體型小巧，夜間活動為主。\n\n分布於印度－西太平洋近岸淺水與岩礁；香港水域有天竺鯛科多種記錄，此種體色較暗易混淆，需結合斑紋細辨。\n\n提示：夜間潛水或夜釣時，大眼反光與小型口大身形是天竺鯛科共通特徵；暗色種更需靠學名與細部斑紋確認。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "apogon-semilineatus",
@@ -260,7 +282,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "大眼梳蘿（Apogon semilineatus）屬天竺鯛科，以特別大的眼睛與體側半截縱線為特徵，體紅色至粉紅調常見。\n\n見於西北太平洋沿岸岩礁與較深淺水；香港東面岩礁區有相關天竺鯛記錄。\n\n辨認：半線（semilineatus）指體側線紋不完全貫穿；大眼適應晨昏與夜間覓食，是「梳蘿」類的典型生態。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "apogon-pseudotaeniatus",
@@ -277,7 +301,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "大炮梳蘿（Apogon pseudotaeniatus）屬天竺鯛科，體側常有兩條明顯深色橫帶，體色偏紅褐，夜間活躍。\n\n分布於印度－西太平洋岩礁淺水；香港沿岸岩礁夜間可見多種帶紋天竺鯛。\n\n學習提示：兩帶圖案是快速辨認線索；天竺鯛科魚多躲岩縫，釣獲或觀察時注意勿傷及其細嫩魚體。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "cheilodipterus-artus",
@@ -294,7 +320,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "縱帶巨牙天竺鯛（Cheilodipterus artus）屬天竺鯛科，體較一般梳蘿修長，口內犬齒發達，體側多條縱帶，俗稱「狼天竺鯛」類。\n\n見於印度－西太平洋珊瑚與岩礁區；香港屬分布北緣，偶見於較佳水質的岩礁環境。\n\n辨認：比普通天竺鯛更「尖嘴利牙」，縱帶清晰；生態上偏向獵食小型甲殼與魚類，與濾食性河口魚不同。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parablennius-thysanius",
@@ -311,7 +339,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "纓副鳚（Parablennius thysanius）屬鳚科，體長形無鱗或細鱗，頭具觸鬚（纓狀），腹鰭喉位，常趴在潮間帶岩石上。\n\n分布於印度－西太平洋潮間帶與淺岩礁；香港石灘、防波堤與潮池常見鳚科魚類。\n\n學習提示：看頭部鬚狀突起與「貼石趴著」的姿態；潮退時在潮池中觀察最安全，勿徒手亂抓以免被咬或受傷。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "entomacrodus-stellifer",
@@ -328,7 +358,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "林哥（Entomacrodus stellifer）屬鳚科，香港釣友常把多種潮間帶小魚統稱「林哥」；本種頭部有角狀突起與條紋，體色可隨環境變化。\n\n見於西北太平洋潮間帶岩礁；香港石岸、防波堤與潮池是典型生境。\n\n提示：真正「林哥」常指鳚科或鰕虎類小型底棲魚；觀察時看有無腹吸盤（鰕虎）或喉位腹鰭（鳚），可粗分兩大類。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "petroscirtes-breviceps",
@@ -345,7 +377,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "咬手仔（Petroscirtes breviceps）屬鳚科齒鳚類，下頜有明顯犬齒，體延長、頭部短鈍，體側常有縱帶，生性較兇，故有「咬手」俗名。\n\n見於印度－西太平洋海草床、藻場與淺岩礁；香港近岸淺灣與海藻區偶有記錄。\n\n安全提示：名稱提醒——口齒鋒利，處理時勿將手指伸近其口；看短頭與體側帶紋可助辨認。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "caesio-cuning",
@@ -362,7 +396,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "海利（Caesio cuning）屬烏尾鮗科，體紡錘形、尾叉深，腹部偏紅、尾鰭上葉常帶黃，是成群在中層水域游動的「飛魚般」礁區魚。\n\n分布於印度－西太平洋珊瑚與岩礁外緣；香港較清潔的離島岩礁外圍偶見烏尾鮗類魚群。\n\n釣者辨認：成群、銀藍至黃紅腹、叉尾；與鰺科相比，烏尾鮗口較小、體較側扁高，常被潛水員當作「指標性」中層魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pterocaesio-diagramma",
@@ -379,7 +415,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雙尾烏尾鮗（Pterocaesio diagramma）屬烏尾鮗科，體側有兩條明顯縱線，尾鰭深叉，體色藍銀帶黃調。\n\n見於印度－西太平洋珊瑚礁中層水域；香港水域偶有記錄，多出現於外圍岩礁。\n\n學習提示：「雙線」是種名特徵；牠們常成群掠過礁緣，觀察尾鰭與體側線紋即可與其他烏尾鮗區分。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "caesio-caerulaurea",
@@ -396,7 +434,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "烏尾鮗（Caesio caerulaurea）屬烏尾鮗科，體藍金相間，體側有金黃縱帶，尾鰭藍而深叉，是名稱來源的典型種。\n\n廣布印度－西太平洋礁區；香港屬分布北緣，水質較佳的離島外圍較有機會遇見。\n\n辨認：藍金配色與體側金帶是關鍵；成群中層游泳、以浮游動物為食，是礁區食物網的重要環節。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "atule-mate",
@@ -413,7 +453,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "離鰭青基（Atule mate）屬鰺科，體紡錘形、側線後部有稜鱗，尾鰭黃，背鰭與臀鰭後方有離鰭（finlets），是近岸常見小型鰺。\n\n分布於印度－西太平洋沿岸與近海；香港近岸與離島外圍可釣獲，常成群。\n\n提示：看尾黃與離鰭；與竹鰺、金邊鰺等相比，離鰭青基的尾色與離鰭組合是快速辨認點。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "alepes-djedaba",
@@ -430,7 +472,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "蝦尾鰺（Alepes djedaba）屬鰺科，體側扁，側線彎曲，肩部常有黑斑，尾鰭叉形，香港俗稱與體型、尾形有關。\n\n廣布印度－西太平洋近岸；香港近海、港口外圍與河口交界常見小型鰺類。\n\n學習提示：鰺科多具稜鱗與側線彎折；蝦尾鰺體較側扁、肩斑可助分辨，是岸釣常見「雜鰺」之一。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "alepes-vari",
@@ -447,7 +491,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "范氏副葉鰺（Alepes vari）屬鰺科，體延長側扁，側線明顯彎曲，體色銀，背側略暗，是近岸群游小型鰺。\n\n見於印度－西太平洋沿岸水域；香港近岸與河口外側可遇。\n\n辨認：與蝦尾鰺同屬，需靠肩斑、體高與鰭色細節區分；整體仍屬「銀身叉尾、成群掠過」的典型鰺科印象。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "carangoides-praeustus",
@@ -464,7 +510,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "青基（Carangoides praeustus）屬鰺科（現多歸 Carangoides/Ferdauia 相關），體較高側扁，背鰭末端或體側常有暗色特徵，是近海常見中型鰺。\n\n分布於印度－西太平洋近岸與大陸棚；香港岩礁外圍與近海拖釣、岸拋偶有釣獲。\n\n提示：青基體高較一般竹鰺明顯，口裂適中；釣者常以體高與側線形態分辨「基」類與「竹鰺」類。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "decapterus-russelli",
@@ -481,7 +529,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "竹鰺（Decapterus russelli）屬鰺科圓鰺屬，體細長圓柱形，側線後部有稜鱗，背鰭後方有離鰭，是華南極常見的「青鱗／竹鰺」類食用魚。\n\n廣布印度－西太平洋近海中上層；香港近海、離島外圍與魚市場常見。\n\n學習提示：細長「竹」身、離鰭、銀亮——是圓鰺屬特徵；常成大群，是食物鏈中重要的中層魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "selaroides-leptolepis",
@@ -498,7 +548,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "金邊鰺（Selaroides leptolepis）屬鰺科，體側有鮮明金黃縱帶，體小而側扁，是印度－西太平洋近岸極常見的小型鰺。\n\n香港近岸、堤岸與河口外側全年可遇，常成群被燈光吸引。\n\n辨認：一條醒目金邊幾乎「一眼可認」；體型小、成群，是岸釣與手釣常見對象，也是大型肉食魚的餌料魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "seriola-dumerili",
@@ -515,7 +567,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "章雄（Seriola dumerili）即杜氏鰤／大五目鰤，屬鰺科，體粗壯延長，側線無稜鱗，幼魚有橫帶，成魚背側藍灰、體側有淡琥珀色帶。\n\n全球溫熱帶近海廣布；香港外海與離島深水岩礁偶有大型個體，是拖釣與深水釣的目標之一。\n\n提示：無稜鱗、體型大、力道強；幼魚橫帶明顯，成魚則看琥珀側帶與粗壯身形，與普通青基截然不同。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "trachurus-japonicus",
@@ -532,7 +586,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "池魚（Trachurus japonicus）屬鰺科竹筴魚屬，體側有明顯稜鱗列（盾鱗），體銀，是西北太平洋重要經濟魚種，香港俗稱「池魚」。\n\n主要分布日本至東海、南海北部近海；香港近海季節性出現，魚市場常見。\n\n學習提示：側線上那排「骨質盾鱗」是竹筴魚屬特徵；與圓鰺（竹鰺）相比，池魚體稍高、稜鱗更醒目。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "carangoides-malabaricus",
@@ -549,7 +605,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "水珍（Carangoides malabaricus）屬鰺科，體高側扁，口裂較大，幼魚與成魚斑紋可不同，是印度－西太平洋近海常見鰺。\n\n香港近海與岩礁外圍有記錄；釣者有時把多種中型鰺統稱「水珍」。\n\n辨認：體高、銀亮、叉尾；需結合側線、鰓蓋斑與鰭色細分，避免與六帶水珍等混淆。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "trachinotus-baillonii",
@@ -566,7 +624,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "章白（Trachinotus baillonii）屬鰺科鯧鰺屬，體很高側扁，口小，體側常有小黑斑，背鰭與臀鰭前葉延長，游動姿態優美。\n\n見於印度－西太平洋沿岸淺水與沙泥底；香港近岸淺灣與河口外側偶有釣獲。\n\n提示：極側扁的「刀形」體與小口是鯧鰺特徵；體側小斑是種名線索，勿與真正的燕鯧（蝙蝠魚）混淆。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "caranx-ignobilis",
@@ -583,7 +643,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "浪人鰺（Caranx ignobilis）即巨型鰺，屬鰺科，體粗壯、頭部厚重，成魚體色暗灰至橄欖，是熱帶礁區頂級掠食者之一。\n\n廣布印度－西太平洋；香港外海與離島深水岩礁偶有記錄，體型可達很大，屬稀遇大型魚。\n\n學習提示：粗頭、強側線稜鱗、力大——釣到大型暗色鰺時要想起「浪人」；幼魚較銀，成魚則明顯變暗。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "caranx-sexfasciatus",
@@ -600,7 +662,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "六帶水珍（Caranx sexfasciatus）屬鰺科，幼魚體側有約六條深色橫帶，成魚帶紋可消退，眼大，是近海常見中大型鰺。\n\n分布印度－西太平洋沿岸與礁區；香港近海與岩礁外圍有記錄。\n\n辨認：幼魚「六帶」最容易認；成魚看大眼與體型，常成群巡游於礁緣中層。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lates-calcarifer",
@@ -617,7 +681,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "盲鰽（Lates calcarifer）即金目鱸／盲曹，屬尖嘴鱸科，體延長側扁，口大、上頜可伸至眼後，成魚銀灰，幼魚褐帶橫紋，是著名養殖魚。\n\n天然分布印度－西太平洋河口與近岸，可在淡咸水間洄游；香港河口與養殖環境可見，野生釣獲需視水域而定。\n\n提示：大金目與大口是特徵；幼魚橫帶明顯，成魚則銀亮。牠能適應淡水至海水，是河口生態的代表種之一。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-auripes",
@@ -634,7 +700,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・東方蝶魚（Chaetodon auripes）屬蝴蝶魚科，體高側扁如圓碟，吻略尖，體黃橙帶細紋，眼部有暗帶，是東亞溫帶至亞熱帶常見蝶魚。\n\n分布日本至華南沿岸岩礁與珊瑚區；香港東面與離島岩礁可見「荷包魚」類。\n\n學習提示：香港把多種蝴蝶魚叫「荷包魚」；本種偏黃、細紋密，與流浪蝶魚等橫帶種可比較。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-auriga",
@@ -651,7 +719,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・絲鰭蝶魚（Chaetodon auriga）屬蝴蝶魚科，背鰭軟條後方延長成絲狀「線」，體有斜紋與眼帶，是熱帶礁區經典種。\n\n廣布印度－西太平洋珊瑚礁；香港屬分布北緣，較暖季節於離島岩礁偶見。\n\n辨認：背鰭那條「絲」是種名關鍵；幼魚絲較短，成魚更明顯。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-lunula",
@@ -668,7 +738,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・月斑蝶魚（Chaetodon lunula）屬蝴蝶魚科，體橙黃，眼後有新月形暗斑與寬眼帶，夜間色斑更醒目，俗稱浣熊蝶魚。\n\n見於印度－西太平洋礁區；香港水域偶有記錄。\n\n提示：看「浣熊眼罩」與新月斑；蝴蝶魚多成對活動，觀察行為也有助辨認。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-melannotus",
@@ -685,7 +757,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・黑背蝶魚（Chaetodon melannotus）屬蝴蝶魚科，背部明顯較暗至近黑，體側有細斜紋，是珊瑚礁常見種。\n\n分布印度－西太平洋；香港偶見於水質較佳的岩礁／珊瑚區。\n\n辨認：黑背對比銀白至淡黃體側，遠看即有印象；喜歡啄食珊瑚息肉等，是礁區健康的參考指標之一。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-modestus",
@@ -702,7 +776,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・褐帶蝶魚（Chaetodon modestus）屬蝴蝶魚科，體色較素，具褐色橫帶，吻適中，見於西北太平洋較溫水域。\n\n分布日本至華南沿岸；香港岩礁區有蝴蝶魚科多種記錄，本種帶紋較「謙遜」朴素。\n\n學習提示：褐帶與較低調體色是特徵；與鮮豔熱帶種並排，可體會緯度與水温對魚色的影響。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-wiebeli",
@@ -719,7 +795,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "香港蝶魚（Chaetodon wiebeli）屬蝴蝶魚科，體黃、具斜紋與眼帶，是以學者命名、在華南至日本常見的蝶魚，中文俗名常連「香港」。\n\n分布西北太平洋沿岸岩礁；香港東面離島岩礁可見，是本地潛水觀察的熱門荷包魚之一。\n\n提示：雖名「香港蝶魚」，分布並非只限香港；看黃體與斜紋，並與東方蝶魚細比較斑紋差異。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-ephippium",
@@ -736,7 +814,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "月光蝶魚（Chaetodon ephippium）屬蝴蝶魚科，背部有大塊鞍狀暗斑，成魚背鰭常有延長絲，體色粉橘至黃，極為醒目。\n\n廣布印度－西太平洋珊瑚礁；香港偶見，屬較熱帶外觀的種類。\n\n辨認：背上那塊「馬鞍」大斑幾乎不會認錯；成魚背絲更添辨識度。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "heniochus-acuminatus",
@@ -753,7 +833,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "馬夫魚（Heniochus acuminatus）屬蝴蝶魚科，體高、黑白分明，背鰭第三棘極度延長如旗幟，是著名的「三角倒吊／馬夫」外形。\n\n見於印度－西太平洋礁區；香港離島岩礁偶有發現。\n\n學習提示：長旗背鰭＋黑白對比是關鍵；幼魚有時會為其他魚「清潔」，成魚則多成對或小群。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-lineolatus",
@@ -770,7 +852,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・線紋蝶魚（Chaetodon lineolatus）屬蝴蝶魚科，體大型，密布細縱線，眼帶明顯，是體型最大的蝴蝶魚之一。\n\n分布印度－西太平洋礁區；香港屬罕見至偶見。\n\n提示：體型較大、線紋極密；看到「特別大的荷包魚」要想起線紋蝶魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-octofasciatus",
@@ -787,7 +871,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・八帶蝶魚（Chaetodon octofasciatus）屬蝴蝶魚科，體側約有八條垂直暗帶，體黃白底，是較易數帶辨認的種類。\n\n見於印度－西太平洋，偏好珊瑚繁生區；香港偶見。\n\n辨認：數橫帶——「八帶」名副其實；喜歡躲在珊瑚枝椏間。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-speculum",
@@ -804,7 +890,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・鏡斑蝶魚（Chaetodon speculum）屬蝴蝶魚科，體鮮黃，體側有一大橢圓黑斑如「鏡子／眼斑」，非常醒目。\n\n分布西太平洋礁區；香港偶有記錄。\n\n提示：黃底＋大黑圓斑，幾乎一眼可認；眼斑可能有迷惑掠食者的功能。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-trifascialis",
@@ -821,7 +909,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・三帶蝶魚（Chaetodon trifascialis）屬蝴蝶魚科，體側有人字形／箭頭狀紋，吻尖，常與特定珊瑚種類密切相關。\n\n見於印度－西太平洋；香港偶見於仍有活珊瑚的地點。\n\n學習提示：人字紋（chevron）是特徵；生態上對珊瑚依賴較高，珊瑚退化時較易受影響。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-trifasciatus",
@@ -838,7 +928,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・紅鰭蝶魚（Chaetodon trifasciatus）屬蝴蝶魚科，體有多條細斜紋，臀鰭與尾柄附近常帶橙紅，是熱帶經典蝶魚（近緣種分類曾有調整）。\n\n廣布印度洋至西太平洋；香港偶見。\n\n辨認：細密斜紋＋鰭部橙紅調；與流浪蝶魚的粗橫帶風格明顯不同。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "chaetodon-vagabundus",
@@ -855,7 +947,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "荷包魚・流浪蝶魚（Chaetodon vagabundus）屬蝴蝶魚科，體側有粗斜紋與垂直暗帶，尾柄有斑，是分布極廣、最常見的蝴蝶魚之一。\n\n印度－西太平洋廣布；香港岩礁與珊瑚區相對較易見到的荷包魚之一。\n\n提示：「流浪」指分布廣；粗斜紋圖案是快速記憶點，適合作為認識蝴蝶魚科的入門種。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "goniistius-zonatus",
@@ -872,7 +966,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "斬三刀（Goniistius zonatus）屬唇指鯛科（或螯甲科相關分類），體高側扁，體側有粗橫帶，唇厚，香港俗名「斬三刀」來自醒目帶紋。\n\n分布西北太平洋岩礁；香港東面岩岸與較深岩礁有記錄，是釣友熟悉的岩礁魚。\n\n辨認：粗橫帶如「刀痕」、唇厚、體高；常貼底活動，釣感沉重。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "cirrhitichthys-aureus",
@@ -889,7 +985,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "哨牙婆（Cirrhitichthys aureus）屬鷹魚科，體色偏黃，體側有紅褐斑點，胸鰭下位強力，常停棲於岩石上「站崗」，故有哨牙等俗名。\n\n見於西北太平洋岩礁；香港沿岸岩礁可見鷹魚類。\n\n學習提示：看「停在石頭上、胸鰭撐著」的姿態；鷹魚是伏擊型小掠食者，斑點圖案助偽裝。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "cirrhitichthys-oxycephalus",
@@ -906,7 +1004,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "尖頭葉鷹魚（Cirrhitichthys oxycephalus）屬鷹魚科，頭部較尖，體有紅白／褐白斑點，廣泛分布於熱帶礁區。\n\n印度－西太平洋珊瑚與岩礁；香港偶見。\n\n辨認：尖頭＋彩色斑點；與哨牙婆同屬，比較頭形與斑點密度即可練習分辨。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "drepane-punctata",
@@ -923,7 +1023,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雞籠鯧（Drepane punctata）屬鐮魚科，體極高側扁，口能向前伸出，體側有垂直斑列，背鰭高聳，外形像「圓扇」。\n\n分布印度－西太平洋近岸沙泥底與河口外緣；香港近岸淺灣偶有釣獲。\n\n提示：極高的體盤與可伸出口是特徵；斑點排列呈縱列時較易與無斑近緣種區分。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "echeneis-naucrates",
@@ -940,7 +1042,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "魚擸（Echeneis naucrates）屬鮣科，頭頂有吸盤（變態的第一背鰭），體延長有縱帶，會吸附於鯊魚、海龜或船底「搭便車」。\n\n全球熱帶至亞熱帶近海廣布；香港近海偶見吸附於大型魚或船隻。\n\n學習提示：頭頂吸盤是唯一關鍵特徵；牠們以搭便車節省體力並覓食殘渣，是有趣的共生／共棲例子。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "platax-pinnatus",
@@ -957,7 +1061,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "石鯧（Platax pinnatus）屬白鯧科，幼魚體極高、鰭緣橘紅，成魚體色轉暗、鰭相對變短，是著名的蝙蝠魚。\n\n見於印度－西太平洋礁區；香港離島岩礁偶見幼魚。\n\n辨認：幼魚「圓碟＋橘邊」極美；成魚變得較厚實暗色。勿與真正食用白鯧（鯧科）混淆——白鯧科蝙蝠魚多為觀賞／礁區魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "platax-teira",
@@ -974,7 +1080,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "燕鯧（Platax teira）屬白鯧科，背鰭與臀鰭特別延長如燕翅，體高側扁，成魚體側常有暗帶，是較常見的蝙蝠魚。\n\n廣布印度－西太平洋近岸與礁區；香港近岸與離島有記錄。\n\n提示：延長的背臀鰭像「翅膀」；幼魚常躲在漂浮物下，成魚則靠近岩礁活動。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "fistularia-commersonii",
@@ -991,7 +1099,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "鶴針（Fistularia commersonii）屬煙管魚科，體極度延長如管，吻管狀，尾絲長，體綠褐帶藍斑，是中層潛行的「長針」魚。\n\n印度－西太平洋廣布於海草床與礁區外緣；香港近岸淺灣與海草／藻場偶見。\n\n辨認：整條像「鶴嘴長針」、尾有長絲；以管狀吻吸食小魚與蝦，游姿呈波浪前進。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "gerres-filamentosus",
@@ -1008,7 +1118,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "銀米（Gerres filamentosus）屬鰏科，體高側扁銀亮，口能大幅伸出向下撮食，背鰭第二棘延長成絲，是河口常見「銀身」魚。\n\n分布印度－西太平洋河口與近岸沙泥底；香港泥灘、河口與避風塘常見。\n\n學習提示：可伸出口＋銀亮體＋背絲是特徵；牠們在底層啄食小型底棲生物，潮漲潮退時特別活躍。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "asterropteryx-semipunctata",
@@ -1025,7 +1137,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "星塘鱧（Asterropteryx semipunctata）屬鰕虎科，體側密布小星狀斑點，第一背鰭有眼斑，常停在沙石或珊瑚碎屑上。\n\n廣布印度－西太平洋淺礁與潟湖；香港近岸淺水與岩礁邊緣可見。\n\n提示：星點圖案是俗名來源；鰕虎有腹吸盤，受驚時會迅速鑽入縫隙。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "bathygobius-fuscus",
@@ -1042,7 +1156,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "深鰕虎魚（Bathygobius fuscus）屬鰕虎科，體較粗壯，色暗褐可變，是潮間帶與河口極常見的「萬能」鰕虎。\n\n印度－西太平洋廣布；香港石堤、潮池、紅樹林與避風塘幾乎隨處可見。\n\n學習提示：這是認識鰕虎科的入門種——看腹吸盤、兩背鰭、貼底趴著；體色會隨底質改變。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "amblyeleotris-gymnocephala",
@@ -1059,7 +1175,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "咬手銀（Amblyeleotris gymnocephala）屬鰕虎科，與槍蝦共用洞穴，體細長有橫帶，頭部圖案如面具，是典型「蝦虎共生」種類。\n\n見於印度－西太平洋沙泥底；香港沙灣與近岸沙地偶見共生蝦穴。\n\n生態趣味：槍蝦挖洞、鰕虎放哨——看到沙地上的雙開洞穴，就可能有這對搭檔。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "amblygobius-phalaena",
@@ -1076,7 +1194,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "林哥・蝶鰕虎魚（Amblygobius phalaena）屬鰕虎科，體有橫帶與細點，背鰭有斑，常在沙底築巢，香港有時也稱林哥。\n\n分布印度－西太平洋淺灣；香港近岸沙泥底有記錄。\n\n辨認：橫帶較明顯，比普通暗色潮間帶鰕虎「花」一些；受驚會鑽沙。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "bathygobius-meggitti",
@@ -1093,7 +1213,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "林哥・梅氏鰕虎魚（Bathygobius meggitti）屬鰕虎科，與深鰕虎魚近緣，體斑與頭部孔突細節不同，同樣是潮間帶常見底棲小魚。\n\n見於印度－西太平洋沿岸；香港石岸與潮池可見近緣種。\n\n提示：Bathygobius 屬種類外形接近，細辨需看頭部感覺孔與斑紋；教學上可先掌握「潮間帶貼石鰕虎」的共同生態。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "cryptocentrus-strigilliceps",
@@ -1110,7 +1232,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "紋斑絲鰕虎魚（Cryptocentrus strigilliceps）屬鰕虎科，頭部有明顯斑紋，與槍蝦共生，體色對比鮮明。\n\n分布西太平洋沙泥底；香港沙質淺灣偶見。\n\n學習提示：頭部「靶心／紋斑」是辨認重點；共生鰕虎負責警戒，是觀察行為生態的好例子。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "istigobius-diadema",
@@ -1127,7 +1251,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "林哥・眼斑鰕虎魚（Istigobius diadema）屬鰕虎科，背部或背鰭附近有眼斑，體有細網紋，常在潮間帶沙石區活動。\n\n見於印度－西太平洋；香港潮池與沙石岸可見相關種類。\n\n辨認：眼斑像「假眼」，可能迷惑掠食者；腹吸盤協助牠在浪打區固定身體。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "tridentiger-trigonocephalus",
@@ -1144,7 +1270,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "紋縞鰕虎魚（Tridentiger trigonocephalus）屬鰕虎科，體側有縱帶，齒具三叉特徵（屬名來源），可生活於河口甚至較淡水域，體色能明顯改變。\n\n分布西北太平洋沿岸與河口；香港河口、排水渠與紅樹林常見。\n\n提示：「變色龍鰕虎」之名來自快速變色；耐低鹽是河口適應的好教材。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "istigobius-decoratus",
@@ -1161,7 +1289,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "華麗銜鰕虎魚（Istigobius decoratus）屬鰕虎科，體色較華麗，有網紋與斑點，常見於沙質潟湖與淺礁。\n\n廣布印度－西太平洋；香港近岸沙質區偶見。\n\n學習提示：比暗色潮間帶種更「花」；觀察時可比較 Istigobius 與 Bathygobius 的斑紋風格差異。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parapristipoma-trilineatum",
@@ -1178,7 +1308,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雞魚（Parapristipoma trilineatum）屬石鱸科，體側有三條縱線，夜間發出咕噜聲，是東亞岩礁常見的「雞魚」。\n\n分布西北太平洋；香港岩岸、堤壩與離島夜間釣常見。\n\n辨認：三縱線＋夜釣咕声；石鱸科魚常夜間活躍，白天躲洞。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "diagramma-pictum",
@@ -1195,7 +1327,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "細鱗（Diagramma pictum）屬石鱸科，幼魚有顯著條紋與斑點，成魚體色變素、唇厚，鱗片相對細密，香港俗稱細鱗。\n\n印度－西太平洋近岸與礁區；香港近海與岩礁有記錄，亦見於魚市場。\n\n提示：幼魚與成魚外表差很大（異型生長），初學常誤認成兩種魚——這是重要學習點。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "plectorhinchus-cinctus",
@@ -1212,7 +1346,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "包公（Plectorhinchus cinctus）屬石鱸科，體側有粗黑橫帶如「包公臉譜」，唇厚，是華南著名岩礁魚。\n\n分布西北太平洋；香港東面岩礁與離島是經典釣場。\n\n辨認：寬黑帶對比黃白底，幾乎不會認錯；厚唇用於啄食底棲無脊椎動物。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "plectorhinchus-gibbosus",
@@ -1229,7 +1365,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "厚唇細鱗（Plectorhinchus gibbosus）屬石鱸科，唇特別肥厚，成魚體色暗，幼魚斑紋鮮明，英文名 Harry hotlips 很傳神。\n\n見於印度－西太平洋礁區與河口外；香港近岸有記錄。\n\n學習提示：誇張厚唇是第一印象；比較包公的帶紋與本種的厚唇暗色成魚，可分辨同科不同屬。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pomadasys-quadrilineatus",
@@ -1246,7 +1384,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雞魚・四線石鱸（Pomadasys quadrilineatus）屬石鱸科，體側約四條縱線，體較修長銀黃，是近岸淺水常見石鱸。\n\n分布印度－西太平洋河口與近岸；香港近岸與河口交界可遇。\n\n提示：數縱線——四線；與三線雞魚比較線數與體色即可練習。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "sargocentron-rubrum",
@@ -1263,7 +1403,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "將軍甲（Sargocentron rubrum）屬金鱗魚科，體紅白相間縱帶，鰓蓋有毒棘，夜間活動，日間躲洞，香港俗稱將軍甲／紅魚。\n\n廣布印度－西太平洋礁區；香港岩礁夜間常見。\n\n安全提示：鰓蓋棘有毒，刺傷會劇痛——切勿徒手抓魚頭兩側；紅白縱帶是辨認關鍵。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "microcanthus-strigatus",
@@ -1280,7 +1422,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "花并（Microcanthus strigatus）屬微鯪科（或相關），體高側扁，黃底黑斜紋，像小型蝴蝶魚，香港俗稱花并。\n\n分布西北太平洋岩礁與藻場；香港東面岩岸常見，是岸釣「雜魚」中較易認的一種。\n\n辨認：黃底斜黑紋，體高；常成小群在浪邊活動，以藻類與小型無脊椎為食。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "girella-punctata",
@@ -1297,7 +1441,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "冧蚌・斑鱾（Girella punctata）屬舵魚科，體高側扁，暗色帶淡斑，齒適於刮藻，是東亞岩礁藻場的典型草食／雜食魚。\n\n分布日本至華南；香港岩岸「冧蚌」是釣友對舵魚／鱾類的俗稱。\n\n提示：暗色高體、愛吃藻；與灰舵魚、黃舵魚同科，可比較斑點與體色。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "kyphosus-cinerascens",
@@ -1314,7 +1460,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "冧蚌・灰舵魚（Kyphosus cinerascens）屬舵魚科，體色灰，背鰭與臀鰭較長，以藻類為主食，常成群在礁邊中層巡游。\n\n印度－西太平洋廣布；香港離島岩礁可見舵魚群。\n\n學習提示：灰身、高體、刮藻——看到成群「灰色冧蚌」掠過礁邊，多半是舵魚屬。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "kyphosus-vaigiensis",
@@ -1331,7 +1479,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "冧蚌・黃舵魚（Kyphosus vaigiensis）屬舵魚科，體側常帶黃銅／黃線光澤，同樣以藻為主，是熱帶至亞熱帶常見舵魚。\n\n廣布印度－西太平洋；香港岩礁與離島有記錄。\n\n辨認：比灰舵魚更帶黃褐光澤；舵魚科魚腸道長、適合消化藻類，是岩礁生態的「清道夫」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "choerodon-azurio",
@@ -1348,7 +1498,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "牙衣（Choerodon azurio）屬隆頭魚科，齒強大如犬齒，體色藍綠斑斕，雄雌與年齡體色可不同，是華南著名「衣」類。\n\n分布西北太平洋岩礁；香港東面與離島是經典產地，釣友極熟悉。\n\n提示：厚唇利牙、體色豔；隆頭魚常用牙咬碎貝殼與甲殼，看齒與唇即可認出「衣」類。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "choerodon-schoenleinii",
@@ -1365,7 +1517,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "青衣（Choerodon schoenleinii）屬隆頭魚科，體側有黑斑，成魚體色青藍綠，是香港備受重視的食用與釣魚目標，資源曾受壓力。\n\n分布西太平洋岩礁與海草床；香港離島岩礁聞名。\n\n學習提示：體側黑斑是重要特徵；體型較牙衣可更大。保育角度——了解最小可捕體長與季節，比只識名稱更重要。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "bodianus-bilunulatus",
@@ -1382,7 +1536,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "黑點牙衣（Bodianus bilunulatus）屬隆頭魚科，體側有鞍狀／新月斑，色彩紅白對比，是熱帶礁區豬齒魚類。\n\n見於印度－西太平洋；香港偶見於較佳岩礁環境。\n\n辨認：鞍斑與紅白配色；與青衣、牙衣同科但屬不同，斑紋更「熱帶」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "cheilinus-chlorourus",
@@ -1399,7 +1555,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "綠尾唇魚（Cheilinus chlorourus）屬隆頭魚科，體被細斑，尾鰭偏綠，唇厚，是珊瑚礁常見的唇魚。\n\n廣布印度－西太平洋；香港偶見。\n\n提示：滿身細斑＋綠尾調；唇魚屬以厚唇啄食底棲生物，游姿常左右擺動觀察環境。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "gomphosus-varius",
@@ -1416,7 +1574,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雜色尖嘴魚（Gomphosus varius）屬隆頭魚科，吻極度延長如鳥喙，雄雌體色不同（雄多綠、雌多褐斑），是著名的「鳥隆頭」。\n\n見於印度－西太平洋礁區；香港偶見。\n\n學習提示：長喙是唯一關鍵——用來啄食縫隙中的小動物；性別體色差異也是隆頭魚常見現象。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "halichoeres-dussumieri",
@@ -1433,7 +1593,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "蠔妹（Halichoeres dussumieri）屬隆頭魚科，體小型色彩多變，香港釣友常把小型海豬魚稱「蠔妹／蠔魚」，與蠔排生境有關。\n\n分布印度－西太平洋近岸；香港岩岸與蠔排常見小型隆頭魚。\n\n提示：體小、色豔、愛在淺岩與蠔殼間穿梭；細分種類需看斑紋，教學上可先認「小海豬魚＝蠔妹類」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "halichoeres-poecilopterus",
@@ -1450,7 +1612,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "花鰭海豬魚（Halichoeres poecilopterus）屬隆頭魚科，鰭上花紋華麗，雄魚體色尤其鮮豔，是東亞沿岸常見海豬魚。\n\n分布西北太平洋；香港近岸岩礁與沙泥交界可見。\n\n辨認：花鰭是特徵；雄雌體色不同，初學常以為是兩種魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "halichoeres-tenuispinis",
@@ -1467,7 +1631,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "蠔魚・細棘（Halichoeres tenuispinis）屬隆頭魚科，體側常有斑點排列，背鰭棘較細，是近岸常見小型隆頭魚。\n\n見於西北太平洋沿岸；香港蠔排與淺岩區有相關種類。\n\n學習提示：三斑／細點排列是記憶點；與蠔妹一樣，是淺岸生態的活躍小掠食者。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "labroides-dimidiatus",
@@ -1484,7 +1650,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "裂唇魚（Labroides dimidiatus）屬隆頭魚科，體側有黑縱帶，藍白對比，是著名的「清潔魚」，會為其他魚清理寄生蟲。\n\n廣布印度－西太平洋礁區；香港水質較佳的岩礁偶見清潔站行為。\n\n生態趣味：看到大魚乖乖張嘴讓小魚進出口腔，就是清潔共生；黑縱帶藍身是標準制服。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "thalassoma-lunare",
@@ -1501,7 +1669,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "龍船魚（Thalassoma lunare）屬隆頭魚科，成魚體綠，尾新月形鮮黃，頭部有放射紋，香港俗稱龍船／月尾。\n\n見於印度－西太平洋礁區；香港離島岩礁可見。\n\n辨認：綠身＋黃月尾，非常醒目；雄魚領域性強，常在礁頂巡游。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "stethojulis-interrupta",
@@ -1518,7 +1688,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "蠔魚・斷線（Stethojulis interrupta）屬隆頭魚科，體側縱線有間斷，體色銀綠帶彩，是淺礁常見小型隆頭魚。\n\n分布印度－西太平洋；香港近岸有記錄。\n\n提示：「斷線」指縱紋不連續；白天活躍於沙石底，夜間可鑽沙休息。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "semicossyphus-reticulatus",
@@ -1535,7 +1707,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "羊頭衣（Semicossyphus reticulatus）屬隆頭魚科，頭部巨大隆起（尤其老年雄魚），體色紅網紋，是東亞大型隆頭魚，資源珍貴。\n\n分布日本至東海、南海北部岩礁；香港外海深水岩礁偶有記錄，屬稀遇大型種。\n\n學習提示：羊頭狀額隆是成魚特徵；體型大、成熟慢，更需珍惜資源，不宜過量捕捉。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "suezichthys-gracilis",
@@ -1552,7 +1726,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "細長蘇彝士隆頭魚（Suezichthys gracilis）屬隆頭魚科，體細長，色彩相對素雅，見於西北太平洋較溫水域。\n\n分布日本至華南沿岸；香港岩礁有相關記錄。\n\n辨認：比一般海豬魚更「瘦長」；適合用來對比隆頭魚科內不同體型策略。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "halichoeres-kneri",
@@ -1569,7 +1745,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "黑線衣（Halichoeres kneri）屬隆頭魚科，體側有黑縱線特徵，體色可隨性別與年齡變化。\n\n見於西太平洋近岸；香港岩礁區有海豬魚多種，本種以黑線為辨認線索。\n\n提示：抓「黑線」記憶；小型隆頭魚種類多，觀察時拍照對照學名最穩妥。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "thalassoma-hardwicke",
@@ -1586,7 +1764,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "鞍斑錦魚（Thalassoma hardwicke）屬隆頭魚科，體側有約六條寬橫帶，色彩繽紛，是熱帶礁區極常見的錦魚。\n\n廣布印度－西太平洋；香港偶見於較暖礁區。\n\n辨認：六條鞍狀橫帶幾乎一眼可認；幼魚與成魚帶紋都醒目，是認識 Thalassoma 屬的好例子。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lactarius-lactarius",
@@ -1603,7 +1783,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "海鰱（Lactarius lactarius）屬乳香魚科，體銀、側扁，口大，背鰭前方有短棘，是近海中上層常見魚，與真正鰱魚（鯉科）無關。\n\n分布印度－西太平洋近海；香港近海與魚市場可見。\n\n提示：銀身大口、體較軟；名稱易誤解，教學時要強調「海鰱≠淡水鰱」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lethrinus-nebulosus",
@@ -1620,7 +1802,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "連尖・星斑（Lethrinus nebulosus）屬龍占魚科，吻尖、唇厚，體側有藍色星狀斑點，是印度－西太平洋重要的「連尖／龍占」。\n\n見於海草床、沙底與岩礁；香港近海與離島有記錄。\n\n辨認：星斑＋尖吻；龍占魚科魚唇可外伸啄食底棲生物，釣感常先輕啄再吞。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lethrinus-haematopterus",
@@ -1637,7 +1821,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "連尖・紅鰭（Lethrinus haematopterus）屬龍占魚科，鰭部常帶紅色調，體色偏褐，是華東至華南沿岸較常見的龍占。\n\n分布西北太平洋；香港近岸岩礁與沙泥底可遇。\n\n提示：紅鰭調是線索；與星斑連尖比較——一個靠星點、一個靠鰭色，可練習同屬分辨。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-argentimaculatus",
@@ -1654,7 +1840,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅鮋（Lutjanus argentimaculatus）屬笛鯛科，幼魚紅、成魚暗綠褐帶淡橫帶，偏好紅樹林與河口，是著名的「紅鮋／紅友」。\n\n廣布印度－西太平洋河口與近岸；香港紅樹林、河口與近岸堤壩是典型釣場。\n\n學習提示：生境是最大線索——紅樹林區的大型暗色笛鯛，優先想紅鮋；幼魚較紅，成魚變暗。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-johnii",
@@ -1671,7 +1859,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "牙點（Lutjanus johnii）屬笛鯛科，體側鱗常有淡色點，側線下方有黑斑，幼魚更明顯，香港俗稱牙點。\n\n見於印度－西太平洋近岸與河口；香港近海與河口外常見。\n\n辨認：側線下黑斑＋體側亮點；與火點等比較斑點位置。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-lemniscatus",
@@ -1688,7 +1878,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "褶尾笛鯛（Lutjanus lemniscatus）屬笛鯛科，體側有縱向黃色條紋，尾鰭形態有特徵，是近海礁區笛鯛。\n\n分布印度－西太平洋；香港近海偶見。\n\n提示：黃縱紋是快速記憶點；笛鯛科整體口大、犬齒發達，是活躍掠食者。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-lutjanus",
@@ -1705,7 +1897,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅畫眉（Lutjanus lutjanus）屬笛鯛科，體較細長，體側有黃縱線，眼相對大，是近海常見小型至中型笛鯛。\n\n廣布印度－西太平洋；香港近海與魚市場可見。\n\n辨認：細長＋黃線；「畫眉」是香港對多種條紋笛鯛的俗稱。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-kasmira",
@@ -1722,7 +1916,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "四間畫眉（Lutjanus kasmira）屬笛鯛科，體側有四條鮮明藍縱帶，底色黃，是熱帶礁區最易認的笛鯛之一。\n\n見於印度－西太平洋珊瑚礁；香港偶見於外圍礁區。\n\n提示：四條藍帶＋黃身，幾乎不會認錯；常成群，是潛水觀察的明星魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-malabaricus",
@@ -1739,7 +1935,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅魚・馬拉巴笛鯛（Lutjanus malabaricus）屬笛鯛科，體高、紅色，幼魚尾柄與背鰭有黑斑特徵，是重要經濟紅魚。\n\n分布印度－西太平洋大陸棚；香港近海與市場可見近緣紅魚。\n\n學習提示：大型紅身笛鯛需結合斑紋與體高分辨；幼魚黑斑是重要檢索特徵。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-russellii",
@@ -1756,7 +1954,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "火點（Lutjanus russellii）屬笛鯛科，體側線下方有明顯黑斑（火點），體色紅褐至銀紅，是華南極常見的近岸笛鯛。\n\n見於河口至岩礁；香港岸釣經典對象之一。\n\n辨認：那顆「火點」黑斑就是名字；與牙點比較斑點與體色細節。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-vitta",
@@ -1773,7 +1973,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "畫眉・單帶笛鯛（Lutjanus vitta）屬笛鯛科，體側有一條明顯暗色縱帶，是近海常見條紋笛鯛。\n\n分布印度－西太平洋；香港近海有記錄。\n\n提示：單帶是關鍵；「畫眉」類都偏修長條紋，和短胖的紅魚型笛鯛可粗分兩型。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-ophuysenii",
@@ -1790,7 +1992,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "畫眉・斑帶笛鯛（Lutjanus ophuysenii）屬笛鯛科，體側縱帶上常有斑點／斷續特徵，分布偏西北太平洋。\n\n見於華南至日本沿岸近海；香港近海可遇。\n\n學習提示：與單帶畫眉接近，需看帶上是否有斑點；教學上強調「條紋笛鯛要細看帶紋連續性」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-sebae",
@@ -1807,7 +2011,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅魚・千年笛鯛（Lutjanus sebae）屬笛鯛科，幼魚有醒目紅白三角／鞍狀帶紋，成魚變為一律紅色，是著名的「紅魚／皇帝笛鯛」。\n\n廣布印度－西太平洋；香港水域偶見，市場與水族館較多人識。\n\n辨認：幼魚那套紅白圖案極經典；成魚全紅後較易與其他紅魚混淆，需看體型與頭形。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-stellatus",
@@ -1824,7 +2030,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "石蚌（Lutjanus stellatus）屬笛鯛科，體側有星狀斑點，體色偏粉紅至銀紅，是東亞岩礁常見笛鯛，香港俗稱石蚌。\n\n分布西北太平洋；香港岩礁釣場熟悉的對象。\n\n提示：星點＋岩礁生境；與紅鮋的河口習性不同，石蚌更偏石底岩礁。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pinjalo-pinjalo",
@@ -1841,7 +2049,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅雞（Pinjalo pinjalo）屬笛鯛科，體高、紅色，外形略似某些笛鯛但屬不同，是近海紅色魚類之一。\n\n分布印度－西太平洋大陸棚與礁區；香港近海偶見。\n\n學習提示：高體紅身；與 Lutjanus 紅魚比較口部與體高，可理解同科不同屬的差異。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lutjanus-fulvus",
@@ -1858,7 +2068,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "畫眉・黑尾笛鯛（Lutjanus fulvus）屬笛鯛科，尾鰭後緣明顯較暗至近黑，體黃褐有細紋，是礁區常見種。\n\n廣布印度－西太平洋；香港偶見。\n\n辨認：黑尾緣是第一印象；常單獨或小群在礁邊活動。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "megalops-cyprinoides",
@@ -1875,7 +2087,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "大青鱗（Megalops cyprinoides）屬大海鰱科，體銀亮側扁，最後背鰭條延長成絲，口上翹，是著名的「印太大海鰱／大青鱗」。\n\n見於印度－西太平洋河口、潟湖與近岸；香港河口與近岸偶有記錄，釣到時衝勁十足。\n\n學習提示：上翹大口＋背絲＋銀鱗；牠能吞氣入鰾輔助呼吸，故能在溶氧較低的河口活動。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "mene-maculata",
@@ -1892,7 +2106,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "豬刀（Mene maculata）屬眼刀魚科，體極高側扁如刀，腹緣尖，體側有暗斑列，背鰭短，是外貌獨特的近海魚。\n\n分布印度－西太平洋近海中上層；香港近海與市場偶見。\n\n辨認：側扁如刀、腹緣幾乎成刃，俗名「豬刀」很傳神；斑點排列可助確認。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "ptereleotris-hanae",
@@ -1909,7 +2125,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "絲尾鰭塘鱧（Ptereleotris hanae）屬鰕虎科（鏢虎／塘鱧類），體延長，尾鰭絲狀延長，體色藍綠，常懸停於沙底洞穴上方。\n\n見於西太平洋沙質潟湖與淺礁；香港沙灣偶見鏢虎類。\n\n提示：長尾絲＋懸停姿態；受驚迅速鑽回沙洞，是觀察「洞居」行為的好例子。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parioglossus-dotui",
@@ -1926,7 +2144,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "尾斑舌塘鱧（Parioglossus dotui）屬鰕虎科，體細長如舌，尾鰭有斑，常成小群在水層中懸游，而非完全貼底。\n\n分布西北太平洋近岸；香港河口與港灣有相關塘鱧記錄。\n\n學習提示：比典型貼底鰕虎更「會飛」——在中層振尾懸停；尾斑是辨認線索。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "ptereleotris-evides",
@@ -1943,7 +2163,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "瑰麗塘鱧（Ptereleotris evides）屬鰕虎科，體雙色（前亮後暗）對比鮮明，尾鰭黑白分明，是熱帶沙礁常見鏢虎。\n\n廣布印度－西太平洋；香港偶見於沙質淺灣。\n\n辨認：前後體色對切、黑尾；成對守衛沙洞，非常上鏡。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "monacanthus-chinensis",
@@ -1960,7 +2182,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "中華沙鯭（Monacanthus chinensis）屬單角魨科，體側扁，第一背鰭為一強棘可鎖定，腹側有可伸展的皮瓣，體色灰褐帶斑，香港稱沙鯭。\n\n見於印度－西太平洋海草床與近岸；香港淺灣、海草與避風塘常見。\n\n提示：背棘可豎起鎖定防捕食；游得慢、靠胸鰭劃水，外形「土土的」很好認。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "stephanolepis-cirrhifer",
@@ -1977,7 +2201,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "沙鯭仔（Stephanolepis cirrhifer）屬單角魨科，背鰭棘附近常有絲狀皮瓣，體較小，是東亞沿岸常見皮革魚。\n\n分布西北太平洋；香港近岸藻場與碼頭常見小型沙鯭。\n\n學習提示：絲狀皮瓣像「鬚」；與中華沙鯭比較大小與皮瓣，可練習同科分辨。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "aluterus-scriptus",
@@ -1994,7 +2220,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "長尾革單棘魨（Aluterus scriptus）屬單角魨科，體延長、尾柄長，體表有藍黑線狀與點狀斑紋如潦草書寫，是大型皮革魚。\n\n廣布全球熱帶海域；香港偶見於近岸與離島。\n\n辨認：全身「潦草字紋」＋長尾，幾乎不會認錯；成魚可達較大體型。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "monodactylus-argenteus",
@@ -2011,7 +2239,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "黃鰭鯧（Monodactylus argenteus）屬銀鱗鯧科，體高側扁銀亮，背鰭與臀鰭帶黃，幼魚可進入河口甚至淡水，是常見的「銀鼓／黃鰭鯧」。\n\n印度－西太平洋河口與近岸；香港河口、紅樹林與水族常見。\n\n提示：極高銀身＋黃鰭；幼魚成群在紅樹林潮溝中，是河口生態觀察的好對象。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parupeneus-indicus",
@@ -2028,7 +2258,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "印度三鬚（Parupeneus indicus）屬羊魚科，頜下有兩條可動觸鬚用於探底，體側常有黃斑／鞍斑特徵，是印度－西太平洋常見羊魚。\n\n見於沙泥底與礁緣；香港近岸沙底可遇三鬚類。\n\n學習提示：兩條「鬍鬚」就是名字來源——用來探測沙中的小型底棲動物；看鞍斑位置辨種。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parupeneus-multifasciatus",
@@ -2045,7 +2277,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "多帶三鬚（Parupeneus multifasciatus）屬羊魚科，體側有多條暗橫帶，觸鬚發達，色彩可隨情緒與環境改變。\n\n分布太平洋礁區沙底；香港偶見。\n\n辨認：多條橫帶；受驚或夜間體色可明顯加深，是羊魚科有趣的生理現象。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parupeneus-ciliatus",
@@ -2062,7 +2296,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "白鞍三鬚（Parupeneus ciliatus）屬羊魚科，背部有淡色鞍狀斑，體色偏紅褐，常見於礁緣沙地。\n\n見於印度－西太平洋；香港近岸有三鬚記錄。\n\n提示：白鞍是記憶點；白天常見牠們成對或小群用觸鬚「掃」沙。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "upeneus-japonicus",
@@ -2079,7 +2315,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "日本三鬚（Upeneus japonicus）屬羊魚科，體側常有縱向色帶，觸鬚短於某些 Parupeneus，是西北太平洋近海常見種。\n\n分布日本至華南近海；香港近岸與魚市場常見「紅衫／三鬚」類。\n\n學習提示：Upeneus 與 Parupeneus 可從齒列與斑紋習慣粗分；本種是本地較常接觸的羊魚之一。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "upeneus-tragula",
@@ -2096,7 +2334,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "斑點三鬚（Upeneus tragula）屬羊魚科，體側有暗縱帶與斑點，觸鬚有斑，是印度－西太平洋近岸常見種。\n\n香港近岸沙泥底可遇。\n\n辨認：縱帶＋斑點組合；觸鬚本身帶色斑也是線索。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parupeneus-barberinoides",
@@ -2113,7 +2353,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雙色三鬚（Parupeneus barberinoides）屬羊魚科，身體前後體色對比強烈（前黃後暗等），極為醒目。\n\n見於西太平洋礁區；香港偶見。\n\n提示：前後雙色對切，是最易認的羊魚之一；仍具典型雙觸鬚探沙行為。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parupeneus-bifasciatus",
@@ -2130,7 +2372,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "雙帶三鬚（Parupeneus bifasciatus）屬羊魚科，體側有兩條明顯暗鞍／橫帶，體色紅至紫褐。\n\n分布印度－西太平洋礁緣；香港偶見。\n\n辨認：兩條寬帶；與多帶種比較「帶的數目」，是簡單有效的野外技巧。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "gymnothorax-undulatus",
@@ -2147,7 +2391,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "波紋裸胸鱔（Gymnothorax undulatus）屬鯙科，體延長無胸鰭，口大牙利，體表有複雜波紋網斑，是熱帶常見海鱔。\n\n廣布印度－西太平洋岩礁洞穴；香港岩礁縫隙有海鱔記錄。\n\n安全提示：海鱔咬傷嚴重——切勿將手伸入石洞；波紋網狀斑是本種特徵。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "gymnothorax-thyrsoideus",
@@ -2164,7 +2410,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "澳洲雙犁海鱔（Gymnothorax thyrsoideus）屬鯙科，頭部偏灰白、身體褐斑，是西太平洋常見的「灰臉」海鱔。\n\n見於岩礁與潮池；香港石岸洞穴偶遇。\n\n提示：灰白頭部對比身體，是快速辨認點；同樣不可徒手探洞。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "gymnothorax-reevesii",
@@ -2181,7 +2429,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "花鱔（Gymnothorax reevesii）屬鯙科，體表斑紋較密如花，是華南沿岸較常被提及的海鱔之一。\n\n分布西北太平洋岩礁；香港東面岩岸有海鱔類記錄。\n\n學習提示：斑紋「較花」；本地多種海鱔外形接近，安全第一，辨種其次——看見洞中張開的口就保持距離。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "scolopsis-vosmeri",
@@ -2198,7 +2448,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "白頸老鴉（Scolopsis vosmeri）屬金線魚科，體側有鱗斑，鰓蓋後／「頸」部常有白斑，眼下有骨棘，香港俗稱老鴉。\n\n見於印度－西太平洋近岸沙泥與礁緣；香港近海常見。\n\n辨認：白頸斑＋側扁身；金線魚科魚眼下常有小棘，處理時稍加留意。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "oplegnathus-fasciatus",
@@ -2215,7 +2467,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "石金鼓（Oplegnathus fasciatus）屬石鯛科，幼魚有明顯黑白橫帶，成魚帶紋可變化，齒癒合成喙狀，能咬碎貝殼與藤壺。\n\n分布西北太平洋岩礁；香港東面岩岸是知名釣場，俗稱金鼓。\n\n學習提示：幼魚「斑馬帶」很好認；喙狀齒反映牠吃附著生物的生態位，是岩礁「粉碎者」。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "oplegnathus-punctatus",
@@ -2232,7 +2486,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "花金鼓（Oplegnathus punctatus）屬石鯛科，體表密布圓斑而非寬帶，同樣具喙狀齒，與石金鼓同屬。\n\n見於西北太平洋；香港岩礁有記錄，較石金鼓略少見。\n\n辨認：圓斑 vs 橫帶——花金鼓與石金鼓的經典對比；兩者都是強力咬餌的岩礁魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "ostracion-cubicus",
@@ -2249,7 +2505,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "黃箱魨（Ostracion cubicus）屬箱魨科，身體被骨板箱包圍，幼魚鮮黃帶黑斑，成魚轉褐黃，外形方正如盒子。\n\n廣布印度－西太平洋礁區；香港離島淺礁偶見。\n\n安全提示：受驚可釋放箱魨毒素（ ostracitoxin ）污染水質——水族館中尤需注意；野外欣賞勿擠壓。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "ostracion-immaculatus",
@@ -2266,7 +2524,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "無斑箱魨（Ostracion immaculatus）屬箱魨科，成魚體表相對少斑或斑點不明顯，體仍呈箱形骨板。\n\n分布西北太平洋；香港偶見箱魨類。\n\n提示：箱形身體是科特徵；與黃箱魨比較斑點多寡。同樣避免擠壓與混養時的毒素風險。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "lactoria-cornuta",
@@ -2283,7 +2543,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "三旁雞（Lactoria cornuta）屬箱魨科，額部與體後有長角狀棘，像「牛角」，體黃斑點，香港俗稱三旁雞／牛魚。\n\n見於印度－西太平洋海草床與淺礁；香港淺灣偶遇。\n\n辨認：長角幾乎不會認錯；游動靠背臀鰭波動，速度慢，易觀察。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pempheris-oualensis",
@@ -2300,7 +2562,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "胭脂刀（Pempheris oualensis）屬双眼魚科，體高側扁如刀，大型眼，夜間成群出洞覓食浮游生物，日間躲在洞穴與碼頭陰影。\n\n廣布印度－西太平洋；香港岩岸洞穴與碼頭夜間可見「刀魚」群。\n\n學習提示：大眼＋刀形側扁；夜潛時一盞燈照進洞，常有一大群胭脂刀，是香港夜潛經典景象。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "parapercis-snyderi",
@@ -2317,7 +2581,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "紅腸（Parapercis snyderi）屬鯊鮠科（沙鱸），體延長貼底，體側有橫帶，尾鰭有 U 形／特徵斑，香港俗稱紅腸。\n\n分布西北太平洋沙泥與碎礁底；香港近岸沙底常見。\n\n辨認：像「小香腸」貼在沙上，尾斑是種名線索；以伏擊小動物為生，釣感常是突然一頓。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "plotosus-lineatus",
@@ -2334,7 +2600,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "坑鰜（Plotosus lineatus）屬海鯰科，體延長有鬚，幼魚黃黑縱帶極醒目並成群，背鰭與胸鰭棘有劇毒，是必須警惕的近岸魚。\n\n廣布印度－西太平洋沿岸與河口；香港淺灣、堤岸與河口常見幼魚群。\n\n安全警告：毒棘刺傷極痛且可嚴重——切勿赤腳踩踏或徒手抓握；幼魚「黃黑條紋蜜蜂樣」成群，就是警示色。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pomacanthus-annularis",
@@ -2351,7 +2619,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "藍環荷包（Pomacanthus annularis）屬刺蓋魚科，成魚體黃褐有藍色環紋與弧線，幼魚則為黑底白／藍同心圓紋，是大型神仙魚。\n\n見於印度－西太平洋礁區；香港偶見於較佳水質岩礁。\n\n學習提示：幼魚與成魚斑紋完全不同；藍環是成魚特徵。刺蓋魚科體型較蝴蝶魚大，頰部有棘。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "centropyge-tibicen",
@@ -2368,7 +2638,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "白斑刺尻魚（Centropyge tibicen）屬刺蓋魚科，體暗色，體側有明顯白斑（鑰匙孔），體型小，是侏儒神仙魚。\n\n分布西太平洋礁區；香港偶見。\n\n辨認：體側白斑像鎖孔；小型神仙魚領域性強，常在珊瑚／岩縫間活動。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "centropyge-vrolikii",
@@ -2385,7 +2657,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "福氏刺尻魚（Centropyge vrolikii）屬刺蓋魚科，體後半常較暗，前半較淡並有細點，是西太平洋常見侏儒神仙。\n\n香港偶見於離島礁區。\n\n提示：前後色差＋細點；與白斑種比較，一個靠白斑、一個靠漸層色。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "abudefduf-vaigiensis",
@@ -2402,7 +2676,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "石剎婆・條紋（Abudefduf vaigiensis）屬雀鯛科，體高側扁，五條黑橫帶，尾偏黃，是印度－西太平洋最常見的「士官魚」。\n\n香港岩礁、碼頭與防波堤幾乎隨處可見成群幼魚與成魚。\n\n學習提示：五條帶＋黃尾調；雀鯛科魚常護衛卵塊，靠近岩壁時會被「石剎婆」驅趕，是觀察領域行為的好機會。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "abudefduf-bengalensis",
@@ -2419,7 +2695,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "石剎婆・孟加拉（Abudefduf bengalensis）屬雀鯛科，橫帶較粗、體色偏黃綠，與條紋種相近但細節不同。\n\n見於印度－西太平洋近岸；香港岩礁亦有士官魚多種。\n\n辨認：與 A. vaigiensis 比較帶寬與體色；兩者都是岸邊最易見到的雀鯛。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "amphiprion-clarkii",
@@ -2436,7 +2714,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "小丑魚（Amphiprion clarkii）屬雀鯛科，體黑橘對比、有白橫帶，與海葵共生，是克拉克氏小丑，華南可見的典型種。\n\n分布印度－西太平洋礁區；香港仍有海葵的地點偶見共生小丑魚。\n\n生態趣味：對海葵免疫並同居；白帶數目與體色可助分辨不同小丑魚種。請勿隨意採捕海葵與魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "epinephelus-akaara",
@@ -2453,7 +2733,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "紅斑（Epinephelus akaara）屬鮨科，體紅褐密布紅斑點，是著名的「香港石斑／赤點石斑」，華南與日本沿岸重要品種。\n\n棲於岩礁洞穴與碎礁；香港離島岩礁歷史上著名，野生資源需保育關注。\n\n辨認：滿身紅點、體色偏紅；與青斑的橙斑綠褐身比較。學習重點也包括：慢長成長、過度捕撈風險。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "epinephelus-areolatus",
@@ -2470,7 +2752,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "齊尾芝麻斑（Epinephelus areolatus）屬鮨科，體密布多角形芝麻斑，尾鰭後緣較齊（截形），是近海常見小型石斑。\n\n廣布印度－西太平洋；香港近海與岩礁可遇。\n\n提示：芝麻斑＋齊尾是關鍵；體型通常小於青斑、東星斑，是認識石斑斑紋多樣性的好例子。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "plectropomus-leopardus",
@@ -2487,7 +2771,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "東星斑（Plectropomus leopardus）屬鮨科，體呈橘紅至褐，滿布藍色小圈斑如豹點，是珊瑚礁區高價值石斑。\n\n見於西太平洋珊瑚礁；香港外圍礁區偶有記錄，養殖與市場更常見。\n\n辨認：藍圈豹點極度醒目；與 Epinephelus 屬石斑相比，東星斑體較修長、掠食性更強。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "pagrus-major",
@@ -2504,7 +2790,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "紅鱲（Pagrus major）屬鯛科，體高側扁，淡紅至鮮紅，體側有藍色細點，是東亞極重要的真鯛，香港稱紅鱲。\n\n分布西北太平洋近海；香港近海與魚市場常見，亦是釣友目標。\n\n學習提示：粉色身＋藍點；與黃腳鱲、黑鱲同科但屬不同，體色明顯偏紅，幼魚常出現近岸。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "acanthopagrus-schlegelii",
@@ -2521,7 +2809,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "黑鱲（Acanthopagrus schlegelii）屬鯛科，體色暗銀至近黑，頭部較暗，是華東至華南沿岸經典的「黑鱲」，與黃腳鱲同屬。\n\n偏好河口、堤岸與近岸岩礁；香港岸釣熱門對象。\n\n辨認：整體偏黑、頭暗；與黃腳鱲比較腹鰭黃色有無，是最實用的現場技巧。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "sebastiscus-marmoratus",
@@ -2538,7 +2828,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "石狗公（Sebastiscus marmoratus）屬鮋科，體延長、頭多棘，體色褐斑如大理石，胸鰭寬大，是東亞岩礁極常見的「石狗公」。\n\n分布西北太平洋潮下帶岩礁；香港幾乎每處岩岸都能釣到。\n\n安全提示：背鰭與頭棘尖銳，刺傷疼痛——抓魚要避開棘列；大理石斑紋與「趴岩」姿態是特徵。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "siganus-canaliculatus",
@@ -2555,7 +2847,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "沿岸岩礁（遊戲分類）"
+      "habitat": "沿岸岩礁（遊戲分類）",
+      "educationIntro": "白點泥鯭（Siganus canaliculatus）屬藍子魚科，體側密布白點，體色可急速改變，背肛鰭棘有毒，香港著名的「泥鯭」。\n\n見於河口、海草床與近岸；香港淺灣與堤岸極常見。\n\n安全警告：毒棘可致劇痛——勿徒手從腹側抓握；白點＋可變色是辨認重點，亦是常見食用魚。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "rhabdosargus-sarba",
@@ -2572,7 +2866,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "近岸／河口（遊戲分類）"
+      "habitat": "近岸／河口（遊戲分類）",
+      "educationIntro": "金絲鱲（Rhabdosargus sarba）屬鯛科，體高，體側有金色縱線，臀鰭常帶黃，是印度－西太平洋近岸常見鯛。\n\n偏好河口與沙泥底近岸；香港近岸與河口交界可釣獲。\n\n辨認：金絲縱線是名字來源；與黃腳鱲、黑鱲並排，可看出鲷科「高體、棘利」的家族相似性。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "scomberomorus-commerson",
@@ -2589,7 +2885,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "available",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "竹鮫（Scomberomorus commerson）屬鯖科，體延長如魚雷，體側有多條窄橫帶，背鰭後方有離鰭，是大型「鮫魚／馬鮫」。\n\n廣布印度－西太平洋近海；香港外海拖釣與季節性近海可遇。\n\n提示：窄橫帶＋離鰭＋高速體型；掠食性強，專吃中上層魚群，是認識鯖科「流線型掠食者」的代表。",
+      "educationRevision": "20260910-workbook"
     },
     {
       "id": "scomber-japonicus",
@@ -2606,7 +2904,9 @@
       "recordBasis": "香港人工魚礁歷史紀錄；非各釣區現場調查",
       "settingsBasis": "重量、難度及釣區分配為遊戲平衡設定",
       "artStatus": "ai-generated",
-      "habitat": "岩礁／外海（遊戲分類）"
+      "habitat": "岩礁／外海（遊戲分類）",
+      "educationIntro": "花鮫（Scomber japonicus）屬鯖科，體側上部有蟲樣暗紋，離鰭明顯，是全球溫帶至亞熱帶重要的鯖魚（華鯖）。\n\n西北太平洋近海資源豐富；香港近海與市場常見，亦作釣餌。\n\n學習提示：背側「花紋」是俗名來源；與竹鮫相比體型小得多、橫帶改為蟲紋，同科不同生態位。",
+      "educationRevision": "20260910-workbook"
     }
   ],
   "areas": [

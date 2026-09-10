@@ -29,6 +29,7 @@ root.FishImagePath=function(value){
  return value;
 };
 function normalize(c){
+ root.applyFishWorkbook?.(c);
  for(const fish of c.fish||[])fish.image=root.FishImagePath(fish.image);
  if(c.regionGuideVersion===1)return c;
  const old=c.areas||[],ids=new Set(c.fish.map(f=>f.id));

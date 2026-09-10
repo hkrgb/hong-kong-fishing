@@ -1,7 +1,9 @@
 function openFishInfo(f){
+ f={...f,...(cfg.fish.find(item=>item.id===f.id)||{})};
  if(document.getElementById('fishInfoOverlay'))return;
  const entry=FishEducation[f.id],custom=String(f.educationIntro||'').trim();
- const pages=custom?custom.match(/[\s\S]{1,170}/g):(entry?.paragraphs||['這種魚的簡介尚未加入，可由後台補充。']);let page=0;
+ const content=custom||entry?.paragraphs?.join('\n\n')||'這種魚的簡介尚未加入，可由後台補充。';
+ const pages=content.split(/\n\s*\n/).flatMap(p=>p.match(/[\s\S]{1,90}/g)||[]);let page=0;
  const focus=document.activeElement,overlay=document.createElement('div');overlay.id='fishInfoOverlay';
  overlay.innerHTML='<section class="fishInfoPanel" role="dialog" aria-modal="true" aria-labelledby="fishInfoTitle"><header><h2 id="fishInfoTitle"></h2><button aria-label="關閉魚類資料">×</button></header><p id="fishInfoText"></p><footer><button id="infoPrevious">上一頁</button><span id="infoPage"></span><button id="infoNext">下一頁</button></footer><a id="fishInfoSource" target="_blank" rel="noopener noreferrer">參考：漁護署歷史魚類名錄 ↗</a></section>';
  document.querySelector('.dialog').append(overlay);const panel=overlay.firstChild,close=panel.querySelector('header button');
@@ -9,7 +11,7 @@ function openFishInfo(f){
  const keys=e=>{if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();done();}if(e.key==='Tab'){e.preventDefault();e.stopImmediatePropagation();const all=[...panel.querySelectorAll('button:not(:disabled),a[href]')],i=all.indexOf(document.activeElement);all[(i+(e.shiftKey?-1:1)+all.length)%all.length].focus();}};
  function render(){panel.querySelector('h2').textContent=f.name+' · 小知識';panel.querySelector('p').textContent=pages[page];document.getElementById('infoPage').textContent=(page+1)+' / '+pages.length;document.getElementById('infoPrevious').disabled=page===0;document.getElementById('infoNext').disabled=page===pages.length-1;}
  close.onclick=done;document.getElementById('infoPrevious').onclick=()=>{page--;render()};document.getElementById('infoNext').onclick=()=>{page++;render()};
- const link=document.getElementById('fishInfoSource');link.href='https://www.afcd.gov.hk/english/fisheries/ar/files/ar_fish_list.pdf';
+ const link=document.getElementById('fishInfoSource');link.hidden=!entry?.source||!!custom;if(!link.hidden)link.href=entry.source;
  document.addEventListener('keydown',keys,true);render();close.focus();
 }
 new MutationObserver(()=>{

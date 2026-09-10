@@ -1,5 +1,5 @@
 /* JSON configuration backups; no player records or credentials. */
-import '../sport/fish-education.js';
+import '../sport/fish-education.js?v=20260910-workbook';
 export function exportData(config,scope){
  if(!['all','fish','areas'].includes(scope))throw Error('不支援的分類');
  const data=structuredClone(scope==='all'?config:config[scope]);
