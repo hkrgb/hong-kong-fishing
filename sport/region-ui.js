@@ -1,22 +1,22 @@
 function showAreas(){
  $('home').hidden=true;
- modal('今天，想去哪裡？','<div class="regionGroups"></div>');
+ modal('前往釣魚','<div class="regionGroups"></div>');
  for(const [key,name,note] of [['local','長洲本地','三個釣點 · 全部免費'],['other','香港其他地區','每次乘船付費 · 回長洲免費']]){
   const a=cfg.areas.find(a=>a.category===key),b=document.createElement('button');b.className='regionGroup';b.dataset.region=key;
   if(a)b.style.backgroundImage='linear-gradient(transparent,#031923ee),url("'+areaArt(a)+'")';
   b.innerHTML='<b>'+name+'</b><span>'+note+'</span>';b.onclick=()=>showRegionAreas(key);$('modalBody').firstChild.append(b);
  }
- foot('商舖',openHarbour);foot('主選單',showHome);
+ foot('返回',showIslandHub);
 }
 function showRegionAreas(category='local',page=0){
  const list=cfg.areas.filter(a=>(a.category||'other')===category),pages=Math.max(1,Math.ceil(list.length/3));page=clamp(page,0,pages-1);
- modal(category==='local'?'長洲本地 · 免費釣區':'香港其他地區','<div class="regionPlaces"></div>');
+ modal(category==='local'?'長洲本地（免費）':'香港其他地區','<div class="regionPlaces"></div>');
  for(const a of list.slice(page*3,page*3+3)){
   const b=document.createElement('button');b.className='regionPlace';b.dataset.area=a.id;b.style.backgroundImage='linear-gradient(transparent 15%,#041b27f5),url("'+areaArt(a)+'")';
   b.innerHTML='<b>'+esc(a.name)+'</b><span>'+ (a.category==='local'?'免費進入':'每次船費 '+areaPrice(a))+'</span><small>查看簡介 →</small>';
   b.disabled=!cfg.fish.some(f=>a.fish?.includes(f.id));b.onclick=()=>requestArea(a);$('modalBody').firstChild.append(b);
  }
- foot('返回分類',showAreas);if(pages>1){foot('上一頁',()=>showRegionAreas(category,page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showRegionAreas(category,page+1)).disabled=page===pages-1;}foot('主選單',showHome);
+ foot('返回',showAreas);if(pages>1){foot('上一頁',()=>showRegionAreas(category,page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showRegionAreas(category,page+1)).disabled=page===pages-1;}
 }
 function confirmBaitPurchase(kind){
  if(!economyReady())return;

@@ -17,7 +17,7 @@ function openFishInfo(f){
 new MutationObserver(()=>{
  const identity=document.querySelector('.fishIdentity[data-fish-id]'),existing=document.getElementById('fishInfoButton');
  if(!identity){existing?.remove();return;}
- const button=existing||document.createElement('button');button.id='fishInfoButton';button.type='button';button.textContent='ⓘ';button.setAttribute('aria-label','查看魚類資料');button.title='魚類資料';
+ const button=existing||document.createElement('button');button.id='fishInfoButton';button.type='button';button.textContent='魚類簡介';button.setAttribute('aria-label','魚類簡介');button.title='魚類資料';
  button.onclick=()=>{const f=cfg.fish.find(f=>f.id===identity.dataset.fishId);if(f)openFishInfo(f)};
  if(!existing)document.getElementById('closeModal').before(button);
 }).observe(document.getElementById('modalBody'),{childList:true,subtree:true});

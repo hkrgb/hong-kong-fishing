@@ -1,0 +1,99 @@
+/* Fixed 1280 × 720 artboard, scaled by the existing fit() for every viewport. */
+#home .homeCenter{width:800px;padding:0 20px;margin-top:-10px}
+#home .homeCenter>small,#home #homeSubtitle{display:none}
+#home #homeTitle{margin:0 auto 12px;line-height:0;letter-spacing:0}
+#homeTitle img{width:590px;height:275px;object-fit:contain}
+#home .homeActions{width:310px;gap:8px}
+#home .homeActions button{min-height:51px;padding:10px 18px}
+#home #accountActions{margin-top:14px}#home #cloudState{margin:9px auto;font-size:13px}
+.homeVersion{position:absolute;bottom:22px;left:36px;color:white;font-size:16px}
+#islandBackdrop{position:absolute;inset:0;z-index:8;background:center/cover;display:none;pointer-events:none}
+#stage.islandBrowsing #islandBackdrop{display:block}
+#islandHub{position:absolute;z-index:9;left:30px;top:120px;display:flex;flex-direction:column;gap:34px}
+#islandHub button{width:405px;height:120px;position:relative;display:flex;align-items:center;border:7px double white;border-radius:25px;background:#f8ffffd1;color:#00517a;padding:12px 14px;font-size:55px;font-weight:bold;box-shadow:0 7px 15px #245b6b22}
+#islandHub button span{width:258px;text-align:center;white-space:nowrap}
+#islandHub button img{width:145px;height:83px;object-fit:cover;border:2px solid white;position:absolute;left:275px;box-shadow:0 3px 7px #1235;border-radius:6px}
+#islandHub button:hover{background:#fff;transform:translateX(5px)}
+#stage.islandBrowsing>header{z-index:11}
+#stage.islandBrowsing>header .brand,#stage.islandBrowsing>header .conditions{visibility:hidden}
+#stage>header .conditions,#stage>header .brand>span{display:none}
+#stage>header .brand{width:100%;margin-top:3px}
+#stage>header .brand h1{font-size:40px;letter-spacing:1px;font-family:"Microsoft JhengHei",sans-serif}
+#returnDirectory{position:absolute;z-index:4;left:36px;bottom:32px;min-width:182px;padding:8px 26px;border:0;border-radius:7px;background:#ffffffd9;color:#00517a;font-size:27px;font-weight:bold}
+#stage:has(#home:not([hidden])) #returnDirectory,#stage.islandBrowsing #returnDirectory{display:none}
+#stage>nav,#stage>aside{display:none!important}
+#stage[data-state=ready] #cue{display:none}
+#stage #modal{background:#dceff51a;backdrop-filter:blur(2px)}
+#stage.islandBrowsing #modal{background:transparent;backdrop-filter:none}
+#stage .dialog{position:relative;background:#f6fcffe0;color:#083f58;border:2px solid #fff;border-radius:20px;box-shadow:0 12px 35px #184f6c25;padding:25px 34px}
+#stage .dialog>header{gap:12px;margin-bottom:18px}
+#stage .dialog>header>div{min-width:0}
+#stage .dialog h2{color:#00517a;font-weight:bold}
+#stage .dialog #modalKicker{color:#37617a!important;letter-spacing:0}
+#stage .dialog #modalKicker:empty{display:none}
+#stage .dialog button{background:#fffffff0;color:#00517a;border:1px solid #c6e0e8;border-radius:8px;font-size:24px}
+#stage .dialog button.primary{background:#f47c3d;border-color:#f47c3d;color:white}
+#stage .dialog button:disabled{opacity:.48}
+#stage .dialog button:focus-visible,#islandHub button:focus-visible{outline:4px solid #ee8d34;outline-offset:3px}
+#stage .dialog footer{gap:16px;margin-top:15px;flex-wrap:wrap}
+#stage .dialog footer button{padding:6px 24px;font-weight:bold;min-height:44px}
+#stage .dialog .intro,#stage .dialog .detail p,#stage .dialog .detail strong{color:#244754}
+#stage .dialog:has(.regionGroups),#stage .dialog:has(.regionPlaces),#stage .dialog:has(.harbourGrid),#stage .dialog:has(.placeIntro),#stage .dialog:has(.islandMiniGrid){width:1130px;height:540px;margin-top:110px;padding:98px 54px 22px}
+#stage .dialog:has(.regionGroups)>header,#stage .dialog:has(.regionPlaces)>header,#stage .dialog:has(.harbourGrid)>header,#stage .dialog:has(.placeIntro)>header,#stage .dialog:has(.islandMiniGrid)>header{position:absolute;top:-38px;left:50%;transform:translateX(-50%);margin:0;white-space:nowrap;max-width:1050px;border:7px double white;border-radius:26px;background:#fafdfff0;padding:21px 60px;box-shadow:0 8px 18px #34617420}
+#stage .dialog:has(.regionGroups)>header h2,#stage .dialog:has(.regionPlaces)>header h2,#stage .dialog:has(.harbourGrid)>header h2,#stage .dialog:has(.placeIntro)>header h2,#stage .dialog:has(.islandMiniGrid)>header h2{font-size:45px;margin:0;white-space:normal;text-align:center}
+#stage .dialog:has(.regionGroups)>header small,#stage .dialog:has(.regionPlaces)>header small,#stage .dialog:has(.harbourGrid)>header small,#stage .dialog:has(.placeIntro)>header small,#stage .dialog:has(.islandMiniGrid)>header small,#stage .dialog:has(.regionGroups) #closeModal,#stage .dialog:has(.regionPlaces) #closeModal,#stage .dialog:has(.harbourGrid) #closeModal,#stage .dialog:has(.placeIntro) #closeModal,#stage .dialog:has(.islandMiniGrid) #closeModal{display:none}
+#stage .regionGroup,#stage .regionPlace,#stage .harbourCard{color:white;border:2px solid white;border-radius:19px;overflow:hidden}
+#stage .regionGroup,#stage .regionPlace{background-color:#092531}
+#stage .regionGroup b,#stage .harbourCard b{font-size:36px}
+#stage .regionPlace b{font-size:29px}
+#stage .harbourCard{background-size:cover;background-position:center;text-align:left;justify-content:flex-end}
+#stage .harbourCard span{font-size:25px;color:white}
+#stage .placeIntro{border:0;background:none;display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+#stage .placeIntro>img{width:100%;height:290px;object-fit:cover;border:4px solid #a7b9bd;box-shadow:0 7px 9px #163e4933}
+#stage .placeIntro>div{position:static;background:none;padding:0;color:#172d32}
+#stage .placeIntro h2,#stage .placeIntro small{display:none}
+#stage .placeIntro p{font-size:29px;line-height:1.5;margin:0}
+#stage .baitChoice,#stage .baitOffer,#stage .saleOffer,#stage .fishCard{background:#ffffffc9!important;border:1px solid #bfd8df;color:#154c63}
+#stage .baitChoice[aria-pressed=true]{border-color:#ed9a4a!important;box-shadow:0 0 0 2px #ed9a4a22}
+#stage .baitChoice small,#stage .baitOffer p,#stage .baitOffer b,#stage .baitOffer .baitStock,#stage .baitUnitPrice,#stage .fishCard small{color:#376077}
+#stage .tackleShop,#stage .marketShop{background:none!important}
+#stage .baitNote,#stage .marketNote{color:#31586b}
+#stage .baitKnowledge article,#stage .checkoutInfo,#stage .checkoutOrder,#stage .periodPicker{background:#ffffffa8;color:#204b60}
+#stage .baitKnowledge article small,#stage .baitKnowledge article aside,#stage .checkoutInfo small,#stage #baitRemaining,#stage #baitPurchaseHint{color:#31586b}
+#stage .catalogToolbar{color:#31586b}
+#stage .dialog:has(.fishShowcase){background:#f4fbffe8}
+#stage .fishShowcase .fishIdentity small,#stage .fishShowcase .fishCapture p,#stage .fishShowcase .fishCapture strong{color:#31586b}
+#stage .detail.fishShowcase>.fishCapture{background:#ffffffa8;border-radius:10px}
+#stage #fishInfoButton{width:auto;min-width:135px;font-size:23px;white-space:nowrap}
+#stage .detail.fishShowcase>.fishIdentity{right:230px}
+#stage .fishInfoPanel{background:#f3fbff;color:#244754;border-color:white}
+#stage .fishInfoPanel h2,#stage #fishInfoSource{color:#00517a}
+#stage .islandBookDialog{width:1280px;height:720px;margin:0;padding:0;background:url('assets/island-ui/journal.jpg') center/cover;border:0;border-radius:0;box-shadow:none}
+#stage .islandBookDialog>header{position:absolute;top:22px;right:30px;left:auto;z-index:2}
+#stage .islandBookDialog>header>div,#stage .islandBookDialog>footer{display:none}
+#stage .islandBookDialog #closeModal{border:0;background:#ffffffaa;color:#706b49}
+.islandBookActions{position:absolute;left:59%;top:24%;width:28%;display:flex;flex-direction:column;gap:27px}
+#stage .islandBookActions button,#stage .islandBookActions a{display:grid;place-items:center;min-height:78px;background:#77714a;color:white;border:0;border-radius:7px;text-decoration:none;font-size:29px;font-weight:bold;box-shadow:0 6px 13px #3b392f3b}
+.islandDisclaimer{font-size:25px;line-height:1.7;padding:0 15px}.islandDisclaimer a{color:#00517a;text-decoration:underline}
+.islandMiniGrid{height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}.islandMiniGrid>p{font-size:21px;margin:0}
+#stage .islandMiniCard{position:relative;width:590px;flex:1;min-height:0;padding:0;overflow:hidden;border:3px solid white;border-radius:23px}
+.islandMiniCard>img{width:100%;height:100%;object-fit:cover}.islandMiniCard>span{position:absolute;bottom:0;left:0;right:0;display:grid;gap:5px;padding:12px;background:#542012d9;color:white;font-size:28px}.islandMiniCard small{font-size:21px}
+#islandMiniPlayer{position:absolute;inset:0;z-index:90;background:#142d35}#islandMiniPlayer iframe{width:100%;height:660px;border:0}#islandMiniPlayer>button{position:absolute;bottom:7px;right:25px;font-size:23px;padding:8px 24px;border:0;border-radius:8px;color:#00517a;background:white}
+#stage.islandBrowsing .dialog:not(.islandBookDialog){height:570px;margin-top:90px}
+#stage.islandBrowsing .dialog:has(.regionGroups),#stage.islandBrowsing .dialog:has(.regionPlaces),#stage.islandBrowsing .dialog:has(.harbourGrid),#stage.islandBrowsing .dialog:has(.placeIntro),#stage.islandBrowsing .dialog:has(.islandMiniGrid){height:540px;margin-top:110px}
+#stage .dialog.compact{width:760px;height:410px}
+#stage .dialog .regionGroup,#stage .dialog .regionPlace,#stage .dialog .harbourCard{color:white;border:2px solid white;border-radius:19px}
+#stage .tackleShop .baitOffer>b,#stage .tackleShop .baitOffer p{color:#28566c}
+#stage .baitNote,#stage .marketNote{text-shadow:none}
+#stage:has(#modal:not([hidden]) .islandBookDialog)>header{visibility:hidden}
+#stage .dialog:has(.placeIntro) footer .primary{order:1}
+#stage #cue{left:260px;max-width:650px}
+#stage .dialog #fishInfoButton{color:#00517a;background:#fff}
+#stage .islandBookDialog #modalBody{overflow:visible}
+
+#stage .checkoutInfo strong,#stage .checkoutInfo span,#stage .checkoutTotal b{color:#27536a}
+
+#stage .baitCheckout{background:#ffffffa8;border-color:#c4dce5}
+#stage .checkoutInfo,#stage .checkoutOrder{background:transparent}
+#stage .catalogGrid .fishCard:disabled{opacity:.78}
+.islandDisclaimer a{white-space:nowrap}
