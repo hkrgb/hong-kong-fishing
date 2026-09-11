@@ -11,6 +11,22 @@ function showIslandHub(){
  stage.classList.add('islandBrowsing');$('home').hidden=true;$('modal').hidden=true;
  $('islandHub').hidden=false;updateIslandBackdrop();updateQuickHud();$('hubFishing').focus();
 }
+async function returnToIslandDirectory(){
+ if(arriving||!economyReady())return;
+ if(!area||area.category==='local'){showIslandHub();return;}
+ const homeArea=cfg.areas.find(a=>a.category==='local');
+ if(!homeArea)return;
+ arriving=true;cancelCast();enter('ready');dialogOpen=true;$('returnDirectory').disabled=true;
+ try{
+  await playBoatTrip(()=>{
+   if(!economyReady())throw Error('save');
+   chooseArea(homeArea);showIslandHub();
+  },boatFiles[scenePeriod()]);
+ }catch{
+  modal('暫時未能返回長洲','<p class="intro">請再試一次。回程免費，沒有扣除金錢。</p>',returnToIslandDirectory,'重試',true);
+  foot('返回釣魚',closeDialog);
+ }finally{arriving=false;$('returnDirectory').disabled=false;}
+}
 const originalSetupHome=setupHome;
 setupHome=function(){
  originalSetupHome();
@@ -20,7 +36,7 @@ setupHome=function(){
  stage.append(hub);$('hubFishing').onclick=showAreas;$('hubShops').onclick=openHarbour;$('hubGames').onclick=showMiniGames;
  const version=document.createElement('small');version.className='homeVersion';version.textContent='ver 1.0';$('home').append(version);
  $('newJourney').onclick=async()=>{if($('boatPreload'))return;await preloadBoatVideos();showIslandHub();};
- const back=document.createElement('button');back.id='returnDirectory';back.textContent='返回目錄';back.onclick=showIslandHub;stage.append(back);
+ const back=document.createElement('button');back.id='returnDirectory';back.textContent='返回目錄';back.onclick=returnToIslandDirectory;stage.append(back);
 };
 const originalShowHome=showHome;
 showHome=function(){
@@ -42,7 +58,7 @@ chooseArea=function(a){islandBrowsing=false;stage.classList.remove('islandBrowsi
 const originalShowAreas=showAreas;
 showAreas=function(...args){islandBrowsing=true;stage.classList.add('islandBrowsing');updateIslandBackdrop();originalShowAreas(...args);};
 const originalUpdateQuickHud=updateQuickHud;
-updateQuickHud=function(){originalUpdateQuickHud();updateIslandBackdrop();if(area)document.querySelector('.brand h1').textContent=area.name;};
+updateQuickHud=function(){originalUpdateQuickHud();updateIslandBackdrop();if(area)document.querySelector('.brand h1').textContent=area.name;if($('returnDirectory'))$('returnDirectory').textContent=area&&area.category!=='local'?'回長洲':'返回目錄';};
 returnFromShop=function(){if(islandBrowsing||!area)showIslandHub();else closeDialog();};
 showJournal=function(){
  modal('遊戲選單','<div class="islandBookActions"><button id="bookFullscreen">'+(isFullscreen()?'退出全屏幕':'全屏幕')+'</button><a href="https://sites.google.com/rgb-workshop.com/book-001/%E8%A9%A6%E9%96%B1" target="_blank" rel="noopener noreferrer">遊戲 / 故事起源</a><button id="bookDisclaimer">免責聲明</button><a href="mailto:info@rgb-workshop.com">聯絡我們</a></div>');
