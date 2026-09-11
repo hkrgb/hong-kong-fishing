@@ -1,12 +1,13 @@
 const arrivalCache=new Map();let arriving=false;
 const boatFiles={morning:'ship-7am.mp4',noon:'ship-1pm.mp4',night:'ship-9pm.mp4'},boatVideos=new Map();
+const preloadedMovies=[...Object.values(boatFiles),'get.mp4'];
 async function preloadBoatVideos(){
- if(boatVideos.size===3)return;
- const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><h2 style="font-size:26px;margin:0 0 20px">資料載入中</h2><p role="status" hidden></p><progress aria-label="載入乘船影片" max="3" value="0"></progress><div></div></section>';stage.append(layer);
+ if(boatVideos.size===preloadedMovies.length)return;
+ const layer=document.createElement('div');layer.id='boatPreload';layer.innerHTML='<section><h2 style="font-size:26px;margin:0 0 20px">資料載入中</h2><p role="status" hidden></p><progress aria-label="載入乘船影片" max="4" value="0"></progress><div></div></section>';stage.append(layer);
  async function attempt(){
-  const status=layer.querySelector('p'),actions=layer.querySelector('div');actions.replaceChildren();status.hidden=true;status.textContent='正在預載早、午、晚乘船影片…';
-  await Promise.all(Object.values(boatFiles).map(async name=>{if(boatVideos.has(name))return;try{const r=await fetch(asset('../mp4/'+name),{signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('video');const blob=await r.blob();if(!blob.size)throw Error('empty');boatVideos.set(name,URL.createObjectURL(blob));}catch{}layer.querySelector('progress').value=boatVideos.size;status.textContent='已預載 '+boatVideos.size+' / 3 段影片';}));
-  if(boatVideos.size===3){layer.remove();return;}
+  const status=layer.querySelector('p'),actions=layer.querySelector('div');actions.replaceChildren();status.hidden=true;status.textContent='資料載入中';
+  await Promise.all(preloadedMovies.map(async name=>{if(boatVideos.has(name))return;try{const r=await fetch(asset('../mp4/'+name),{signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('video');const blob=await r.blob();if(!blob.size)throw Error('empty');boatVideos.set(name,URL.createObjectURL(blob));}catch{}layer.querySelector('progress').value=boatVideos.size;status.textContent='已預載 '+boatVideos.size+' / 4 段影片';}));
+  if(boatVideos.size===preloadedMovies.length){layer.remove();return;}
   status.hidden=false;status.textContent='部分影片未能載入。可重試，或先進入遊戲（乘船時再載入）。';
   await new Promise(resolve=>{for(const [label,action] of [['重試預載',async()=>{await attempt();resolve();}],['先進入遊戲',()=>{layer.remove();resolve();}]]){const b=document.createElement('button');b.textContent=label;b.onclick=action;actions.append(b);}});
  }
@@ -27,11 +28,11 @@ async function enterAreaLoaded(a,confirmed=false){
  }catch{modal('暫時未能載入釣區','<p class="intro">請檢查網絡，然後重試。</p>',()=>enterAreaLoaded(a),'重試',true);foot('返回釣區',showAreas);}
  finally{arriving=false;$('closeModal').disabled=false;}
 }
-function playBoatTrip(revealScene=()=>{}){return new Promise((resolve,reject)=>{
+function playBoatTrip(revealScene=()=>{},file=boatFiles[RegionGuide.period()]){return new Promise((resolve,reject)=>{
  const layer=document.createElement('div');layer.id='boatTrip';
  const video=document.createElement('video');video.playsInline=true;video.muted=true;video.preload='auto';
- const file=boatFiles[RegionGuide.period()];video.src=boatVideos.get(file)||asset('../mp4/'+file);
- const button=document.createElement('button');button.textContent='載入乘船影片…';button.hidden=true;layer.append(video,button);stage.append(layer);
+ video.src=boatVideos.get(file)||asset('../mp4/'+file);
+ const button=document.createElement('button');button.textContent='資料載入中';button.hidden=true;layer.append(video,button);stage.append(layer);
  let done=false;const finish=async()=>{
   if(done)return;done=true;clearTimeout(timer);video.pause();button.hidden=true;
   try{
@@ -42,9 +43,9 @@ function playBoatTrip(revealScene=()=>{}){return new Promise((resolve,reject)=>{
    await fade.finished.catch(()=>{});resolve();
   }catch(error){reject(error);}finally{layer.remove();}
  };
- const fallback=()=>{button.hidden=false;button.textContent='影片未能播放 · 繼續前往釣區';button.onclick=finish;};
+ const fallback=()=>{button.hidden=false;button.textContent='影片未能播放 · 繼續';button.onclick=finish;};
  const timer=setTimeout(fallback,15000);video.onplaying=()=>{clearTimeout(timer);button.hidden=true;};video.onended=finish;video.onerror=fallback;
- video.play().catch(()=>{button.hidden=false;button.textContent='點按播放乘船影片';button.onclick=()=>video.play().catch(fallback);});
+ video.play().catch(()=>{button.hidden=false;button.textContent='點按播放影片';button.onclick=()=>video.play().catch(fallback);});
 });}
 document.addEventListener('contextmenu',e=>{if(e.target.closest('#stage')&&!e.target.closest('input,textarea,[contenteditable="true"]'))e.preventDefault()});
 document.addEventListener('dragstart',e=>{if(e.target.closest('#stage')&&!e.target.closest('input,textarea,[contenteditable="true"]'))e.preventDefault()});
