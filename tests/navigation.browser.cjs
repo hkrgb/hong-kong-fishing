@@ -14,7 +14,7 @@ const assert=require('node:assert/strict');
   await page.evaluate(()=>showIslandHub());await page.click('#menu');await page.click('#closeModal');await hubVisible();
   await page.evaluate(()=>chooseArea(cfg.areas.find(a=>a.category==='local')));
   await page.click('#returnDirectory');await page.click('#menu');await page.click('#closeModal');await hubVisible();
-  await page.click('#menu');await page.click('#bookDisclaimer');await page.getByRole('button',{name:'返回',exact:true}).click();await page.click('#closeModal');await hubVisible();
+  await page.click('#menu');await page.locator('.personalTab').nth(2).click();await page.click('#bookDisclaimer');await page.getByRole('button',{name:'返回遊戲設定',exact:true}).click();await page.click('#closeModal');await hubVisible();
   await page.click('#menu');await page.keyboard.press('Escape');await hubVisible();
   await page.evaluate(()=>{backgroundPeriodOverride='noon';chooseArea(cfg.areas.find(a=>a.category==='other'));globalThis.tripCount=0;const original=playBoatTrip;playBoatTrip=(...args)=>{tripCount++;return original(...args)}});
   assert.equal(await page.locator('#returnDirectory').innerText(),'回家');
