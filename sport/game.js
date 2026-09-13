@@ -110,11 +110,13 @@ function showAreaIntro(a,page=0){$('home').hidden=true;const picture=a.introImag
 function exitJourney(){$('home').hidden=true;modal('離開遊戲？','<p class="intro">'+(embedded?'進度會交回主程式。':'請確認雲端顯示「已同步」，或下載備份後才關閉瀏覽器。')+'</p>',()=>{persist();if(embedded){report(true)}else{modal('下次再會。','<p class="intro">本次遊戲已暫停；請留意以下存檔狀態再關閉分頁。<br>'+esc(cloudMessage)+'</p>',showHome,'返回主選單',true)}},'確定',true);foot('取消',showHome)}
 
 function fishMarkup(f){const current=cfg.fish.find(item=>item.id===f.id),url=current?.image||f.image;return url?'<img loading="lazy" decoding="async" src="'+esc(asset(url))+'" alt="'+esc(f.name)+'">':'<div class="missingFish"><span>魚類資料</span><b>'+esc(f.name)+'</b><small>專屬圖片待補</small></div>'}
+let catalogRegion='';
 function showCatalog(page=0,query=''){
- const q=query.trim().toLowerCase(),list=cfg.fish.filter(f=>(!q||hasCaught(f))&&[f.name,f.en,f.scientificName,f.family].some(v=>String(v||'').toLowerCase().includes(q))),pages=Math.max(1,Math.ceil(list.length/8));
- page=clamp(page,0,pages-1);modal('香港海魚資料庫','<div class="catalogSearch"><input id="catalogQuery" placeholder="搜尋已釣獲的魚名／學名" aria-label="搜尋魚庫"><button id="findFish">搜尋</button><span>'+list.length+' 種結果</span></div><div class="grid catalogGrid"></div>');
- const regionFish=[...new Map(cfg.fish.filter(f=>!area||area.fish?.includes(f.id)).map(f=>[f.id,f])).values()],collected=regionFish.filter(hasCaught).length;
- $('modalKicker').textContent=(area?area.name:'全部釣區')+' · 已收集 '+collected+' / '+regionFish.length+' 種 · 尚欠 '+(regionFish.length-collected)+' 種';
+ const q=query.trim().toLowerCase(),region=cfg.areas.find(a=>a.id===catalogRegion),list=cfg.fish.filter(f=>(!region||region.fish.includes(f.id))&&(!q||hasCaught(f))&&[f.name,f.en,f.scientificName,f.family].some(v=>String(v||'').toLowerCase().includes(q))),pages=Math.max(1,Math.ceil(list.length/8));
+ page=clamp(page,0,pages-1);modal('香港海魚資料庫','<div class="catalogSearch"><select id="catalogRegion" aria-label="釣區篩選"><option value="">全部釣區</option>'+cfg.areas.map(a=>'<option value="'+esc(a.id)+'">'+esc(a.name)+'</option>').join('')+'</select><input id="catalogQuery" placeholder="搜尋已釣獲的魚名／學名" aria-label="搜尋魚庫"><button id="findFish">搜尋</button><span>'+list.length+' 種結果</span></div><div class="grid catalogGrid"></div>');
+ const regionFish=[...new Map(cfg.fish.filter(f=>!region||region.fish?.includes(f.id)).map(f=>[f.id,f])).values()],collected=regionFish.filter(hasCaught).length;
+ $('modalKicker').textContent=(region?region.name:'全部釣區')+' · 已收集 '+collected+' / '+regionFish.length+' 種 · 尚欠 '+(regionFish.length-collected)+' 種';
+ $('catalogRegion').value=catalogRegion;$('catalogRegion').onchange=()=>{catalogRegion=$('catalogRegion').value;showCatalog(0,$('catalogQuery').value);};
  $('catalogQuery').value=query;$('findFish').onclick=()=>showCatalog(0,$('catalogQuery').value);$('catalogQuery').onkeydown=e=>{if(e.key==='Enter')$('findFish').click()};
  const g=$('modalBody').querySelector('.grid');
  for(const f of list.slice(page*8,page*8+8)){const b=document.createElement('button');b.className='fishCard';if(!hasCaught(f)){b.classList.add('undiscovered');b.disabled=true;b.innerHTML=unknownFish()+'<b>未解鎖</b><small>釣獲後顯示資料</small>';g.append(b);continue;}b.innerHTML=fishMarkup(f)+'<b>'+esc(f.name)+'</b><small>'+esc(f.scientificName||f.en)+'</small>';b.onclick=()=>showCatalogFish(f,list.filter(hasCaught),page,query);g.append(b)}

@@ -4,7 +4,7 @@ globalThis.CoastEconomy=(()=>{
  const kinds=['basic','advanced','master'];
  function mergeEvents(a=[],b=[]){const map=new Map();for(const e of [...(Array.isArray(a)?a:[]),...(Array.isArray(b)?b:[])]){if(!e||typeof e.id!=='string'||!Number.isSafeInteger(e.seq)||e.seq<1)continue;const old=map.get(e.id);if(!old||JSON.stringify(e)<JSON.stringify(old))map.set(e.id,e);}return [...map.values()].sort((x,y)=>x.seq-y.seq||x.id.localeCompare(y.id));}
  function account(save={}){
-  const s={money:500,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),rewards:new Set(),accepted:new Set(),rejected:[]};
+  const s={money:500,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),released:new Set(),purchases:new Map(),daily:new Map(),collection:new Map(),rewards:new Set(),accepted:new Set(),rejected:[]};
   const fish=new Set((save.bag||[]).map(catchKey));
   for(const e of mergeEvents(save.economyEvents)){
    const price=Number.isSafeInteger(e.amount)&&e.amount>=0&&e.amount<=10000000;let ok=false;
@@ -12,7 +12,13 @@ globalThis.CoastEconomy=(()=>{
    if(e.type==='use'&&kinds.includes(e.bait)&&s.bait[e.bait]>0){s.bait[e.bait]--;ok=true;}
    if(e.type==='unlock'&&typeof e.areaId==='string'&&!s.areas.has(e.areaId)&&price&&s.money>=e.amount){s.money-=e.amount;s.areas.add(e.areaId);ok=true;}
    if(e.type==='travel'&&typeof e.areaId==='string'&&price&&s.money>=e.amount){s.money-=e.amount;ok=true;}
-   if(e.type==='sell'&&fish.has(e.catchKey)&&!s.sold.has(e.catchKey)&&price){s.sold.add(e.catchKey);s.money+=e.amount;ok=true;}
+   if(e.type==='sell'&&fish.has(e.catchKey)&&!s.sold.has(e.catchKey)&&!s.released.has(e.catchKey)&&price){s.sold.add(e.catchKey);s.money+=e.amount;ok=true;}
+   if(e.type==='release'&&fish.has(e.catchKey)&&!s.sold.has(e.catchKey)&&!s.released.has(e.catchKey)){s.released.add(e.catchKey);ok=true;}
+   if(e.type==='souvenir'&&['toy','postcard'].includes(e.kind)&&e.amount===20&&s.money>=20&&typeof e.purchaseKey==='string'&&e.purchaseKey.length>0&&e.purchaseKey.length<200&&!s.purchases.has(e.purchaseKey)&&/^\d{4}-\d{2}-\d{2}$/.test(e.day)&&e.item&&typeof e.item.id==='string'&&e.item.id.length>0){
+    const key=e.kind+'|'+e.day,prior=s.daily.get(key);
+    if(!prior||JSON.stringify(prior)===JSON.stringify(e.item)){s.money-=20;s.daily.set(key,e.item);s.purchases.set(e.purchaseKey,e);if(e.kind==='toy')s.collection.set('toy|'+e.item.id,e.item);ok=true;}
+   }
+   if(e.type==='postcard-complete'&&s.purchases.get(e.purchaseKey)?.kind==='postcard'){const item=s.purchases.get(e.purchaseKey).item;s.collection.set('postcard|'+item.id,item);ok=true;}
    if(e.type==='minigame'&&e.game==='peace-bun-whack'&&[1,2,3].includes(e.level)&&e.amount===e.level*100&&typeof e.rewardKey==='string'&&e.rewardKey.length>0&&e.rewardKey.length<200&&!s.rewards.has(e.rewardKey)){s.rewards.add(e.rewardKey);s.money+=e.amount;ok=true;}
    if(e.type==='relief'&&Number.isFinite(e.limit)&&s.money<e.limit&&kinds.every(k=>s.bait[k]===0)){s.bait.basic=3;ok=true;}
    if(ok)s.accepted.add(e.id);else s.rejected.push(e.id);
