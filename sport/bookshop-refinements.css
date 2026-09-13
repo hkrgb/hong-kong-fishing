@@ -1,0 +1,13 @@
+/* Follow-up five-page PDF: readable books, left navigation and steady news. */
+#stage #bookshopHub{inset:auto;left:30px;top:155px;bottom:auto;width:290px;display:flex;flex-direction:column;gap:40px;text-shadow:none}
+#stage #bookshopHub>button{width:290px;height:115px;min-height:115px;padding:12px 15px;border:7px double white;border-radius:25px;background:#f6fcffcf;color:#00517a;font-size:52px;font-weight:bold;box-shadow:0 6px 18px #22465b1c;white-space:nowrap}
+#stage #bookshopHub>button:hover{background:#fffffff0;transform:translateX(4px)}
+#stage .dialog.bookDetailDialog,#stage.islandBrowsing .dialog.bookDetailDialog{background:linear-gradient(#fffdf6f5,#fffdf6f5),url('assets/bookshop/book-bg.jpg') center/cover;height:600px;margin-top:84px}
+#stage .bookDetailDialog>footer:empty{display:none}.bookCopy h2{font-size:38px}.bookCopy h3{font-size:26px;line-height:1.4}.bookCopy p{font-size:27px;line-height:1.6;margin-bottom:17px}.bookCopy{padding-right:22px;scrollbar-width:auto}.bookCover{width:30%}
+.bookVideos{display:block;overflow:auto;padding:0 46px 0 8px}.bookVideos article{height:100%;display:flex;flex-direction:column;align-items:center;gap:8px}.bookVideos iframe{width:100%;height:auto;flex:1;min-height:200px;max-width:850px;border-radius:10px}.bookVideos h3{font-size:24px;line-height:1.35;margin:0;max-width:850px;width:100%}.bookVideos a{font-size:21px;align-self:flex-start;margin-left:max(0px,calc((100% - 850px)/2))}
+#stage .bookDetailDialog:has(.bookVideos)>header{position:absolute;top:18px;right:18px;left:auto;z-index:2}#stage .bookDetailDialog:has(.bookVideos)>header>div{display:none}#stage .bookDetailDialog:has(.bookVideos) #modalBody{padding-top:10px}#stage .bookDetailDialog:has(.bookVideos) #modalFooter{padding-left:160px}
+#tickerText{animation:journeyNews var(--ticker-duration,30s) linear 1 both}
+@keyframes journeyNews{from{transform:translateX(var(--ticker-start,649px))}to{transform:translateX(var(--ticker-end,-100%))}}
+@media(prefers-reduced-motion:reduce){#tickerText{animation:none}}
+#stage:has(#modal:not([hidden]) .bookDetailDialog)>header{pointer-events:none}
+#stage:has(#modal:not([hidden]) .bookDetailDialog)>header #quickHud,#stage:has(#modal:not([hidden]) .bookDetailDialog)>header #menu{pointer-events:auto}
