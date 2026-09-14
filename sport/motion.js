@@ -51,8 +51,8 @@ function updateSeaLife(dt){
       const head=18*f.size,dx=bait.x-f.x,dy=bait.y-f.y,d=Math.hypot(dx,dy);
       f.desired=d>head?Math.atan2(dy,dx):f.angle;
       desiredSpeed=clamp((d-head)*.75,0,32)*clamp(+weather.bite||1,.7,1.4);
-      if(state==='wait'&&d<head+12&&stateTime>1.5){nibble=0;enter('nibble');}
-      if(state==='nibble'){desiredSpeed=Math.sin(stateTime*5)>0?2.8:0;if(stateTime>3){enter('hook');ring(bait.x,bait.y);}}
+      if(state==='wait'&&d<head+12&&stateTime>biteWait){nibble=0;enter('nibble');}
+      if(state==='nibble'){desiredSpeed=Math.sin(stateTime*5)>0?2.8:0;if(stateTime>4){enter('hook');ring(bait.x,bait.y);}}
       if(state==='hook')desiredSpeed=1;
     }else if(f===selected&&state==='fight'){
       f.desired=Math.atan2(bait.y-f.y,bait.x-f.x);desiredSpeed=Math.min(44,Math.hypot(bait.x-f.x,bait.y-f.y)*1.8);
