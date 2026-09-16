@@ -17,7 +17,7 @@ const assert=require('node:assert/strict');
   await page.click('#menu');await page.locator('.personalTab').nth(2).click();await page.click('#bookDisclaimer');await page.getByRole('button',{name:'返回遊戲設定',exact:true}).click();await page.click('#closeModal');await hubVisible();
   await page.click('#menu');await page.keyboard.press('Escape');await hubVisible();
   await page.evaluate(()=>{backgroundPeriodOverride='noon';chooseArea(cfg.areas.find(a=>a.category==='other'));globalThis.tripCount=0;const original=playBoatTrip;playBoatTrip=(...args)=>{tripCount++;return original(...args)}});
-  assert.equal(await page.locator('#returnDirectory').innerText(),'回家');
+  assert.equal(await page.locator('#returnDirectory').innerText(),'⌂ 回家');
   const money=await page.evaluate(()=>wallet().money);
   await page.click('#returnDirectory');await page.waitForSelector('#boatTrip video');
   await page.evaluate(()=>returnToIslandDirectory()); // repeated click cannot start another trip
@@ -30,7 +30,7 @@ const assert=require('node:assert/strict');
   assert.equal(await page.evaluate(()=>wallet().money),money);
   assert.match(await page.locator('#islandBackdrop').getAttribute('style'),/menu-day\.jpg/);
   await page.click('#hubFishing');await page.click('[data-region="local"]');await page.locator('.regionPlace').nth(1).click();await page.getByRole('button',{name:'進入遊戲',exact:true}).click();await page.waitForFunction(()=>!dialogOpen);
-  assert.equal(await page.evaluate(()=>tripCount),1);assert.equal(await page.locator('#returnDirectory').innerText(),'回家');
+  assert.equal(await page.evaluate(()=>tripCount),1);assert.equal(await page.locator('#returnDirectory').innerText(),'⌂ 回家');
   await page.click('#menu');await page.click('#closeModal');assert.equal(await page.evaluate(()=>dialogOpen),false);
   await page.click('#returnDirectory');await hubVisible();assert.equal(await page.evaluate(()=>tripCount),1);
   assert.deepEqual(errors,[]);

@@ -41,8 +41,8 @@ setupHome=function(){
 const originalShowHome=showHome;
 showHome=function(){
  islandBrowsing=false;stage.classList.remove('islandBrowsing');if($('islandHub'))$('islandHub').hidden=true;
- originalShowHome();document.title='離島旅程 · 從長洲出發的釣魚之旅';
- $('homeTitle').innerHTML='<img src="'+islandAsset('titlename.png')+'" alt="離島旅程 · 從長洲出發的釣魚之旅">';$('homeSubtitle').textContent='';
+ originalShowHome();document.title='離島旅程—從長洲出發的釣魚之旅';
+ $('homeTitle').innerHTML='<img src="'+islandAsset('titlename.png')+'" alt="離島旅程—從長洲出發的釣魚之旅">';$('homeSubtitle').textContent='';
 };
 const originalModal=modal;
 modal=function(...args){

@@ -17,7 +17,7 @@ showJournal=function(tab='collection',page=0,view=''){
  const paginate=(count,size)=>{const pages=Math.max(1,Math.ceil(count/size));page=clamp(page,0,pages-1);if(pages>1){const bar=$('personalPagination');for(const [label,delta] of [['上一頁',-1],[(page+1)+' / '+pages,0],['下一頁',1]]){const b=document.createElement('button');b.textContent=label;b.disabled=!delta||page+delta<0||page+delta>=pages;b.onclick=()=>showJournal(tab,page+delta,view);bar.append(b);}}return page*size;};
  if(tab==='collection'&&!view){
   setTitle('我的收藏品','每一尾魚、每一件小物，都是旅途留下的回憶。');
-  body.className='personalCollections';body.innerHTML='<button id="personalFish"><span class="collectionSketch fishSketch" aria-hidden="true">魚</span><b>魚獲</b><small>'+save.bag.length+' 尾旅途紀錄</small><span class="collectionArrow">翻開魚獲手帳 →</span></button><button id="personalObjects"><img src="'+bookAsset('yoyo.png')+'" alt=""><b>物件</b><small>'+objects.length+' 款玩具與明信片</small><span class="collectionArrow">看看我的收藏 →</span></button>';
+  body.className='personalCollections';body.innerHTML='<button id="personalFish">'+fishMarkup(save.bag[0]||cfg.fish[Math.floor(Math.random()*cfg.fish.length)])+'<b>魚獲</b><small>'+save.bag.length+' 尾旅途紀錄</small><span class="collectionArrow">翻開魚獲手帳 →</span></button><button id="personalObjects"><img src="'+bookAsset('yoyo.png')+'" alt=""><b>物件</b><small>'+objects.length+' 款玩具與明信片</small><span class="collectionArrow">看看我的收藏 →</span></button>';
   $('personalFish').onclick=()=>showJournal('collection',0,'fish');$('personalObjects').onclick=()=>showJournal('collection',0,'objects');
  }else if(tab==='collection'){
   const isFish=view==='fish',items=isFish?save.bag:objects,start=paginate(items.length,6);setTitle(isFish?'魚獲':'物件',isFish?'已出售或放生的魚，也會留在這本手帳。':'書店玩具與完成的明信片，都收藏在這裡。');

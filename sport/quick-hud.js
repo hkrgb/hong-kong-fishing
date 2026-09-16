@@ -1,5 +1,5 @@
 function setupQuickHud(){
- document.title=cfg.texts?.title||'香港專業釣魚';document.querySelector('.brand h1').textContent=document.title;
+ document.title='離島旅程—從長洲出發的釣魚之旅';document.querySelector('.brand h1').textContent=document.title;
  const bar=document.createElement('div');bar.id='quickHud';bar.innerHTML='<span id="hudMoney" aria-label="金錢"></span><button id="hudBait" aria-label="選擇魚餌"></button><button id="hudFish" aria-label="魚類圖鑑">🐟 圖鑑</button><button id="hudPeriods" aria-label="選擇早午晚背景"><span data-period="morning">🌅 早</span><span data-period="noon">☀ 午</span><span data-period="night">☾ 晚</span></button><span id="hudClock"></span><button id="hudTemperature" aria-label="氣溫資料"></button>';document.querySelector('#stage>header').insertBefore(bar,document.querySelector('.conditions'));
  $('hudPeriods').onclick=showPeriodPicker;$('hudBait').onclick=showBaitPicker;$('hudFish').onclick=()=>showCatalog();$('hudTemperature').onclick=()=>$('weatherInfo').click();updateQuickHud();setInterval(updateQuickHud,1000);
 }

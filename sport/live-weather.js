@@ -32,7 +32,12 @@ window.CoastWeather = (() => {
     const airOK=air?.unit==='C'&&temperature(air.value)&&fresh(airTime,2);
     const seaOK=sea?.unit==='C'&&temperature(sea.value)&&fresh(sea.recordTime,48);
     const code=Number(current?.icon?.[0]), iconOK=fresh(current?.iconUpdateTime||current?.updateTime,18)&&fresh(current?.updateTime,2);
-    return {air:airOK?air:null,airTime,sea:seaOK?sea:null,seaTime:sea?.recordTime,
+    const humidity=current?.humidity?.data?.find(v=>v.unit==='percent'&&Number.isFinite(v.value)&&v.value>=0&&v.value<=100);
+    const uv=current?.uvindex?.data?.find(v=>Number.isFinite(v.value)&&v.value>=0);
+    const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Hong_Kong',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replaceAll('-','');
+    const forecast=fresh(data.fnd?.updateTime,24)?data.fnd?.weatherForecast?.find(v=>v.forecastDate===today):null;
+    return {humidity:fresh(current?.humidity?.recordTime,2)?humidity:null,uv:fresh(current?.updateTime,2)?uv:null,forecast,
+      air:airOK?air:null,airTime,sea:seaOK?sea:null,seaTime:sea?.recordTime,
       live:!!iconOK,name:iconOK?(names[code]||(code>=70&&code<=75?'晚間天晴':'香港天氣')):'天氣資料暫不可用',
       rain:iconOK&&[53,54,62,63,64,65].includes(code),cloud:iconOK&&[60,61,62,63,64,65,76].includes(code),
       night:iconOK&&code>=70&&code<=77,wind:iconOK&&code===80,

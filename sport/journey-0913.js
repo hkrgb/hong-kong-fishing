@@ -5,18 +5,18 @@ let inBookshop=false,dailySession=null;
 const septemberHub=showIslandHub;
 showIslandHub=function(){inBookshop=false;$('bookshopHub')?.remove();septemberHub();};
 const septemberBackdrop=updateIslandBackdrop;
-updateIslandBackdrop=function(){if(inBookshop){const file={morning:'bookshop-morning.png',noon:'bookshop-bg.jpg',night:'bookshop-night.png'}[scenePeriod()],url=bookAsset(file),layer=$('islandBackdrop');if(layer.dataset.picture!==url){layer.style.backgroundImage='url("'+url+'")';layer.dataset.picture=url;}}else septemberBackdrop();};
+updateIslandBackdrop=function(){const preview=$('hubBooks')?.querySelector('img');if(preview){const url=bookAsset({morning:'bookshop-morning.png',noon:'bookshop-bg.jpg',night:'bookshop-night.png'}[scenePeriod()]);if(preview.src!==url)preview.src=url;}if(inBookshop){const file={morning:'bookshop-morning.png',noon:'bookshop-bg.jpg',night:'bookshop-night.png'}[scenePeriod()],url=bookAsset(file),layer=$('islandBackdrop');if(layer.dataset.picture!==url){layer.style.backgroundImage='url("'+url+'")';layer.dataset.picture=url;}}else septemberBackdrop();};
 const septemberSetup=setupHome;
 setupHome=function(){
  septemberSetup();$('hubFishing').querySelector('span').textContent='出發釣魚';
  const b=document.createElement('button');b.id='hubBooks';b.innerHTML='<span>前往書店</span><img alt="" src="'+bookAsset('bookshop-bg.jpg')+'">';b.onclick=showBookshop;$('hubGames').before(b);
- const ticker=document.createElement('section');ticker.id='islandTicker';ticker.innerHTML='<img alt="" src="'+bookAsset('radio2.png')+'"><div><h2 id="tickerTitle">天氣消息</h2><div class="tickerWindow"><p id="tickerText"></p></div></div>';stage.append(ticker);
- $('tickerText').addEventListener('animationend',e=>{if(e.animationName==='journeyNews')updateTicker();});updateTicker();
+ const ticker=document.createElement('section');ticker.id='islandTicker';ticker.innerHTML='<img alt="" src="'+bookAsset('radio2.png')+'"><div><div class="tickerHeading"><h2 id="tickerTitle">旅遊</h2><img id="tickerPicture" alt=""></div><div class="tickerWindow"><p id="tickerText"></p></div></div>';stage.append(ticker);
+ updateTicker();
 };
 const septemberQuickSetup=setupQuickHud;
 setupQuickHud=function(){septemberQuickSetup();$('hudFish').after($('returnDirectory'));setupJourneyMusic();};
 const septemberHud=updateQuickHud;
-updateQuickHud=function(){septemberHud();if($('returnDirectory')){$('returnDirectory').textContent='回家';$('returnDirectory').title=area&&area.category!=='local'?'乘船返回長洲目錄':'返回長洲目錄';}};
+updateQuickHud=function(){septemberHud();if($('returnDirectory')){$('returnDirectory').textContent='⌂ 回家';$('returnDirectory').title=area&&area.category!=='local'?'乘船返回長洲目錄':'返回長洲目錄';}};
 const septemberClose=closeDialog;
 closeDialog=function(){if(inBookshop){showBookshop();return;}septemberClose();};
 const septemberChoose=chooseArea;
@@ -28,8 +28,8 @@ modal=function(...args){$('bookshopHub')?.remove();septemberModal(...args);docum
 function showBookshop(){
  cancelCast();held=false;dialogOpen=true;islandBrowsing=true;inBookshop=true;stage.classList.add('islandBrowsing');$('home').hidden=true;$('modal').hidden=true;$('islandHub').hidden=true;$('bookshopHub')?.remove();updateIslandBackdrop();
  const hub=document.createElement('section');hub.id='bookshopHub';hub.setAttribute('aria-label','長洲書店');
- hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button>';
- stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');
+ hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="bookshopHome">⌂ 回家</button>';
+ stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('bookshopHome').onclick=returnToIslandDirectory;
 }
 function showBooks(index=0,tab='info',videoPage=0){
  const books=bookshopData().books,b=books[index];if(!b){modal('好書推介','<p class="intro">新書正在準備中。</p>');return;}
@@ -37,7 +37,7 @@ function showBooks(index=0,tab='info',videoPage=0){
  videoPage=clamp(videoPage,0,Math.max(0,media.length-1));
  const content=tab==='info'?'<article class="bookCopy"><h2>'+esc(b.name)+'</h2><h3>'+esc(b.subtitle||'')+'</h3>'+String(b.description||'').split('\n').filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</article><img class="bookCover" src="'+esc(bookAsset(b.image))+'" alt="'+esc(b.name)+'書籍封面">':'<div class="bookVideos">'+(media.length?media.slice(videoPage,videoPage+1).map(v=>'<article><iframe title="'+esc(v.title)+'" src="https://www.youtube-nocookie.com/embed/'+v.id+'" allow="fullscreen; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><h3>'+esc(v.title)+'</h3><a href="https://www.youtube.com/watch?v='+v.id+'" target="_blank" rel="noopener">在 YouTube 觀看 ↗</a></article>').join(''):'<p class="intro">影片正在準備中。</p>')+'</div>';
  modal('好書推介','<div class="bookLayout"><nav class="bookTabs"><button id="bookInfoTab" aria-pressed="'+(tab==='info')+'">書籍資料</button><button id="bookMediaTab" aria-pressed="'+(tab==='media')+'">多媒體</button></nav><div class="bookContent">'+content+'</div></div>');
- document.querySelector('.dialog').classList.add('bookDetailDialog');$('bookInfoTab').onclick=()=>showBooks(index,'info');$('bookMediaTab').onclick=()=>showBooks(index,'media');
+ document.querySelector('.dialog').classList.add('bookDetailDialog');const back=foot('‹ 返回書店',showBookshop);back.className='bookshopBack';$('bookInfoTab').onclick=()=>showBooks(index,'info');$('bookMediaTab').onclick=()=>showBooks(index,'media');
  if(tab==='media'&&media.length){foot('上一頁',()=>showBooks(index,'media',videoPage-1)).disabled=videoPage===0;foot((videoPage+1)+' / '+media.length,()=>{}).disabled=true;foot('下一頁',()=>showBooks(index,'media',videoPage+1)).disabled=videoPage===media.length-1;}
  if(books.length>1){foot('上一本',()=>showBooks(index-1)).disabled=index===0;foot((index+1)+' / '+books.length,()=>{}).disabled=true;foot('下一本',()=>showBooks(index+1)).disabled=index===books.length-1;}
 }
@@ -57,19 +57,33 @@ showFish=function(f,newCatch=false){
   const s=document.createElement('p');s.className='catchDisposition';s.textContent=w.released.has(key)?'已放生 · 保留紀錄，不能出售':'已出售 · 保留紀錄';$('modalBody').append(s);
  }
 };
-let tickerIndex=0,tickerTimer=null;
-function updateTicker(){
- if(!$('tickerText')||!cfg)return;let title,text;
+let tickerIndex=0,tickerTimer=null,tickerAnimation=0;
+function tickerItem(){
  switch(tickerIndex++%3){
-  case 0:{title='天氣消息';const s=CoastWeather.snapshot(area||cfg.areas[0]);text=s.live?'香港天文台：'+s.name+'；'+(s.air?s.air.place+' '+s.air.value+'°C · '+observationTime(s.airTime):'氣溫暫無有效觀測'):'天文台即時資料暫不可用，請稍後查看。';break;}
-  case 1:{title='魚類小百科';const f=cfg.fish[Math.floor(Math.random()*cfg.fish.length)];text=f.name+'：'+(f.educationIntro||f.description||[f.en,f.scientificName,f.family].filter(Boolean).join(' · '));break;}
-  default:{title='旅遊資訊';const a=cfg.areas[Math.floor(Math.random()*cfg.areas.length)];text=a.name+'：'+(a.introText||a.description||'放慢步伐，欣賞海岸景色。');}
+  case 0:{const a=cfg.areas[Math.floor(Math.random()*cfg.areas.length)];return {title:'旅遊',text:a.name+'：'+(a.introText||a.description||'放慢步伐，欣賞海岸景色。'),image:areaArt(a,'noon'),alt:a.name};}
+  case 1:{const f=cfg.fish[Math.floor(Math.random()*cfg.fish.length)];return {title:'魚',text:f.name+'：'+(f.educationIntro||f.description||[f.en,f.scientificName,f.family].filter(Boolean).join(' · ')),image:asset(f.image),alt:f.name};}
+  default:{const s=CoastWeather.snapshot(area||cfg.areas[0]),parts=['香港天文台：'+s.name];
+   if(s.air)parts.push(s.air.place+'氣溫 '+s.air.value+'°C（'+observationTime(s.airTime)+'）');
+   if(s.humidity)parts.push(s.humidity.place+'相對濕度 '+s.humidity.value+'%');
+   if(s.uv)parts.push(s.uv.place+'紫外線指數 '+s.uv.value+'（'+s.uv.desc+'）');
+   if(s.sea)parts.push(s.sea.place+'海水溫度 '+s.sea.value+'°C（'+observationTime(s.seaTime)+'）');
+   if(s.forecast){const f=s.forecast;parts.push('今日預測：'+f.forecastWeather+' '+f.forecastWind);if(f.forecastMintemp?.unit==='C'&&f.forecastMaxtemp?.unit==='C')parts.push('預測氣溫 '+f.forecastMintemp.value+'–'+f.forecastMaxtemp.value+'°C');}
+   if(parts.length===1)parts.push('即時觀測暫未能載入，稍後會再更新');
+   return {title:'天氣',text:parts.join('；'),image:'',alt:''};}
  }
- $('tickerTitle').textContent=title;const p=$('tickerText');p.textContent=text;clearTimeout(tickerTimer);p.style.animation='none';
- const start=p.parentElement.clientWidth||649,end=p.scrollWidth||text.length*26;
- p.style.setProperty('--ticker-start',start+'px');p.style.setProperty('--ticker-end',-end+'px');p.style.setProperty('--ticker-duration',(start+end)/45+'s');
- void p.offsetWidth;p.style.animation='';
- if(matchMedia('(prefers-reduced-motion: reduce)').matches)tickerTimer=setTimeout(updateTicker,Math.max(12000,text.length*350));
+}
+function updateTicker(){
+ const track=$('tickerText');if(!track||!cfg)return;cancelAnimationFrame(tickerAnimation);clearTimeout(tickerTimer);track.replaceChildren();track.style.animation='none';
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let x=0,last=0,active=null,items=[];
+ const label=item=>{if(active===item)return;active=item;const heading=$('tickerTitle'),picture=$('tickerPicture');heading.textContent=item.title;picture.hidden=!item.image;if(item.image){picture.src=item.image;picture.alt=item.alt;picture.dataset.category=item.title;}if(!reduced){heading.animate([{opacity:0},{opacity:1}],{duration:450});picture.animate([{opacity:0},{opacity:1}],{duration:450});}};
+ const append=()=>{const item=tickerItem(),node=document.createElement('span');node.className='tickerItem';node.textContent=item.text;track.append(node);item.node=node;items.push(item);};
+ append();label(items[0]);
+ if(reduced){track.style.transform='none';tickerTimer=setTimeout(updateTicker,Math.max(15000,items[0].text.length*350));return;}
+ append();
+ const tick=now=>{const dt=last?Math.min((now-last)/1000,.1):0;last=now;
+  if(!document.hidden&&track.getClientRects().length){const width=track.parentElement.clientWidth;if(width){x-=45*dt;while(items.length>1&&x+items[0].node.offsetWidth<0){x+=items[0].node.offsetWidth;items.shift().node.remove();append();}while(x+track.scrollWidth<width+100)append();let offset=x,current=items[0];for(const item of items){if(offset<=width)current=item;offset+=item.node.offsetWidth;}label(current);track.style.transform='translateX('+x+'px)';}}
+  tickerAnimation=requestAnimationFrame(tick);
+ };tickerAnimation=requestAnimationFrame(tick);
 }
 function setupJourneyMusic(){
  const audio=new Audio(bookAsset('bgm-piano.mp3'));audio.id='journeyMusic';audio.loop=true;audio.volume=.3;document.body.append(audio);
@@ -93,7 +107,7 @@ function openDailyGame(kind){
  const url=remote?new URL('https://hkrgb.github.io/'+path+'/'):new URL('../../'+path+'/',document.baseURI);
  const id=crypto.randomUUID();url.searchParams.set('bookshopSession',id);url.searchParams.set('parentOrigin',location.origin);
  const layer=document.createElement('section');layer.id='bookshopPlayer';const frame=document.createElement('iframe');frame.title=kind==='toy'?'懷舊扭蛋':'每日明信片';frame.src=url.href;frame.allow='fullscreen';
- const close=document.createElement('button');close.textContent='返回書店';close.onclick=()=>{dailySession=null;layer.remove();showBookshop();};layer.append(frame,close);stage.append(layer);dailySession={id,frame,origin:url.origin,kind,requests:new Map()};
+ const close=document.createElement('button');close.textContent='‹ 返回書店';close.className='bookshopBack';close.onclick=()=>{dailySession=null;layer.remove();showBookshop();};layer.append(frame,close);stage.append(layer);dailySession={id,frame,origin:url.origin,kind,requests:new Map()};
 }
 addEventListener('message',e=>{
  const s=dailySession,d=e.data;if(!s||e.source!==s.frame.contentWindow||e.origin!==s.origin||!d||d.session!==s.id)return;

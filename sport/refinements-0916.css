@@ -1,0 +1,16 @@
+/* September 16 slide annotations: clear HUD, continuous news and shared navigation. */
+#stage[data-state=fight] #cue{bottom:430px}
+#stage[data-state=fight] #fightHud{bottom:270px;min-height:130px}
+#stage #bookshopHub #bookshopHome{height:64px;min-height:64px;font-size:30px;border-width:3px;border-radius:14px}
+#stage .bookshopBack,#stage #bookshopPlayer>.bookshopBack{font-size:24px;font-weight:bold;padding:10px 24px;min-height:48px;border:1px solid #b2d0d9;border-radius:12px;background:#f7fcff;color:#17516a;box-shadow:0 3px 10px #173c4d20}
+#stage .bookDetailDialog #modalFooter{position:relative;min-height:52px;padding-left:205px}
+#stage .bookDetailDialog #modalFooter>.bookshopBack{position:absolute;left:0;bottom:0}
+#stage #bookshopPlayer>.bookshopBack{left:30px;right:auto;bottom:8px}
+#stage #islandTicker{bottom:25px}
+.tickerHeading{display:flex;align-items:center;gap:20px;min-height:72px;margin-bottom:6px}
+#islandTicker .tickerHeading h2{font-size:34px;margin:0;min-width:80px}
+#tickerPicture{height:72px;width:128px;object-fit:cover;border:1px solid #ffffff70;border-radius:8px;background:#ffffffd9}
+#tickerPicture[data-category=魚]{object-fit:contain}
+#stage #tickerText{display:flex;animation:none;width:max-content;transform:translateX(0);will-change:transform}
+.tickerItem{display:block;flex:none;padding-right:80px;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){#stage #tickerText{display:block;max-height:100px;white-space:normal;transform:none!important}.tickerItem{white-space:normal;padding-right:0}}
