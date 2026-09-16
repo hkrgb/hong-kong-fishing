@@ -10,7 +10,12 @@
 .tickerHeading{display:flex;align-items:center;gap:20px;min-height:72px;margin-bottom:6px}
 #islandTicker .tickerHeading h2{font-size:34px;margin:0;min-width:80px}
 #tickerPicture{height:72px;width:128px;object-fit:cover;border:1px solid #ffffff70;border-radius:8px;background:#ffffffd9}
-#tickerPicture[data-category=魚]{object-fit:contain}
+#tickerPicture[data-category="魚類小知識"]{object-fit:contain;background:transparent;border:0;border-radius:0}
 #stage #tickerText{display:flex;animation:none;width:max-content;transform:translateX(0);will-change:transform}
 .tickerItem{display:block;flex:none;padding-right:80px;white-space:nowrap}
 @media(prefers-reduced-motion:reduce){#stage #tickerText{display:block;max-height:100px;white-space:normal;transform:none!important}.tickerItem{white-space:normal;padding-right:0}}
+
+/* Let the activity background fill the former footer strip. */
+#stage #bookshopPlayer{background:transparent}
+#stage #bookshopPlayer iframe{display:block;height:100%}
+#stage .bookDetailDialog #modalFooter{background:transparent;border:0;box-shadow:none}
