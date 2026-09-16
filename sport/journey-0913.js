@@ -60,7 +60,7 @@ showFish=function(f,newCatch=false){
 let tickerIndex=0,tickerTimer=null,tickerAnimation=0;
 function tickerItem(){
  switch(tickerIndex++%3){
-  case 0:{const a=cfg.areas[Math.floor(Math.random()*cfg.areas.length)];return {title:'景點簡介',text:a.name+'：'+(a.introText||a.description||'放慢步伐，欣賞海岸景色。'),image:areaArt(a,'noon'),alt:a.name};}
+  case 0:{const a=tickerIndex===1&&area?area:cfg.areas[Math.floor(Math.random()*cfg.areas.length)];return {title:'景點簡介',text:a.name+'：'+(a.introText||a.description||'放慢步伐，欣賞海岸景色。'),image:areaArt(a,'noon'),alt:a.name};}
   case 1:{const f=cfg.fish[Math.floor(Math.random()*cfg.fish.length)];return {title:'魚類小知識',text:f.name+'：'+(f.educationIntro||f.description||[f.en,f.scientificName,f.family].filter(Boolean).join(' · ')),image:asset(f.image),alt:f.name};}
   default:{const s=CoastWeather.snapshot(area||cfg.areas[0]),parts=['香港天文台：'+s.name];
    if(s.air)parts.push(s.air.place+'氣溫 '+s.air.value+'°C（'+observationTime(s.airTime)+'）');
