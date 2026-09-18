@@ -1,0 +1,31 @@
+{
+  "id": "/hong-kong-fishing/",
+  "name": "離島旅程：從長洲出發的釣魚之旅",
+  "short_name": "離島旅程",
+  "description": "從長洲出發，探索香港海岸、收集魚類與旅途回憶。",
+  "lang": "zh-HK",
+  "start_url": "/hong-kong-fishing/?source=pwa",
+  "scope": "/hong-kong-fishing/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#071d28",
+  "background_color": "#071d28",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "app-assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "app-assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -35,7 +35,7 @@ showJournal=function(tab='collection',page=0,view=''){
   }
  }else{
   setTitle('遊戲設定','放慢腳步，按自己的步調享受旅程。');body.className='personalSettings';
-  body.innerHTML='<button id="bookFullscreen"><b>'+(isFullscreen()?'退出全屏幕':'全屏幕')+'</b><span>調整遊戲顯示方式</span></button><button id="personalMusic"><b>背景音樂</b><span></span></button><button id="bookDisclaimer"><b>免責聲明</b><span>遊戲及資料使用說明</span></button><a href="mailto:info@rgb-workshop.com"><b>聯絡我們</b><span>info@rgb-workshop.com</span></a>';
+  body.innerHTML='<button id="bookFullscreen"><b>'+(isFullscreen()?'退出全屏幕':'全屏幕')+'</b><span>調整遊戲顯示方式</span></button><button id="personalMusic"><b>背景音樂</b><span></span></button><button id="bookDisclaimer"><b>免責聲明</b><span>遊戲及資料使用說明</span></button><a href="../privacy.html" target="_blank" rel="noopener"><b>隱私權政策</b><span>了解資料的使用方式</span></a><a href="../delete-account.html" target="_blank" rel="noopener"><b>刪除帳戶及資料</b><span>提出遊戲資料刪除要求</span></a><a href="mailto:info@rgb-workshop.com"><b>聯絡我們</b><span>info@rgb-workshop.com</span></a>';
   $('bookFullscreen').onclick=async()=>{await toggleFullscreen();$('bookFullscreen').querySelector('b').textContent=isFullscreen()?'退出全屏幕':'全屏幕';};
   const music=()=>{const on=$('musicToggle')?.getAttribute('aria-pressed')==='true';$('personalMusic').querySelector('span').textContent=on?'播放中 · 按此關閉':'已關閉 · 按此播放';$('personalMusic').setAttribute('aria-pressed',String(on));};music();$('personalMusic').onclick=()=>{$('musicToggle')?.click();music();};$('bookDisclaimer').onclick=()=>{showDisclaimer();$('modalFooter').replaceChildren();foot('返回遊戲設定',()=>showJournal('settings'),true);};
  }

@@ -1,0 +1,37 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.rgbworkshop.islandfishing'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.rgbworkshop.islandfishing'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+    signingConfigs {
+        release {
+            if (System.getenv('ISLAND_KEYSTORE')) {
+                storeFile file(System.getenv('ISLAND_KEYSTORE'))
+                storePassword System.getenv('ISLAND_STORE_PASSWORD')
+                keyAlias 'island-upload'
+                keyPassword System.getenv('ISLAND_STORE_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.6.2'
+}
