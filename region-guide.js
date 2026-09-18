@@ -30,10 +30,18 @@ root.FishImagePath=function(value){
  if(match&&cutoutFiles[match[1]])value=value.slice(0,value.lastIndexOf('/')+1)+cutoutFiles[match[1]];
  return value;
 };
+function applyLocalScenery(c){
+ if(c.localSceneryVersion===20260918)return c;
+ for(const a of c.areas||[])if(['harbour','cheung-chau','tung-wan'].includes(a.id)){
+  a.backgrounds=Object.fromEntries(['morning','noon','night'].map(period=>[period,'../sport/assets/locations-20260918/'+a.id+'-'+period+'.png']));
+  a.background=a.backgrounds.noon;a.introImage='';
+ }
+ c.localSceneryVersion=20260918;return c;
+}
 function normalize(c){
  root.applyFishWorkbook?.(c);
  for(const fish of c.fish||[])fish.image=root.FishImagePath(fish.image);
- if(c.regionGuideVersion===1)return c;
+ if(c.regionGuideVersion===1)return applyLocalScenery(c);
  const old=c.areas||[],ids=new Set(c.fish.map(f=>f.id));
  c.legacyAreas=c.legacyAreas||old;
  c.areas=locations.map(([id,name,category,template,price,description,words])=>{
@@ -47,7 +55,7 @@ function normalize(c){
  c.areas.find(a=>a.id==='tung-lung').unlockAliases=['ninepins'];
  const known=new Set([...locations.map(a=>a[0]),'lantau','ninepins']);
  c.areas.push(...old.filter(a=>!known.has(a.id)).map(a=>({...a,category:a.category||'other'})));
- c.baitKnowledge=c.baitKnowledge||structuredClone(baitKnowledge);c.regionGuideVersion=1;return c;
+ c.baitKnowledge=c.baitKnowledge||structuredClone(baitKnowledge);c.regionGuideVersion=1;return applyLocalScenery(c);
 }
 function period(date=new Date()){const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Hong_Kong',hour:'2-digit',hourCycle:'h23'}).format(date));return h>=5&&h<11?'morning':h>=11&&h<18?'noon':'night';}
 function weighted(pool,a,random=Math.random){if(!pool.length)return null;const boosted=new Set(a?.boostedFish||[]),mult=Math.max(1,Math.min(20,Number(a?.commonWeight)||3));let n=random()*pool.reduce((s,f)=>s+(boosted.has(f.id)?mult:1),0);for(const f of pool){n-=boosted.has(f.id)?mult:1;if(n<0)return f;}return pool.at(-1);}

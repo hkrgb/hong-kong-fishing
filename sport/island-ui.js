@@ -70,7 +70,7 @@ function showDisclaimer(){
 }
 function showMiniGames(){
  modal('小遊戲','<div class="islandMiniGrid"><button id="playBun" class="islandMiniCard"><img src="'+new URL('../../peace-bun-whack/assets/festival-board.png',document.baseURI).href+'" alt="平安包打地鼠遊戲"><span><b>平安包打地鼠</b><small>初級 $100 · 中級 $200 · 高級 $300</small></span></button><p>通關獎金自動存入釣魚遊戲，可用來買魚餌及支付船費。</p></div>',showIslandHub,'返回');
- $('playBun').onclick=playBunGame;
+ $('playBun').onclick=playBunGame;foot('進入遊戲',playBunGame,true).id='enterMiniGame';
 }
 function playBunGame(){
  if(!economyReady()||miniSession)return;

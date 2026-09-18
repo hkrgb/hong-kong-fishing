@@ -12,6 +12,7 @@ showJournal=function(tab='collection',page=0,view=''){
  document.querySelector('.dialog').classList.remove('islandBookDialog');document.querySelector('.dialog').classList.add('personalJournal');
  const groups=[['collection','我的收藏品',save.bag.length+' 尾魚獲 · '+objects.length+' 款物件'],['achievements','我的成就',Object.keys(stamps).length+' 枚地區印章'],['settings','遊戲設定','讓旅程更自在']];
  for(const [key,title,note] of groups){const b=document.createElement('button');b.className='personalTab';b.setAttribute('aria-pressed',String(tab===key));b.innerHTML='<b>'+title+'</b><span>'+note+'</span>';b.onclick=()=>showJournal(key);document.querySelector('.personalTabs').append(b);}
+ const exit=document.createElement('button');exit.id='personalExit';exit.textContent='離開遊戲';exit.onclick=()=>{exitJourney();$('modalFooter').lastElementChild.onclick=()=>showJournal(tab,page,view);};document.querySelector('.personalTabs').append(exit);
  const heading=document.querySelector('.personalPageHeading'),body=$('personalContent');
  const setTitle=(title,desc)=>{heading.innerHTML='<h3>'+title+'</h3><p>'+desc+'</p>';};
  const paginate=(count,size)=>{const pages=Math.max(1,Math.ceil(count/size));page=clamp(page,0,pages-1);if(pages>1){const bar=$('personalPagination');for(const [label,delta] of [['上一頁',-1],[(page+1)+' / '+pages,0],['下一頁',1]]){const b=document.createElement('button');b.textContent=label;b.disabled=!delta||page+delta<0||page+delta>=pages;b.onclick=()=>showJournal(tab,page+delta,view);bar.append(b);}}return page*size;};
