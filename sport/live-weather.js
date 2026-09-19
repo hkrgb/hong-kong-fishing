@@ -8,6 +8,7 @@ window.CoastWeather = (() => {
   const temperature=v=>typeof v==='number'&&Number.isFinite(v)&&v>=-10&&v<=50;
   try {const cached=JSON.parse(sessionStorage.getItem('coast-hko-v1'));if(cached&&typeof cached==='object')data=cached;} catch {}
   async function refresh(force=false){
+    if(!navigator.onLine)return data;
     if(pending)return pending;
     if(!force&&Date.now()-lastAttempt<600000)return data;
     lastAttempt=Date.now();
@@ -45,3 +46,4 @@ window.CoastWeather = (() => {
   }
   return {refresh,snapshot,fresh};
 })();
+

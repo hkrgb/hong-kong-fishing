@@ -1,11 +1,11 @@
 # 離島旅程 Android
 
 - 套件：`com.rgbworkshop.islandfishing`
-- 版本：1.0.0 (1)
+- 版本：1.0.1 (2)
 - Android 8.0+；target / compile SDK 36。
 - 使用 Google Android Browser Helper 的 Trusted Web Activity；原有 Google 登入、下載存檔及同源小遊戲在瀏覽器安全環境運作。
 - 正式網址： https://hkrgb.github.io/hong-kong-fishing/?source=android
-- 需要網絡。斷線顯示重試頁，不宣稱完整離線遊玩。
+- 首次啟動需連線，於主選單按「下載離線遊戲」下載約 224 MB。完成後核心玩法、風景、乘船影片、收藏、書店及平安包小遊戲可離線遊玩；本機存檔保留。Google 登入、雲端同步、即時天氣及 YouTube 仍需網絡。清除網站資料會移除離線包及本機存檔；可重新下載。
 
 ## 建置
 
@@ -26,3 +26,4 @@
 ## 檢查
 
 `lintRelease`、APK 簽署檢查、Play Bundle 格式驗證及網站測試。發佈前仍需真實 Android 裝置測試 Google 登入、跨小遊戲收藏、影片、返回操作和網絡中斷。商店內容分級、資料安全、目標年齡與開發者聲明需依實際情況完成。
+

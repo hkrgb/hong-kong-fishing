@@ -1,0 +1,18 @@
+{
+  "version":3,
+  "texts":{
+    "pageTitle":"平安包打地鼠","brandLine":"CHEUNG CHAU FESTIVAL","brandMain":"平安包","brandSub":"打地鼠",
+    "levelLabel":"關卡","timeLabel":"剩餘時間","scoreLabel":"得分","accuracyLabel":"命中率","scoreUnit":"分","minuteUnit":"分鐘","pauseButtonLabel":"暫停",
+    "helpTitle":"玩法說明","helpText":"拍中平安包，提高命中率，避開蛋撻！","bunLegend":"打中／出現平安包","tartLegend":"蛋撻扣分",
+    "loadingTitle":"正在準備平安包…","startEyebrow":"BUN FESTIVAL CHALLENGE","startTitle":"三關平安包挑戰","startText":"每關限時內打中至少 70% 出現的平安包即可過關。蛋撻不計入平安包命中率。","startButton":"開始第一關 →","levelName":"第 {level} 關",
+    "pauseEyebrow":"PAUSED","pauseTitle":"遊戲暫停","resumeButton":"繼續遊戲 →",
+    "levelCompleteEyebrow":"LEVEL COMPLETE","levelFailedEyebrow":"TRY AGAIN","levelSuccessTitle":"第 {level} 關通過！","levelFailedTitle":"第 {level} 關未達標","accuracyResult":"打中 {hits}／{total} 個包，命中率 {accuracy}%（目標 {target}%）","levelRewardText":"獲得 {reward} 分，目前總分 {score} 分。","levelRetryText":"需要達到 {target}% 才可進入下一關。","retryLevelButton":"重玩本關","nextLevelButton":"進入下一關 →","viewResultButton":"查看總成績 →",
+    "completeEyebrow":"ALL LEVELS COMPLETE","successTitle":"三關挑戰完成！","successText":"你完成全部關卡，共取得 {score} 分，可以帶回故事。","retryButton":"重新挑戰","returnButton":"回到故事 →","returningButton":"正在返回故事…"
+  },
+  "settings":{"tartPenalty":20,"tartChance":18},
+  "levels":[
+    {"duration":120,"requiredAccuracy":70,"reward":100,"spawnEveryMs":760,"visibleForMs":1350,"doubleChance":0.08},
+    {"duration":120,"requiredAccuracy":70,"reward":200,"spawnEveryMs":590,"visibleForMs":1050,"doubleChance":0.20},
+    {"duration":120,"requiredAccuracy":70,"reward":500,"spawnEveryMs":430,"visibleForMs":780,"doubleChance":0.34}
+  ]
+}

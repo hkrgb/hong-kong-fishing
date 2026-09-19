@@ -1,6 +1,6 @@
-import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js';
-import {getAuth,GoogleAuthProvider,onAuthStateChanged,signInWithPopup,signOut} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
-import {getFirestore,doc,runTransaction,serverTimestamp} from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+import {initializeApp} from './vendor/firebase-10.12.5/firebase-app.js';
+import {getAuth,GoogleAuthProvider,onAuthStateChanged,signInWithPopup,signOut} from './vendor/firebase-10.12.5/firebase-auth.js';
+import {getFirestore,doc,runTransaction,serverTimestamp} from './vendor/firebase-10.12.5/firebase-firestore.js';
 import {mergeSaves,emptySave} from './save-merge.js?v=20260913b';
 const config={projectId:'yes-card-gacha-rgb',appId:'1:496431023991:web:b62a7768104553c9958372',apiKey:'AIzaSyB8f7LK3UR-l2UgV_6qYPgAfDNfV4YlYrM',authDomain:'yes-card-gacha-rgb.firebaseapp.com'};
 export function createCloud(hooks){
@@ -10,7 +10,9 @@ export function createCloud(hooks){
  const local=uid=>{try{return JSON.parse(localStorage.getItem(key(uid))||'null')||emptySave()}catch{return emptySave()}};
  function cache(){if(user)try{localStorage.setItem(key(user.uid),JSON.stringify(hooks.read()));localOk=true}catch{localOk=false}return localOk}
  async function sync(){
-  clearTimeout(timer);if(!user)return false;if(busy){again=true;return false}
+  clearTimeout(timer);if(!user)return false;
+  if(!navigator.onLine){cache();hooks.status(localOk?'離線遊玩 · 進度已保存在本機，連線後會自動同步':'本機備份失敗，請立即下載存檔。',user);return false;}
+  if(busy){again=true;return false}
   busy=true;const who=user,version=epoch,snapshot=hooks.read();hooks.status('正在同步…',user);
   try{
    const ref=doc(db,'fishingPlayers',who.uid,'saves','coastline');
@@ -35,7 +37,7 @@ export function createCloud(hooks){
   await sync();
  });
  const api={
-  login:async()=>{try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(e){hooks.status(e.code==='auth/popup-blocked'?'登入視窗被阻擋，請允許彈出視窗後再試。':'未完成 Google 登入，現有存檔沒有刪除。',user)}},
+  login:async()=>{if(!navigator.onLine){hooks.status('Google 登入需要網絡，仍可離線遊玩。',user);return;}try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(e){hooks.status(e.code==='auth/popup-blocked'?'登入視窗被阻擋，請允許彈出視窗後再試。':'未完成 Google 登入，現有存檔沒有刪除。',user)}},
   logout:async()=>{if(user)cache();await signOut(auth)},
   changed:()=>{if(!user)return;cache();hooks.status(localOk?'已本機備份 · 等待雲端同步':'本機備份失敗 · 正在嘗試雲端同步',user);clearTimeout(timer);timer=setTimeout(sync,500)},
   sync, get user(){return user},
@@ -44,3 +46,4 @@ export function createCloud(hooks){
  addEventListener('online',()=>{if(user)sync()});
  return api;
 }
+

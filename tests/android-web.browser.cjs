@@ -12,6 +12,6 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
  await page.screenshot({path:'tmp/android-settings-qa.png'});
  await page.evaluate(()=>navigator.serviceWorker.ready);await page.goto(new URL('privacy.html',url).href);assert(await page.getByRole('heading',{name:'離島旅程 · 隱私權政策'}).isVisible());
  await page.goto(new URL('delete-account.html',url).href);assert(await page.getByRole('link',{name:'以電郵提出刪除要求'}).isVisible());
- await context.setOffline(true);await page.goto(new URL('?offline-test=1',url).href);assert(await page.getByRole('heading',{name:'海風暫時停了'}).isVisible());await context.setOffline(false);
- console.log('PASS: PWA manifest and icons, all settings controls in desktop/mobile bounds, privacy/deletion routes, offline fallback');
+ await context.setOffline(true);await page.goto(new URL('?offline-test=1',url).href);await page.waitForFunction(()=>typeof cfg!=='undefined'&&cfg&&state!=='loading');assert(await page.locator('#newJourney').count());await context.setOffline(false);
+ console.log('PASS: PWA manifest and icons, all settings controls in desktop/mobile bounds, privacy/deletion routes, offline game shell');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

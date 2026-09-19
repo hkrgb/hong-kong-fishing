@@ -1,0 +1,1746 @@
+{
+  "version": "12d469974c4508d7",
+  "bytes": 235074229,
+  "entries": [
+    {
+      "url": "app-assets/icon-192.png",
+      "bytes": 82629,
+      "revision": "681070a528eede51"
+    },
+    {
+      "url": "app-assets/icon-512.png",
+      "bytes": 525210,
+      "revision": "5bef90a40318539e"
+    },
+    {
+      "url": "app-install.js",
+      "bytes": 3783,
+      "revision": "81e88d1cfee09fce"
+    },
+    {
+      "url": "assets/cheung-chau-map.png",
+      "bytes": 2594556,
+      "revision": "24c6ce86a91b26c0"
+    },
+    {
+      "url": "assets/cheung-chau-start.png",
+      "bytes": 2063671,
+      "revision": "1d155d98e3cb9691"
+    },
+    {
+      "url": "assets/coast-bg.png",
+      "bytes": 2177277,
+      "revision": "b360abcc67a24525"
+    },
+    {
+      "url": "assets/fish/barred-threadfin.png",
+      "bytes": 1493416,
+      "revision": "c9d48ab60e505637"
+    },
+    {
+      "url": "assets/fish/bigeye.png",
+      "bytes": 2542618,
+      "revision": "87d2d479db42b13d"
+    },
+    {
+      "url": "assets/fish/bombay-duck.png",
+      "bytes": 1215520,
+      "revision": "df8ccf317e7024aa"
+    },
+    {
+      "url": "assets/fish/chinese-pomfret.png",
+      "bytes": 2413937,
+      "revision": "96efecbfc98f04da"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/abudefduf-bengalensis.png",
+      "bytes": 356832,
+      "revision": "d3a2a492dabca10e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/abudefduf-vaigiensis.png",
+      "bytes": 348937,
+      "revision": "20117da4268bf254"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/acanthopagrus-schlegelii.png",
+      "bytes": 371660,
+      "revision": "ae4bbf4c1632b9f1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/acanthurus-dussumieri.png",
+      "bytes": 327801,
+      "revision": "4a189332392d48a7"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/alepes-djedaba.png",
+      "bytes": 322192,
+      "revision": "c90cdbae7fc7a348"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/alepes-vari.png",
+      "bytes": 271377,
+      "revision": "440c255f0e2e2d66"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/aluterus-scriptus.png",
+      "bytes": 243377,
+      "revision": "42a4ce10cccfab05"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/ambassis-gymnocephalus.png",
+      "bytes": 202873,
+      "revision": "9219e1a7f7db4db0"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/amblyeleotris-gymnocephala.png",
+      "bytes": 219942,
+      "revision": "da69597d87a9d3cd"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/amblygobius-phalaena.png",
+      "bytes": 319599,
+      "revision": "2faf2715b1817641"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/amphiprion-clarkii.png",
+      "bytes": 288664,
+      "revision": "2e2e50f20b22d7db"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/apogon-doederleini.png",
+      "bytes": 279334,
+      "revision": "6ef5a11b86b7f7bf"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/apogon-fasciatus.png",
+      "bytes": 279533,
+      "revision": "79e303c69f2c44fe"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/apogon-niger.png",
+      "bytes": 305425,
+      "revision": "705bbf407ff99a45"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/apogon-pseudotaeniatus.png",
+      "bytes": 296304,
+      "revision": "702a94ce5814de96"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/apogon-semilineatus.png",
+      "bytes": 359425,
+      "revision": "7f56fa3677eba72a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/asterropteryx-semipunctata.png",
+      "bytes": 316260,
+      "revision": "d909e708d1e944b4"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/atule-mate.png",
+      "bytes": 263561,
+      "revision": "872bc6c79b0f357c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/bathygobius-fuscus.png",
+      "bytes": 331509,
+      "revision": "dd4168a2dc6e230b"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/bathygobius-meggitti.png",
+      "bytes": 349662,
+      "revision": "f0a314158c76dd9c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/bodianus-bilunulatus.png",
+      "bytes": 342370,
+      "revision": "91d0bf08125f62ca"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/caesio-caerulaurea.png",
+      "bytes": 290293,
+      "revision": "1a60075c7ffa4c8a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/caesio-cuning.png",
+      "bytes": 273400,
+      "revision": "351e5ff4d5eff491"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/carangoides-malabaricus.png",
+      "bytes": 293388,
+      "revision": "0b8d56b5a86f96a1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/carangoides-praeustus.png",
+      "bytes": 299810,
+      "revision": "89f7b949ffd7b32f"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/caranx-ignobilis.png",
+      "bytes": 321173,
+      "revision": "69b668e558ecb3a7"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/caranx-sexfasciatus.png",
+      "bytes": 266328,
+      "revision": "2216299135e02eaa"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/centropyge-tibicen.png",
+      "bytes": 213742,
+      "revision": "3a475b537a4d6d70"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/centropyge-vrolikii.png",
+      "bytes": 354062,
+      "revision": "b796505afc104540"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-auriga.png",
+      "bytes": 277945,
+      "revision": "5d6b3a6d3d52ebb6"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-auripes.png",
+      "bytes": 377863,
+      "revision": "89ca3221ee4ec82c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-ephippium.png",
+      "bytes": 262227,
+      "revision": "58dfba8fbd9b9ebb"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-lineolatus.png",
+      "bytes": 252638,
+      "revision": "8402f603ff5014c0"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-lunula.png",
+      "bytes": 345511,
+      "revision": "047cfbee52cf7e23"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-melannotus.png",
+      "bytes": 294601,
+      "revision": "618d8f1fab786f0a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-modestus.png",
+      "bytes": 324159,
+      "revision": "28c77ec4fcccf857"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-octofasciatus.png",
+      "bytes": 242497,
+      "revision": "f793ca643688bde1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-speculum.png",
+      "bytes": 304900,
+      "revision": "9d3a69036ac77b33"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-trifascialis.png",
+      "bytes": 324888,
+      "revision": "3ffec642798b9a40"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-trifasciatus.png",
+      "bytes": 359028,
+      "revision": "53e72ab88a041957"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-vagabundus.png",
+      "bytes": 307654,
+      "revision": "0f114bbc0c5cdca8"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/chaetodon-wiebeli.png",
+      "bytes": 353780,
+      "revision": "66140af64e75200a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/cheilinus-chlorourus.png",
+      "bytes": 362330,
+      "revision": "ad4335fac7df2f55"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/cheilodipterus-artus.png",
+      "bytes": 274763,
+      "revision": "f9c1c0941e78b923"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/choerodon-azurio.png",
+      "bytes": 405661,
+      "revision": "f1132925898d9789"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/choerodon-schoenleinii.png",
+      "bytes": 395073,
+      "revision": "8a13fec3c84c87e0"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/cirrhitichthys-aureus.png",
+      "bytes": 337279,
+      "revision": "2e77ec148d8c6fbb"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/cirrhitichthys-oxycephalus.png",
+      "bytes": 323709,
+      "revision": "9e29979fb3a929af"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/cryptocentrus-strigilliceps.png",
+      "bytes": 263804,
+      "revision": "6cbaa8d4604cb6a9"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/decapterus-russelli.png",
+      "bytes": 230198,
+      "revision": "064e38e73071a9db"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/diagramma-pictum.png",
+      "bytes": 332037,
+      "revision": "b12afb3acbe143b4"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/drepane-punctata.png",
+      "bytes": 308943,
+      "revision": "34c01881d3983116"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/echeneis-naucrates.png",
+      "bytes": 176991,
+      "revision": "53b61781d1e1ce76"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/entomacrodus-stellifer.png",
+      "bytes": 344859,
+      "revision": "880f70e079984d32"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/epinephelus-akaara.png",
+      "bytes": 335219,
+      "revision": "f79b0c15f97b125d"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/epinephelus-areolatus.png",
+      "bytes": 325567,
+      "revision": "bbc60b9406127e7c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/fistularia-commersonii.png",
+      "bytes": 79406,
+      "revision": "42c24e03b3329ff6"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/gerres-filamentosus.png",
+      "bytes": 366569,
+      "revision": "12fcb114b2f22fce"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/girella-punctata.png",
+      "bytes": 244285,
+      "revision": "6755df077fd01f7f"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/gomphosus-varius.png",
+      "bytes": 243367,
+      "revision": "84b48f53476be90e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/goniistius-zonatus.png",
+      "bytes": 348466,
+      "revision": "7ff42fd5d7b32413"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/grouper.png",
+      "bytes": 383892,
+      "revision": "2dfd64f9966742a4"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/gymnothorax-reevesii.png",
+      "bytes": 224840,
+      "revision": "0f523639c3f5ed76"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/gymnothorax-thyrsoideus.png",
+      "bytes": 220248,
+      "revision": "8f02580fe86ca415"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/gymnothorax-undulatus.png",
+      "bytes": 193384,
+      "revision": "495458e9e08457d8"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/halichoeres-dussumieri.png",
+      "bytes": 265165,
+      "revision": "7ba3436a1d72efc2"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/halichoeres-kneri.png",
+      "bytes": 248258,
+      "revision": "e99f6edfa4e1efd9"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/halichoeres-poecilopterus.png",
+      "bytes": 337551,
+      "revision": "cdb3dbdf0559b08c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/halichoeres-tenuispinis.png",
+      "bytes": 279865,
+      "revision": "ba25c29bae8f6126"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/heniochus-acuminatus.png",
+      "bytes": 226285,
+      "revision": "c8c4efcc45d30dc4"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/histrio-histrio.png",
+      "bytes": 428685,
+      "revision": "b3a1cb889def8b89"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/istigobius-decoratus.png",
+      "bytes": 278520,
+      "revision": "97a29134fe363bdf"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/istigobius-diadema.png",
+      "bytes": 266882,
+      "revision": "ad249a5f0047bc5c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/kyphosus-cinerascens.png",
+      "bytes": 292190,
+      "revision": "b6b972e5d848f5df"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/kyphosus-vaigiensis.png",
+      "bytes": 371602,
+      "revision": "76eab9d4e701c3c2"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/labroides-dimidiatus.png",
+      "bytes": 173353,
+      "revision": "e7a715054109c1f1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lactarius-lactarius.png",
+      "bytes": 331893,
+      "revision": "670aaad8b49b1357"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lactoria-cornuta.png",
+      "bytes": 279550,
+      "revision": "3c9966b696c676b3"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lates-calcarifer.png",
+      "bytes": 304754,
+      "revision": "87a23a8a0731ba17"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lethrinus-haematopterus.png",
+      "bytes": 286314,
+      "revision": "ff7705bc09ae576e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lethrinus-nebulosus.png",
+      "bytes": 319477,
+      "revision": "e348996abe68ac55"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-argentimaculatus.png",
+      "bytes": 362745,
+      "revision": "8ddaa620e8d151b8"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-fulvus.png",
+      "bytes": 314152,
+      "revision": "7d82985598349b90"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-johnii.png",
+      "bytes": 351075,
+      "revision": "a0023db7b67b16cc"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-kasmira.png",
+      "bytes": 303576,
+      "revision": "325ecc1f0228c96c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-lemniscatus.png",
+      "bytes": 309610,
+      "revision": "e7040e47c2a1b762"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-lutjanus.png",
+      "bytes": 305417,
+      "revision": "5dfefc40f8be7b45"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-malabaricus.png",
+      "bytes": 375436,
+      "revision": "7c0979ef6b3e83a2"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-ophuysenii.png",
+      "bytes": 313535,
+      "revision": "41d7441194b5523c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-russellii.png",
+      "bytes": 298876,
+      "revision": "6b5f6b2645e54b3c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-sebae.png",
+      "bytes": 361826,
+      "revision": "7a8c9264fece6f4b"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-stellatus.png",
+      "bytes": 396419,
+      "revision": "2a10a44e1d535533"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/lutjanus-vitta.png",
+      "bytes": 285729,
+      "revision": "3624ff6ba4c4e8a0"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/megalops-cyprinoides.png",
+      "bytes": 240519,
+      "revision": "0eae169c466a9f8e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/mene-maculata.png",
+      "bytes": 304153,
+      "revision": "f95eeb462be9c445"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/microcanthus-strigatus.png",
+      "bytes": 313081,
+      "revision": "21916d696919e116"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/monacanthus-chinensis.png",
+      "bytes": 290930,
+      "revision": "a942c3453f4e3881"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/monodactylus-argenteus.png",
+      "bytes": 248247,
+      "revision": "22aa0fff59a9864e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/mullet.png",
+      "bytes": 311175,
+      "revision": "c960963b50c889c8"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/oplegnathus-fasciatus.png",
+      "bytes": 347730,
+      "revision": "36f2e6e7c143d868"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/oplegnathus-punctatus.png",
+      "bytes": 291813,
+      "revision": "06415420c1a440b5"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/ostracion-cubicus.png",
+      "bytes": 322678,
+      "revision": "e98cfe49a9c0cee5"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/ostracion-immaculatus.png",
+      "bytes": 260701,
+      "revision": "22e810f37b7e25af"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pagrus-major.png",
+      "bytes": 359818,
+      "revision": "1ad541d8ce4ffa39"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parablennius-thysanius.png",
+      "bytes": 298841,
+      "revision": "9811c8ca921e2a38"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parapercis-snyderi.png",
+      "bytes": 309684,
+      "revision": "84600fe9ab1e3950"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parapristipoma-trilineatum.png",
+      "bytes": 232681,
+      "revision": "a1e9f794369028f1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parioglossus-dotui.png",
+      "bytes": 236031,
+      "revision": "87234e3a9fe53ac9"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parupeneus-barberinoides.png",
+      "bytes": 228072,
+      "revision": "e8fc4d61d0dcc24c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parupeneus-bifasciatus.png",
+      "bytes": 343951,
+      "revision": "3e78ec0322b97168"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parupeneus-ciliatus.png",
+      "bytes": 261237,
+      "revision": "940dca46525e5339"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parupeneus-indicus.png",
+      "bytes": 304787,
+      "revision": "3b907aeb7d9f3538"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/parupeneus-multifasciatus.png",
+      "bytes": 326918,
+      "revision": "c731c404f01b93fa"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pempheris-oualensis.png",
+      "bytes": 395921,
+      "revision": "a94a4ff2381c1506"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/petroscirtes-breviceps.png",
+      "bytes": 188100,
+      "revision": "0d918c11bcd6be41"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pinjalo-pinjalo.png",
+      "bytes": 270133,
+      "revision": "18274923c719a24d"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/platax-pinnatus.png",
+      "bytes": 356045,
+      "revision": "110292bdc0877858"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/platax-teira.png",
+      "bytes": 293071,
+      "revision": "527c69781661a5a9"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/plectorhinchus-cinctus.png",
+      "bytes": 324848,
+      "revision": "d378443115abd234"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/plectorhinchus-gibbosus.png",
+      "bytes": 276803,
+      "revision": "0a859bf61ed15f1f"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/plectropomus-leopardus.png",
+      "bytes": 365424,
+      "revision": "456ea17c50bd87f7"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/plotosus-lineatus.png",
+      "bytes": 163724,
+      "revision": "dcce6dc9e1848c7e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pomacanthus-annularis.png",
+      "bytes": 347344,
+      "revision": "7e4632152dd5f71a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pomadasys-quadrilineatus.png",
+      "bytes": 318944,
+      "revision": "524e2aa3aca94023"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/prionurus-scalprum.png",
+      "bytes": 336333,
+      "revision": "bdbbbb46cbe2d46c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/ptereleotris-evides.png",
+      "bytes": 182211,
+      "revision": "7dae41a099a92d97"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/ptereleotris-hanae.png",
+      "bytes": 124417,
+      "revision": "43197e35cf07eb6c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/pterocaesio-diagramma.png",
+      "bytes": 277958,
+      "revision": "4cefbe5ca225ac81"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/rhabdosargus-sarba.png",
+      "bytes": 389359,
+      "revision": "778fe98e662d2199"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/sargocentron-rubrum.png",
+      "bytes": 414372,
+      "revision": "f462213255e5fe47"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/scolopsis-vosmeri.png",
+      "bytes": 370390,
+      "revision": "f85ff0c757c97752"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/scomber-japonicus.png",
+      "bytes": 238579,
+      "revision": "d18d28d81d49c5ea"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/scomberomorus-commerson.png",
+      "bytes": 200688,
+      "revision": "d22abe79e2571c8a"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/seabass.png",
+      "bytes": 304757,
+      "revision": "776aa1fa5a5e8f31"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/seabream.png",
+      "bytes": 386888,
+      "revision": "986ff66a7873bd98"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/sebastiscus-marmoratus.png",
+      "bytes": 405830,
+      "revision": "6730393a7cb98faa"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/selaroides-leptolepis.png",
+      "bytes": 261438,
+      "revision": "9e90ca9cc0d6fa0e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/semicossyphus-reticulatus.png",
+      "bytes": 445026,
+      "revision": "32814deb1be48a1c"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/seriola-dumerili.png",
+      "bytes": 279016,
+      "revision": "abf74f1fc2e99641"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/siganus-canaliculatus.png",
+      "bytes": 292166,
+      "revision": "8b598ce87fec724e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/stephanolepis-cirrhifer.png",
+      "bytes": 274840,
+      "revision": "484ad49bdaea085d"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/stethojulis-interrupta.png",
+      "bytes": 198171,
+      "revision": "68dd540641aeed73"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/suezichthys-gracilis.png",
+      "bytes": 145975,
+      "revision": "7cca43bd4eefd2b8"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/thalassoma-hardwicke.png",
+      "bytes": 269484,
+      "revision": "f5c9e8b3cf19918e"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/thalassoma-lunare.png",
+      "bytes": 282272,
+      "revision": "c72ca3a2fd587bc1"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/trachinotus-baillonii.png",
+      "bytes": 303318,
+      "revision": "0e846b2076769bed"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/trachurus-japonicus.png",
+      "bytes": 261858,
+      "revision": "36deed23e66b0966"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/tridentiger-trigonocephalus.png",
+      "bytes": 284699,
+      "revision": "7ec19b56b4307078"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/upeneus-japonicus.png",
+      "bytes": 238535,
+      "revision": "952f34fe072c00fc"
+    },
+    {
+      "url": "assets/fish/corrected-20260914/upeneus-tragula.png",
+      "bytes": 295373,
+      "revision": "3dc85c78a43692cc"
+    },
+    {
+      "url": "assets/fish/crimson-snapper.png",
+      "bytes": 2436847,
+      "revision": "30c812add030f10f"
+    },
+    {
+      "url": "assets/fish/filefish.png",
+      "bytes": 2663098,
+      "revision": "ad119edf5e658e35"
+    },
+    {
+      "url": "assets/fish/flounder.png",
+      "bytes": 2339057,
+      "revision": "22ad1c0628badf0a"
+    },
+    {
+      "url": "assets/fish/fourfinger-threadfin.png",
+      "bytes": 1431478,
+      "revision": "7692ea4076d839cd"
+    },
+    {
+      "url": "assets/fish/golden-threadfin-bream.png",
+      "bytes": 2068705,
+      "revision": "f9cb0b0a801b7555"
+    },
+    {
+      "url": "assets/fish/grey-mullet.png",
+      "bytes": 1646657,
+      "revision": "9082fae29abc64fe"
+    },
+    {
+      "url": "assets/fish/japanese-seabass.png",
+      "bytes": 1785693,
+      "revision": "f6c9ceb78cb61a0e"
+    },
+    {
+      "url": "assets/fish/japanese-whiting.png",
+      "bytes": 1539406,
+      "revision": "ebf359c28a28663d"
+    },
+    {
+      "url": "assets/fish/largehead-hairtail.png",
+      "bytes": 1117283,
+      "revision": "b467b049546e0b14"
+    },
+    {
+      "url": "assets/fish/mahi-mahi.png",
+      "bytes": 1490358,
+      "revision": "1d42d8a2b0cf465b"
+    },
+    {
+      "url": "assets/fish/orange-spotted-grouper.png",
+      "bytes": 1872452,
+      "revision": "b6d7becb451813b8"
+    },
+    {
+      "url": "assets/fish/ponyfish.png",
+      "bytes": 2505151,
+      "revision": "ba775a6a6b2615dc"
+    },
+    {
+      "url": "assets/fish/pufferfish.png",
+      "bytes": 1812135,
+      "revision": "e30d15c5906a2084"
+    },
+    {
+      "url": "assets/fish/rabbitfish.png",
+      "bytes": 2399738,
+      "revision": "49526150bca69895"
+    },
+    {
+      "url": "assets/fish/silver-pomfret.png",
+      "bytes": 2343916,
+      "revision": "c885df54f0a762bb"
+    },
+    {
+      "url": "assets/fish/tongue-sole.png",
+      "bytes": 2020972,
+      "revision": "1cd5d89df606fb37"
+    },
+    {
+      "url": "assets/fish/yellow-croaker.png",
+      "bytes": 2264144,
+      "revision": "65f5469be11c3ca8"
+    },
+    {
+      "url": "assets/fish/yellowfin-seabream.png",
+      "bytes": 2476096,
+      "revision": "938f2898289e7abf"
+    },
+    {
+      "url": "assets/fishing-master-certificate.png",
+      "bytes": 3806357,
+      "revision": "d2549ec7e4dd5834"
+    },
+    {
+      "url": "assets/grey-mullet.png",
+      "bytes": 1352883,
+      "revision": "ad101ac32fb8ccb0"
+    },
+    {
+      "url": "assets/japanese-seabass.png",
+      "bytes": 1675109,
+      "revision": "04772cdcd896c330"
+    },
+    {
+      "url": "assets/orange-spotted-grouper.png",
+      "bytes": 1888465,
+      "revision": "7459e8604c5031a8"
+    },
+    {
+      "url": "assets/rod-pro.png",
+      "bytes": 1755455,
+      "revision": "8cc21b7ba7dc6279"
+    },
+    {
+      "url": "assets/yellowfin-seabream.png",
+      "bytes": 1770569,
+      "revision": "7cfad4ed84bc74b3"
+    },
+    {
+      "url": "delete-account.html",
+      "bytes": 2006,
+      "revision": "4c555007169df753"
+    },
+    {
+      "url": "index.html",
+      "bytes": 5513,
+      "revision": "5d1db57b6c4b29c9"
+    },
+    {
+      "url": "manifest.webmanifest",
+      "bytes": 797,
+      "revision": "adbcd25d3c1c916b"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/assets/festival-board.png",
+      "bytes": 1931281,
+      "revision": "5513a8256e24ed72"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png",
+      "bytes": 3222654,
+      "revision": "71719ed36a9e94a0"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/assets/peace-bun-plain.png",
+      "bytes": 1563366,
+      "revision": "0f4dc7392a64818a"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/assets/peace-bun-stamped.png",
+      "bytes": 1651418,
+      "revision": "1753b5217f7a5bd3"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/assets/peace-bun.png",
+      "bytes": 1651418,
+      "revision": "1753b5217f7a5bd3"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/certificate-v1.css",
+      "bytes": 400,
+      "revision": "335d699c2f9960e6"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/config.json",
+      "bytes": 2094,
+      "revision": "2c09d94d6be0ff7c"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/fishing-rewards.js",
+      "bytes": 1945,
+      "revision": "3894ac2b392f90be"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/fullscreen-safe.css",
+      "bytes": 593,
+      "revision": "4d262e6b0a5af485"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/game-menu.css",
+      "bytes": 1480,
+      "revision": "8dab1956c72c5efc"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/game-menu.js",
+      "bytes": 1331,
+      "revision": "cd87ea16bab10565"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/game.js",
+      "bytes": 11318,
+      "revision": "22ef935f6ba82837"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/index.html",
+      "bytes": 3647,
+      "revision": "a7be01e2423b5a30"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/levels-v3.css",
+      "bytes": 1332,
+      "revision": "ef7160d096ecaa87"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/mobile-modal-fix-v1.css",
+      "bytes": 1048,
+      "revision": "56f5dc7d3215f192"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/objects-v2.css",
+      "bytes": 2168,
+      "revision": "b95b34748b3b78ee"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/readable-0913.css",
+      "bytes": 1978,
+      "revision": "f2c3b1bda5eb7859"
+    },
+    {
+      "url": "mini-games/peace-bun-whack/style.css",
+      "bytes": 5225,
+      "revision": "1122837e3e849a5b"
+    },
+    {
+      "url": "mp4/get.mp4",
+      "bytes": 4202586,
+      "revision": "c1bb98b126a6a01b"
+    },
+    {
+      "url": "mp4/ship-1pm.mp4",
+      "bytes": 6764867,
+      "revision": "e7ca391d9b1ab5f4"
+    },
+    {
+      "url": "mp4/ship-7am.mp4",
+      "bytes": 6534090,
+      "revision": "ad1e568312115b7f"
+    },
+    {
+      "url": "mp4/ship-9pm.mp4",
+      "bytes": 7051981,
+      "revision": "544ee97bb32e9a87"
+    },
+    {
+      "url": "offline-ui.css",
+      "bytes": 778,
+      "revision": "6623911a77a79aae"
+    },
+    {
+      "url": "offline.html",
+      "bytes": 972,
+      "revision": "6c246a6d10ac6808"
+    },
+    {
+      "url": "privacy.html",
+      "bytes": 3052,
+      "revision": "0c3a8d4a0ad7f1fb"
+    },
+    {
+      "url": "pro/config.json",
+      "bytes": 180739,
+      "revision": "a7502101bebb2c0e"
+    },
+    {
+      "url": "region-guide.js",
+      "bytes": 36771,
+      "revision": "b970326b5f640c14"
+    },
+    {
+      "url": "sport/admin.html",
+      "bytes": 646,
+      "revision": "5519c8de9e9ed989"
+    },
+    {
+      "url": "sport/arrival.css",
+      "bytes": 2558,
+      "revision": "17973045f49c59dc"
+    },
+    {
+      "url": "sport/arrival.js",
+      "bytes": 5295,
+      "revision": "a4db05cacbc25886"
+    },
+    {
+      "url": "sport/assets/bookshop/bgm-piano.mp3",
+      "bytes": 3786522,
+      "revision": "aca1f55e59968afe"
+    },
+    {
+      "url": "sport/assets/bookshop/book-bg.jpg",
+      "bytes": 191329,
+      "revision": "0b2504e6a0a80781"
+    },
+    {
+      "url": "sport/assets/bookshop/bookshop-bg.jpg",
+      "bytes": 507054,
+      "revision": "6517746610dd1662"
+    },
+    {
+      "url": "sport/assets/bookshop/bookshop-morning.png",
+      "bytes": 3265678,
+      "revision": "ac8f8d33f4609494"
+    },
+    {
+      "url": "sport/assets/bookshop/bookshop-night.png",
+      "bytes": 3081006,
+      "revision": "cdacf8c80b0d9380"
+    },
+    {
+      "url": "sport/assets/bookshop/machine.png",
+      "bytes": 2460625,
+      "revision": "a3254b3c6a311158"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-1.jpg",
+      "bytes": 256470,
+      "revision": "9494ab979d7792f2"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-2.jpg",
+      "bytes": 255146,
+      "revision": "e2276245de702bfe"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-3.jpg",
+      "bytes": 188904,
+      "revision": "0fb75fd0a7c04d4d"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-4.jpg",
+      "bytes": 131222,
+      "revision": "54c3e47c48a0153e"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-5.jpg",
+      "bytes": 175576,
+      "revision": "3280718d335d6786"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-6.jpg",
+      "bytes": 205620,
+      "revision": "fb4a388b027f9558"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-table.png",
+      "bytes": 2139945,
+      "revision": "12bbf74c2aba9520"
+    },
+    {
+      "url": "sport/assets/bookshop/radio2.png",
+      "bytes": 19920,
+      "revision": "3f2abfba5e738da0"
+    },
+    {
+      "url": "sport/assets/bookshop/shuttlecock.png",
+      "bytes": 1574951,
+      "revision": "27958e93c9617da5"
+    },
+    {
+      "url": "sport/assets/bookshop/watermelon-ball.png",
+      "bytes": 1367071,
+      "revision": "ed16c460021e240c"
+    },
+    {
+      "url": "sport/assets/bookshop/yoyo.png",
+      "bytes": 1245945,
+      "revision": "21e46a8e2825b695"
+    },
+    {
+      "url": "sport/assets/bookshop/離島旅程-3d.png",
+      "bytes": 5408127,
+      "revision": "12a1c2eedc464ae7"
+    },
+    {
+      "url": "sport/assets/cheung-chau.png",
+      "bytes": 1951773,
+      "revision": "1ba5aa1a6d453e2c"
+    },
+    {
+      "url": "sport/assets/competition.png",
+      "bytes": 2228575,
+      "revision": "4473a7b3f2f7e0c3"
+    },
+    {
+      "url": "sport/assets/economy/bait-kit.png",
+      "bytes": 2187983,
+      "revision": "928ce824c9195481"
+    },
+    {
+      "url": "sport/assets/economy/bait-kit.webp",
+      "bytes": 138242,
+      "revision": "9249478ab9e63823"
+    },
+    {
+      "url": "sport/assets/economy/fish-market.png",
+      "bytes": 1876367,
+      "revision": "f65e3869b301fe96"
+    },
+    {
+      "url": "sport/assets/economy/fish-market.webp",
+      "bytes": 127624,
+      "revision": "d8b60460eb7b9868"
+    },
+    {
+      "url": "sport/assets/economy/manifest.json",
+      "bytes": 2046,
+      "revision": "d953c1b4b1fcc239"
+    },
+    {
+      "url": "sport/assets/economy/market-scale.png",
+      "bytes": 2368365,
+      "revision": "e294a896cee09460"
+    },
+    {
+      "url": "sport/assets/economy/market-scale.webp",
+      "bytes": 231326,
+      "revision": "d5b6d2b147f5e09b"
+    },
+    {
+      "url": "sport/assets/economy/tackle-shop.png",
+      "bytes": 2039335,
+      "revision": "0eea62b16e1f9358"
+    },
+    {
+      "url": "sport/assets/economy/tackle-shop.webp",
+      "bytes": 158368,
+      "revision": "60a96004d0d2182b"
+    },
+    {
+      "url": "sport/assets/island-ui/journal.jpg",
+      "bytes": 501105,
+      "revision": "d8ad10dec78b7592"
+    },
+    {
+      "url": "sport/assets/island-ui/menu-day.jpg",
+      "bytes": 895408,
+      "revision": "2e40632fd6ae904d"
+    },
+    {
+      "url": "sport/assets/island-ui/menu-morning.jpg",
+      "bytes": 736777,
+      "revision": "6ca7b558e06de0f6"
+    },
+    {
+      "url": "sport/assets/island-ui/menu-night.jpg",
+      "bytes": 759441,
+      "revision": "e3c8030b4db45a61"
+    },
+    {
+      "url": "sport/assets/island-ui/titlename.png",
+      "bytes": 234302,
+      "revision": "ad7a8786a74e8a83"
+    },
+    {
+      "url": "sport/assets/lantau.png",
+      "bytes": 1955160,
+      "revision": "df1684d575ff0cfa"
+    },
+    {
+      "url": "sport/assets/locations-20260918/cheung-chau-morning.png",
+      "bytes": 3052627,
+      "revision": "e7b8b97a1c8bd3c7"
+    },
+    {
+      "url": "sport/assets/locations-20260918/cheung-chau-night.png",
+      "bytes": 2541537,
+      "revision": "949b5ef6ad4565a8"
+    },
+    {
+      "url": "sport/assets/locations-20260918/cheung-chau-noon.png",
+      "bytes": 3173836,
+      "revision": "619e98b0f1fa87e3"
+    },
+    {
+      "url": "sport/assets/locations-20260918/harbour-morning.png",
+      "bytes": 2626048,
+      "revision": "aee3a69b0c2767b3"
+    },
+    {
+      "url": "sport/assets/locations-20260918/harbour-night.png",
+      "bytes": 2510505,
+      "revision": "2f3d0fd2cdeaeb68"
+    },
+    {
+      "url": "sport/assets/locations-20260918/harbour-noon.png",
+      "bytes": 2695241,
+      "revision": "1eac9157f4874f0e"
+    },
+    {
+      "url": "sport/assets/locations-20260918/tung-wan-morning.png",
+      "bytes": 2614047,
+      "revision": "0ee7b55a58e6b14c"
+    },
+    {
+      "url": "sport/assets/locations-20260918/tung-wan-night.png",
+      "bytes": 2548398,
+      "revision": "c242701ce4a33fea"
+    },
+    {
+      "url": "sport/assets/locations-20260918/tung-wan-noon.png",
+      "bytes": 2657290,
+      "revision": "76dd153714e02759"
+    },
+    {
+      "url": "sport/assets/locations/cheung-chau-morning.webp",
+      "bytes": 234290,
+      "revision": "4a4cfd6a57ad1ccf"
+    },
+    {
+      "url": "sport/assets/locations/cheung-chau-night.webp",
+      "bytes": 165274,
+      "revision": "d36908c9eefeaf43"
+    },
+    {
+      "url": "sport/assets/locations/cheung-chau-noon.webp",
+      "bytes": 230514,
+      "revision": "8d6de39509d60250"
+    },
+    {
+      "url": "sport/assets/locations/harbour-morning.webp",
+      "bytes": 254594,
+      "revision": "509962247c4fc6a4"
+    },
+    {
+      "url": "sport/assets/locations/harbour-night.webp",
+      "bytes": 228968,
+      "revision": "e513eeb745d443a2"
+    },
+    {
+      "url": "sport/assets/locations/harbour-noon.webp",
+      "bytes": 268744,
+      "revision": "e1358aecb4b2deae"
+    },
+    {
+      "url": "sport/assets/locations/manifest.json",
+      "bytes": 20829,
+      "revision": "d640d07877c505bf"
+    },
+    {
+      "url": "sport/assets/locations/peng-chau-morning.webp",
+      "bytes": 291500,
+      "revision": "0a5cfbe3b64490a1"
+    },
+    {
+      "url": "sport/assets/locations/peng-chau-night.webp",
+      "bytes": 190194,
+      "revision": "a0050cc831a3a4bf"
+    },
+    {
+      "url": "sport/assets/locations/peng-chau-noon.webp",
+      "bytes": 265606,
+      "revision": "fda9b5367c72b9c6"
+    },
+    {
+      "url": "sport/assets/locations/po-toi-morning.webp",
+      "bytes": 290634,
+      "revision": "7ddf41d7ac64e9bc"
+    },
+    {
+      "url": "sport/assets/locations/po-toi-night.webp",
+      "bytes": 191726,
+      "revision": "55ad539b6317edb5"
+    },
+    {
+      "url": "sport/assets/locations/po-toi-noon.webp",
+      "bytes": 253940,
+      "revision": "19f02786f1a2af3b"
+    },
+    {
+      "url": "sport/assets/locations/sharp-island-morning.webp",
+      "bytes": 375992,
+      "revision": "d477161b04a424ef"
+    },
+    {
+      "url": "sport/assets/locations/sharp-island-night.webp",
+      "bytes": 272908,
+      "revision": "613c270edc7f47d0"
+    },
+    {
+      "url": "sport/assets/locations/sharp-island-noon.webp",
+      "bytes": 363108,
+      "revision": "21e03215a45dde5c"
+    },
+    {
+      "url": "sport/assets/locations/tsing-ma-morning.webp",
+      "bytes": 295006,
+      "revision": "89d276c54855beab"
+    },
+    {
+      "url": "sport/assets/locations/tsing-ma-night.webp",
+      "bytes": 170930,
+      "revision": "f76b1b5ca6036262"
+    },
+    {
+      "url": "sport/assets/locations/tsing-ma-noon.webp",
+      "bytes": 226176,
+      "revision": "7516274c7a4b0ed9"
+    },
+    {
+      "url": "sport/assets/locations/tsuen-wan-morning.webp",
+      "bytes": 329496,
+      "revision": "b69c070179b5750d"
+    },
+    {
+      "url": "sport/assets/locations/tsuen-wan-night.webp",
+      "bytes": 231360,
+      "revision": "12878e2ebb4ce970"
+    },
+    {
+      "url": "sport/assets/locations/tsuen-wan-noon.webp",
+      "bytes": 296786,
+      "revision": "21cdb05584e8957b"
+    },
+    {
+      "url": "sport/assets/locations/tung-lung-morning.webp",
+      "bytes": 369166,
+      "revision": "9950460cc58e9bd8"
+    },
+    {
+      "url": "sport/assets/locations/tung-lung-night.webp",
+      "bytes": 235768,
+      "revision": "0c3c25b2cddb081e"
+    },
+    {
+      "url": "sport/assets/locations/tung-lung-noon.webp",
+      "bytes": 357778,
+      "revision": "9e90f8d2cd8efc28"
+    },
+    {
+      "url": "sport/assets/locations/tung-wan-morning.webp",
+      "bytes": 368384,
+      "revision": "e702a03d02deb627"
+    },
+    {
+      "url": "sport/assets/locations/tung-wan-night.webp",
+      "bytes": 269656,
+      "revision": "e5a99aa3723092ab"
+    },
+    {
+      "url": "sport/assets/locations/tung-wan-noon.webp",
+      "bytes": 356736,
+      "revision": "49e2fc1ee8c72325"
+    },
+    {
+      "url": "sport/assets/motion/manifest.json",
+      "bytes": 2905,
+      "revision": "6840717992fd6d24"
+    },
+    {
+      "url": "sport/assets/motion/reeling-hand.png",
+      "bytes": 1456249,
+      "revision": "6d964cde32e325da"
+    },
+    {
+      "url": "sport/assets/motion/reeling-hand.webp",
+      "bytes": 268796,
+      "revision": "6526c26592783475"
+    },
+    {
+      "url": "sport/assets/motion/rod-base-v2.png",
+      "bytes": 1464334,
+      "revision": "3f9880960572ad33"
+    },
+    {
+      "url": "sport/assets/motion/rod-base-v2.webp",
+      "bytes": 140474,
+      "revision": "04fffe655891ea2e"
+    },
+    {
+      "url": "sport/assets/motion/rod-base.png",
+      "bytes": 1360932,
+      "revision": "63cb79ef8a5c7f27"
+    },
+    {
+      "url": "sport/assets/motion/rod-base.webp",
+      "bytes": 120218,
+      "revision": "ee0378b7a47321d5"
+    },
+    {
+      "url": "sport/assets/new-discovery.webp",
+      "bytes": 570876,
+      "revision": "dae72a0f5d188c5e"
+    },
+    {
+      "url": "sport/assets/ninepins.png",
+      "bytes": 2548422,
+      "revision": "23794e36651d4edf"
+    },
+    {
+      "url": "sport/assets/opening.png",
+      "bytes": 2111218,
+      "revision": "5b205b86d819069c"
+    },
+    {
+      "url": "sport/assets/po-toi.png",
+      "bytes": 2161938,
+      "revision": "41fd18011016bf46"
+    },
+    {
+      "url": "sport/assets/trophy.png",
+      "bytes": 2290384,
+      "revision": "3a1b8cc69536242a"
+    },
+    {
+      "url": "sport/bookshop-data.js",
+      "bytes": 1977,
+      "revision": "c690041f0b07434b"
+    },
+    {
+      "url": "sport/bookshop-refinements.css",
+      "bytes": 2264,
+      "revision": "b1da8b0c724124f0"
+    },
+    {
+      "url": "sport/catalog.css",
+      "bytes": 736,
+      "revision": "4b6e29dce59937be"
+    },
+    {
+      "url": "sport/cloud.js",
+      "bytes": 3786,
+      "revision": "9afa4880a3dfbdce"
+    },
+    {
+      "url": "sport/discovery.css",
+      "bytes": 1029,
+      "revision": "1c747e89a16a6f26"
+    },
+    {
+      "url": "sport/discovery.js",
+      "bytes": 2107,
+      "revision": "c428f582107022da"
+    },
+    {
+      "url": "sport/economy-core.js",
+      "bytes": 3354,
+      "revision": "84b74b5111badc2e"
+    },
+    {
+      "url": "sport/economy.css",
+      "bytes": 2536,
+      "revision": "2ab59b9a0b5e6ab8"
+    },
+    {
+      "url": "sport/economy.js",
+      "bytes": 9251,
+      "revision": "beba1aeca07f11bd"
+    },
+    {
+      "url": "sport/entry-orientation.css",
+      "bytes": 500,
+      "revision": "b959f04900ef3619"
+    },
+    {
+      "url": "sport/feedback.css",
+      "bytes": 836,
+      "revision": "939ae0d297bb0920"
+    },
+    {
+      "url": "sport/feedback.js",
+      "bytes": 2236,
+      "revision": "e0706229e35770d0"
+    },
+    {
+      "url": "sport/fish-education.js",
+      "bytes": 74911,
+      "revision": "c68078f23a4dfdf8"
+    },
+    {
+      "url": "sport/fish-info.css",
+      "bytes": 1289,
+      "revision": "d560ce23cbfc9e25"
+    },
+    {
+      "url": "sport/fish-info.js",
+      "bytes": 2961,
+      "revision": "8d1b3f789abc44cd"
+    },
+    {
+      "url": "sport/fish-showcase.css",
+      "bytes": 2561,
+      "revision": "feae079c9bbd9fd7"
+    },
+    {
+      "url": "sport/fullscreen.css",
+      "bytes": 518,
+      "revision": "52ec32c4d197ca55"
+    },
+    {
+      "url": "sport/game.js",
+      "bytes": 34340,
+      "revision": "45a687caa8b203d6"
+    },
+    {
+      "url": "sport/home.css",
+      "bytes": 1781,
+      "revision": "5fd8e794dd2fbc88"
+    },
+    {
+      "url": "sport/index.html",
+      "bytes": 5491,
+      "revision": "afea0bbbb5877280"
+    },
+    {
+      "url": "sport/island-ui.css",
+      "bytes": 10134,
+      "revision": "c385dc44a2a97ea9"
+    },
+    {
+      "url": "sport/island-ui.js",
+      "bytes": 8003,
+      "revision": "99c00b53a930da1e"
+    },
+    {
+      "url": "sport/journal.css",
+      "bytes": 3279,
+      "revision": "91c8b24505eaaac0"
+    },
+    {
+      "url": "sport/journal.js",
+      "bytes": 2480,
+      "revision": "700e92e657f8cead"
+    },
+    {
+      "url": "sport/journey-0913.css",
+      "bytes": 5358,
+      "revision": "443e425b3ff7477f"
+    },
+    {
+      "url": "sport/journey-0913.js",
+      "bytes": 15359,
+      "revision": "cdce626300a3bbf4"
+    },
+    {
+      "url": "sport/launch.css",
+      "bytes": 695,
+      "revision": "19827421058f9fba"
+    },
+    {
+      "url": "sport/live-weather.js",
+      "bytes": 3777,
+      "revision": "ef56b17787642465"
+    },
+    {
+      "url": "sport/market-layout.css",
+      "bytes": 1191,
+      "revision": "1dc536f6d817a9f2"
+    },
+    {
+      "url": "sport/mobile.css",
+      "bytes": 781,
+      "revision": "4df51d78171b858e"
+    },
+    {
+      "url": "sport/motion.css",
+      "bytes": 761,
+      "revision": "575d16ebac972622"
+    },
+    {
+      "url": "sport/motion.js",
+      "bytes": 6787,
+      "revision": "b96b6a9a38968cdf"
+    },
+    {
+      "url": "sport/personal-journal.css",
+      "bytes": 7932,
+      "revision": "436f75d9af19fd93"
+    },
+    {
+      "url": "sport/personal-journal.js",
+      "bytes": 8940,
+      "revision": "0778af6ba88dda94"
+    },
+    {
+      "url": "sport/quick-hud.css",
+      "bytes": 3971,
+      "revision": "fed63a4296d7ed2a"
+    },
+    {
+      "url": "sport/quick-hud.js",
+      "bytes": 3906,
+      "revision": "03c7b05763ef1191"
+    },
+    {
+      "url": "sport/refinements-0916.css",
+      "bytes": 1876,
+      "revision": "390e070892e6a9c8"
+    },
+    {
+      "url": "sport/region-stamps.js",
+      "bytes": 1149,
+      "revision": "2fc2b40aecd35227"
+    },
+    {
+      "url": "sport/region-ui.css",
+      "bytes": 4232,
+      "revision": "5d52d73074c5117a"
+    },
+    {
+      "url": "sport/region-ui.js",
+      "bytes": 6338,
+      "revision": "0285199cfec2bd5c"
+    },
+    {
+      "url": "sport/save-merge.js",
+      "bytes": 933,
+      "revision": "8ad52e45052c2fdb"
+    },
+    {
+      "url": "sport/style.css",
+      "bytes": 5956,
+      "revision": "35355582f50ba2e6"
+    },
+    {
+      "url": "sport/tackle-layout.css",
+      "bytes": 1039,
+      "revision": "8de9e3d5af088c9a"
+    },
+    {
+      "url": "sport/vendor/firebase-10.12.5/firebase-app.js",
+      "bytes": 102290,
+      "revision": "7ffa909c4c1d4218"
+    },
+    {
+      "url": "sport/vendor/firebase-10.12.5/firebase-auth.js",
+      "bytes": 150959,
+      "revision": "b957017371a5ede3"
+    },
+    {
+      "url": "sport/vendor/firebase-10.12.5/firebase-firestore.js",
+      "bytes": 438021,
+      "revision": "3cb27b5fd790b880"
+    },
+    {
+      "url": "sport/weather-ui.js",
+      "bytes": 2473,
+      "revision": "641668c81a3591e4"
+    }
+  ]
+}
