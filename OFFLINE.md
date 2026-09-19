@@ -11,3 +11,6 @@ Google 登入、雲端同步、天文台即時資料、YouTube 及外部網頁�
 維護時執行 `node tools/build-offline-manifest.cjs` 重新產生有內容雜湊的資源清單。清單僅包含遊戲發布資源，不包含編輯器、原始修改資料或私密金鑰。Firebase 10.12.5 官方 SDK 隨附以避免離線啟動依賴 CDN；使用者資料和認證請求不會進入 Service Worker 快取。
 
 驗證：`tests/offline.browser.cjs` 測試完整下載、斷網重新啟動、本機存檔、所有發布資源、風景、影片 byte ranges、實際拋竿與平安包；`tests/cloud-offline.test.cjs` 驗證帳戶隔離及重連同步。
+
+## Android 1.1.0
+Android 1.1.0 將全部遊戲資源直接包入安裝檔，首次開啟即可離線玩，不需要上述網站版下載步驟。App 使用獨立本機存檔；Google 雲端功能保留於外部瀏覽器網頁版，舊存檔可用 JSON 備份匯入。即時天氣、YouTube 及外部網頁仍需連線。

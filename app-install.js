@@ -1,5 +1,6 @@
 /* Offline pack is opt-in: show actual completion, keep partial downloads resumable. */
 (()=>{
+ if(globalThis.ISLAND_NATIVE)return;
  let registration,info={ready:false,done:0,total:0,bytes:0},failure='';
  const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('../offline-ui.css',document.baseURI);document.head.append(css);
  const status=()=>registration?.active?.postMessage({type:'OFFLINE_STATUS'});
