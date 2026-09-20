@@ -97,3 +97,7 @@
 #stage .checkoutInfo,#stage .checkoutOrder{background:transparent}
 #stage .catalogGrid .fishCard:disabled{opacity:.78}
 .islandDisclaimer a{white-space:nowrap}
+
+/* Keep complete place names on a single, content-sized title plaque. */
+#stage .dialog:has(.placeIntro)>header{right:auto;width:max-content;min-width:520px;max-width:calc(100% - 48px);box-sizing:border-box}
+#stage .dialog:has(.placeIntro)>header h2{white-space:nowrap}
