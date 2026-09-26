@@ -1,6 +1,9 @@
 /* Run after changing shipped artwork or game code. Never include editor/private files. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),files=new Set();
+// One canonical entry: keep the public root identical except for its relative asset base.
+fs.writeFileSync(path.join(root,'index.html'),fs.readFileSync(path.join(root,'sport/index.html'),'utf8').replace('<head>','<head><base href="./sport/">'));
+
 const sandbox={structuredClone,Intl,Date};sandbox.globalThis=sandbox;
 vm.runInNewContext(fs.readFileSync(path.join(root,'region-guide.js'),'utf8'),sandbox);
 function add(relative){relative=relative.replaceAll('\\','/');if(fs.statSync(path.join(root,relative),{throwIfNoEntry:false})?.isFile())files.add(relative);}

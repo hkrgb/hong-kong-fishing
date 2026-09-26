@@ -4,7 +4,7 @@ for(const native of [false,true]){
  const root=path.resolve(__dirname,native?'../android-app/app/build/generated/gameAssets/game':'..'),origin=native?'https://appassets.androidplatform.net/assets/game/':'https://hkrgb.github.io/hong-kong-fishing/';
  const context=await browser.newContext({viewport:{width:844,height:390},serviceWorkers:'block'}),errors=[],missing=[];
  await context.route('**/*',async route=>{const url=route.request().url();if(!url.startsWith(origin))return route.abort('internetdisconnected');const relative=decodeURIComponent(new URL(url).pathname.slice(new URL(origin).pathname.length));const file=path.resolve(root,relative||'index.html');if(!file.startsWith(root+path.sep)||!fs.existsSync(file)){missing.push(relative);return route.fulfill({status:404,body:''});}const types={'.js':'text/javascript','.css':'text/css','.html':'text/html','.json':'application/json','.svg':'image/svg+xml','.mp4':'video/mp4','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};await route.fulfill({path:file,contentType:types[path.extname(file)]||'application/octet-stream'});});
- const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(origin+'sport/index.html');await p.waitForFunction(()=>typeof cfg!=='undefined'&&cfg&&!cloudLoading);if(!native)await p.click('#skipFullscreen');
+ const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(origin);await p.waitForFunction(()=>typeof cfg!=='undefined'&&cfg&&!cloudLoading);if(!native)await p.click('#skipFullscreen');
 
  await p.evaluate(()=>chooseArea(cfg.areas.find(a=>a.id==='harbour')));
  for(const size of [{width:1280,height:720},{width:844,height:390}]){

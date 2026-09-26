@@ -1,6 +1,6 @@
 {
-  "version": "d6bc77425ed224f7",
-  "bytes": 235211618,
+  "version": "edefddc6afb68219",
+  "bytes": 235211682,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5561,
-      "revision": "336387c68dbf7539"
+      "bytes": 5619,
+      "revision": "3b3d2a310e259d99"
     },
     {
       "url": "manifest.webmanifest",
@@ -1704,8 +1704,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5591,
-      "revision": "91d09c934b147c57"
+      "bytes": 5597,
+      "revision": "7f89099647dc5fec"
     },
     {
       "url": "sport/island-ui.css",

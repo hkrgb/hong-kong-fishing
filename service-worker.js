@@ -11,6 +11,8 @@ async function put(c,url){const r=await fetch(url,{cache:'reload',credentials:'o
 self.addEventListener('install',e=>e.waitUntil((async()=>{
  const c=await caches.open(CACHE);
  for(const item of OFFLINE_MANIFEST.entries.filter(e=>/\.(html|js|css|json|webmanifest)$/.test(e.url)))await put(c,new URL(item.url,base).href);
+ // Activate only after the complete code bundle is cached. Saves and existing packs remain intact.
+ await self.skipWaiting();
 })()));
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 async function download(){
