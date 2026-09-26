@@ -11,8 +11,8 @@ const assert=require('node:assert/strict');
  const before=JSON.stringify(config);
  for(const scope of ['all','fish']){
   const file=exportData(config,scope),fish=scope==='all'?file.data.fish:file.data;
-  assert.equal(fish.length,150);
-  for(const f of fish)assert.equal(f.educationIntro,globalThis.FishEducation[f.id].paragraphs.join('\n\n'));
+  assert.equal(fish.length,170);
+  for(const f of fish)assert.equal(f.educationIntro,globalThis.FishEducation[f.id]?.paragraphs.join('\n\n')||config.fish.find(v=>v.id===f.id).educationIntro);
   fish[0].educationIntro='自行修改的簡介。';
   const restored=importData(config,file,scope);
   assert.equal(restored.fish[0].educationIntro,'自行修改的簡介。');
@@ -20,10 +20,10 @@ const assert=require('node:assert/strict');
  }
  assert.equal(JSON.stringify(config),before,'Export must not mutate draft');
  assert.deepEqual(exportData(config,'areas').data,config.areas);
- const old=structuredClone(config);for(const f of old.fish){delete f.educationRevision;f.educationIntro='舊簡介';}
+ const old=structuredClone(config);for(const f of old.fish){if(!globalThis.FishEducation[f.id])continue;delete f.educationRevision;f.educationIntro='舊簡介';}
  globalThis.applyFishWorkbook(old);
  assert.deepEqual(old,config);
  old.fish[0].educationIntro='之後的自訂簡介';globalThis.applyFishWorkbook(old);
  assert.equal(old.fish[0].educationIntro,'之後的自訂簡介');
- console.log('PASS 150 built-in introductions, all/fish roundtrip, custom precedence, no mutation, areas unchanged');
+ console.log('PASS 170 built-in introductions, all/fish roundtrip, custom precedence, no mutation, areas unchanged');
 })().catch(e=>{console.error(e);process.exit(1)});

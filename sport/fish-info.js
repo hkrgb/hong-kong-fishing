@@ -11,7 +11,7 @@ function openFishInfo(f){
  const keys=e=>{if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();done();}if(e.key==='Tab'){e.preventDefault();e.stopImmediatePropagation();const all=[...panel.querySelectorAll('button:not(:disabled),a[href]')],i=all.indexOf(document.activeElement);all[(i+(e.shiftKey?-1:1)+all.length)%all.length].focus();}};
  function render(){panel.querySelector('h2').textContent=f.name+' · 小知識';panel.querySelector('p').textContent=pages[page];document.getElementById('infoPage').textContent=(page+1)+' / '+pages.length;document.getElementById('infoPrevious').disabled=page===0;document.getElementById('infoNext').disabled=page===pages.length-1;}
  close.onclick=done;document.getElementById('infoPrevious').onclick=()=>{page--;render()};document.getElementById('infoNext').onclick=()=>{page++;render()};
- const link=document.getElementById('fishInfoSource');link.hidden=!entry?.source||!!custom;if(!link.hidden)link.href=entry.source;
+ const link=document.getElementById('fishInfoSource');const reference=f.source||entry?.source;link.hidden=!reference||!/^https:\/\//.test(reference);if(!link.hidden){link.href=reference;link.textContent='參考資料 ↗';}
  document.addEventListener('keydown',keys,true);render();close.focus();
 }
 new MutationObserver(()=>{

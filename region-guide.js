@@ -39,6 +39,7 @@ function applyLocalScenery(c){
  c.localSceneryVersion=20260918;return c;
 }
 function normalize(c){
+ root.PremiumFish?.apply(c);
  root.applyFishWorkbook?.(c);
  for(const fish of c.fish||[])fish.image=root.FishImagePath(fish.image);
  if(c.regionGuideVersion===1)return applyLocalScenery(c);
@@ -58,6 +59,6 @@ function normalize(c){
  c.baitKnowledge=c.baitKnowledge||structuredClone(baitKnowledge);c.regionGuideVersion=1;return applyLocalScenery(c);
 }
 function period(date=new Date()){const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Hong_Kong',hour:'2-digit',hourCycle:'h23'}).format(date));return h>=5&&h<11?'morning':h>=11&&h<18?'noon':'night';}
-function weighted(pool,a,random=Math.random){if(!pool.length)return null;const boosted=new Set(a?.boostedFish||[]),mult=Math.max(1,Math.min(20,Number(a?.commonWeight)||3));let n=random()*pool.reduce((s,f)=>s+(boosted.has(f.id)?mult:1),0);for(const f of pool){n-=boosted.has(f.id)?mult:1;if(n<0)return f;}return pool.at(-1);}
+function weighted(pool,a,random=Math.random){if(!pool.length)return null;const boosted=new Set(a?.boostedFish||[]),mult=Math.max(1,Math.min(20,Number(a?.commonWeight)||3));let n=random()*pool.reduce((s,f)=>s+((boosted.has(f.id)?mult:1)*Math.max(.01,Math.min(10,Number(f.spawnWeight)||1))),0);for(const f of pool){n-=(boosted.has(f.id)?mult:1)*Math.max(.01,Math.min(10,Number(f.spawnWeight)||1));if(n<0)return f;}return pool.at(-1);}
 root.RegionGuide={normalize,period,weighted,locations,baitKnowledge};
 })(globalThis);

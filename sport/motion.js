@@ -75,7 +75,7 @@ function updateSeaLife(dt){
 function drawNaturalFish(f){
   ctx.save();ctx.translate(f.x,f.y);ctx.rotate(f.angle);
   const depth=clamp((f.y-320)/230,.1,1);const size=fishSize(f.species).type,scale=size==='large'?1.35:size==='small'?.65:1;ctx.scale(scale*f.size*(.55+depth*.5),scale*f.size*(.55+depth*.5)*.62);
-  ctx.fillStyle=size==='large'?`rgba(190,39,31,${.5+depth*.2})`:`rgba(3,29,34,${.13+depth*.18})`;
+  ctx.fillStyle=f.species?.premium?`rgba(225,43,47,${.65+depth*.2})`:`rgba(3,29,34,${.13+depth*.18})`;
   const spine=x=>Math.sin(f.phase-(30-x)*.055)*Math.pow((30-x)/75,1.7)*5+(f.bend||0)*Math.pow((30-x)/75,2)*6;
   ctx.beginPath();ctx.moveTo(30,0);
   for(let side=-1;side<=1;side+=2){for(let i=0;i<=14;i++){const u=side<0?i/14:1-i/14,x=30-u*63,width=Math.sin(Math.PI*u)*10.5*(1-u*.45);ctx.lineTo(x,spine(x)+width*side);}}

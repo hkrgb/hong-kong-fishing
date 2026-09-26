@@ -1,6 +1,6 @@
 {
-  "version": "fbe29d03b247fe0a",
-  "bytes": 235076326,
+  "version": "f19e1ec8ac7dc6b3",
+  "bytes": 235210992,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -1064,13 +1064,13 @@
     },
     {
       "url": "pro/config.json",
-      "bytes": 180739,
-      "revision": "a7502101bebb2c0e"
+      "bytes": 210460,
+      "revision": "d92b524f9df4ec12"
     },
     {
       "url": "region-guide.js",
-      "bytes": 36771,
-      "revision": "b970326b5f640c14"
+      "bytes": 36909,
+      "revision": "7d79d12a4efc1365"
     },
     {
       "url": "sport/admin.html",
@@ -1503,6 +1503,106 @@
       "revision": "41fd18011016bf46"
     },
     {
+      "url": "sport/assets/premium-fish/cephalopholis-sonnerati.svg",
+      "bytes": 5209,
+      "revision": "5070f722432a83f4"
+    },
+    {
+      "url": "sport/assets/premium-fish/cheilinus-undulatus.svg",
+      "bytes": 3255,
+      "revision": "d6056db18a949d61"
+    },
+    {
+      "url": "sport/assets/premium-fish/cromileptes-altivelis.svg",
+      "bytes": 5200,
+      "revision": "ff05fcb365320829"
+    },
+    {
+      "url": "sport/assets/premium-fish/eleutheronema-tetradactylum.svg",
+      "bytes": 1634,
+      "revision": "ba3f24d9a693e9d0"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-awoara.svg",
+      "bytes": 5203,
+      "revision": "c891021ee378a69b"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-bleekeri.svg",
+      "bytes": 5211,
+      "revision": "41e13eab7d028c1e"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-bruneus.svg",
+      "bytes": 5206,
+      "revision": "d96ba4842e92a5be"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-fuscoguttatus.svg",
+      "bytes": 5207,
+      "revision": "83f86f16343789b8"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-lanceolatus.svg",
+      "bytes": 2278,
+      "revision": "cab4ba72435bb481"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-malabaricus.svg",
+      "bytes": 5206,
+      "revision": "9deadef201970431"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-polyphekadion.svg",
+      "bytes": 5206,
+      "revision": "54a85a6754fbac84"
+    },
+    {
+      "url": "sport/assets/premium-fish/epinephelus-quoyanus.svg",
+      "bytes": 5269,
+      "revision": "3cc04378367fe955"
+    },
+    {
+      "url": "sport/assets/premium-fish/larimichthys-crocea.svg",
+      "bytes": 1305,
+      "revision": "806db0b51aad0b4a"
+    },
+    {
+      "url": "sport/assets/premium-fish/pampus-argenteus.svg",
+      "bytes": 1290,
+      "revision": "e0380f678dd671f0"
+    },
+    {
+      "url": "sport/assets/premium-fish/pampus-chinensis.svg",
+      "bytes": 1290,
+      "revision": "2bccb01d42e41e8f"
+    },
+    {
+      "url": "sport/assets/premium-fish/plectropomus-areolatus.svg",
+      "bytes": 5207,
+      "revision": "b67d2209a378f264"
+    },
+    {
+      "url": "sport/assets/premium-fish/plectropomus-laevis.svg",
+      "bytes": 2298,
+      "revision": "bf6bd40adde093c3"
+    },
+    {
+      "url": "sport/assets/premium-fish/plectropomus-maculatus.svg",
+      "bytes": 5207,
+      "revision": "df6917847a10ffdc"
+    },
+    {
+      "url": "sport/assets/premium-fish/trachinotus-blochii.svg",
+      "bytes": 1293,
+      "revision": "2d0b65c348420f2b"
+    },
+    {
+      "url": "sport/assets/premium-fish/variola-louti.svg",
+      "bytes": 5211,
+      "revision": "f25f75dae2d9de3c"
+    },
+    {
       "url": "sport/assets/trophy.png",
       "bytes": 2290384,
       "revision": "3a1b8cc69536242a"
@@ -1579,8 +1679,8 @@
     },
     {
       "url": "sport/fish-info.js",
-      "bytes": 2961,
-      "revision": "8d1b3f789abc44cd"
+      "bytes": 3054,
+      "revision": "668aba205a7df0f5"
     },
     {
       "url": "sport/fish-showcase.css",
@@ -1594,8 +1694,8 @@
     },
     {
       "url": "sport/game.js",
-      "bytes": 34500,
-      "revision": "4d6bff3008473d9d"
+      "bytes": 34582,
+      "revision": "8df68ee811e8fe03"
     },
     {
       "url": "sport/home.css",
@@ -1604,8 +1704,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5541,
-      "revision": "13e33dd36d5da483"
+      "bytes": 5588,
+      "revision": "1512b7f635ca5869"
     },
     {
       "url": "sport/island-ui.css",
@@ -1664,8 +1764,8 @@
     },
     {
       "url": "sport/motion.js",
-      "bytes": 6787,
-      "revision": "b96b6a9a38968cdf"
+      "bytes": 6792,
+      "revision": "a19b7718e7a54496"
     },
     {
       "url": "sport/native-app.js",
@@ -1681,6 +1781,11 @@
       "url": "sport/personal-journal.js",
       "bytes": 8940,
       "revision": "0778af6ba88dda94"
+    },
+    {
+      "url": "sport/premium-fish.js",
+      "bytes": 27395,
+      "revision": "6569c7bb065e55d3"
     },
     {
       "url": "sport/quick-hud.css",
