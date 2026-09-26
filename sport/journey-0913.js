@@ -10,7 +10,7 @@ const septemberSetup=setupHome;
 setupHome=function(){
  septemberSetup();$('hubFishing').querySelector('span').textContent='出發釣魚';
  const b=document.createElement('button');b.id='hubBooks';b.innerHTML='<span>前往書店</span><img alt="" src="'+bookAsset('bookshop-bg.jpg')+'">';b.onclick=showBookshop;$('hubGames').before(b);
- const ticker=document.createElement('section');ticker.id='islandTicker';ticker.innerHTML='<img alt="" src="'+bookAsset('radio2.png')+'"><div><div class="tickerHeading"><h2 id="tickerTitle">景點簡介</h2><img id="tickerPicture" alt=""></div><div class="tickerWindow"><p id="tickerText"></p></div></div>';stage.append(ticker);
+ const ticker=document.createElement('section');ticker.id='islandTicker';ticker.innerHTML='<img alt="" src="'+bookAsset('radio2.png')+'"><div><div class="tickerHeading"><h2 id="tickerTitle">景點簡介</h2><span id="tickerIdentity" hidden><img id="tickerPicture" alt=""><span id="tickerName"></span></span></div><div class="tickerWindow"><p id="tickerText"></p></div></div>';stage.append(ticker);
  updateTicker();
 };
 const septemberQuickSetup=setupQuickHud;
@@ -75,7 +75,7 @@ function tickerItem(){
 function updateTicker(){
  const track=$('tickerText');if(!track||!cfg)return;cancelAnimationFrame(tickerAnimation);clearTimeout(tickerTimer);track.replaceChildren();track.style.animation='none';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let x=null,last=0,active=null,items=[];track.style.transform='translateX('+(track.parentElement.clientWidth||649)+'px)';
- const label=item=>{if(active===item)return;active=item;const heading=$('tickerTitle'),picture=$('tickerPicture');heading.textContent=item.title;picture.hidden=!item.image;if(item.image){picture.src=item.image;picture.alt=item.alt;picture.dataset.category=item.title;}if(!reduced){heading.animate([{opacity:0},{opacity:1}],{duration:450});picture.animate([{opacity:0},{opacity:1}],{duration:450});}};
+ const label=item=>{if(active===item)return;active=item;const heading=$('tickerTitle'),picture=$('tickerPicture'),identity=$('tickerIdentity'),name=$('tickerName');heading.textContent=item.title;identity.hidden=!item.image;picture.hidden=!item.image;name.textContent=item.image?item.alt:'';if(item.image){picture.src=item.image;picture.alt=item.alt;picture.dataset.category=item.title;}if(!reduced){heading.animate([{opacity:0},{opacity:1}],{duration:450});identity.getAnimations().forEach(animation=>animation.cancel());identity.animate([{opacity:0},{opacity:1}],{duration:450});}};
  const append=()=>{const item=tickerItem(),node=document.createElement('span');node.className='tickerItem';node.textContent=item.text;track.append(node);item.node=node;items.push(item);};
  append();label(items[0]);
  if(reduced){track.style.transform='none';tickerTimer=setTimeout(updateTicker,Math.max(15000,items[0].text.length*350));return;}

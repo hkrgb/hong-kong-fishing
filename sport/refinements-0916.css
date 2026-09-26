@@ -19,3 +19,10 @@
 #stage #bookshopPlayer{background:transparent}
 #stage #bookshopPlayer iframe{display:block;height:100%}
 #stage .bookDetailDialog #modalFooter{background:transparent;border:0;box-shadow:none}
+
+/* Image and its name share visibility and the same fade animation. */
+#tickerIdentity{display:flex;align-items:center;gap:12px;min-width:0}
+#tickerIdentity[hidden]{display:none}
+#tickerIdentity #tickerPicture{flex:none}
+#tickerName{font-size:24px;font-weight:600;line-height:1.35;white-space:nowrap}
+#islandTicker .tickerHeading h2{flex:none;white-space:nowrap}
