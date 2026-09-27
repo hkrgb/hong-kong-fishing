@@ -1,6 +1,6 @@
 /* September bookshop, catch decisions and daily paid activities. */
 const bookAsset=name=>/^https?:\/\//.test(name)?name:new URL('assets/bookshop/'+name,document.baseURI).href;
-const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,cfg.bookshop?.[k]??BookshopDefaults[k]]));
+const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,k==='books'?(cfg.bookshop?.[k]??BookshopDefaults[k]):[...BookshopDefaults[k],...(cfg.bookshop?.[k]||[]).filter(v=>!BookshopDefaults[k].some(x=>x.id===v.id))]]));
 let inBookshop=false,dailySession=null;
 const septemberHub=showIslandHub;
 showIslandHub=function(){inBookshop=false;$('bookshopHub')?.remove();septemberHub();};
@@ -28,8 +28,8 @@ modal=function(...args){$('bookshopHub')?.remove();septemberModal(...args);docum
 function showBookshop(){
  cancelCast();held=false;dialogOpen=true;islandBrowsing=true;inBookshop=true;stage.classList.add('islandBrowsing');$('home').hidden=true;$('modal').hidden=true;$('islandHub').hidden=true;$('bookshopHub')?.remove();updateIslandBackdrop();
  const hub=document.createElement('section');hub.id='bookshopHub';hub.setAttribute('aria-label','長洲書店');
- hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="bookshopHome">⌂ 回家</button>';
- stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('bookshopHome').onclick=returnToIslandDirectory;
+ hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button><button id="bookshopHome">⌂ 回家</button>';
+ stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('recyclingStation').onclick=()=>showRecycling();$('bookshopHome').onclick=returnToIslandDirectory;
 }
 function showBooks(index=0,tab='info',videoPage=0){
  const books=bookshopData().books,b=books[index];if(!b){modal('好書推介','<p class="intro">新書正在準備中。</p>');return;}
@@ -103,21 +103,21 @@ function dailyItem(kind,day){
 function dailyReply(message){if(dailySession)dailySession.frame.contentWindow.postMessage({...message,session:dailySession.id},dailySession.origin);}
 function openDailyGame(kind){
  if(dailySession||!economyReady())return;
- const remote=location.hostname==='hkrgb.github.io',path=kind==='toy'?'yes-card-gacha':remote?'island-jigsaw-puzzle':'jigsaw-puzzle';
- const url=remote?new URL('https://hkrgb.github.io/'+path+'/'):new URL('../../'+path+'/',document.baseURI);
+ const path=kind==='toy'?'yes-card-gacha':'jigsaw-puzzle';
+ const url=new URL('../mini-games/'+path+'/',document.baseURI);
  const id=crypto.randomUUID();url.searchParams.set('bookshopSession',id);url.searchParams.set('parentOrigin',location.origin);
  const layer=document.createElement('section');layer.id='bookshopPlayer';const frame=document.createElement('iframe');frame.title=kind==='toy'?'懷舊扭蛋':'每日明信片';frame.src=url.href;frame.allow='fullscreen';
  const close=document.createElement('button');close.textContent='‹ 返回書店';close.className='bookshopBack';close.onclick=()=>{dailySession=null;layer.remove();showBookshop();};layer.append(frame,close);stage.append(layer);dailySession={id,frame,origin:url.origin,kind,requests:new Map()};
 }
 addEventListener('message',e=>{
  const s=dailySession,d=e.data;if(!s||e.source!==s.frame.contentWindow||e.origin!==s.origin||!d||d.session!==s.id)return;
- const sendState=()=>dailyReply({type:'bookshop-state',kind:s.kind,day:hkDay(),money:wallet().money,price:20,art:{machine:bookAsset('machine.png'),background:bookAsset('postcard-table.png')},collection:[...wallet().collection.entries()].filter(([k])=>k.startsWith(s.kind+'|')).map(([,v])=>({...v,image:bookAsset(v.image)}))});
+ const sendState=()=>dailyReply({type:'bookshop-state',kind:s.kind,day:hkDay(),money:wallet().money,price:20,art:{machine:bookAsset('machine.png'),background:bookAsset('postcard-table.png')},collection:[...wallet().collection.entries()].filter(([k])=>k.startsWith(s.kind+'|')).map(([,v])=>({...collectionItem(v),image:bookAsset(collectionItem(v).image)}))});
  if(d.type==='bookshop-ready'){sendState();return;}
  if(d.type==='bookshop-play'){
   if(typeof d.request!=='string'||!/^[\w-]{1,80}$/.test(d.request))return;
   const purchaseKey=s.id+'|'+d.request;let receipt=wallet().purchases.get(purchaseKey);
   if(!receipt){const day=hkDay(),item=dailyItem(s.kind,day);if(!item||!transact({type:'souvenir',kind:s.kind,day,item,amount:20,purchaseKey})){dailyReply({type:'bookshop-error',request:d.request,text:item?'金錢不足或存檔正在同步，未有扣款。':'本日藏品尚未準備好，未有扣款。'});return;}receipt=wallet().purchases.get(purchaseKey);}
-  s.requests.set(d.request,purchaseKey);updateQuickHud();dailyReply({type:'bookshop-paid',request:d.request,day:receipt.day,money:wallet().money,item:{...receipt.item,image:bookAsset(receipt.item.image)}});return;
+  s.requests.set(d.request,purchaseKey);updateQuickHud();dailyReply({type:'bookshop-paid',request:d.request,day:receipt.day,money:wallet().money,item:{...collectionItem(receipt.item),image:bookAsset(collectionItem(receipt.item).image)}});return;
  }
  if(d.type==='bookshop-complete'&&s.kind==='postcard'&&s.requests.has(d.request)){
   // The host validates a complete permutation, and grants no cash for puzzles.

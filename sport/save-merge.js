@@ -1,4 +1,4 @@
-import './economy-core.js?v=20260913';
+import './economy-core.js?v=20260927-eco';
 import './region-stamps.js?v=20260913b';
 export const emptySave=()=>({bag:[],medals:{},visited:{},score:0,cupWins:{},cupRewards:{}});
 export function mergeSaves(a={},b={}){

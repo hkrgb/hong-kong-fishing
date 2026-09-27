@@ -1,6 +1,6 @@
 {
-  "version": "edefddc6afb68219",
-  "bytes": 235211682,
+  "version": "34bad63f25e8008d",
+  "bytes": 282176406,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,13 +929,43 @@
     },
     {
       "url": "index.html",
-      "bytes": 5619,
-      "revision": "3b3d2a310e259d99"
+      "bytes": 5737,
+      "revision": "fd4d73b04fb3cf89"
     },
     {
       "url": "manifest.webmanifest",
       "bytes": 797,
       "revision": "adbcd25d3c1c916b"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/assets/daily/bookshop-bg.jpg",
+      "bytes": 507054,
+      "revision": "6517746610dd1662"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/assets/daily/machine.png",
+      "bytes": 2460625,
+      "revision": "a3254b3c6a311158"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/assets/daily/postcard-table.png",
+      "bytes": 2139945,
+      "revision": "12bbf74c2aba9520"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/daily-game.css",
+      "bytes": 6779,
+      "revision": "f81e742d542db334"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/daily-game.js",
+      "bytes": 9746,
+      "revision": "b4b3cb1435ccbfb8"
+    },
+    {
+      "url": "mini-games/jigsaw-puzzle/index.html",
+      "bytes": 2104,
+      "revision": "1d2c1adca7051969"
     },
     {
       "url": "mini-games/peace-bun-whack/assets/festival-board.png",
@@ -1028,6 +1058,36 @@
       "revision": "1122837e3e849a5b"
     },
     {
+      "url": "mini-games/yes-card-gacha/assets/daily/bookshop-bg.jpg",
+      "bytes": 507054,
+      "revision": "6517746610dd1662"
+    },
+    {
+      "url": "mini-games/yes-card-gacha/assets/daily/machine.png",
+      "bytes": 2460625,
+      "revision": "a3254b3c6a311158"
+    },
+    {
+      "url": "mini-games/yes-card-gacha/assets/daily/postcard-table.png",
+      "bytes": 2139945,
+      "revision": "12bbf74c2aba9520"
+    },
+    {
+      "url": "mini-games/yes-card-gacha/daily-game.css",
+      "bytes": 6175,
+      "revision": "e06341e3f0009d1d"
+    },
+    {
+      "url": "mini-games/yes-card-gacha/daily-game.js",
+      "bytes": 8156,
+      "revision": "962dd2b92dd8f492"
+    },
+    {
+      "url": "mini-games/yes-card-gacha/index.html",
+      "bytes": 1848,
+      "revision": "06e138f91b43d1e0"
+    },
+    {
       "url": "mp4/get.mp4",
       "bytes": 4202586,
       "revision": "c1bb98b126a6a01b"
@@ -1064,8 +1124,8 @@
     },
     {
       "url": "pro/config.json",
-      "bytes": 210460,
-      "revision": "d92b524f9df4ec12"
+      "bytes": 207006,
+      "revision": "f9eff9078b6a7011"
     },
     {
       "url": "region-guide.js",
@@ -1113,9 +1173,69 @@
       "revision": "cdacf8c80b0d9380"
     },
     {
+      "url": "sport/assets/bookshop/litter-1.png",
+      "bytes": 410545,
+      "revision": "6742382425eaf53f"
+    },
+    {
+      "url": "sport/assets/bookshop/litter-2.png",
+      "bytes": 183460,
+      "revision": "be366d70b41813c7"
+    },
+    {
+      "url": "sport/assets/bookshop/litter-3.png",
+      "bytes": 167701,
+      "revision": "8aaf7a16f71a92e5"
+    },
+    {
+      "url": "sport/assets/bookshop/litter-4.png",
+      "bytes": 186832,
+      "revision": "ba126216497f2534"
+    },
+    {
+      "url": "sport/assets/bookshop/litter-5.png",
+      "bytes": 143375,
+      "revision": "9c35d5c1392021e3"
+    },
+    {
+      "url": "sport/assets/bookshop/litter-6.png",
+      "bytes": 270182,
+      "revision": "f74655304195b8f9"
+    },
+    {
       "url": "sport/assets/bookshop/machine.png",
       "bytes": 2460625,
       "revision": "a3254b3c6a311158"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-2.jpg",
+      "bytes": 255146,
+      "revision": "e2276245de702bfe"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-3.jpg",
+      "bytes": 182554,
+      "revision": "c9a76c30ed755dd8"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-5.jpg",
+      "bytes": 192377,
+      "revision": "485ab72a0a8c7413"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-6.jpg",
+      "bytes": 202317,
+      "revision": "bb5120573640f957"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-7.jpg",
+      "bytes": 163414,
+      "revision": "faeb514c7d8830ef"
+    },
+    {
+      "url": "sport/assets/bookshop/postcard-0927-8.jpg",
+      "bytes": 142945,
+      "revision": "5aba30831076417c"
     },
     {
       "url": "sport/assets/bookshop/postcard-1.jpg",
@@ -1124,8 +1244,8 @@
     },
     {
       "url": "sport/assets/bookshop/postcard-2.jpg",
-      "bytes": 255146,
-      "revision": "e2276245de702bfe"
+      "bytes": 215708,
+      "revision": "1c4776349a5f02d4"
     },
     {
       "url": "sport/assets/bookshop/postcard-3.jpg",
@@ -1161,6 +1281,66 @@
       "url": "sport/assets/bookshop/shuttlecock.png",
       "bytes": 1574951,
       "revision": "27958e93c9617da5"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-1.png",
+      "bytes": 220210,
+      "revision": "9f960845fb2aff0e"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-10.png",
+      "bytes": 129520,
+      "revision": "ebcc83ecea88298b"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-11.png",
+      "bytes": 280223,
+      "revision": "30f6cafc6a1ee375"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-12.png",
+      "bytes": 239023,
+      "revision": "9d79ba474c6b0377"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-2.png",
+      "bytes": 285831,
+      "revision": "90681b61a2587671"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-3.png",
+      "bytes": 252482,
+      "revision": "6b74f1f22a8818a0"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-4.png",
+      "bytes": 299732,
+      "revision": "c2b7ee597b29ba50"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-5.png",
+      "bytes": 135377,
+      "revision": "9b0dbd1804b37c76"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-6.png",
+      "bytes": 287517,
+      "revision": "cd24a222ec2c8a12"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-7.png",
+      "bytes": 289537,
+      "revision": "addb47879b163d19"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-8.png",
+      "bytes": 138938,
+      "revision": "39796d8f73fd5d86"
+    },
+    {
+      "url": "sport/assets/bookshop/toy-0927-9.png",
+      "bytes": 354623,
+      "revision": "61ff0b8791cd0104"
     },
     {
       "url": "sport/assets/bookshop/watermelon-ball.png",
@@ -1503,104 +1683,104 @@
       "revision": "41fd18011016bf46"
     },
     {
-      "url": "sport/assets/premium-fish/cephalopholis-sonnerati.svg",
-      "bytes": 5209,
-      "revision": "5070f722432a83f4"
+      "url": "sport/assets/premium-fish/cephalopholis-sonnerati.png",
+      "bytes": 1389760,
+      "revision": "3bac839eb2939778"
     },
     {
-      "url": "sport/assets/premium-fish/cheilinus-undulatus.svg",
-      "bytes": 3255,
-      "revision": "d6056db18a949d61"
+      "url": "sport/assets/premium-fish/cheilinus-undulatus.png",
+      "bytes": 1854116,
+      "revision": "b7d2cd2757c87294"
     },
     {
-      "url": "sport/assets/premium-fish/cromileptes-altivelis.svg",
-      "bytes": 5200,
-      "revision": "ff05fcb365320829"
+      "url": "sport/assets/premium-fish/cromileptes-altivelis.png",
+      "bytes": 1084202,
+      "revision": "17c4d7e48c293641"
     },
     {
-      "url": "sport/assets/premium-fish/eleutheronema-tetradactylum.svg",
-      "bytes": 1634,
-      "revision": "ba3f24d9a693e9d0"
+      "url": "sport/assets/premium-fish/eleutheronema-tetradactylum.png",
+      "bytes": 1266769,
+      "revision": "2c05bab9609117d8"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-awoara.svg",
-      "bytes": 5203,
-      "revision": "c891021ee378a69b"
+      "url": "sport/assets/premium-fish/epinephelus-awoara.png",
+      "bytes": 2007832,
+      "revision": "ff2195a976821cc7"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-bleekeri.svg",
-      "bytes": 5211,
-      "revision": "41e13eab7d028c1e"
+      "url": "sport/assets/premium-fish/epinephelus-bleekeri.png",
+      "bytes": 1896161,
+      "revision": "7a3a5ac7ebd72a06"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-bruneus.svg",
-      "bytes": 5206,
-      "revision": "d96ba4842e92a5be"
+      "url": "sport/assets/premium-fish/epinephelus-bruneus.png",
+      "bytes": 2074196,
+      "revision": "bec214a25777c29e"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-fuscoguttatus.svg",
-      "bytes": 5207,
-      "revision": "83f86f16343789b8"
+      "url": "sport/assets/premium-fish/epinephelus-fuscoguttatus.png",
+      "bytes": 1410776,
+      "revision": "7d211476b02dfd89"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-lanceolatus.svg",
-      "bytes": 2278,
-      "revision": "cab4ba72435bb481"
+      "url": "sport/assets/premium-fish/epinephelus-lanceolatus.png",
+      "bytes": 1682890,
+      "revision": "e081086d980142d9"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-malabaricus.svg",
-      "bytes": 5206,
-      "revision": "9deadef201970431"
+      "url": "sport/assets/premium-fish/epinephelus-malabaricus.png",
+      "bytes": 1959420,
+      "revision": "2e61d392c1f7b3e4"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-polyphekadion.svg",
-      "bytes": 5206,
-      "revision": "54a85a6754fbac84"
+      "url": "sport/assets/premium-fish/epinephelus-polyphekadion.png",
+      "bytes": 1417713,
+      "revision": "a7cce3f45b8aa799"
     },
     {
-      "url": "sport/assets/premium-fish/epinephelus-quoyanus.svg",
-      "bytes": 5269,
-      "revision": "3cc04378367fe955"
+      "url": "sport/assets/premium-fish/epinephelus-quoyanus.png",
+      "bytes": 1672287,
+      "revision": "200e4e67659e4404"
     },
     {
-      "url": "sport/assets/premium-fish/larimichthys-crocea.svg",
-      "bytes": 1305,
-      "revision": "806db0b51aad0b4a"
+      "url": "sport/assets/premium-fish/larimichthys-crocea.png",
+      "bytes": 1080207,
+      "revision": "80e799da36c918ad"
     },
     {
-      "url": "sport/assets/premium-fish/pampus-argenteus.svg",
-      "bytes": 1290,
-      "revision": "e0380f678dd671f0"
+      "url": "sport/assets/premium-fish/pampus-argenteus.png",
+      "bytes": 1547154,
+      "revision": "f80d379e46e38b22"
     },
     {
-      "url": "sport/assets/premium-fish/pampus-chinensis.svg",
-      "bytes": 1290,
-      "revision": "2bccb01d42e41e8f"
+      "url": "sport/assets/premium-fish/pampus-chinensis.png",
+      "bytes": 1960783,
+      "revision": "98dc85eb3c45f10f"
     },
     {
-      "url": "sport/assets/premium-fish/plectropomus-areolatus.svg",
-      "bytes": 5207,
-      "revision": "b67d2209a378f264"
+      "url": "sport/assets/premium-fish/plectropomus-areolatus.png",
+      "bytes": 1521735,
+      "revision": "2adf52274c417788"
     },
     {
-      "url": "sport/assets/premium-fish/plectropomus-laevis.svg",
-      "bytes": 2298,
-      "revision": "bf6bd40adde093c3"
+      "url": "sport/assets/premium-fish/plectropomus-laevis.png",
+      "bytes": 1671075,
+      "revision": "a8c792fbd8638462"
     },
     {
-      "url": "sport/assets/premium-fish/plectropomus-maculatus.svg",
-      "bytes": 5207,
-      "revision": "df6917847a10ffdc"
+      "url": "sport/assets/premium-fish/plectropomus-maculatus.png",
+      "bytes": 1282421,
+      "revision": "fad8807fce1e6be1"
     },
     {
-      "url": "sport/assets/premium-fish/trachinotus-blochii.svg",
-      "bytes": 1293,
-      "revision": "2d0b65c348420f2b"
+      "url": "sport/assets/premium-fish/trachinotus-blochii.png",
+      "bytes": 1264818,
+      "revision": "90230b4cb592b320"
     },
     {
-      "url": "sport/assets/premium-fish/variola-louti.svg",
-      "bytes": 5211,
-      "revision": "f25f75dae2d9de3c"
+      "url": "sport/assets/premium-fish/variola-louti.png",
+      "bytes": 1366893,
+      "revision": "594aea42c02a45ee"
     },
     {
       "url": "sport/assets/trophy.png",
@@ -1609,8 +1789,8 @@
     },
     {
       "url": "sport/bookshop-data.js",
-      "bytes": 1977,
-      "revision": "c690041f0b07434b"
+      "bytes": 4952,
+      "revision": "f6da08f8cc3e5fae"
     },
     {
       "url": "sport/bookshop-refinements.css",
@@ -1624,8 +1804,8 @@
     },
     {
       "url": "sport/cloud.js",
-      "bytes": 3786,
-      "revision": "9afa4880a3dfbdce"
+      "bytes": 3787,
+      "revision": "053554c55785b09b"
     },
     {
       "url": "sport/discovery.css",
@@ -1639,8 +1819,8 @@
     },
     {
       "url": "sport/economy-core.js",
-      "bytes": 3354,
-      "revision": "84b74b5111badc2e"
+      "bytes": 4165,
+      "revision": "3f5e13affed427be"
     },
     {
       "url": "sport/economy.css",
@@ -1679,8 +1859,8 @@
     },
     {
       "url": "sport/fish-info.js",
-      "bytes": 3054,
-      "revision": "668aba205a7df0f5"
+      "bytes": 3042,
+      "revision": "4373f2cd9ec4a59f"
     },
     {
       "url": "sport/fish-showcase.css",
@@ -1694,8 +1874,8 @@
     },
     {
       "url": "sport/game.js",
-      "bytes": 34582,
-      "revision": "8df68ee811e8fe03"
+      "bytes": 34576,
+      "revision": "908bfb9e3718210b"
     },
     {
       "url": "sport/home.css",
@@ -1704,8 +1884,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5597,
-      "revision": "7f89099647dc5fec"
+      "bytes": 5715,
+      "revision": "4c18968c425e3dde"
     },
     {
       "url": "sport/island-ui.css",
@@ -1734,8 +1914,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 15611,
-      "revision": "839a0645f791d65a"
+      "bytes": 15773,
+      "revision": "c6e167f1132ec8ec"
     },
     {
       "url": "sport/launch.css",
@@ -1779,13 +1959,13 @@
     },
     {
       "url": "sport/personal-journal.js",
-      "bytes": 8940,
-      "revision": "0778af6ba88dda94"
+      "bytes": 9020,
+      "revision": "0384a1f6afaba988"
     },
     {
       "url": "sport/premium-fish.js",
-      "bytes": 27395,
-      "revision": "6569c7bb065e55d3"
+      "bytes": 27955,
+      "revision": "ebf7f4ddb455291f"
     },
     {
       "url": "sport/quick-hud.css",
@@ -1794,8 +1974,18 @@
     },
     {
       "url": "sport/quick-hud.js",
-      "bytes": 3906,
-      "revision": "03c7b05763ef1191"
+      "bytes": 3997,
+      "revision": "8d96902a54a3e2a9"
+    },
+    {
+      "url": "sport/recycling.css",
+      "bytes": 1457,
+      "revision": "f8f8fc2da3fe19cb"
+    },
+    {
+      "url": "sport/recycling.js",
+      "bytes": 3314,
+      "revision": "6d2d09bc480fe4d8"
     },
     {
       "url": "sport/refinements-0916.css",
@@ -1819,8 +2009,8 @@
     },
     {
       "url": "sport/save-merge.js",
-      "bytes": 933,
-      "revision": "8ad52e45052c2fdb"
+      "bytes": 940,
+      "revision": "ac291b6564f23332"
     },
     {
       "url": "sport/style.css",
