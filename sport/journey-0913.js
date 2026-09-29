@@ -94,12 +94,11 @@ function setupJourneyMusic(){
  document.addEventListener('pointerdown',()=>{started=true;refresh();},{once:true});document.addEventListener('keydown',()=>{started=true;refresh();},{once:true});document.addEventListener('visibilitychange',refresh);document.addEventListener('play',refresh,true);document.addEventListener('pause',e=>{if(e.target!==audio)refresh();},true);setInterval(refresh,1000);refresh();
 }
 function hkDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Hong_Kong',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
-function dailyItem(kind,day){
- const fixed=wallet().daily.get(kind+'|'+day);if(fixed)return fixed;
- const list=bookshopData()[kind==='toy'?'toys':'postcards'].filter(v=>v.id&&v.image).slice().sort((a,b)=>a.id.localeCompare(b.id));
- let hash=2166136261;for(const c of kind+'|'+day)hash=Math.imul(hash^c.charCodeAt(0),16777619)>>>0;
- return list.length?structuredClone(list[hash%list.length]):null;
+function dailyPool(kind,day){
+ const w=wallet(),key=kind+'|'+day;
+ return w.dailyPools.get(key)||DailySouvenirs.pool(bookshopData()[kind==='toy'?'toys':'postcards'],kind,day,w.daily.get(key));
 }
+function dailyItem(kind,day){return DailySouvenirs.draw(dailyPool(kind,day));}
 function dailyReply(message){if(dailySession)dailySession.frame.contentWindow.postMessage({...message,session:dailySession.id},dailySession.origin);}
 function openDailyGame(kind){
  if(dailySession||!economyReady())return;
@@ -116,7 +115,7 @@ addEventListener('message',e=>{
  if(d.type==='bookshop-play'){
   if(typeof d.request!=='string'||!/^[\w-]{1,80}$/.test(d.request))return;
   const purchaseKey=s.id+'|'+d.request;let receipt=wallet().purchases.get(purchaseKey);
-  if(!receipt){const day=hkDay(),item=dailyItem(s.kind,day);if(!item||!transact({type:'souvenir',kind:s.kind,day,item,amount:20,purchaseKey})){dailyReply({type:'bookshop-error',request:d.request,text:item?'金錢不足或存檔正在同步，未有扣款。':'本日藏品尚未準備好，未有扣款。'});return;}receipt=wallet().purchases.get(purchaseKey);}
+  if(!receipt){const day=hkDay(),item=dailyItem(s.kind,day);if(!item||!transact({type:'souvenir',kind:s.kind,day,item,dailyMode:3,dailyPool:dailyPool(s.kind,day),amount:20,purchaseKey})){dailyReply({type:'bookshop-error',request:d.request,text:item?'金錢不足或存檔正在同步，未有扣款。':'本日藏品尚未準備好，未有扣款。'});return;}receipt=wallet().purchases.get(purchaseKey);}
   s.requests.set(d.request,purchaseKey);updateQuickHud();dailyReply({type:'bookshop-paid',request:d.request,day:receipt.day,money:wallet().money,item:{...collectionItem(receipt.item),image:bookAsset(collectionItem(receipt.item).image)}});return;
  }
  if(d.type==='bookshop-complete'&&s.kind==='postcard'&&s.requests.has(d.request)){

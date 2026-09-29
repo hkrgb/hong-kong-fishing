@@ -1,6 +1,6 @@
 {
-  "version": "34bad63f25e8008d",
-  "bytes": 282176406,
+  "version": "1e98fe53ece96a0f",
+  "bytes": 282179763,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5737,
-      "revision": "fd4d73b04fb3cf89"
+      "bytes": 5778,
+      "revision": "415de47826a99db7"
     },
     {
       "url": "manifest.webmanifest",
@@ -953,19 +953,24 @@
       "revision": "12bbf74c2aba9520"
     },
     {
+      "url": "mini-games/jigsaw-puzzle/daily-data.json",
+      "bytes": 1323,
+      "revision": "dfcda56c25e5d6f5"
+    },
+    {
       "url": "mini-games/jigsaw-puzzle/daily-game.css",
       "bytes": 6779,
       "revision": "f81e742d542db334"
     },
     {
       "url": "mini-games/jigsaw-puzzle/daily-game.js",
-      "bytes": 9746,
-      "revision": "b4b3cb1435ccbfb8"
+      "bytes": 9296,
+      "revision": "4469d01692a5083c"
     },
     {
       "url": "mini-games/jigsaw-puzzle/index.html",
-      "bytes": 2104,
-      "revision": "1d2c1adca7051969"
+      "bytes": 2184,
+      "revision": "e6fb36fe21f5ae8d"
     },
     {
       "url": "mini-games/peace-bun-whack/assets/festival-board.png",
@@ -1073,19 +1078,24 @@
       "revision": "12bbf74c2aba9520"
     },
     {
+      "url": "mini-games/yes-card-gacha/daily-data.json",
+      "bytes": 1506,
+      "revision": "fab8f9086d53d0b4"
+    },
+    {
       "url": "mini-games/yes-card-gacha/daily-game.css",
       "bytes": 6175,
       "revision": "e06341e3f0009d1d"
     },
     {
       "url": "mini-games/yes-card-gacha/daily-game.js",
-      "bytes": 8156,
-      "revision": "962dd2b92dd8f492"
+      "bytes": 7693,
+      "revision": "18842daf9f113793"
     },
     {
       "url": "mini-games/yes-card-gacha/index.html",
-      "bytes": 1848,
-      "revision": "06e138f91b43d1e0"
+      "bytes": 1928,
+      "revision": "e574e7806faeac1e"
     },
     {
       "url": "mp4/get.mp4",
@@ -1124,8 +1134,8 @@
     },
     {
       "url": "pro/config.json",
-      "bytes": 207006,
-      "revision": "f9eff9078b6a7011"
+      "bytes": 207271,
+      "revision": "ed6ee6f8886a2c45"
     },
     {
       "url": "region-guide.js",
@@ -1804,8 +1814,13 @@
     },
     {
       "url": "sport/cloud.js",
-      "bytes": 3787,
-      "revision": "053554c55785b09b"
+      "bytes": 3791,
+      "revision": "a11b035bc768b469"
+    },
+    {
+      "url": "sport/daily-souvenirs.js",
+      "bytes": 887,
+      "revision": "7e49734f621a3679"
     },
     {
       "url": "sport/discovery.css",
@@ -1819,8 +1834,8 @@
     },
     {
       "url": "sport/economy-core.js",
-      "bytes": 4165,
-      "revision": "3f5e13affed427be"
+      "bytes": 4618,
+      "revision": "165242e028a41f96"
     },
     {
       "url": "sport/economy.css",
@@ -1875,7 +1890,7 @@
     {
       "url": "sport/game.js",
       "bytes": 34576,
-      "revision": "908bfb9e3718210b"
+      "revision": "b119aff42f8b71a3"
     },
     {
       "url": "sport/home.css",
@@ -1884,8 +1899,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5715,
-      "revision": "4c18968c425e3dde"
+      "bytes": 5756,
+      "revision": "3c8623ee61f83768"
     },
     {
       "url": "sport/island-ui.css",
@@ -1914,8 +1929,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 15773,
-      "revision": "c6e167f1132ec8ec"
+      "bytes": 15691,
+      "revision": "ec8d62b1ffcdbb4b"
     },
     {
       "url": "sport/launch.css",
@@ -1964,8 +1979,8 @@
     },
     {
       "url": "sport/premium-fish.js",
-      "bytes": 27955,
-      "revision": "ebf7f4ddb455291f"
+      "bytes": 27631,
+      "revision": "7fdd39acf3969ef2"
     },
     {
       "url": "sport/quick-hud.css",
@@ -2009,8 +2024,8 @@
     },
     {
       "url": "sport/save-merge.js",
-      "bytes": 940,
-      "revision": "ac291b6564f23332"
+      "bytes": 936,
+      "revision": "ec2ddb9311677b48"
     },
     {
       "url": "sport/style.css",

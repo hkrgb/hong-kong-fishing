@@ -4,7 +4,7 @@ globalThis.CoastEconomy=(()=>{
  const kinds=['basic','advanced','master'];
  function mergeEvents(a=[],b=[]){const map=new Map();for(const e of [...(Array.isArray(a)?a:[]),...(Array.isArray(b)?b:[])]){if(!e||typeof e.id!=='string'||!Number.isSafeInteger(e.seq)||e.seq<1)continue;const old=map.get(e.id);if(!old||JSON.stringify(e)<JSON.stringify(old))map.set(e.id,e);}return [...map.values()].sort((x,y)=>x.seq-y.seq||x.id.localeCompare(y.id));}
  function account(save={}){
-  const s={money:500,hearts:10,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),released:new Set(),purchases:new Map(),daily:new Map(),collection:new Map(),ownership:new Map(),completed:new Set(),litterCatches:new Set(),rewards:new Set(),accepted:new Set(),rejected:[]};
+  const s={money:500,hearts:10,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),released:new Set(),purchases:new Map(),daily:new Map(),dailyPools:new Map(),collection:new Map(),ownership:new Map(),completed:new Set(),litterCatches:new Set(),rewards:new Set(),accepted:new Set(),rejected:[]};
   const fish=new Set((save.bag||[]).map(catchKey));
   for(const e of mergeEvents(save.economyEvents)){
    const price=Number.isSafeInteger(e.amount)&&e.amount>=0&&e.amount<=10000000;let ok=false;
@@ -16,7 +16,9 @@ globalThis.CoastEconomy=(()=>{
    if(e.type==='release'&&fish.has(e.catchKey)&&!s.sold.has(e.catchKey)&&!s.released.has(e.catchKey)){s.released.add(e.catchKey);ok=true;}
    if(e.type==='souvenir'&&['toy','postcard'].includes(e.kind)&&e.amount===20&&s.money>=20&&typeof e.purchaseKey==='string'&&e.purchaseKey.length>0&&e.purchaseKey.length<200&&!s.purchases.has(e.purchaseKey)&&/^\d{4}-\d{2}-\d{2}$/.test(e.day)&&e.item&&typeof e.item.id==='string'&&e.item.id.length>0){
     const key=e.kind+'|'+e.day,prior=s.daily.get(key);
-    if(!prior||JSON.stringify(prior)===JSON.stringify(e.item)){s.money-=20;s.daily.set(key,e.item);s.purchases.set(e.purchaseKey,e);if(e.kind==='toy'){s.collection.set('toy|'+e.item.id,e.item);s.ownership.set('toy|'+e.item.id,e.id);}ok=true;}
+    const pool=e.dailyPool,validPool=Array.isArray(pool)&&pool.length===3&&new Set(pool.map(v=>v?.id)).size===3&&pool.every(v=>v&&typeof v.id==='string'&&typeof v.image==='string')&&pool.some(v=>JSON.stringify(v)===JSON.stringify(e.item));
+    const fixed=s.dailyPools.get(key),valid=e.dailyMode===3?validPool&&(!fixed||JSON.stringify(fixed)===JSON.stringify(pool)):!prior||JSON.stringify(prior)===JSON.stringify(e.item);
+    if(valid){s.money-=20;if(e.dailyMode===3)s.dailyPools.set(key,pool);else s.daily.set(key,e.item);s.purchases.set(e.purchaseKey,e);if(e.kind==='toy'){s.collection.set('toy|'+e.item.id,e.item);s.ownership.set('toy|'+e.item.id,e.id);}ok=true;}
    }
    if(e.type==='postcard-complete'&&s.purchases.get(e.purchaseKey)?.kind==='postcard'&&!s.completed.has(e.purchaseKey)){const item=s.purchases.get(e.purchaseKey).item;s.completed.add(e.purchaseKey);s.collection.set('postcard|'+item.id,item);s.ownership.set('postcard|'+item.id,e.id);ok=true;}
    if(e.type==='litter'&&typeof e.catchId==='string'&&!s.litterCatches.has(e.catchId)&&e.item&&/^litter-[1-6]$/.test(e.item.id)){const key='litter|'+e.item.id;s.litterCatches.add(e.catchId);s.collection.set(key,e.item);s.ownership.set(key,e.id);ok=true;}
