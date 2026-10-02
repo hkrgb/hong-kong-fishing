@@ -1,5 +1,5 @@
-import './economy-core.js?v=20260929';
-import './region-stamps.js?v=20260913b';
+import './economy-core.js?v=20261003';
+import './region-stamps.js?v=20261003';
 export const emptySave=()=>({bag:[],medals:{},visited:{},score:0,cupWins:{},cupRewards:{}});
 export function mergeSaves(a={},b={}){
  const fish=new Map();for(const f of [...(a.bag||[]),...(b.bag||[])])fish.set(f.catchId||[f.id,f.time,f.weight,f.area].join('|'),f);

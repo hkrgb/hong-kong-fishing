@@ -1,6 +1,6 @@
 {
-  "version": "1e98fe53ece96a0f",
-  "bytes": 282179763,
+  "version": "789fd30742dde535",
+  "bytes": 292095833,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5778,
-      "revision": "415de47826a99db7"
+      "bytes": 5623,
+      "revision": "0214dde54f092a8f"
     },
     {
       "url": "manifest.webmanifest",
@@ -1009,8 +1009,8 @@
     },
     {
       "url": "mini-games/peace-bun-whack/fishing-rewards.js",
-      "bytes": 1945,
-      "revision": "3894ac2b392f90be"
+      "bytes": 1993,
+      "revision": "e450924973c18929"
     },
     {
       "url": "mini-games/peace-bun-whack/fullscreen-safe.css",
@@ -1134,8 +1134,8 @@
     },
     {
       "url": "pro/config.json",
-      "bytes": 207271,
-      "revision": "ed6ee6f8886a2c45"
+      "bytes": 220124,
+      "revision": "c94b084626c74b5a"
     },
     {
       "url": "region-guide.js",
@@ -1166,6 +1166,56 @@
       "url": "sport/assets/bookshop/book-bg.jpg",
       "bytes": 191329,
       "revision": "0b2504e6a0a80781"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/001.png",
+      "bytes": 580292,
+      "revision": "e17a83da41bda3f9"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/002.png",
+      "bytes": 876672,
+      "revision": "a0ead37bdc2e41ed"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/003.png",
+      "bytes": 882993,
+      "revision": "d3469dc73d001b3d"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/004.png",
+      "bytes": 1055667,
+      "revision": "54fd464fa7fe66f0"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/005.png",
+      "bytes": 556743,
+      "revision": "003ad3ff589d3ff8"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/006.png",
+      "bytes": 697072,
+      "revision": "b1f2bdd06bdffadf"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/007.png",
+      "bytes": 627086,
+      "revision": "5dde944d776ad6c3"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/008.png",
+      "bytes": 131985,
+      "revision": "c490e8bbd4612159"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/book-index-bg.png",
+      "bytes": 2273473,
+      "revision": "87f22cca4bd42180"
+    },
+    {
+      "url": "sport/assets/bookshop/books-1003/book-info-bg.png",
+      "bytes": 2205673,
+      "revision": "5ff5c02a2c563806"
     },
     {
       "url": "sport/assets/bookshop/bookshop-bg.jpg",
@@ -1799,13 +1849,18 @@
     },
     {
       "url": "sport/bookshop-data.js",
-      "bytes": 4952,
-      "revision": "f6da08f8cc3e5fae"
+      "bytes": 13301,
+      "revision": "e4b1f4d3f1fc11f9"
     },
     {
       "url": "sport/bookshop-refinements.css",
       "bytes": 2264,
       "revision": "b1da8b0c724124f0"
+    },
+    {
+      "url": "sport/bookstore-1003.css",
+      "bytes": 4097,
+      "revision": "fd5d8e16a44312a7"
     },
     {
       "url": "sport/catalog.css",
@@ -1815,7 +1870,7 @@
     {
       "url": "sport/cloud.js",
       "bytes": 3791,
-      "revision": "a11b035bc768b469"
+      "revision": "56df7afe8edd6275"
     },
     {
       "url": "sport/daily-souvenirs.js",
@@ -1834,8 +1889,8 @@
     },
     {
       "url": "sport/economy-core.js",
-      "bytes": 4618,
-      "revision": "165242e028a41f96"
+      "bytes": 5543,
+      "revision": "3544c77f6f9f45aa"
     },
     {
       "url": "sport/economy.css",
@@ -1890,7 +1945,7 @@
     {
       "url": "sport/game.js",
       "bytes": 34576,
-      "revision": "b119aff42f8b71a3"
+      "revision": "b416f8677425a043"
     },
     {
       "url": "sport/home.css",
@@ -1899,8 +1954,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5756,
-      "revision": "3c8623ee61f83768"
+      "bytes": 5601,
+      "revision": "5f73c4ad4c699718"
     },
     {
       "url": "sport/island-ui.css",
@@ -1909,8 +1964,8 @@
     },
     {
       "url": "sport/island-ui.js",
-      "bytes": 8003,
-      "revision": "99c00b53a930da1e"
+      "bytes": 8050,
+      "revision": "c63ea52986e20ecf"
     },
     {
       "url": "sport/journal.css",
@@ -1929,8 +1984,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 15691,
-      "revision": "ec8d62b1ffcdbb4b"
+      "bytes": 16389,
+      "revision": "df6080d4dcc4c6a1"
     },
     {
       "url": "sport/launch.css",
@@ -1974,8 +2029,8 @@
     },
     {
       "url": "sport/personal-journal.js",
-      "bytes": 9020,
-      "revision": "0384a1f6afaba988"
+      "bytes": 10603,
+      "revision": "38888c11b99e2421"
     },
     {
       "url": "sport/premium-fish.js",
@@ -1999,8 +2054,8 @@
     },
     {
       "url": "sport/recycling.js",
-      "bytes": 3314,
-      "revision": "6d2d09bc480fe4d8"
+      "bytes": 3439,
+      "revision": "977a76de6eeaa3ba"
     },
     {
       "url": "sport/refinements-0916.css",
@@ -2024,8 +2079,8 @@
     },
     {
       "url": "sport/save-merge.js",
-      "bytes": 936,
-      "revision": "ec2ddb9311677b48"
+      "bytes": 935,
+      "revision": "6d21a3e6e7553eba"
     },
     {
       "url": "sport/style.css",

@@ -69,7 +69,7 @@ function showDisclaimer(){
  modal('免責聲明','<article class="islandDisclaimer"><p>本遊戲以休閒娛樂及認識香港海岸為目的。遊戲內的文字、魚類介紹、圖片及其他資料主要由人工智能（AI）生成或輔助製作，可能存在錯誤、遺漏或與實際情況不符。</p><p>遊戲中的魚種分布、釣獲機率、價格及環境設定屬遊戲設計，請勿用作實際出海、垂釣或食用魚類的判斷依據。</p><p>如發現資料有誤、圖片或內容有問題，或希望提出建議，歡迎電郵至 <a href="mailto:info@rgb-workshop.com">info@rgb-workshop.com</a>，我們會跟進及作適當修訂。多謝你幫助我們完善這段離島旅程。</p></article>',showJournal,'返回');
 }
 function showMiniGames(){
- modal('小遊戲','<div class="islandMiniGrid"><button id="playBun" class="islandMiniCard"><img src="'+new URL('../mini-games/peace-bun-whack/assets/festival-board.png',document.baseURI).href+'" alt="平安包打地鼠遊戲"><span><b>平安包打地鼠</b><small>初級 $100 · 中級 $200 · 高級 $300</small></span></button><p>通關獎金自動存入釣魚遊戲，可用來買魚餌及支付船費。</p></div>',showIslandHub,'返回');
+ modal('小遊戲','<div class="islandMiniGrid"><button id="playBun" class="islandMiniCard"><img src="'+new URL('../mini-games/peace-bun-whack/assets/festival-board.png',document.baseURI).href+'" alt="平安包打地鼠遊戲"><span><b>平安包打地鼠</b><small>初級 $100 · 中級 $200 · 高級 $300</small></span></button><p>通關獎金自動存入釣魚遊戲；三關全過另獲平安包達人證書，存入「我的收藏品 → 物件」。</p></div>',showIslandHub,'返回');
  $('playBun').onclick=playBunGame;foot('進入遊戲',playBunGame,true).id='enterMiniGame';
 }
 function playBunGame(){

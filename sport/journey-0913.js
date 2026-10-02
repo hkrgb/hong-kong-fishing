@@ -1,6 +1,6 @@
 /* September bookshop, catch decisions and daily paid activities. */
 const bookAsset=name=>/^https?:\/\//.test(name)?name:new URL('assets/bookshop/'+name,document.baseURI).href;
-const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,k==='books'?(cfg.bookshop?.[k]??BookshopDefaults[k]):[...BookshopDefaults[k],...(cfg.bookshop?.[k]||[]).filter(v=>!BookshopDefaults[k].some(x=>x.id===v.id))]]));
+const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,k==='books'?BookshopDefaults.books:[...BookshopDefaults[k],...(cfg.bookshop?.[k]||[]).filter(v=>!BookshopDefaults[k].some(x=>x.id===v.id))]]));
 let inBookshop=false,dailySession=null;
 const septemberHub=showIslandHub;
 showIslandHub=function(){inBookshop=false;$('bookshopHub')?.remove();septemberHub();};
@@ -31,18 +31,18 @@ function showBookshop(){
  hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button><button id="bookshopHome">⌂ 回家</button>';
  stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('recyclingStation').onclick=()=>showRecycling();$('bookshopHome').onclick=returnToIslandDirectory;
 }
-function showBooks(index=0,tab='info',videoPage=0){
- const books=bookshopData().books,b=books[index];if(!b){modal('好書推介','<p class="intro">新書正在準備中。</p>');return;}
+function showBooks(index=-1,tab='info',videoPage=0){
+ const books=bookshopData().books;if(index<0){showBookshelf();return;}const b=books[index];if(!b){modal('好書推介','<p class="intro">新書正在準備中。</p>');return;}
  const media=(b.videos||[]).filter(v=>/^[\w-]{11}$/.test(v.id));
  videoPage=clamp(videoPage,0,Math.max(0,media.length-1));
  const content=tab==='info'?'<article class="bookCopy"><h2>'+esc(b.name)+'</h2><h3>'+esc(b.subtitle||'')+'</h3>'+String(b.description||'').split('\n').filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</article><img class="bookCover" src="'+esc(bookAsset(b.image))+'" alt="'+esc(b.name)+'書籍封面">':'<div class="bookVideos">'+(!navigator.onLine?'<p class="intro">影片需要網絡連線；書籍介紹及小遊戲可離線使用。</p>':media.length?media.slice(videoPage,videoPage+1).map(v=>'<article><iframe title="'+esc(v.title)+'" src="https://www.youtube-nocookie.com/embed/'+v.id+'" allow="fullscreen; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><h3>'+esc(v.title)+'</h3><a href="https://www.youtube.com/watch?v='+v.id+'" target="_blank" rel="noopener">在 YouTube 觀看 ↗</a></article>').join(''):'<p class="intro">影片正在準備中。</p>')+'</div>';
  modal('好書推介','<div class="bookLayout"><nav class="bookTabs"><button id="bookInfoTab" aria-pressed="'+(tab==='info')+'">書籍資料</button><button id="bookMediaTab" aria-pressed="'+(tab==='media')+'">多媒體</button></nav><div class="bookContent">'+content+'</div></div>');
- document.querySelector('.dialog').classList.add('bookDetailDialog');const back=foot('‹ 返回書店',showBookshop);back.className='bookshopBack';$('bookInfoTab').onclick=()=>showBooks(index,'info');$('bookMediaTab').onclick=()=>showBooks(index,'media');
+ document.querySelector('.dialog').classList.add('bookDetailDialog');const back=foot('‹ 返回書架',showBookshelf);back.className='bookshopBack';$('bookInfoTab').onclick=()=>showBooks(index,'info');$('bookMediaTab').onclick=()=>showBooks(index,'media');
  if(tab==='media'&&media.length){foot('上一頁',()=>showBooks(index,'media',videoPage-1)).disabled=videoPage===0;foot((videoPage+1)+' / '+media.length,()=>{}).disabled=true;foot('下一頁',()=>showBooks(index,'media',videoPage+1)).disabled=videoPage===media.length-1;}
  if(books.length>1){foot('上一本',()=>showBooks(index-1)).disabled=index===0;foot((index+1)+' / '+books.length,()=>{}).disabled=true;foot('下一本',()=>showBooks(index+1)).disabled=index===books.length-1;}
 }
 function showBookCollection(){
- const entries=[...wallet().collection.entries()];
+ const entries=[...wallet().instances.entries()];
  modal('我的收藏',entries.length?'<div class="souvenirCollection">'+entries.map(([key,v])=>'<article><img src="'+esc(bookAsset(v.image))+'" alt="'+esc(v.name)+'"><b>'+esc(v.name)+'</b><small>'+ (key.startsWith('toy|')?'懷舊玩具':'已完成明信片')+'</small></article>').join('')+'</div>':'<p class="intro">到扭蛋機轉出童年玩具，或完成一張明信片拼圖吧。</p>',showBookshop,'返回書店');
 }
 const septemberFish=showFish;
@@ -110,7 +110,7 @@ function openDailyGame(kind){
 }
 addEventListener('message',e=>{
  const s=dailySession,d=e.data;if(!s||e.source!==s.frame.contentWindow||e.origin!==s.origin||!d||d.session!==s.id)return;
- const sendState=()=>dailyReply({type:'bookshop-state',kind:s.kind,day:hkDay(),money:wallet().money,price:20,art:{machine:bookAsset('machine.png'),background:bookAsset('postcard-table.png')},collection:[...wallet().collection.entries()].filter(([k])=>k.startsWith(s.kind+'|')).map(([,v])=>({...collectionItem(v),image:bookAsset(collectionItem(v).image)}))});
+ const sendState=()=>dailyReply({type:'bookshop-state',kind:s.kind,day:hkDay(),money:wallet().money,price:20,art:{machine:bookAsset('machine.png'),background:bookAsset('postcard-table.png')},collection:[...wallet().instances.entries()].filter(([k])=>k.startsWith(s.kind+'|')).map(([,v])=>({...collectionItem(v),image:bookAsset(collectionItem(v).image)}))});
  if(d.type==='bookshop-ready'){sendState();return;}
  if(d.type==='bookshop-play'){
   if(typeof d.request!=='string'||!/^[\w-]{1,80}$/.test(d.request))return;
@@ -126,3 +126,13 @@ addEventListener('message',e=>{
   sendState();dailyReply({type:'bookshop-collected',request:d.request});
  }
 });
+
+function showBookshelf(){
+ const books=bookshopData().books;
+ modal('好書推介','<div class="bookshelfGrid">'+books.map((b,i)=>'<button class="shelfBook" data-book="'+i+'" aria-label="閱讀《'+esc(b.name)+'》"><img src="'+esc(bookAsset(b.image))+'" alt="'+esc(b.name)+'"></button>').join('')+'</div>');
+ document.querySelector('.dialog').classList.add('bookShelfDialog');
+ document.querySelectorAll('.shelfBook').forEach(b=>b.onclick=()=>showBooks(Number(b.dataset.book)));
+ foot('‹ 返回書店',showBookshop);
+}
+const shelfModal=modal;
+modal=function(...args){shelfModal(...args);document.querySelector('.dialog').classList.remove('bookShelfDialog');};
