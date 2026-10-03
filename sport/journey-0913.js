@@ -28,18 +28,8 @@ modal=function(...args){$('bookshopHub')?.remove();septemberModal(...args);docum
 function showBookshop(){
  cancelCast();held=false;dialogOpen=true;islandBrowsing=true;inBookshop=true;stage.classList.add('islandBrowsing');$('home').hidden=true;$('modal').hidden=true;$('islandHub').hidden=true;$('bookshopHub')?.remove();updateIslandBackdrop();
  const hub=document.createElement('section');hub.id='bookshopHub';hub.setAttribute('aria-label','長洲書店');
- hub.innerHTML='<button id="recommendBooks">好書推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button><button id="bookshopHome">⌂ 回家</button>';
+ hub.innerHTML='<button id="recommendBooks">店長推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button><button id="bookshopHome">⌂ 回家</button>';
  stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('recyclingStation').onclick=()=>showRecycling();$('bookshopHome').onclick=returnToIslandDirectory;
-}
-function showBooks(index=-1,tab='info',videoPage=0){
- const books=bookshopData().books;if(index<0){showBookshelf();return;}const b=books[index];if(!b){modal('好書推介','<p class="intro">新書正在準備中。</p>');return;}
- const media=(b.videos||[]).filter(v=>/^[\w-]{11}$/.test(v.id));
- videoPage=clamp(videoPage,0,Math.max(0,media.length-1));
- const content=tab==='info'?'<article class="bookCopy"><h2>'+esc(b.name)+'</h2><h3>'+esc(b.subtitle||'')+'</h3>'+String(b.description||'').split('\n').filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</article><img class="bookCover" src="'+esc(bookAsset(b.image))+'" alt="'+esc(b.name)+'書籍封面">':'<div class="bookVideos">'+(!navigator.onLine?'<p class="intro">影片需要網絡連線；書籍介紹及小遊戲可離線使用。</p>':media.length?media.slice(videoPage,videoPage+1).map(v=>'<article><iframe title="'+esc(v.title)+'" src="https://www.youtube-nocookie.com/embed/'+v.id+'" allow="fullscreen; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><h3>'+esc(v.title)+'</h3><a href="https://www.youtube.com/watch?v='+v.id+'" target="_blank" rel="noopener">在 YouTube 觀看 ↗</a></article>').join(''):'<p class="intro">影片正在準備中。</p>')+'</div>';
- modal('好書推介','<div class="bookLayout"><nav class="bookTabs"><button id="bookInfoTab" aria-pressed="'+(tab==='info')+'">書籍資料</button><button id="bookMediaTab" aria-pressed="'+(tab==='media')+'">多媒體</button></nav><div class="bookContent">'+content+'</div></div>');
- document.querySelector('.dialog').classList.add('bookDetailDialog');const back=foot('‹ 返回書架',showBookshelf);back.className='bookshopBack';$('bookInfoTab').onclick=()=>showBooks(index,'info');$('bookMediaTab').onclick=()=>showBooks(index,'media');
- if(tab==='media'&&media.length){foot('上一頁',()=>showBooks(index,'media',videoPage-1)).disabled=videoPage===0;foot((videoPage+1)+' / '+media.length,()=>{}).disabled=true;foot('下一頁',()=>showBooks(index,'media',videoPage+1)).disabled=videoPage===media.length-1;}
- if(books.length>1){foot('上一本',()=>showBooks(index-1)).disabled=index===0;foot((index+1)+' / '+books.length,()=>{}).disabled=true;foot('下一本',()=>showBooks(index+1)).disabled=index===books.length-1;}
 }
 function showBookCollection(){
  const entries=[...wallet().instances.entries()];
@@ -127,12 +117,3 @@ addEventListener('message',e=>{
  }
 });
 
-function showBookshelf(){
- const books=bookshopData().books;
- modal('好書推介','<div class="bookshelfGrid">'+books.map((b,i)=>'<button class="shelfBook" data-book="'+i+'" aria-label="閱讀《'+esc(b.name)+'》"><img src="'+esc(bookAsset(b.image))+'" alt="'+esc(b.name)+'"></button>').join('')+'</div>');
- document.querySelector('.dialog').classList.add('bookShelfDialog');
- document.querySelectorAll('.shelfBook').forEach(b=>b.onclick=()=>showBooks(Number(b.dataset.book)));
- foot('‹ 返回書店',showBookshop);
-}
-const shelfModal=modal;
-modal=function(...args){shelfModal(...args);document.querySelector('.dialog').classList.remove('bookShelfDialog');};

@@ -1,0 +1,51 @@
+/* Store manager's independent book and video catalogues. */
+#stage .dialog.managerDialog,#stage.islandBrowsing .dialog.managerDialog{width:1220px;height:592px;margin-top:98px;padding:0;border:8px solid #fffdf5;border-radius:24px;background:url('assets/bookshop/books-1003/book-index-bg.png') center/100% 100%;color:#fff8e4;overflow:hidden}
+#stage .dialog.managerBookInfo,#stage.islandBrowsing .dialog.managerBookInfo{background-image:url('assets/bookshop/books-1003/book-info-bg.png')}
+#stage .dialog.managerMedia,#stage.islandBrowsing .dialog.managerMedia{background-image:url('assets/bookshop/manager-1003/media-bg.png')}
+#stage .managerDialog>header{position:absolute;left:auto;right:10px;top:10px;width:48px;height:48px;margin:0;padding:0;z-index:5}
+#stage .managerDialog>header>div{display:none}
+#stage .managerDialog #closeModal{width:48px;height:48px;min-height:0;padding:0;font-size:30px;background:#fff;color:#16516b}
+#stage .managerMedia>header{display:none}
+#stage .managerDialog #modalBody{flex:1;min-height:0;height:auto;padding:0;overflow:hidden}
+.managerTabs{position:absolute!important;left:0;top:22px;bottom:22px;width:55px;display:flex!important;flex-direction:column;gap:8px;z-index:4}
+#stage .managerDialog .managerTabs button{writing-mode:vertical-rl;text-orientation:upright;letter-spacing:2px;width:55px;flex:1;min-height:0;padding:8px 10px;border:0;border-radius:0 7px 7px 0;font-size:27px;font-weight:normal;line-height:1.2;background:#dcedb8;color:#172719;box-shadow:1px 2px 5px #0003}
+#stage .managerDialog .managerTabs button[aria-pressed=true]{background:#ffcb36;color:#17190e}
+#stage .managerDialog .managerTabs #managerBack{background:#109781;color:#fff}
+.managerContent{height:100%;min-height:0}
+.managerShelf{display:grid;height:100%;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:33px 46px;padding:30px 127px 14px 195px}
+#stage .managerDialog .shelfBook{min-height:0;padding:0;border:0;box-shadow:none;background:transparent;display:flex;align-items:flex-end;justify-content:center}
+#stage .managerDialog .shelfBook img{height:100%;max-height:100%;max-width:100%;object-fit:contain;filter:drop-shadow(3px 4px 3px #2e170866)}
+#stage .managerDialog .shelfBook:hover img,#stage .managerDialog .shelfBook:focus-visible img{filter:drop-shadow(0 0 6px #fff3b6)}
+#stage .managerDialog #modalFooter{height:64px;min-height:64px;flex-shrink:0;margin:0;padding:5px 0 10px;display:flex;align-items:center;justify-content:center;gap:15px;background:transparent;border:0}
+#stage .managerDialog #modalFooter button{height:47px;min-height:0;width:112px;padding:2px 14px;font-size:27px;color:#6593a0}
+.managerPageCount{display:grid;place-items:center;min-width:98px;height:44px;font-size:24px;background:#ffefd09e;color:#466975;border-radius:6px}
+#stage .managerDialog #modalFooter .managerShelfBack{position:absolute;left:78px;width:auto;font-size:22px;color:#16516b}
+.managerBookLayout{height:100%;display:flex;gap:42px;align-items:stretch;padding:60px 125px 65px 215px}
+#stage .managerBookInfo .bookCover{width:270px;height:100%;max-height:100%;object-fit:contain;flex-shrink:0;order:0}
+#stage .managerBookInfo .bookCopy{flex:1;min-width:0;min-height:0;overflow-y:auto;padding:0 12px 22px 0;touch-action:pan-y;scrollbar-color:#ffecc3 #754319;scrollbar-width:thin;color:#fff9eb}
+#stage .managerBookInfo .bookCopy h2{font-size:34px;color:#fff9eb;margin:0 0 16px}
+#stage .managerBookInfo .bookCopy h3{font-size:22px;color:#fff9eb;margin:0 0 20px;line-height:1.5}
+#stage .managerBookInfo .bookCopy p{font-size:21px;line-height:1.7;color:#fff9eb;font-weight:normal;margin:0 0 20px;text-shadow:0 1px 2px #653411}
+#stage .managerBookInfo .bookCopy[data-size=medium] p{font-size:26px}
+#stage .managerBookInfo .bookCopy[data-size=large] p{font-size:31px}
+.managerFontControls{position:absolute;top:12px;right:80px;display:flex;align-items:center;gap:6px;font-size:20px;color:#fff8e4;z-index:4}
+#stage .managerDialog .managerFontControls button{min-height:36px;width:39px;padding:2px 5px;font-size:22px;background:#fff7dd;color:#47594a}
+#stage .managerDialog .managerFontControls button[aria-pressed=true]{background:#ffca38;color:#27371c;border-color:#ffca38}
+#stage .managerDialog #managerMediaExpand{position:absolute;right:18px;top:18px;z-index:5;display:flex;align-items:center;flex-direction:column;gap:4px;background:transparent;color:#fff;border:0;padding:0;width:85px;font-size:19px;text-shadow:0 1px 4px #000}
+#managerMediaExpand img{height:60px;width:65px;object-fit:contain}
+.managerTV{position:absolute;left:24.3%;top:24%;width:37%;aspect-ratio:16/9;background:#000;display:flex}
+#managerPlayer{width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center}
+#managerPlayer iframe{display:block;width:100%;height:100%;border:0;background:#000}
+#managerMediaCollapse{display:none}
+#managerPlayer:fullscreen{width:100vw;height:100vh;background:#000}
+#managerPlayer:fullscreen iframe{width:min(100vw,177.7778vh);height:min(100vh,56.25vw)}
+#stage .managerDialog #managerPlayer:fullscreen #managerMediaCollapse{display:block;position:absolute;top:12px;right:18px;z-index:5;width:48px;height:48px;padding:0;background:#18383ccc;color:#fff;border:1px solid #fff;font-size:32px}
+.managerOffline{padding:20px;font-size:23px;color:#fff;text-align:center;line-height:1.6}
+.managerVideoCaption{position:absolute;bottom:77px;left:155px;right:105px;text-align:center;color:#fff;display:flex;flex-direction:column;align-items:center;gap:6px;text-shadow:0 1px 4px #000}
+.managerVideoCaption b{font-size:24px;line-height:1.3;font-weight:normal}
+.managerVideoCaption a{font-size:18px;color:#fff;text-decoration:underline}
+.managerVideoFallback{position:fixed;inset:0;z-index:10000;background:#000;display:flex;align-items:center;justify-content:center}
+.managerVideoFallback iframe{width:min(100vw,177.7778vh);height:min(100vh,56.25vw);border:0}
+.managerVideoFallback button{position:absolute;right:18px;top:12px;width:48px;height:48px;background:#18383ccc;color:#fff;border:1px solid #fff;font-size:32px}
+#stage:has(#modal:not([hidden]) .managerDialog)>header{pointer-events:none}
+#stage:has(#modal:not([hidden]) .managerDialog)>header #quickHud,#stage:has(#modal:not([hidden]) .managerDialog)>header #menu{pointer-events:auto}

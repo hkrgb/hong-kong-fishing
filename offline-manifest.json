@@ -1,6 +1,6 @@
 {
-  "version": "789fd30742dde535",
-  "bytes": 292095833,
+  "version": "13db4f31df587924",
+  "bytes": 293202280,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5623,
-      "revision": "0214dde54f092a8f"
+      "bytes": 5805,
+      "revision": "2184dc03d57d210f"
     },
     {
       "url": "manifest.webmanifest",
@@ -1266,6 +1266,16 @@
       "url": "sport/assets/bookshop/machine.png",
       "bytes": 2460625,
       "revision": "a3254b3c6a311158"
+    },
+    {
+      "url": "sport/assets/bookshop/manager-1003/media-bg.png",
+      "bytes": 1079365,
+      "revision": "3b4de9598816347e"
+    },
+    {
+      "url": "sport/assets/bookshop/manager-1003/yt-icon.png",
+      "bytes": 16747,
+      "revision": "1c9a9585ace527b0"
     },
     {
       "url": "sport/assets/bookshop/postcard-0927-2.jpg",
@@ -1954,8 +1964,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5601,
-      "revision": "5f73c4ad4c699718"
+      "bytes": 5783,
+      "revision": "5233ccd6cfc0dad8"
     },
     {
       "url": "sport/island-ui.css",
@@ -1984,8 +1994,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 16389,
-      "revision": "df6080d4dcc4c6a1"
+      "bytes": 13382,
+      "revision": "925238d9dd33c7eb"
     },
     {
       "url": "sport/launch.css",
@@ -1996,6 +2006,16 @@
       "url": "sport/live-weather.js",
       "bytes": 3777,
       "revision": "ef56b17787642465"
+    },
+    {
+      "url": "sport/manager-recommendations.css",
+      "bytes": 6363,
+      "revision": "1380e9af2f2c9ad5"
+    },
+    {
+      "url": "sport/manager-recommendations.js",
+      "bytes": 6615,
+      "revision": "a9e1ab9cd5b1adca"
     },
     {
       "url": "sport/market-layout.css",
