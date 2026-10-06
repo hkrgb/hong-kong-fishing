@@ -34,6 +34,17 @@ addEventListener('message',event=>{
  const s=theatreSession,d=event.data;if(!s||event.source!==s.frame.contentWindow||event.origin!==TheatreStory.origin||!d||d.channel!=='island-theatre'||d.game!==TheatreStory.game||d.session!==s.token)return;
  if(d.type==='ready'){s.ready=true;clearTimeout(s.timer);$('theatrePlayer')?.querySelector('.theatreLoading')?.remove();}
  if(d.type==='error'){clearTimeout(s.timer);const p=$('theatrePlayer')?.querySelector('.theatreLoading p');if(p)p.textContent='未能載入最新故事，請返回重試。';}
- if(d.type==='complete'&&s.ready&&transact({type:'story-complete',story:TheatreStory.id})){showTheatre();modal('完成《拋海星的人》','<p class="intro">獲得「泥鯭粥」及「卡片盒」！已加入旅程手帳的「物件」。</p>',showTheatre,'返回小劇場');foot('查看物件',()=>showJournal('collection',0,'objects'));}
+ if(d.type==='complete'&&s.ready)finishTheatreCollection();
 });
 const theatreClose=closeDialog;closeDialog=function(){if(theatreView){$('modal').hidden=true;if(!$('theatrePlayer'))showTheatre();return;}theatreClose();};
+
+function finishTheatreCollection(){
+ const already=wallet().storyRewards.has(TheatreStory.id);
+ if(!already&&!transact({type:'story-complete',story:TheatreStory.id})){
+  modal('暫時未能保存獎勵','<p class="intro">請稍後再試，物件尚未入庫。</p>',finishTheatreCollection,'重試');return;
+ }
+ showTheatre();
+ const pictures=StorySouvenirs.map(item=>'<figure><img src="'+esc(bookAsset(item.image))+'" alt="'+esc(item.name)+'"><figcaption>'+esc(item.name)+'</figcaption></figure>').join('');
+ modal(already?'再次完成《拋海星的人》':'獲得小劇場特別物件','<div class="theatreRewards">'+pictures+'</div><p class="intro">'+(already?'這兩件特別物件已在你的收藏中。':'已加入「我的收藏品 → 物件」。')+'卡片盒及泥鯭粥為劇場專屬，不會在扭蛋出現。</p>',showTheatre,'返回小劇場');
+ foot('查看物件',()=>showJournal('collection',0,'objects'));
+}

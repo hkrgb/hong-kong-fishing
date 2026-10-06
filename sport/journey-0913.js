@@ -1,6 +1,6 @@
 /* September bookshop, catch decisions and daily paid activities. */
 const bookAsset=name=>/^https?:\/\//.test(name)?name:new URL('assets/bookshop/'+name,document.baseURI).href;
-const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,k==='books'?BookshopDefaults.books:[...BookshopDefaults[k],...(cfg.bookshop?.[k]||[]).filter(v=>!BookshopDefaults[k].some(x=>x.id===v.id))]]));
+const bookshopData=()=>Object.fromEntries(['books','toys','postcards'].map(k=>[k,k==='books'?BookshopDefaults.books:[...BookshopDefaults[k],...(cfg.bookshop?.[k]||[]).filter(v=>!BookshopDefaults[k].some(x=>x.id===v.id))].filter(v=>k!=='toys'||!StorySouvenirs.some(x=>x.id===v.id||x.name===v.name))]));
 let inBookshop=false,dailySession=null;
 const septemberHub=showIslandHub;
 showIslandHub=function(){inBookshop=false;$('bookshopHub')?.remove();septemberHub();};

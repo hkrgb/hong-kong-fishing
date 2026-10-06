@@ -34,7 +34,7 @@ globalThis.CoastEconomy=(()=>{
    if(e.type==='minigame'&&e.game==='peace-bun-whack'&&[1,2,3].includes(e.level)&&e.amount===e.level*100&&typeof e.rewardKey==='string'&&e.rewardKey.length>0&&e.rewardKey.length<200&&!s.rewards.has(e.rewardKey)){s.rewards.add(e.rewardKey);s.money+=e.amount;if(e.level===3)addItem('certificate',{id:'peaceBunMaster',name:'平安包達人證書',image:'../../../mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png'},e.id);ok=true;}
    if(e.type==='certificate-import'&&e.certificate==='peaceBunMaster'&&![...s.instances.keys()].some(k=>k.startsWith('certificate|'))){addItem('certificate',{id:'peaceBunMaster',name:'平安包達人證書',image:'../../../mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png'},e.id);ok=true;}
    if(e.type==='story-unlock'&&e.story==='star-thrower'&&!s.stories.has(e.story)&&storyEligible(save,s)){s.stories.add(e.story);ok=true;}
-   if(e.type==='story-complete'&&e.story==='star-thrower'&&s.stories.has(e.story)&&!s.storyRewards.has(e.story)){s.storyRewards.add(e.story);addItem('story',{id:'star-congee',name:'泥鯭粥',image:'../theatre/congee.svg'},e.id+'-congee');addItem('story',{id:'star-card-case',name:'卡片盒',image:'../theatre/card-case.png'},e.id+'-card');ok=true;}
+   if(e.type==='story-complete'&&e.story==='star-thrower'&&s.stories.has(e.story)&&!s.storyRewards.has(e.story)){s.storyRewards.add(e.story);addItem('story',{id:'star-congee',name:'泥鯭粥',image:'../theatre/congee.png'},e.id+'-congee');addItem('story',{id:'star-card-case',name:'卡片盒',image:'../theatre/card-case.png'},e.id+'-card');ok=true;}
    if(e.type==='relief'&&Number.isFinite(e.limit)&&s.money<e.limit&&kinds.every(k=>s.bait[k]===0)){s.bait.basic=3;ok=true;}
    if(ok)s.accepted.add(e.id);else s.rejected.push(e.id);
   }return s;
