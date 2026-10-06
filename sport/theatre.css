@@ -19,3 +19,5 @@
 #stage.theatreMode #modal{z-index:40}
 
 .theatreRewards{display:flex;justify-content:center;gap:45px}.theatreRewards figure{margin:0;text-align:center;font-size:26px;color:#18536b}.theatreRewards img{display:block;width:230px;height:200px;object-fit:contain;margin-bottom:8px}
+
+#stage:has(.theatreCover)>header{visibility:hidden}.theatreCover{position:absolute;inset:0;z-index:100;background:#000;display:grid;place-items:center}.theatreCover img{width:100%;height:100%;object-fit:contain}

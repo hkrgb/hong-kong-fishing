@@ -1,6 +1,6 @@
 {
-  "version": "d2eb58966e2f6e76",
-  "bytes": 295939581,
+  "version": "a6b5ca6909a28f73",
+  "bytes": 295938194,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -930,7 +930,7 @@
     {
       "url": "index.html",
       "bytes": 5905,
-      "revision": "4d37ec13c8126fac"
+      "revision": "c5bed2ae315a6687"
     },
     {
       "url": "manifest.webmanifest",
@@ -1909,8 +1909,8 @@
     },
     {
       "url": "sport/assets/theatre/story.png",
-      "bytes": 74304,
-      "revision": "92986a42e7b85e8d"
+      "bytes": 70396,
+      "revision": "0d8bf67484ae6320"
     },
     {
       "url": "sport/assets/trophy.png",
@@ -1959,8 +1959,8 @@
     },
     {
       "url": "sport/economy-core.js",
-      "bytes": 6247,
-      "revision": "aee1e2a336e769b1"
+      "bytes": 6787,
+      "revision": "b7b0e2148fb8917b"
     },
     {
       "url": "sport/economy.css",
@@ -1969,8 +1969,8 @@
     },
     {
       "url": "sport/economy.js",
-      "bytes": 9251,
-      "revision": "beba1aeca07f11bd"
+      "bytes": 9293,
+      "revision": "e7011b6b90637dc3"
     },
     {
       "url": "sport/entry-orientation.css",
@@ -2025,7 +2025,7 @@
     {
       "url": "sport/index.html",
       "bytes": 5883,
-      "revision": "b2520d8e7fa58c3c"
+      "revision": "269bc39c0e7c6a24"
     },
     {
       "url": "sport/island-ui.css",
@@ -2054,8 +2054,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 13367,
-      "revision": "b7954daa3edd98fa"
+      "bytes": 13454,
+      "revision": "ea90292db896620e"
     },
     {
       "url": "sport/launch.css",
@@ -2109,8 +2109,8 @@
     },
     {
       "url": "sport/personal-journal.js",
-      "bytes": 10649,
-      "revision": "b5c24c9dfbb4be15"
+      "bytes": 10761,
+      "revision": "def1e0c209f8ca4f"
     },
     {
       "url": "sport/premium-fish.js",
@@ -2174,13 +2174,13 @@
     },
     {
       "url": "sport/theatre.css",
-      "bytes": 1969,
-      "revision": "d3cff442f005b3ba"
+      "bytes": 2184,
+      "revision": "a1426a23348b6ef3"
     },
     {
       "url": "sport/theatre.js",
-      "bytes": 6313,
-      "revision": "e4e2fa402855af63"
+      "bytes": 7838,
+      "revision": "527ddb3eb1af1385"
     },
     {
       "url": "sport/vendor/firebase-10.12.5/firebase-app.js",

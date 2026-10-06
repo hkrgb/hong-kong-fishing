@@ -29,7 +29,7 @@ function showTackle(){
 }
 function salePrice(f){const current=cfg.fish.find(v=>v.id===f.id);return Math.max(10,Math.round((+f.weight||0)*moneyValue(current?.sellPerKg,moneyValue(cfg.economy?.sellPerKg,50))));}
 function showMarket(page=0){
- const w=wallet(),fish=save.bag.filter(f=>!w.sold.has(CoastEconomy.catchKey(f))&&!w.released.has(CoastEconomy.catchKey(f))),pages=Math.max(1,Math.ceil(fish.length/3));page=clamp(page,0,pages-1);
+ const w=wallet(),fish=save.bag.filter(f=>!w.sold.has(CoastEconomy.catchKey(f))&&!w.released.has(CoastEconomy.catchKey(f))&&!w.offered.has(CoastEconomy.catchKey(f))),pages=Math.max(1,Math.ceil(fish.length/3));page=clamp(page,0,pages-1);
  modal('海鮮檔','<div class="marketShop" style="background-image:linear-gradient(#071d2966,#071d29aa),url('+shopAsset('fish-market')+')"><div class="marketOffers">'+(fish.length?'':'<p>沒有可出售魚獲</p>')+'</div><p class="marketNote">出售後仍保留圖鑑及魚獲紀錄。</p></div>');
  for(const f of fish.slice(page*3,page*3+3)){const row=document.createElement('section');row.className='saleOffer';row.innerHTML=fishMarkup(f)+'<div><b>'+esc(f.name)+'</b><p>'+Number(f.weight).toFixed(2)+' kg · $'+salePrice(f)+'</p></div>';const b=document.createElement('button');b.textContent='出售';b.onclick=()=>confirmSale(f,page);row.append(b);document.querySelector('.marketOffers').append(row);}
  foot('上一頁',()=>showMarket(page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showMarket(page+1)).disabled=page===pages-1;foot('商街',openHarbour);foot('返回',returnFromShop);foot('賣出所有魚獲',confirmSellAll,true).disabled=!fish.length;

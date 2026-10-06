@@ -38,13 +38,13 @@ function showBookCollection(){
 const septemberFish=showFish;
 showFish=function(f,newCatch=false){
  septemberFish(f,newCatch);const key=CoastEconomy.catchKey(f),w=wallet();
- if(newCatch&&!w.sold.has(key)&&!w.released.has(key)){
+ if(newCatch&&!w.sold.has(key)&&!w.released.has(key)&&!w.offered.has(key)){
   $('modalFooter').replaceChildren();let decided=false;
   const finish=()=>{if(pendingPrize)showPrize();else closeDialog();};
   foot('放入釣箱',()=>{if(decided)return;decided=true;finish();},true);
   foot('放生',()=>{if(decided||!transact({type:'release',catchKey:key}))return;decided=true;updateQuickHud();finish();});
- }else if(w.released.has(key)||w.sold.has(key)){
-  const s=document.createElement('p');s.className='catchDisposition';s.textContent=w.released.has(key)?'已放生 · 保留紀錄，不能出售':'已出售 · 保留紀錄';$('modalBody').append(s);
+ }else if(w.offered.has(key)||w.released.has(key)||w.sold.has(key)){
+  const s=document.createElement('p');s.className='catchDisposition';s.textContent=w.offered.has(key)?'已用於解鎖小劇場':w.released.has(key)?'已放生 · 保留紀錄，不能出售':'已出售 · 保留紀錄';$('modalBody').append(s);
  }
 };
 let tickerIndex=0,tickerTimer=null,tickerAnimation=0;
