@@ -1,10 +1,11 @@
 /* Shared deterministic ledger: never merge money with Math.max or sum starting gifts. */
 globalThis.CoastEconomy=(()=>{
  const catchKey=f=>f.catchId||[f.id,f.time,f.weight,f.area].join('|');
+ const storyEligible=(save,s)=>s.hearts>=10||(save.bag||[]).some(f=>f.id==='siganus-canaliculatus'&&!s.sold.has(catchKey(f))&&!s.released.has(catchKey(f)));
  const kinds=['basic','advanced','master'];
  function mergeEvents(a=[],b=[]){const map=new Map();for(const e of [...(Array.isArray(a)?a:[]),...(Array.isArray(b)?b:[])]){if(!e||typeof e.id!=='string'||!Number.isSafeInteger(e.seq)||e.seq<1)continue;const old=map.get(e.id);if(!old||JSON.stringify(e)<JSON.stringify(old))map.set(e.id,e);}return [...map.values()].sort((x,y)=>x.seq-y.seq||x.id.localeCompare(y.id));}
  function account(save={}){
-  const s={money:500,hearts:10,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),released:new Set(),purchases:new Map(),daily:new Map(),dailyPools:new Map(),collection:new Map(),instances:new Map(),instanceOwners:new Map(),ownership:new Map(),completed:new Set(),litterCatches:new Set(),rewards:new Set(),accepted:new Set(),rejected:[]};
+  const s={stories:new Set(),storyRewards:new Set(),money:500,hearts:10,bait:{basic:10,advanced:0,master:0},areas:new Set(),sold:new Set(),released:new Set(),purchases:new Map(),daily:new Map(),dailyPools:new Map(),collection:new Map(),instances:new Map(),instanceOwners:new Map(),ownership:new Map(),completed:new Set(),litterCatches:new Set(),rewards:new Set(),accepted:new Set(),rejected:[]};
   const addItem=(kind,item,owner)=>{const key=kind+'|'+item.id;s.collection.set(key,item);s.ownership.set(key,owner);s.instances.set(kind+'|'+owner,item);s.instanceOwners.set(kind+'|'+owner,owner);};
   const fish=new Set((save.bag||[]).map(catchKey));
   for(const e of mergeEvents(save.economyEvents)){
@@ -32,10 +33,12 @@ globalThis.CoastEconomy=(()=>{
    }
    if(e.type==='minigame'&&e.game==='peace-bun-whack'&&[1,2,3].includes(e.level)&&e.amount===e.level*100&&typeof e.rewardKey==='string'&&e.rewardKey.length>0&&e.rewardKey.length<200&&!s.rewards.has(e.rewardKey)){s.rewards.add(e.rewardKey);s.money+=e.amount;if(e.level===3)addItem('certificate',{id:'peaceBunMaster',name:'平安包達人證書',image:'../../../mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png'},e.id);ok=true;}
    if(e.type==='certificate-import'&&e.certificate==='peaceBunMaster'&&![...s.instances.keys()].some(k=>k.startsWith('certificate|'))){addItem('certificate',{id:'peaceBunMaster',name:'平安包達人證書',image:'../../../mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png'},e.id);ok=true;}
+   if(e.type==='story-unlock'&&e.story==='star-thrower'&&!s.stories.has(e.story)&&storyEligible(save,s)){s.stories.add(e.story);ok=true;}
+   if(e.type==='story-complete'&&e.story==='star-thrower'&&s.stories.has(e.story)&&!s.storyRewards.has(e.story)){s.storyRewards.add(e.story);addItem('story',{id:'star-congee',name:'泥鯭粥',image:'../theatre/congee.svg'},e.id+'-congee');addItem('story',{id:'star-card-case',name:'卡片盒',image:'../theatre/card-case.png'},e.id+'-card');ok=true;}
    if(e.type==='relief'&&Number.isFinite(e.limit)&&s.money<e.limit&&kinds.every(k=>s.bait[k]===0)){s.bait.basic=3;ok=true;}
    if(ok)s.accepted.add(e.id);else s.rejected.push(e.id);
   }return s;
  }
  function pool(fish,caught,kind,roll){const unseen=fish.filter(f=>!caught.has(f.id)),seen=fish.filter(f=>caught.has(f.id));if(kind==='basic')return fish;if(!unseen.length)return [];if(kind==='master'||!seen.length||roll<.6)return unseen;return seen;}
- return {account,mergeEvents,catchKey,pool};
+ return {account,mergeEvents,catchKey,pool,storyEligible};
 })();

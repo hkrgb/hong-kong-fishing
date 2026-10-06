@@ -1,6 +1,6 @@
 {
-  "version": "13db4f31df587924",
-  "bytes": 293202280,
+  "version": "59c1cd81c0bb61e0",
+  "bytes": 294383619,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5805,
-      "revision": "2184dc03d57d210f"
+      "bytes": 5851,
+      "revision": "77d30b1bf7491d52"
     },
     {
       "url": "manifest.webmanifest",
@@ -979,8 +979,8 @@
     },
     {
       "url": "mini-games/peace-bun-whack/assets/peace-bun-master-certificate.png",
-      "bytes": 3222654,
-      "revision": "71719ed36a9e94a0"
+      "bytes": 1754639,
+      "revision": "e404804375847f75"
     },
     {
       "url": "mini-games/peace-bun-whack/assets/peace-bun-plain.png",
@@ -1853,6 +1853,41 @@
       "revision": "594aea42c02a45ee"
     },
     {
+      "url": "sport/assets/theatre/card-case.png",
+      "bytes": 1976080,
+      "revision": "67582043bdafdcb0"
+    },
+    {
+      "url": "sport/assets/theatre/congee.svg",
+      "bytes": 934,
+      "revision": "fc889effa51890b8"
+    },
+    {
+      "url": "sport/assets/theatre/lock.png",
+      "bytes": 4814,
+      "revision": "bcd20ac4c67d0654"
+    },
+    {
+      "url": "sport/assets/theatre/play-bu.png",
+      "bytes": 14707,
+      "revision": "0d0a245106877f9a"
+    },
+    {
+      "url": "sport/assets/theatre/story-01.jpg",
+      "bytes": 379043,
+      "revision": "505842efa695e3b2"
+    },
+    {
+      "url": "sport/assets/theatre/story-bg.jpg",
+      "bytes": 191398,
+      "revision": "92012bfe6f0bb42b"
+    },
+    {
+      "url": "sport/assets/theatre/story.png",
+      "bytes": 74304,
+      "revision": "92986a42e7b85e8d"
+    },
+    {
       "url": "sport/assets/trophy.png",
       "bytes": 2290384,
       "revision": "3a1b8cc69536242a"
@@ -1899,8 +1934,8 @@
     },
     {
       "url": "sport/economy-core.js",
-      "bytes": 5543,
-      "revision": "3544c77f6f9f45aa"
+      "bytes": 6247,
+      "revision": "47ff3d6081d53688"
     },
     {
       "url": "sport/economy.css",
@@ -1964,8 +1999,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5783,
-      "revision": "5233ccd6cfc0dad8"
+      "bytes": 5829,
+      "revision": "580d4dcb53b6cf6c"
     },
     {
       "url": "sport/island-ui.css",
@@ -1994,8 +2029,8 @@
     },
     {
       "url": "sport/journey-0913.js",
-      "bytes": 13382,
-      "revision": "925238d9dd33c7eb"
+      "bytes": 13290,
+      "revision": "e2e1cac3843a46ac"
     },
     {
       "url": "sport/launch.css",
@@ -2049,8 +2084,8 @@
     },
     {
       "url": "sport/personal-journal.js",
-      "bytes": 10603,
-      "revision": "38888c11b99e2421"
+      "bytes": 10649,
+      "revision": "b5c24c9dfbb4be15"
     },
     {
       "url": "sport/premium-fish.js",
@@ -2111,6 +2146,16 @@
       "url": "sport/tackle-layout.css",
       "bytes": 1039,
       "revision": "8de9e3d5af088c9a"
+    },
+    {
+      "url": "sport/theatre.css",
+      "bytes": 1710,
+      "revision": "657c10248414cab1"
+    },
+    {
+      "url": "sport/theatre.js",
+      "bytes": 5614,
+      "revision": "43531bb0b75439e6"
     },
     {
       "url": "sport/vendor/firebase-10.12.5/firebase-app.js",

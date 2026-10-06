@@ -14,7 +14,7 @@ setupHome=function(){
  updateTicker();
 };
 const septemberQuickSetup=setupQuickHud;
-setupQuickHud=function(){septemberQuickSetup();$('hudFish').after($('returnDirectory'));setupJourneyMusic();};
+setupQuickHud=function(){septemberQuickSetup();$('hudHearts').before($('returnDirectory'));setupJourneyMusic();};
 const septemberHud=updateQuickHud;
 updateQuickHud=function(){septemberHud();if($('returnDirectory')){$('returnDirectory').textContent='⌂ 回家';$('returnDirectory').title=area&&area.category!=='local'?'乘船返回長洲目錄':'返回長洲目錄';}};
 const septemberClose=closeDialog;
@@ -28,8 +28,8 @@ modal=function(...args){$('bookshopHub')?.remove();septemberModal(...args);docum
 function showBookshop(){
  cancelCast();held=false;dialogOpen=true;islandBrowsing=true;inBookshop=true;stage.classList.add('islandBrowsing');$('home').hidden=true;$('modal').hidden=true;$('islandHub').hidden=true;$('bookshopHub')?.remove();updateIslandBackdrop();
  const hub=document.createElement('section');hub.id='bookshopHub';hub.setAttribute('aria-label','長洲書店');
- hub.innerHTML='<button id="recommendBooks">店長推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button><button id="bookshopHome">⌂ 回家</button>';
- stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('recyclingStation').onclick=()=>showRecycling();$('bookshopHome').onclick=returnToIslandDirectory;
+ hub.innerHTML='<button id="recommendBooks">店長推介</button><button id="dailyToys">懷舊扭蛋</button><button id="dailyPostcards">明信片</button><button id="recyclingStation">回收站</button>';
+ stage.append(hub);$('recommendBooks').onclick=()=>showBooks();$('dailyToys').onclick=()=>openDailyGame('toy');$('dailyPostcards').onclick=()=>openDailyGame('postcard');$('recyclingStation').onclick=()=>showRecycling();
 }
 function showBookCollection(){
  const entries=[...wallet().instances.entries()];

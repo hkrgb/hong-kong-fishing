@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const c={};vm.runInNewContext(fs.readFileSync(__dirname+'/../sport/economy-core.js','utf8'),c);const E=c.CoastEconomy;
+const event=(type,seq)=>({id:'e'+seq,seq,type,story:'star-thrower'});
+let save={bag:[],economyEvents:[event('story-unlock',1),event('story-complete',2),event('story-complete',3)]},w=E.account(save);
+assert(w.stories.has('star-thrower'));assert.equal(w.hearts,10);assert.equal(w.instances.size,2);assert(w.rejected.includes('e3'));
+assert.equal(E.account({economyEvents:[event('story-complete',1)]}).instances.size,0);
+const low={hearts:0,sold:new Set(),released:new Set()},fish={id:'siganus-canaliculatus',catchId:'fish1'};
+assert(!E.storyEligible({bag:[]},low));assert(E.storyEligible({bag:[fish]},low));low.sold.add('fish1');assert(!E.storyEligible({bag:[fish]},low));
+assert.equal(E.account({bag:[],economyEvents:E.mergeEvents(save.economyEvents,save.economyEvents)}).instances.size,2);
+console.log('PASS story eligibility, permanent ledger unlock, no consumption, two rewards, replay and completion-before-unlock rejection');
