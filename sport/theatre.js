@@ -49,7 +49,7 @@ function playTheatre(){
 }
 addEventListener('message',event=>{
  const s=theatreSession,d=event.data;if(!s||event.source!==s.frame.contentWindow||event.origin!==TheatreStory.origin||!d||d.channel!=='island-theatre'||d.game!==TheatreStory.game||d.session!==s.token)return;
- if(d.type==='ready'){s.ready=true;clearTimeout(s.timer);$('theatrePlayer')?.querySelector('.theatreLoading')?.remove();}
+ if(d.type==='ready'){s.ready=true;sendTheatreFont();clearTimeout(s.timer);$('theatrePlayer')?.querySelector('.theatreLoading')?.remove();}
  if(d.type==='error'){clearTimeout(s.timer);const p=$('theatrePlayer')?.querySelector('.theatreLoading p');if(p)p.textContent='未能載入最新故事，請返回重試。';}
  if(d.type==='complete'&&s.ready)finishTheatreCollection();
 });
@@ -65,3 +65,8 @@ function finishTheatreCollection(){
  modal(already?'再次完成《拋海星的人》':'獲得小劇場特別物件','<div class="theatreRewards">'+pictures+'</div><p class="intro">'+(already?'這兩件特別物件已在你的收藏中。':'已加入「我的收藏品 → 物件」。')+'卡片盒及泥鯭粥為劇場專屬，不會在扭蛋出現。</p>',showTheatre,'返回小劇場');
  foot('查看物件',()=>showJournal('collection',0,'objects'));
 }
+
+let theatreFontSize='small';try{const value=localStorage.getItem('island-theatre-font-size');if(['small','medium','large'].includes(value))theatreFontSize=value;}catch{}
+function sendTheatreFont(){const s=theatreSession;if(s?.ready)s.frame.contentWindow.postMessage({channel:'island-theatre',type:'font-size',game:TheatreStory.game,session:s.token,size:theatreFontSize},TheatreStory.origin);}
+function showTheatreFontSettings(){modal('小劇場文字大小','<p class="intro">選擇閱讀文字大小，設定會自動保存。</p><div id="theatreFontSettings" role="group" aria-label="小劇場文字大小"></div>');for(const [size,label] of [['small','小'],['medium','中'],['large','大']]){const b=document.createElement('button');b.textContent=label;b.setAttribute('aria-pressed',String(size===theatreFontSize));b.onclick=()=>{theatreFontSize=size;try{localStorage.setItem('island-theatre-font-size',size);}catch{}sendTheatreFont();document.querySelectorAll('#theatreFontSettings button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));};$('theatreFontSettings').append(b);}foot(theatreSession?'返回小劇場':'返回遊戲設定',()=>theatreSession?closeDialog():showJournal('settings'),true);}
+const theatreSettingsJournal=showJournal;showJournal=function(...args){theatreSettingsJournal(...args);if(args[0]==='settings'){const b=document.createElement('button');b.innerHTML='<b>小劇場文字大小</b><span>小／中／大</span>';b.onclick=showTheatreFontSettings;document.querySelector('.personalSettings')?.append(b);}};

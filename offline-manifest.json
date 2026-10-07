@@ -1,6 +1,6 @@
 {
-  "version": "f2b0fc9b0b7ece42",
-  "bytes": 295939891,
+  "version": "19c075c15d6d4b15",
+  "bytes": 295941795,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5851,
-      "revision": "cb45a646c3485fb7"
+      "bytes": 5905,
+      "revision": "f7459aaab79a080b"
     },
     {
       "url": "manifest.webmanifest",
@@ -2024,8 +2024,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5829,
-      "revision": "006111fbaadbd669"
+      "bytes": 5883,
+      "revision": "c315a7d28737f731"
     },
     {
       "url": "sport/island-ui.css",
@@ -2174,13 +2174,13 @@
     },
     {
       "url": "sport/theatre.css",
-      "bytes": 2184,
-      "revision": "a1426a23348b6ef3"
+      "bytes": 2408,
+      "revision": "1be2f7b4eb77f2db"
     },
     {
       "url": "sport/theatre.js",
-      "bytes": 7838,
-      "revision": "527ddb3eb1af1385"
+      "bytes": 9410,
+      "revision": "477ca0941f504692"
     },
     {
       "url": "sport/vendor/firebase-10.12.5/firebase-app.js",
