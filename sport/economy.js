@@ -41,7 +41,7 @@ function confirmSellAll(){
  const total=items.reduce((n,f)=>n+f.amount,0);let done=false;
  modal('賣出所有魚獲？','<p class="intro">共 '+items.length+' 條魚<br>合共可獲得 $'+total+'<br>圖鑑及魚獲紀錄會保留。</p>',()=>{if(done)return;done=true;let received=0;for(const f of items)if(transact({type:'sell',catchKey:f.key,amount:f.amount}))received+=f.amount;modal('出售結果','<p class="intro">本次獲得 $'+received+'<br>目前金錢 $'+wallet().money+'</p>',()=>showMarket(),'確定',true);},'是',true);foot('否',()=>showMarket());
 }
-function requestArea(a){if(economyReady())showAreaIntro(a);}
+function requestArea(a){if(economyReady()&&checkRegionAccess(a))showAreaIntro(a);}
 function canBaitCast(){const w=wallet();if(!economyReady())return false;if(!w.bait[equippedBait]){showTackle();return false;}if(equippedBait!=='basic'&&fishList.every(hasCaught)){economyMessage('本區魚種已全部收集','未有未釣過魚種，高級魚餌不會被消耗。請換基本魚餌或其他釣區。',showTackle);return false;}return true;}
 function useCastBait(){if(!canBaitCast())return false;const pool=CoastEconomy.pool(fishList,new Set(save.bag.map(f=>f.id)),equippedBait,Math.random());if(!pool.length||!transact({type:'use',bait:equippedBait}))return false;castSpecies=equippedBait==='basic'?null:RegionGuide.weighted(pool,area);return true;}
 function attractedFish(){const close=(a,b)=>Math.hypot(a.x-target.x,a.y-target.y)<Math.hypot(b.x-target.x,b.y-target.y)?a:b;const matching=castSpecies?school.filter(f=>f.species.id===castSpecies.id):school;const f=(matching.length?matching:school).reduce(close);if(castSpecies)f.species=castSpecies;return f;}

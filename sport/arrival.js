@@ -15,12 +15,13 @@ async function preloadBoatVideos(){
 }
 function preloadPicture(url){if(arrivalCache.has(url))return arrivalCache.get(url);const p=new Promise((resolve,reject)=>{const i=new Image(),timer=setTimeout(()=>reject(Error('timeout')),12000);i.onload=async()=>{try{await i.decode();clearTimeout(timer);resolve(i)}catch(e){clearTimeout(timer);reject(e)}};i.onerror=()=>{clearTimeout(timer);reject(Error('image'))};i.src=url;});arrivalCache.set(url,p);p.catch(()=>arrivalCache.delete(url));return p;}
 async function enterAreaLoaded(a,confirmed=false){
- if(arriving)return;
+ if(arriving||!checkRegionAccess(a))return;
  const travelling=area?.id!==a.id,price=travelling?areaPrice(a):0;
  if(price&&!confirmed){modal('確認乘船','<div class="boatCheckout"><h3>'+esc(a.name)+'</h3><div class="boatAmounts"><p>本次船費<strong>🪙 '+price+'</strong></p><p>現有金錢<strong>🪙 '+wallet().money+'</strong></p></div><p class="boatNote">每次前往外區需付船費，返回長洲免費。</p></div>',()=>enterAreaLoaded(a,true),'確認出發',true);foot('取消',()=>showRegionAreas(a.category));return;}
  arriving=true;modal('準備前往 '+a.name,'<div class="arrival"><div class="arrivalSpinner"></div><h2>正在準備海岸…</h2></div>');$('closeModal').disabled=true;
  try{
   await preloadPicture(areaArt(a));if(!economyReady())throw Error('save');
+  if(!checkRegionAccess(a))return;
   if(price&&!transact({type:'travel',areaId:a.id,amount:price})){economyMessage('金錢不足','沒有扣款，請先到免費釣區釣魚或出售魚獲。',showAreas);return;}
   updateWallet();updateQuickHud();
   if(travelling&&(a.category!=='local'||(area&&area.category!=='local')))await playBoatTrip(()=>chooseArea(a));

@@ -29,3 +29,5 @@
 #stage .tackleShop .baitOffer>b{line-height:30px}
 #stage .tackleShop .baitOffer p{font-size:24px;line-height:1.25;margin:0;min-height:0}
 #stage .tackleShop .baitOffer button{min-height:44px!important;font-size:24px!important;padding:2px 8px!important}
+
+.regionPlace.regionLocked small{color:#ffe1a1;white-space:normal}.regionPlace.regionLocked{filter:saturate(.65)}

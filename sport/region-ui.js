@@ -1,7 +1,16 @@
+// Gates are eligibility checks, not purchases: souvenirs remain in the collection.
+const RegionRequirements={ 'tsuen-wan':{item:'star-congee',label:'泥鯭粥'},'tung-lung':{item:'peaceBunMaster',label:'平安包達人證書'},'sharp-island':{percent:30},'tsing-ma':{percent:50},'po-toi':{percent:70}};
+function regionAccess(a){
+ const rule=RegionRequirements[a.id];if(a.category==='local'||!rule)return {open:true,label:'無需解鎖'};
+ if(rule.item)return {open:[...wallet().instances.values()].some(v=>v.id===rule.item),label:'收藏物件「'+rule.label+'」'};
+ const ids=new Set(cfg.fish.map(f=>f.id)),found=new Set(save.bag.map(f=>f.id).filter(id=>ids.has(id))),required=Math.ceil(ids.size*rule.percent/100);
+ return {open:found.size>=required,label:'圖鑑收集 '+rule.percent+'%（'+required+' 種）',progress:found.size+' / '+ids.size+' 種'};
+}
+function checkRegionAccess(a){const gate=regionAccess(a);if(gate.open)return true;economyMessage('地區尚未解鎖','前往 '+a.name+' 需要'+gate.label+'。'+(gate.progress?'目前已收集 '+gate.progress+'。':''),()=>showRegionAreas(a.category));return false;}
 function showAreas(){
  $('home').hidden=true;
  modal('前往釣魚','<div class="regionGroups"></div>');
- for(const [key,name,note] of [['local','長洲本地','三個釣點 · 全部免費'],['other','香港其他地區','每次乘船付費 · 回長洲免費']]){
+ for(const [key,name,note] of [['local','長洲本地','三個釣點 · 全部免費'],['other','香港其他地區','達成解鎖條件後付船費 · 回長洲免費']]){
   const a=cfg.areas.find(a=>a.category===key),b=document.createElement('button');b.className='regionGroup';b.dataset.region=key;
   if(a)b.style.backgroundImage='linear-gradient(transparent,#031923ee),url("'+areaArt(a)+'")';
   b.innerHTML='<b>'+name+'</b><span>'+note+'</span>';b.onclick=()=>showRegionAreas(key);$('modalBody').firstChild.append(b);
@@ -13,7 +22,8 @@ function showRegionAreas(category='local',page=0){
  modal(category==='local'?'長洲本地（免費）':'香港其他地區','<div class="regionPlaces"></div>');
  for(const a of list.slice(page*3,page*3+3)){
   const b=document.createElement('button');b.className='regionPlace';b.dataset.area=a.id;b.style.backgroundImage='linear-gradient(transparent 15%,#041b27f5),url("'+areaArt(a)+'")';
-  b.innerHTML='<b>'+esc(a.name)+'</b><span>'+ (a.category==='local'?'免費進入':'每次船費 '+areaPrice(a))+'</span><small>查看簡介 →</small>';
+  const gate=regionAccess(a);b.classList.toggle('regionLocked',!gate.open);
+  b.innerHTML='<b>'+esc(a.name)+'</b><span>'+ (a.category==='local'?'免費進入':'每次船費 '+areaPrice(a))+'</span><small>'+(!gate.open?'🔒 '+esc(gate.label)+(gate.progress?' · '+gate.progress:''):'查看簡介 →')+'</small>';
   b.disabled=!cfg.fish.some(f=>a.fish?.includes(f.id));b.onclick=()=>requestArea(a);$('modalBody').firstChild.append(b);
  }
  foot('返回',showAreas);if(pages>1){foot('上一頁',()=>showRegionAreas(category,page-1)).disabled=page===0;foot((page+1)+' / '+pages,()=>{}).disabled=true;foot('下一頁',()=>showRegionAreas(category,page+1)).disabled=page===pages-1;}

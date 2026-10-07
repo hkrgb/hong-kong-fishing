@@ -1,6 +1,6 @@
 {
-  "version": "a6b5ca6909a28f73",
-  "bytes": 295938194,
+  "version": "f2b0fc9b0b7ece42",
+  "bytes": 295939891,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -929,8 +929,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5905,
-      "revision": "c5bed2ae315a6687"
+      "bytes": 5851,
+      "revision": "cb45a646c3485fb7"
     },
     {
       "url": "manifest.webmanifest",
@@ -1154,8 +1154,8 @@
     },
     {
       "url": "sport/arrival.js",
-      "bytes": 5295,
-      "revision": "a4db05cacbc25886"
+      "bytes": 5405,
+      "revision": "36cfc194feaec79e"
     },
     {
       "url": "sport/assets/bookshop/bgm-piano.mp3",
@@ -1969,8 +1969,8 @@
     },
     {
       "url": "sport/economy.js",
-      "bytes": 9293,
-      "revision": "e7011b6b90637dc3"
+      "bytes": 9315,
+      "revision": "856b175eb66f26fe"
     },
     {
       "url": "sport/entry-orientation.css",
@@ -2014,8 +2014,8 @@
     },
     {
       "url": "sport/game.js",
-      "bytes": 34576,
-      "revision": "b416f8677425a043"
+      "bytes": 34793,
+      "revision": "76ed66384b12f47c"
     },
     {
       "url": "sport/home.css",
@@ -2024,8 +2024,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5883,
-      "revision": "269bc39c0e7c6a24"
+      "bytes": 5829,
+      "revision": "006111fbaadbd669"
     },
     {
       "url": "sport/island-ui.css",
@@ -2149,13 +2149,13 @@
     },
     {
       "url": "sport/region-ui.css",
-      "bytes": 4232,
-      "revision": "5d52d73074c5117a"
+      "bytes": 4379,
+      "revision": "2469eec078d4cade"
     },
     {
       "url": "sport/region-ui.js",
-      "bytes": 6338,
-      "revision": "0285199cfec2bd5c"
+      "bytes": 7647,
+      "revision": "eada00318a23c1d1"
     },
     {
       "url": "sport/save-merge.js",
