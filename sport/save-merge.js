@@ -2,6 +2,9 @@ import './economy-core.js?v=20261003';
 import './region-stamps.js?v=20261003';
 export const emptySave=()=>({bag:[],medals:{},visited:{},score:0,cupWins:{},cupRewards:{}});
 export function mergeSaves(a={},b={}){
+ const timeline=s=>{const t=s.progressTimeline;return t&&Number.isFinite(t.at)&&typeof t.id==='string'?[t.at,t.id]:[0,''];};
+ const ta=timeline(a),tb=timeline(b);
+ if(ta[0]!==tb[0]||ta[1]!==tb[1])return JSON.parse(JSON.stringify(ta[0]>tb[0]||(ta[0]===tb[0]&&ta[1]>tb[1])?a:b));
  const fish=new Map();for(const f of [...(a.bag||[]),...(b.bag||[])])fish.set(f.catchId||[f.id,f.time,f.weight,f.area].join('|'),f);
  const rewards={...(a.cupRewards||{})};for(const [k,v] of Object.entries(b.cupRewards||{}))rewards[k]=Math.max(+rewards[k]||0,+v||0);
  return {...a,...b,regionStamps:globalThis.CoastStamps.merge(a.regionStamps,b.regionStamps),economyEvents:globalThis.CoastEconomy.mergeEvents(a.economyEvents,b.economyEvents),bag:[...fish.values()].sort((x,y)=>(+y.time||0)-(+x.time||0)),medals:{...a.medals,...b.medals},visited:{...a.visited,...b.visited},cupWins:{...a.cupWins,...b.cupWins},cupRewards:rewards,score:Math.max(+a.score||0,+b.score||0,Object.values(rewards).reduce((s,n)=>s+n,0))};

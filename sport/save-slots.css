@@ -1,0 +1,6 @@
+.slotIntro{color:#204a5c!important;font-size:19px;line-height:1.5;margin:0 0 18px}
+.saveSlotGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.saveSlotCard{background:#f7fcff;border:2px solid #90bdce;border-radius:18px;padding:20px;color:#143e50;display:flex;flex-direction:column;min-height:255px}
+.saveSlotCard h3{font-size:26px;margin:0 0 14px}.slotDetails{font-size:19px;line-height:1.65;min-height:100px;overflow-wrap:anywhere}.saveSlotCard small{font-size:16px;color:#405d69;margin:12px 0}
+.slotActions{display:flex;gap:12px;margin-top:auto}.slotActions button{flex:1;background:#e2f0f5;color:#123b4f;border:1px solid #799eaf;border-radius:9px;padding:10px;font-size:21px}.slotActions button:disabled{opacity:.45}
+.marketShop .marketOffers .marketEmpty{color:#163b4e!important;background:#fffffff2;padding:24px;border-radius:14px;font-size:25px;font-weight:700;text-align:center;margin:15px 0}

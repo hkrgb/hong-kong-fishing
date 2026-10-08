@@ -100,7 +100,7 @@ function showHome(){cancelCast();tournament=null;pendingPrize=null;held=false;di
 function updateAccount(){if(!$('home'))return;$('cloudState').textContent=embedded?'故事模式 · 由主程式保存進度':cloudMessage;$('accountActions').hidden=embedded;$('googleLogin').hidden=!!cloud?.user;$('googleLogin').disabled=cloudLoading;$('cloudSync').hidden=!cloud?.user;$('googleLogout').hidden=!cloud?.user;$('importGuest').hidden=!cloud?.user;$('newJourney').disabled=cloudLoading||(embedded&&!hostReady);$('loadJourney').disabled=cloudLoading||(embedded&&!hostReady)}
 async function setupCloud(){
  if(globalThis.ISLAND_NATIVE){cloudLoading=false;cloudMessage='離線版 · 進度自動儲存在此手機';updateAccount();return;}
- try{const module=await Promise.race([import('./cloud.js?v=20261003'),new Promise((_,reject)=>setTimeout(()=>reject(Error('timeout')),5000))]);cloud=module.createCloud({
+ try{const module=await Promise.race([import('./cloud.js?v=20261008b'),new Promise((_,reject)=>setTimeout(()=>reject(Error('timeout')),5000))]);cloud=module.createCloud({
  read:()=>JSON.parse(JSON.stringify(save)),readGuest:guestSave,
  replace:d=>{save=d;updateLog()},
  guest:()=>{save=guestSave();updateLog()},

@@ -1,6 +1,6 @@
 {
-  "version": "49e0d6221430cafd",
-  "bytes": 314146794,
+  "version": "e81fd6c836571ec5",
+  "bytes": 314154392,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -934,8 +934,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5851,
-      "revision": "d8404c53e8bd9cfc"
+      "bytes": 6011,
+      "revision": "3bb8c0190f38d779"
     },
     {
       "url": "manifest.webmanifest",
@@ -1944,8 +1944,8 @@
     },
     {
       "url": "sport/cloud.js",
-      "bytes": 3791,
-      "revision": "56df7afe8edd6275"
+      "bytes": 3792,
+      "revision": "72764219ac034777"
     },
     {
       "url": "sport/daily-souvenirs.js",
@@ -1974,8 +1974,8 @@
     },
     {
       "url": "sport/economy.js",
-      "bytes": 9315,
-      "revision": "856b175eb66f26fe"
+      "bytes": 9334,
+      "revision": "ec4cc7290d15a3f8"
     },
     {
       "url": "sport/entry-orientation.css",
@@ -2019,8 +2019,8 @@
     },
     {
       "url": "sport/game.js",
-      "bytes": 34793,
-      "revision": "76ed66384b12f47c"
+      "bytes": 34794,
+      "revision": "cda114b3428be0a0"
     },
     {
       "url": "sport/home.css",
@@ -2029,8 +2029,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5829,
-      "revision": "a252350ae8bc0f68"
+      "bytes": 5989,
+      "revision": "81d5534520201618"
     },
     {
       "url": "sport/island-ui.css",
@@ -2164,8 +2164,18 @@
     },
     {
       "url": "sport/save-merge.js",
-      "bytes": 935,
-      "revision": "6d21a3e6e7553eba"
+      "bytes": 1212,
+      "revision": "aae207fabf93d886"
+    },
+    {
+      "url": "sport/save-slots.css",
+      "bytes": 924,
+      "revision": "74d4098c4e340956"
+    },
+    {
+      "url": "sport/save-slots.js",
+      "bytes": 6056,
+      "revision": "31f1eac71b684c01"
     },
     {
       "url": "sport/style.css",
