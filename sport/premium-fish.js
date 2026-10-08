@@ -476,7 +476,7 @@ const fish=[
     "en": "Chinese silver pomfret",
     "scientificName": "Pampus chinensis",
     "family": "Stromateidae",
-    "image": "../sport/assets/premium-fish/pampus-chinensis.png",
+    "image": "../assets/fish/review-20261008/pampus-chinensis.png",
     "min": 0.5,
     "max": 3,
     "hits": 6,

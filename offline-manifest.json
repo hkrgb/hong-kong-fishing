@@ -1,6 +1,6 @@
 {
-  "version": "19c075c15d6d4b15",
-  "bytes": 295941795,
+  "version": "49e0d6221430cafd",
+  "bytes": 314146794,
   "entries": [
     {
       "url": "app-assets/icon-192.png",
@@ -113,11 +113,6 @@
       "revision": "6ef5a11b86b7f7bf"
     },
     {
-      "url": "assets/fish/corrected-20260914/apogon-fasciatus.png",
-      "bytes": 279533,
-      "revision": "79e303c69f2c44fe"
-    },
-    {
       "url": "assets/fish/corrected-20260914/apogon-niger.png",
       "bytes": 305425,
       "revision": "705bbf407ff99a45"
@@ -191,11 +186,6 @@
       "url": "assets/fish/corrected-20260914/centropyge-tibicen.png",
       "bytes": 213742,
       "revision": "3a475b537a4d6d70"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/centropyge-vrolikii.png",
-      "bytes": 354062,
-      "revision": "b796505afc104540"
     },
     {
       "url": "assets/fish/corrected-20260914/chaetodon-auriga.png",
@@ -333,11 +323,6 @@
       "revision": "bbc60b9406127e7c"
     },
     {
-      "url": "assets/fish/corrected-20260914/fistularia-commersonii.png",
-      "bytes": 79406,
-      "revision": "42c24e03b3329ff6"
-    },
-    {
       "url": "assets/fish/corrected-20260914/gerres-filamentosus.png",
       "bytes": 366569,
       "revision": "12fcb114b2f22fce"
@@ -361,21 +346,6 @@
       "url": "assets/fish/corrected-20260914/grouper.png",
       "bytes": 383892,
       "revision": "2dfd64f9966742a4"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/gymnothorax-reevesii.png",
-      "bytes": 224840,
-      "revision": "0f523639c3f5ed76"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/gymnothorax-thyrsoideus.png",
-      "bytes": 220248,
-      "revision": "8f02580fe86ca415"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/gymnothorax-undulatus.png",
-      "bytes": 193384,
-      "revision": "495458e9e08457d8"
     },
     {
       "url": "assets/fish/corrected-20260914/halichoeres-dussumieri.png",
@@ -523,11 +493,6 @@
       "revision": "0eae169c466a9f8e"
     },
     {
-      "url": "assets/fish/corrected-20260914/mene-maculata.png",
-      "bytes": 304153,
-      "revision": "f95eeb462be9c445"
-    },
-    {
       "url": "assets/fish/corrected-20260914/microcanthus-strigatus.png",
       "bytes": 313081,
       "revision": "21916d696919e116"
@@ -658,24 +623,9 @@
       "revision": "456ea17c50bd87f7"
     },
     {
-      "url": "assets/fish/corrected-20260914/plotosus-lineatus.png",
-      "bytes": 163724,
-      "revision": "dcce6dc9e1848c7e"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/pomacanthus-annularis.png",
-      "bytes": 347344,
-      "revision": "7e4632152dd5f71a"
-    },
-    {
       "url": "assets/fish/corrected-20260914/pomadasys-quadrilineatus.png",
       "bytes": 318944,
       "revision": "524e2aa3aca94023"
-    },
-    {
-      "url": "assets/fish/corrected-20260914/prionurus-scalprum.png",
-      "bytes": 336333,
-      "revision": "bdbbbb46cbe2d46c"
     },
     {
       "url": "assets/fish/corrected-20260914/ptereleotris-evides.png",
@@ -873,6 +823,61 @@
       "revision": "49526150bca69895"
     },
     {
+      "url": "assets/fish/review-20261008/apogon-fasciatus.png",
+      "bytes": 2159177,
+      "revision": "7aa02c81b27ae94b"
+    },
+    {
+      "url": "assets/fish/review-20261008/centropyge-vrolikii.png",
+      "bytes": 2485767,
+      "revision": "0c4961c4bdeb295b"
+    },
+    {
+      "url": "assets/fish/review-20261008/fistularia-commersonii.png",
+      "bytes": 392097,
+      "revision": "abbdd0823e75cdc9"
+    },
+    {
+      "url": "assets/fish/review-20261008/gymnothorax-reevesii.png",
+      "bytes": 1942714,
+      "revision": "f084f9a36d397f4b"
+    },
+    {
+      "url": "assets/fish/review-20261008/gymnothorax-thyrsoideus.png",
+      "bytes": 1228824,
+      "revision": "606d0690ff281eb8"
+    },
+    {
+      "url": "assets/fish/review-20261008/gymnothorax-undulatus.png",
+      "bytes": 1303420,
+      "revision": "cf39c7699b4b5f6f"
+    },
+    {
+      "url": "assets/fish/review-20261008/mene-maculata.png",
+      "bytes": 2608882,
+      "revision": "a0fbffcc1fc1ecf5"
+    },
+    {
+      "url": "assets/fish/review-20261008/pampus-chinensis.png",
+      "bytes": 2487790,
+      "revision": "01d865aca809a9d4"
+    },
+    {
+      "url": "assets/fish/review-20261008/plotosus-lineatus.png",
+      "bytes": 1281024,
+      "revision": "a37407dd8f635802"
+    },
+    {
+      "url": "assets/fish/review-20261008/pomacanthus-annularis.png",
+      "bytes": 2605196,
+      "revision": "bb2eb674801bd0ff"
+    },
+    {
+      "url": "assets/fish/review-20261008/prionurus-scalprum.png",
+      "bytes": 2211811,
+      "revision": "cf8c9b2fc482e6c0"
+    },
+    {
       "url": "assets/fish/silver-pomfret.png",
       "bytes": 2343916,
       "revision": "c885df54f0a762bb"
@@ -929,8 +934,8 @@
     },
     {
       "url": "index.html",
-      "bytes": 5905,
-      "revision": "f7459aaab79a080b"
+      "bytes": 5851,
+      "revision": "d8404c53e8bd9cfc"
     },
     {
       "url": "manifest.webmanifest",
@@ -1134,13 +1139,13 @@
     },
     {
       "url": "pro/config.json",
-      "bytes": 220124,
-      "revision": "c94b084626c74b5a"
+      "bytes": 220249,
+      "revision": "ccfcaae66444a099"
     },
     {
       "url": "region-guide.js",
-      "bytes": 36909,
-      "revision": "7d79d12a4efc1365"
+      "bytes": 37625,
+      "revision": "d39b6bdc395f3779"
     },
     {
       "url": "sport/admin.html",
@@ -2024,8 +2029,8 @@
     },
     {
       "url": "sport/index.html",
-      "bytes": 5883,
-      "revision": "c315a7d28737f731"
+      "bytes": 5829,
+      "revision": "a252350ae8bc0f68"
     },
     {
       "url": "sport/island-ui.css",
@@ -2114,8 +2119,8 @@
     },
     {
       "url": "sport/premium-fish.js",
-      "bytes": 27631,
-      "revision": "7fdd39acf3969ef2"
+      "bytes": 28222,
+      "revision": "2a6599257c16ed78"
     },
     {
       "url": "sport/quick-hud.css",

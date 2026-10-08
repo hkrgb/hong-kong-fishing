@@ -1,0 +1,101 @@
+[
+  {
+    "id": "prionurus-scalprum",
+    "name": "倒吊",
+    "scientificName": "Prionurus scalprum",
+    "old": "../assets/fish/corrected-20260914/prionurus-scalprum.png",
+    "source": "https://fishdb.sinica.edu.tw/chi/species.php?gen=Prionurus&spe=scalprum",
+    "reason": "尾柄骨板及尾鰭顏色不配合",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Prionurus scalprum (倒吊). Body uniform charcoal grey brown, deep oval laterally compressed body, small pointed mouth, low continuous dorsal and anal fins, narrow caudal peduncle with a single longitudinal row of black fixed bony plates, three prominent rear plates. Tail dusky grey with a narrow pale white rear edge. Absolutely no yellow tail, yellow patches or orange markings. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "apogon-fasciatus",
+    "name": "四間梳蘿",
+    "scientificName": "Apogon fasciatus",
+    "old": "../assets/fish/corrected-20260914/apogon-fasciatus.png",
+    "source": "https://fishesofaustralia.net.au/home/species/3252",
+    "reason": "把縱向橫紋錯畫成垂直暗帶",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Apogon fasciatus (四間梳蘿). Whitish dusky pink slender cardinalfish, large eye, TWO separate dorsal fins, translucent forked tail. A broad dark HORIZONTAL midlateral stripe runs from snout through eye into centre of tail; a second narrower dark HORIZONTAL stripe above it runs from above eye to upper tail base. These are longitudinal stripes from head to tail, NO vertical bars. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "fistularia-commersonii",
+    "name": "鶴針",
+    "scientificName": "Fistularia commersonii",
+    "old": "../assets/fish/corrected-20260914/fistularia-commersonii.png",
+    "source": "https://fishesofaustralia.net.au/home/species/1507",
+    "reason": "尾鰭及尾絲形狀不清楚",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Fistularia commersonii (鶴針). Extremely elongated thin smooth olive-grey cornetfish, long narrow tubular snout and tiny terminal mouth, dorsal and anal fins opposite each other far back, small FORKED tail with a conspicuous very LONG thin WHITE filament extending from the middle of the tail. Two thin blue rows of spots along the body. Entire complete tail filament visible, gently curve filament if needed. No rounded paddle tail, no chin barbel. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "mene-maculata",
+    "name": "豬刀",
+    "scientificName": "Mene maculata",
+    "old": "../assets/fish/corrected-20260914/mene-maculata.png",
+    "source": "https://fishesofaustralia.net.au/home/species/580",
+    "reason": "體形及背臀鰭近似其他魚種",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Mene maculata (豬刀). Razor moonfish with extremely deep laterally compressed silver body, bluish metallic upper back with two irregular rows of dark blue spots ONLY on upper half, sharp protruding keeled breast and low rounded triangular silver belly. Small nearly vertical mouth; low long-based anal fin follows underside, long thin pelvic fin rays, deeply forked tail. No tall spiky dorsal crown or prominent separated anal spines; NOT Drepane or Zeus. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "gymnothorax-undulatus",
+    "name": "波紋裸胸鱔",
+    "scientificName": "Gymnothorax undulatus",
+    "old": "../assets/fish/corrected-20260914/gymnothorax-undulatus.png",
+    "source": "https://fishesofaustralia.net.au/home/species/3818",
+    "reason": "舊圖身體及尾部未清楚呈現",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Gymnothorax undulatus (波紋裸胸鱔). Undulate moray eel, entire long thick muscular eel in open S curve, narrow tapering tail clearly visible, continuous dorsal caudal anal fin ribbon, NO pectoral or pelvic fins. Greenish yellow head, body has close-set irregular dark brown blotches separated by undulating pale yellow lines and smaller dark dots forming broken irregular bars. Real moray jaws, small gill opening. Complete head to tail no overlap. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "gymnothorax-thyrsoideus",
+    "name": "澳洲雙犁海鱔",
+    "scientificName": "Gymnothorax thyrsoideus",
+    "old": "../assets/fish/corrected-20260914/gymnothorax-thyrsoideus.png",
+    "source": "https://fishesofaustralia.net.au/home/species/3820",
+    "reason": "舊圖尾部及白眼特徵不足",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Gymnothorax thyrsoideus (澳洲雙犁海鱔). Greyface moray eel, complete long muscular eel in open S curve, tapering tail clearly visible, low continuous dorsal caudal anal fin ribbon, NO pectoral or pelvic fins. Pale brown finely mottled body, pale grey white to purplish snout and head, silvery WHITE IRIS around small dark pupil. Real moray jaws, small gill opening. Complete head to tail no overlap. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "gymnothorax-reevesii",
+    "name": "花鱔",
+    "scientificName": "Gymnothorax reevesii",
+    "old": "../assets/fish/corrected-20260914/gymnothorax-reevesii.png",
+    "source": "https://zoolstud.sinica.edu.tw/Journals/33.1/44.pdf",
+    "reason": "舊圖尾部及斑紋辨識度不足",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Gymnothorax reevesii (花鱔). Reeves moray eel, full elongated muscular eel in open S curve, complete tapering tail visible, low continuous dorsal caudal anal fin ribbon, NO pectoral or pelvic fins. Yellowish brown ground colour with numerous large obscure dark brown spots in 3 to 5 irregular rows along body, small brown freckles between, slightly downward curved upper jaw; rear fin dark edged, tail fin with comb-like brown bands. Do NOT substitute a sharp honeycomb pattern species. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "plotosus-lineatus",
+    "name": "坑鰜",
+    "scientificName": "Plotosus lineatus",
+    "old": "../assets/fish/corrected-20260914/plotosus-lineatus.png",
+    "source": "https://fishesofaustralia.net.au/home/species/2766",
+    "reason": "舊圖尾部及口鬚未清楚呈現",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Plotosus lineatus (坑鰜). Striped eel catfish with elongated dark brown eel-shaped body and TWO pale cream longitudinal stripes on visible side, broad blunt catfish head, FOUR PAIRS of fine mouth barbels, one short anterior dorsal fin and pectoral fins, long second dorsal and anal fins CONTINUOUS with rounded pointed eel tail. Body in gentle open S curve, all tail clearly visible. No forked tail or separate round tail. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "pomacanthus-annularis",
+    "name": "藍環荷包",
+    "scientificName": "Pomacanthus annularis",
+    "old": "../assets/fish/corrected-20260914/pomacanthus-annularis.png",
+    "source": "https://www.kahaku.go.jp/research/db/zoology/Fishes_of_Andaman_Sea/contents/pomacanthidae/05.html",
+    "reason": "尾鰭錯畫成全黃色",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Pomacanthus annularis (藍環荷包). Adult blue-ring angelfish, deep compressed orange-brown body with 5 to 8 thin bright blue curved diagonal stripes, distinct blue ring above gill cover, two blue horizontal head lines, elongated trailing tip of dorsal fin, rounded anal fin. Tail fin must be translucent WHITE with only thin YELLOW EDGE, not solid yellow. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "centropyge-vrolikii",
+    "name": "福氏刺尻魚",
+    "scientificName": "Centropyge vrolikii",
+    "old": "../assets/fish/corrected-20260914/centropyge-vrolikii.png",
+    "source": "https://fishesofaustralia.net.au/home/species/644",
+    "reason": "後半身黃色與物種不符",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Centropyge vrolikii (福氏刺尻魚). Adult pearlscale half-black angelfish, compact oval deep body, front half pale greyish brown with pearly whitish scale centres gradually darkening to solid BLACK posterior body. Tail BLACK, rear dorsal and anal fins BLACK with narrow electric blue margin. Small orange patch at gill opening and pectoral fin base. Absolutely NO yellow body panels and NO yellow fins. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  },
+  {
+    "id": "pampus-chinensis",
+    "name": "斗鯧",
+    "scientificName": "Pampus chinensis",
+    "old": "../sport/assets/premium-fish/pampus-chinensis.png",
+    "source": "https://www.fao.org/4/y0870e/y0870e42.pdf",
+    "reason": "尾鰭及背臀鰭過度分叉尖長",
+    "prompt": "Use case: scientific-educational. Asset: realistic transparent fish encyclopedia game artwork. Generate exactly ONE Pampus chinensis (斗鯧). Chinese pomfret Pampus chinensis adult: broad deep oval extremely laterally compressed silver body, short blunt snout and small eye, smooth non-falcate rounded dorsal and anal profiles, fin rays gradually diminishing toward tail, no sickle shaped long fin lobes, no pelvic fins. Caudal fin nearly TRUNCATE or only shallowly indented with short rounded lobes, NOT deeply forked. Uniform silvery grey subtle natural scales, no spots or yellow fins. Strict natural-history species anatomy, photographic specimen realism, natural wet texture and soft neutral lighting, not cartoon, not vector or plastic CGI. Clean lateral side profile facing LEFT, complete fish and every fin visible, centred with generous clear margins, landscape composition. Isolated on genuinely transparent alpha background, no scene, water, ground, shadow, text, labels, hooks, hands or watermark. This is generated educational artwork, not a real photograph."
+  }
+]
