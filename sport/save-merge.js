@@ -1,5 +1,5 @@
-import './economy-core.js?v=20261003';
-import './region-stamps.js?v=20261003';
+import './economy-core.js?v=20261010';
+import './region-stamps.js?v=20261010';
 export const emptySave=()=>({bag:[],medals:{},visited:{},score:0,cupWins:{},cupRewards:{}});
 export function mergeSaves(a={},b={}){
  const timeline=s=>{const t=s.progressTimeline;return t&&Number.isFinite(t.at)&&typeof t.id==='string'?[t.at,t.id]:[0,''];};

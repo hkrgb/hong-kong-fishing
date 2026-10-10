@@ -38,6 +38,8 @@ globalThis.CoastEconomy=(()=>{
     if(e.payment==='hearts'&&s.hearts>=10){s.hearts-=10;s.stories.add(e.story);ok=true;}
     if(e.payment==='fish'&&(save.bag||[]).some(f=>f.id==='siganus-canaliculatus'&&catchKey(f)===e.catchKey)&&!s.sold.has(e.catchKey)&&!s.released.has(e.catchKey)&&!s.offered.has(e.catchKey)){s.offered.add(e.catchKey);s.stories.add(e.story);ok=true;}
    }
+   if(e.type==='story-unlock-paid'&&e.story==='dad-birthday'&&!s.stories.has(e.story)&&e.payment==='hearts'&&s.hearts>=30){s.hearts-=30;s.stories.add(e.story);ok=true;}
+   if(e.type==='story-complete'&&e.story==='dad-birthday'&&s.stories.has(e.story)&&!s.storyRewards.has(e.story)){s.storyRewards.add(e.story);addItem('story',{id:'birthday-flask',name:'酒瓶（生日禮物）',image:'../theatre/birthday-flask.png'},e.id+'-flask');ok=true;}
    if(e.type==='story-complete'&&e.story==='star-thrower'&&s.stories.has(e.story)&&!s.storyRewards.has(e.story)){s.storyRewards.add(e.story);addItem('story',{id:'star-congee',name:'泥鯭粥',image:'../theatre/congee.png'},e.id+'-congee');addItem('story',{id:'star-card-case',name:'卡片盒',image:'../theatre/card-case.png'},e.id+'-card');ok=true;}
    if(e.type==='relief'&&Number.isFinite(e.limit)&&s.money<e.limit&&kinds.every(k=>s.bait[k]===0)){s.bait.basic=3;ok=true;}
    if(ok)s.accepted.add(e.id);else s.rejected.push(e.id);
